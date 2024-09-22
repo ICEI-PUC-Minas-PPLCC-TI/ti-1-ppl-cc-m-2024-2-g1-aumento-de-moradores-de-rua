@@ -94,7 +94,6 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 >
 > Nessa etapa, vamos trabalhar com a metodologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
 >
-<<<<<<< HEAD
 > * **Matriz CSD**: Na matriz foram identificadas as seguintes dúvidas, certezas e suposições: 
 > **1- Dúvidas**: - Uma vez que há o investimento inicial de R$982 milhões pelo governo para pessoas em situação de rua, como tal verba é distribuída? 
 > - Por que não vemos o impacto deste "benefício" na vida diária dos afetados?
@@ -108,9 +107,6 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 > - Melhorias no acesso a empregos e educação, ajudariam no processo.
 > - O preconceito da população auxilia na estabilização e perpetuação do problema.
 > - Existe um grande desinteresse por parte política em achar formas que visem resolver as causas estruturais de falta de moradia.
-=======
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
->>>>>>> 7b293839e0466f2bd4140ad3aef5ca6eedca9794
 > * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
 > * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
 > * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
