@@ -90,19 +90,19 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
  ### Matriz CSD: 
  Na matriz foram identificadas as seguintes dúvidas, certezas e suposições: 
-> 
+
 > **1- Dúvidas**: 
 > ▸ Uma vez que há o investimento inicial de R$982 milhões pelo governo para pessoas em situação de rua, como tal verba é distribuída? 
 > ▸ Por que não vemos o impacto deste "benefício" na vida diária dos afetados?
 > ▸ Quais os principais fatores socioeconõmicos que contribuem para o aumento de moradores de rua?
 > ▸ Qual a relação entre educação e prevenção da população de rua?
-> 
+
 > **2- Certezas**: 
 > ▸ Falta de Pesquisa e Mensuração: Há uma disparidade entre os números dos moradores de rua calculados pela Prefeitura de BH, com a realidade.
 > ▸ Poucas Verbas e Sub-notificação: A precariedade de pesquisas na área, não compreende a dimensionalidade dos moradores de rua e suas necessidades, que resulta em pouca verba estatal.
 > ▸ Aumento dos Moradores de Rua: a cada ano, há um aumento progressivo dos Moradores de Rua, por "n" motivos (desemprego, inflação, falta de políticas pública, má gestão...).
 > ▸ Condições de Insalubridade e Doenças Autoimunes: Há relação entre o aumento do número de doenças auto-imunes nos cidadãos, sob o viés da contaminação.
-> 
+
 > **3- Suposições**: 
 > ▸ Através de um investimento público  localizado e correto, Haverá uma diminuição significativa dos moradores de rua.
 > ▸ Melhorias no acesso a empregos e educação, ajudariam no processo.
@@ -112,13 +112,14 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 > ### Mapa de stakeholders: 
 >Na fase de Mapa de stakeholders apresentamos as seguintes pessoas:
+
 > **1- Pessoas Fundamentais**: ▸ Doadores
 > ▸ Moradores de rua
 > Prefeitura de BH
->
+
 > **2- Pessoas Importantes**: ▸ Abrigos e ONG's
 > ▸ Trabalhores Sociais e Profissionais da Saúde
->
+
 > **3- Pessoas Influenciadoras**: ▸ População
 > ▸ Mídia
 
