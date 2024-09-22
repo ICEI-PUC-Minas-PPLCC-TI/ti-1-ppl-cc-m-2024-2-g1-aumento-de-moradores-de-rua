@@ -198,6 +198,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Efetuar cadastro
 - **Código:** RF01
 - **Descrição:** O sistema deve registrar as informações do cadastro realizado no sistema.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -223,6 +224,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Realizar login
 - **Código:** RF02
 - **Descrição:** O sistema deve efetuar o login.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -243,6 +245,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Atualizar perfil
 - **Código:** RF03
 - **Descrição:** O sistema deve atualizar as informações.
+- **Prioridade:** Importante.
 
 ### Requisitos Não Funcionais
 
@@ -261,10 +264,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Recuperar senha
 - **Código:** RF04
 - **Descrição:** O sistema deve permitir que os usuários recuperem a senha.
+- **Prioridade:** Importante.
 
 ### Requisitos Não Funcionais
 
-| ID RNF | Descrição                                                                                            | Categoria   |
+| ID RNF | Descrição                                                                                            | Categoria   | 
 | ------ | ---------------------------------------------------------------------------------------------------- | ----------- |
 | 4.1    | Para recuperar a senha o usuário deverá inserir o EMAIL e CNPJ/CPF que foram informados no cadastro. | Interface   |
 | 4.2    | Será enviado um email com um link que redirecionará para a página de recuperação de senha.           | Usabilidade |
@@ -280,6 +284,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Realizar Logoff
 - **Código:** RF05
 - **Descrição:** Permite que o usuário saia do sistema.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -299,6 +304,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Realizar Doação
 - **Código:** RF06
 - **Descrição:** O sistema deve direcionar para a página de doações e realizar as transações.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -321,6 +327,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Visualizar Histórico de Doações Recebidas
 - **Código:** RF07
 - **Descrição:** O sistema deve permitir que a ONG visualize o histórico de doações recebidas.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -339,6 +346,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Registrar Ações de Voluntariado
 - **Código:** RF08
 - **Descrição:** A ONG pode registrar ações de voluntariado para gerenciamento interno e convite a voluntários.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -357,6 +365,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Controlar Estoque de Doações
 - **Código:** RF09
 - **Descrição:** O sistema deve permitir que a ONG gerencie o estoque de itens doados.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -375,6 +384,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Gerenciar Parcerias com Empresas
 - **Código:** RF10
 - **Descrição:** O sistema deve permitir que ONGs gerenciem parcerias com empresas doadoras.
+- **Prioridade:** Desejável.
 
 ### Requisitos Não Funcionais
 
@@ -395,6 +405,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Integrar com Redes Sociais
 - **Código:** RF11
 - **Descrição:** O sistema será integrado com as Redes Sociais.
+- **Prioridade:** Desejável.
 
 ### Requisitos Não Funcionais
 
@@ -412,6 +423,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Avaliar Ações Voluntárias
 - **Código:** RF12
 - **Descrição:** O sistema deve permitir a avaliação das ações realizadas pelos voluntários.
+- **Prioridade:** Importante.
 
 ### Requisitos Não Funcionais
 
@@ -431,6 +443,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Cadastrar Moradores de Rua
 - **Código:** RF13
 - **Descrição:** O sistema deve permitir que as ONG’s cadastrem os moradores de rua.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -452,6 +465,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Acompanhar Moradores de Rua
 - **Código:** RF14
 - **Descrição:** Facilitar o acompanhamento de moradores de rua por serviços de assistência médica e psicológica.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -470,6 +484,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Registrar Localização de Moradores de Rua
 - **Código:** RF15
 - **Descrição:** O sistema deve registrar a localização aproximada dos moradores de rua.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
@@ -489,6 +504,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - **Nome:** Registrar Necessidade dos Moradores de Rua
 - **Código:** RF16
 - **Descrição:** O sistema deve registrar as informações de uma ONG.
+- **Prioridade:** Essencial.
 
 ### Requisitos Não Funcionais
 
