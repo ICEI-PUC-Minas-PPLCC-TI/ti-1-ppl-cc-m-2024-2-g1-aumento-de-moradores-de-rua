@@ -8,7 +8,7 @@ A população em situação de rua totalizou 5.344 em BH no ano de 2022, segundo
 
 ## Alunos integrantes da equipe
 
-* [Any Gabrriela Neri de Oliveira]
+* [Any Gabrriela Neri de Oliveira](https://github.com/anygabriella)
 * [Eduardo Henrique Aniceto Teixeira](https://github.com/Eduard-Aniceto)
 * [Frederico Matheus Costa Duarte](https://github.com/Freduart12)
 * [Izabel Oliveira da Paz Chaves](https://github.com/rainbowcrack)

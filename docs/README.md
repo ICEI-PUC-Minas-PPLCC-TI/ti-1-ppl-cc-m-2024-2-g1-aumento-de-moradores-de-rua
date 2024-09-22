@@ -6,7 +6,7 @@ Informações básicas do projeto.
 * **Repositório GitHub:** [[LINK PARA O REPOSITÓRIO NO GITHUB]](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/tree/master)
   
 * **Membros da equipe:** 
-* [Any Gabrriela Neri de Oliveira]
+* [Any Gabrriela Neri de Oliveira](https://github.com/anygabriella)
 * [Eduardo Henrique Aniceto Teixeira](https://github.com/Eduard-Aniceto)
 * [Frederico Matheus Costa Duarte](https://github.com/Freduart12)
 * [Izabel Oliveira da Paz Chaves](https://github.com/rainbowcrack)
