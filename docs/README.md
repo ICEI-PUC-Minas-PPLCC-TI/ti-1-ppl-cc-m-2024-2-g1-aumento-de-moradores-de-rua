@@ -242,19 +242,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisito Funcional
 
-- **Nome:** Atualizar perfil
+- **Nome:** Atualizar perfil 
 - **Código:** RF03
-- **Descrição:** O sistema deve atualizar as informações.
+- **Descrição:** O sistema deve atualizar as informações. 
 - **Prioridade:** Importante.
 
 ### Requisitos Não Funcionais
 
-| ID RNF | Descrição                                                                      | Categoria   |
-| ------ | ------------------------------------------------------------------------------ | ----------- |
+| ID RNF | Descrição                                                                      | Categoria   | 
+| ------ | ------------------------------------------------------------------------------ | ----------- | 
 | 3.1    | Para realizar a atualização das informações.                                   | Interface   |
 | 3.2    | As informações passarão por uma fase de validação antes da publicação.         | Segurança   |
 | 3.3    | A opção de atualizar perfil estará disponível no menu do usuário após o login. | Usabilidade |
 
+---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 3.1   | Alta       |
+| 3.2   | Alta       |
+| 3.3   | Média      |
 ---
 
 ## RF04 - Recuperação de Senha
