@@ -110,6 +110,7 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
  ▸ Existe um grande desinteresse por parte política em achar formas que visem resolver as causas estruturais de falta de moradia.
 
 
+
  ### Mapa de stakeholders: 
 Na fase de Mapa de stakeholders apresentamos as seguintes pessoas:
 
@@ -125,6 +126,7 @@ Na fase de Mapa de stakeholders apresentamos as seguintes pessoas:
 
 
 
+
 ### Entrevistas qualitativas: 
 Nesta etapa fizemos as seguintes perguntas para os desabrigados e coletamos as informações:
 
@@ -136,13 +138,14 @@ familiares próximos, como mãe e pai, e por não receberem o apoio necessário 
 
 **3- Como são as doações recebidas?**: No que se refere a doações / ajudas recebidas por eles pela população local, ambos apresentaram opiniões positivas, alegando uma empatia considerável dos urbanistas a sua situação. Entretanto houve uma divergência de opiniões sobre o amparo oferecido pelo governo, onde um relata receber auxílio, enquanto o outro nunca teve acesso a algo do tipo.
 
-A seguir são perguntas foram feitas para um profissional que trabalha com lipeza pública e tem contato direto com tal população: 
 
+A seguir são perguntas foram feitas para um profissional que trabalha com lipeza pública e tem contato direto com tal população: 
 **1- Como os moradores de rua influenciam seu trabalho?**: "Trabalhando na área pública, frequentemente nos deparamos com pessoas em situação de rua que, infelizmente, não demonstram interesse em mudar de vida. Isso pode prejudicar o nosso trabalho, pois muitos acabam utilizando as ruas para suas necessidades básicas e descartando lixo de forma inadequada. Eu acredito que viver nessas condições não é positivo, tanto para eles quanto para a comunidade em geral, e isso reflete negativamente no nosso dia a dia."
 
 **2- Quais são os aspectos positivos dessa convivência?**: "O lado positivo é que, na maioria das vezes, são pessoas educadas e amigáveis. Contudo, sempre existem exceções, e há alguns indivíduos mais agressivos que dificultam o nosso trabalho."
 
 **3- Como você percebe o tratamento da população em relação aos moradores de rua?**: "É uma situação muito paralela. Percebo que muitas pessoas se preocupam em ajudar, mas, em muitos casos, os próprios moradores de rua não buscam sair dessa situação. Isso torna o processo de ajuda muito complicado. Conheço, por exemplo, uma pessoa que teve a oportunidade de mudar de vida, com emprego e tudo, mas preferiu continuar no vício das drogas e da bebida. Isso torna realmente difícil prestar qualquer tipo de assistência."
+
 
 
 
