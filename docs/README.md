@@ -216,6 +216,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 2.0    | Quando o CPF e CNPJ forem preenchidos, haverá a verificação para saber se são válidos.                                                                                                                                         | Usabilidade |
 
 ---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 1.1   | Alta       |
+| 1.2   | Alta       |
+| 1.3   | Alta       |
+| 1.4   | Alta       |
+| 1.5   | Alta       |
+| 1.6   | Alta       |
+| 1.7   | Média      |
+| 1.8   | Baixa      |
+| 1.9   | Alta       |
+| 2.0   | Alta       |
+---
 
 ## RF02 - Realizar Login
 
@@ -236,6 +249,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 2.4    | Haverá a opção de preferência por manter o login salvo.                                                   | Interface   |
 | 2.5    | Haverá verificação para saber se os campos preenchidos do ID da ONG e da senha estão corretos.            | Usabilidade |
 
+---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 2.1   | Alta       |
+| 2.2   | Alta       |
+| 2.3   | Alta       |
+| 2.4   | Média      |
+| 2.5   | Alta       |
 ---
 
 ## RF03 - Atualização de Perfil
@@ -282,6 +303,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 4.4    | A nova senha deverá atender aos critérios de segurança estabelecidos (mínimo de caracteres, etc.).   | Segurança   |
 
 ---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 4.1   | Alta       |
+| 4.2   | Alta       |
+| 4.3   | Alta       |
+| 4.4   | Alta       |
+---
 
 ## RF05 - Realizar Logoff
 
@@ -301,6 +329,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 5.3    | Após clicar em SAIR, todo o sistema é atualizado e direcionado para a página inicial.                                              | Usabilidade |
 | 5.4    | Toda e qualquer interação com SAIR, limpa os campos necessários para efetuar o login a não ser que as preferências estejam salvas. | Segurança   |
 
+---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 5.1   | Média      |
+| 5.2   | Média      |
+| 5.3   | Alta       |
+| 5.4   | Alta       |
 ---
 
 ## RF06 - Realizar Doação
@@ -325,6 +360,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 6.7    | Todas as transações devem ser realizadas em ambiente seguro com criptografia de dados.                  | Segurança   |
 
 ---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 6.1   | Alta       |
+| 6.2   | Alta       |
+| 6.3   | Alta       |
+| 6.4   | Média      |
+| 6.5   | Alta       |
+| 6.6   | Média      |
+| 6.7   | Alta       |
+---
 
 ## RF07 - Visualizar Histórico de Doações Recebidas
 
@@ -343,6 +388,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 7.2    | O sistema deve permitir filtrar o histórico por período, valor ou doador.                                              | Usabilidade |
 | 7.3    | Os dados devem ser apresentados de forma clara e organizada, com opção de exportar relatórios.                         | Usabilidade |
 
+---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 7.1   | Alta       |
+| 7.2   | Alta       |
+| 7.3   | Alta       |
 ---
 
 ## RF08 - Registrar Ações de Voluntariado
@@ -363,6 +414,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 8.3    | A ONG poderá gerenciar a lista de voluntários inscritos em cada ação.                                             | Usabilidade |
 
 ---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 8.1   | Alta       |
+| 8.2   | Alta       |
+| 8.3   | Alta       |
+---
 
 ## RF09 - Controlar Estoque de Doações
 
@@ -381,6 +438,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 9.2   | O sistema deve alertar quando o estoque de determinados itens estiver baixo.                                  | Usabilidade |
 | 9.3   | Relatórios de estoque poderão ser gerados para auxiliar na gestão de recursos.                                | Usabilidade |
 
+---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 9.1   | Alta       |
+| 9.2   | Alta       |
+| 9.3   | Baixo      |
 ---
 
 ## RF10 - Gerenciar Parcerias com Empresas
@@ -403,6 +466,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 10.5   | Ao realizar a doação, as empresas com CNPJ serão cadastradas como parceiras da ONG.                  | Usabilidade |
 
 ---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 10.1  | Alta       |
+| 10.2  | Alta       |
+| 10.3  | Alta       |
+| 10.4  | Média      |
+| 10.5  | Alta       |
+---
 
 ## RF11 - Integrar com Redes Sociais
 
@@ -420,6 +491,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 11.1   | No rodapé para inscrições às ONG’s, expostas na página de adesão à causa, será informado suas redes sociais, a exemplo de: Instagram, Página Oficial, Youtube, canal do WhatsApp, Telegram… | Interface   |
 | 11.2   | O sistema será linkado e irá redirecionar, por hiperligações, até a rede social correspondente ao clique do usuário.                                                                        | Usabilidade |
 
+---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 11.1  | Baixa      |
+| 11.2  | Média      |
 ---
 
 ## RF12 - Avaliar Ações Voluntárias
@@ -440,6 +516,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 12.3   | As avaliações incluirão critérios como organização, impacto e satisfação pessoal que serão campos textuais, e uma nota geral que serão estrelas. | Interface   |
 | 12.4   | As ONGs e os voluntários poderão visualizar feedbacks para melhorar futuras ações.                                                               | Interface   |
 
+---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 12.1  | Média      |
+| 12.2  | Média      |
+| 12.3  | Média      |
+| 12.4  | Baixa      |
 ---
 
 ## RF13 - Cadastrar Moradores de Rua
@@ -463,6 +546,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 13.6   | Ao final de cada registro, torna-se obrigatório a Aceitação de Termos de Uso e Serviço que incluem a segurança de dados registrados dos moradores de rua, pela Lei Geral de Proteção dos Dados.     | Segurança   |
 
 ---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 13.1  | Alta       |
+| 13.2  | Média      |
+| 13.3  | Alta       |
+| 13.4  | Média      |
+| 13.5  | Média      |
+| 13.6  | Média      |
+---
 
 ## RF14 - Acompanhar Moradores de Rua
 
@@ -481,6 +573,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 14.2   | Notificações podem ser enviadas para os serviços de assistência quando uma nova necessidade for identificada.                                                                                                                                                                                          | Interface   |
 | 14.3   | O histórico de acompanhamento estará disponível para as ONGs autorizadas.                                                                                                                                                                                                                              | Usabilidade |
 
+---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 14.1  | Alta       |
+| 14.2  | Média      |
+| 14.3  | Alta       |
 ---
 
 ## RF15 - Registrar Localização de Moradores de Rua
@@ -502,6 +600,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 15.4   | Haverá um consentimento a ser preenchido para permitir o uso da localização pelo sistema.                                                                                                | Segurança   |
 
 ---
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 15.1  | Alta       |
+| 15.2  | Alta       |
+| 15.3  | Média      |
+| 15.4  | Baixa      |
+---
 
 ## RF16 - Registrar Necessidade dos Moradores de Rua
 
@@ -521,7 +626,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 16.3   | O sistema deve permitir a atualização ou exclusão das necessidades registradas conforme necessário.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Usabilidade |
 
 ---
-
+|ID RNF | Prioridade |
+| ----- | ---------- |
+| 16.1  | Alta       |
+| 16.2  | Alta       |
+| 16.3  | Alta       |
+---
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
