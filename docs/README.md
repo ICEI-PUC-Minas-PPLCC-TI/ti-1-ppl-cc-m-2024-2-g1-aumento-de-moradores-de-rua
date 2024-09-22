@@ -140,6 +140,7 @@ familiares próximos, como mãe e pai, e por não receberem o apoio necessário 
 
 
 A seguir são perguntas foram feitas para um profissional que trabalha com lipeza pública e tem contato direto com tal população: 
+
 **1- Como os moradores de rua influenciam seu trabalho?**: "Trabalhando na área pública, frequentemente nos deparamos com pessoas em situação de rua que, infelizmente, não demonstram interesse em mudar de vida. Isso pode prejudicar o nosso trabalho, pois muitos acabam utilizando as ruas para suas necessidades básicas e descartando lixo de forma inadequada. Eu acredito que viver nessas condições não é positivo, tanto para eles quanto para a comunidade em geral, e isso reflete negativamente no nosso dia a dia."
 
 **2- Quais são os aspectos positivos dessa convivência?**: "O lado positivo é que, na maioria das vezes, são pessoas educadas e amigáveis. Contudo, sempre existem exceções, e há alguns indivíduos mais agressivos que dificultam o nosso trabalho."
@@ -151,7 +152,36 @@ A seguir são perguntas foram feitas para um profissional que trabalha com lipez
 
  ### Highlights de pesquisa: 
 
- 
+ **Nome**: Entrevista com duas pessoas em situação de rua e um trabalhador da prefeitura.
+ **Data**: 30/08/2024.
+ **Local**: Praça da Liberdade, Lourdes.
+
+ **O que os participantes falaram ou fizeram que surprendeu, ou falas mais significativas**: ▸ Um dos moradores entrevistados estava lendo livros e disse que parou os estudos no ensino médio.
+ ▸ Ambos disseram sobre a falta de segurança nos abrigos, justificado pela preferência nas ruas.
+ ▸ O trabalhador destacou mais aspectos negativos sobre as pessoas em situação de rua.
+ ▸ Informou sobre a dificuldade de manter e limpar as ruas com a presença deles.
+
+
+ **Principais temas ou aprendizados que surgiram desta entrevista**: É possível observar a dicotomia entre os entrevistados, do qual os moradores de rua preferem permanecer no estado em que se encontram, optando pela ajuda alheia, e o trabalhador da prefeitura preferem que saiam das ruas, como também que ninguém forneça doações.
+
+Com os aprendizados que vivenciamos, o grupo chegou a conclusão que devemos nos ater nas necessidades do nosso público alvo, os próprios moradores que vivenciam tal realidade, por isso nossa solução deve priorizar sua capacidade de escolha. Não devemos, desenfreadamente, submeter nossos próprios pensamentos em querer levá-los aos abrigos, sem a menos entender a crítica situação das políticas públicas e da segurança.
+
+
+**Aspectos que importaram mais para os participantes**: Entre as pessoas em situação de rua, destaca-se a preferência pessoal em permanecer nas ruas em contraponto aos abrigos. Ademais, sobre a falta de suporte familiar incutidos em seus passados, que preferem ao menos comentar. A ajuda dos pedestres com a doação de roupas e de alimentos se faz presente recorrente, contribuindo para a confiança em um ambiente de gratidão pela boa ação.
+
+O trabalhador da prefeitura, responsável pela limpeza e manutenção das ruas, adotou uma postura radical em relação ao público em situação de rua afirmando que dificultam o seu trabalho ao remexerem nos lixos, além de que alguns podem ser agressivos. Justificou sua postura frente essa problemática defendendo a realocação deles de forma mais rápida possível.
+
+
+**Novos tópicos ou questões para explorar no futuro**: Pensamos em entender melhor a realidade das pessoas em situação de rua, de um viés mais qualitativo e governamental. Consoante a isso exploraremos no futuro próximo:
+▸ Como funciona o sistema de segurança e a infraestrutura nos abrigos?
+▸ O que fazer para atrair o nosso público aos abrigos?
+▸ Como unir ONG's e voluntários a esse projeto?
+
+Exploramos as ODS's da ONU e queremos que a tecnologia dialogue com a fraternidade humana. Buscaremos outros projetos e soluções para inspirar a nossa ideia e aprender o que deu errado.
+Queremos dialogar com os nossos colegas de classe de T.I 1 que possuem temas que abrangem o que buscamos, para achar a melhor solução: "Desperdício de Comida", "Desemprego", "Dificuldade de Doações a ONG's" e o grupo de "Vícios".
+
+
+
 
 ## Etapa de Definição
 
