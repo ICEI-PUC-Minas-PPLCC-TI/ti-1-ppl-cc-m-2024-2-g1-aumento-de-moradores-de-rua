@@ -31,58 +31,47 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Problema
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+**O aumento do número de moradores de rua é um problema social crescente que reflecte falhas estruturais em várias áreas, incluindo habitação, saúde mental, emprego e apoio social. Esse impacto não afeta apenas os indivíduos diretamente afetados, mas também as comunidades e sociedades como um todo.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
->
-> **Orientações**:
->
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Os moradores de rua enfrentam frequentemente uma série de desafios, como a falta de acesso a serviços básicos, como alimentação, saúde e abrigo, além de sofrerem com a estigmatização e a exclusão social. As ONGs que trabalham para mitigar essa situação enfrentam dificuldades operacionais significativas, como a gestão ineficiente de recursos, a falta de visibilidade sobre a localização e as necessidades dos moradores, e a dificuldade em envolver voluntários e doadores.**
+
 
 ## Objetivos
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+**Objetivo Geral:
+Desenvolver um aplicativo para ONGs que facilite a identificação e mapeamento de moradores de rua, promova a arrecadação de doações e forneça informações sobre as ONGs participantes, com o intuito de melhorar a gestão de recursos e a assistência a essas populações.
+Objetivos Específicos:
+Mapear a população em situação de rua: Criar uma funcionalidade que permita registrar e visualizar a localização dos moradores de rua, ajudando ONGs a direcionar melhor seus esforços e recursos.
+Facilitar a captação de doações: Implementar um sistema no app que permita que doadores localizem pontos de coleta, façam doações online ou se conectem diretamente com ONGs.
+Fornecer informações detalhadas sobre as ONGs: Desenvolver uma área dedicada no aplicativo onde os usuários possam conhecer o trabalho das ONGs, suas missões, áreas de atuação e como podem colaborar.
+Promover a interação entre ONGs e a comunidade: Facilitar a comunicação entre ONGs e voluntários, doadores e outros stakeholders, promovendo ações conjuntas e campanhas.
+Aumentar a conscientização sobre a situação dos moradores de rua: Utilizar o aplicativo como uma plataforma de sensibilização, mostrando a realidade das pessoas em situação de rua e incentivando a participação da sociedade na solução desse problema.
+Oferecer uma interface intuitiva e acessível: Garantir que o aplicativo seja fácil de usar, mesmo para usuários com pouca familiaridade com tecnologia, e acessível a pessoas com diferentes necessidades.**
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+**O aumento do número de moradores de rua é uma questão social urgente e complexa que afeta milhões de pessoas em todo o mundo. Isso resulta de uma combinação de factores, incluindo a falta de habitação acessível, desemprego, problemas de saúde mental e escassez de serviços de apoio. Diante desse cenário, a atuação das Organizações Não Governamentais (ONGs) torna-se fundamental para prestar assistência e promover a reintegração social dessas pessoas.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Este trabalho justifica-se pela necessidade de criar uma ferramenta digital que facilite a atuação das ONGs e melhore a eficiência de suas operações. O desenvolvimento de um aplicativo específico para esse público-alvo visa atender a diversas necessidades, como a gestão de ações, o acompanhamento de moradores de rua, a integração com redes sociais, e o registro de ações de voluntariado.**
+
 
 ## Público-Alvo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+**O público-alvo do aplicativo específico para ONGs que atuam no apoio a moradores de rua é composto por três grupos principais:
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+1-Organizações Não Governamentais (ONGs):
+
+As ONGs são o foco principal do aplicativo, pois são as responsáveis ​​por fornecer assistência e apoio direto aos moradores de rua. O aplicativo deve atender suas necessidades operacionais, facilitando a gestão de ações, o acompanhamento de ações de voluntariado e a integração com parceiros.
+
+2-Moradores de Rua:
+
+Os moradores de rua são os beneficiários das ações realizadas pelas ONGs. O aplicativo deve ser projetado para atender suas necessidades, permitindo que as ONGs registrem informações sobre sua localização, saúde e bem-estar, além de possibilitar um acompanhamento mais eficaz. 
+
+3-Voluntários e Doadores:
+
+O aplicativo também é destinado a voluntários e doadores que desejam contribuir com as ONGs. A plataforma deve facilitar o engajamento desses indivíduos, permitindo que eles se inscrevam para ações de voluntariado, façam ações financeiras e acompanhem o impacto de suas contribuições.**
+
 
 # Product Discovery
 
