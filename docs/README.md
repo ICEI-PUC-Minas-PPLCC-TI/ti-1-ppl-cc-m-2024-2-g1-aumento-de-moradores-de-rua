@@ -757,17 +757,20 @@ A cada semana, elegemos um Scrum Master para organizar as tarefas de cada um no 
 
 Relação de ferramentas empregadas pelo grupo durante o projeto.
 
-| Ambiente                    | Plataforma | Link de acesso                              |
+| Ambiente                    | Plataforma | Link de acesso                              | 
 | --------------------------- | ---------- | ------------------------------------------- |
-| Processo de Design Thinking | Miro       | https ⚠️ EXEMPLO ⚠️        |
-| Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/ ⚠️ EXEMPLO ⚠️      |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo        | Figma  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
-| Editor de Código            | Visual Studio Code  | https://vscode.dev/?vscode-lang=pt-br                                            |
+| Processo de Design Thinking | Miro       | https://miro.com/welcomeonboard/T05PMHQwc3l4OTMyMkN5Tmp3Q2RMZ0Y1MlJUTENGTDJkWnRodUJBYTlyM3ViUTFuSVdZVnRjaHlTeGVoUzhaQ3wzNDU4NzY0NTk3OTAyNTAwNjIzfDI=?share_link_id=243424165500 |
+| Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/ |
+| Hospedagem do site          | Render     | https://site.render.com/|
+| Protótipo Interativo e Projeto Interfaces | Figma  | https://www.figma.com/design/sr9gPmIYiNjavTUbWUqum8/Projeto-de-Interfaces?node-id=0-1&node-type=canvas#-1   |
+| Editor de Código           | Visual Studio Code  | https://vscode.dev/?vscode-lang=pt-br  |
+| Apresentação de Slides | Canva | https://miro.com/welcomeonboard/T05PMHQwc3l4OTMyMkN5Tmp3Q2RMZ0Y1MlJUTENGTDJkWnRodUJBYTlyM3ViUTFuSVdZVnRjaHlTeGVoUzhaQ3wzNDU4NzY0NTk3OTAyNTAwNjIzfDI=?share_link_id=243424165500 |
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, (2) )ferramentas de comunicação, (3) )ferramentas de diagramação, (4) )plataformas de hospedagem, entre outras.
+* Utilizamos a plataforma **Miro** pela praticidade entre as interações do grupo, do qual todos poderiam editar como em um quadro negro.
+* Usamos o **GitHub** pela alto alcance entre os desenvolvedores e pessoas do ramo das tecnologias, além de ter hospedagem em nuvem e facilitar o acesso remoto dos membros.
+* O **Figma** pela diversidade de tamanhos e interações que permite a compatibilidade mobile e desktop pelo tamanho de polegadas, além de permitir trabalhar em grupo.
+* O **VS Code** pelas extensões Markdown e por permitir a sincronização com o Git.
+* O **Canva** por estar repleto de templates e efeitos para ajudar no design da apresentação de slides.
 
 ## Gerenciamento do Projeto
 * [Any Gabrriela](https://github.com/anygabriella): Design Thinking, Projeto de Interfaces
