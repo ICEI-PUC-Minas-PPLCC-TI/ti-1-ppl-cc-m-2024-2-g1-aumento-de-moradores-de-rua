@@ -764,7 +764,7 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 | Hospedagem do site          | Render     | https://site.render.com/|
 | Protótipo Interativo e Projeto Interfaces | Figma  | https://www.figma.com/design/sr9gPmIYiNjavTUbWUqum8/Projeto-de-Interfaces?node-id=0-1&node-type=canvas#-1   |
 | Editor de Código           | Visual Studio Code  | https://vscode.dev/?vscode-lang=pt-br  |
-| Apresentação de Slides | Canva | https://miro.com/welcomeonboard/T05PMHQwc3l4OTMyMkN5Tmp3Q2RMZ0Y1MlJUTENGTDJkWnRodUJBYTlyM3ViUTFuSVdZVnRjaHlTeGVoUzhaQ3wzNDU4NzY0NTk3OTAyNTAwNjIzfDI=?share_link_id=243424165500 |
+| Apresentação de Slides | Canva | https://www.canva.com/design/DAGRazcszTQ/8IJf5cV13NWzDTyeejO2ww/edit?utm_content=DAGRazcszTQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton |
 
 * Utilizamos a plataforma **Miro** pela praticidade entre as interações do grupo, do qual todos poderiam editar como em um quadro negro.
 * Usamos o **GitHub** pela alto alcance entre os desenvolvedores e pessoas do ramo das tecnologias, além de ter hospedagem em nuvem e facilitar o acesso remoto dos membros.
@@ -782,14 +782,17 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 Utilizamos a Metodologia Kanban para organizar os trabalhos a serem entregues por cada integrante, por meio de: A Fazer, Em Adamento e Concluído, em Post-it coloridos em um quadro branco no Canva e no Notion. Fizemos um Controle de Qualidade atráves de votações de aprovações de trabalho, do qual todos tiveram direito a um voto em: Pronto para Enviar, Precisa ser Revisado e Descartado.
 
 A gestão de configuração do projeto via GitHub foi dada por conexão remota SSH, dos membros do time adicionados ao projeto:
+
 ```bash
 $ git remote add origin https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/
 ```
 Em sua máquina local, cada um optou por usar o VS Code baixado no computador ou usado em site via docker ou usado como editor de texto na Google Cloud, o repositório foi puxado por:
+
 ```bash
 $ git clone https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/
 ```
 Configuramos diretamente no Master, após autenticarmos o Git com o VS Code e a nossa conta no GitHub:
+
 ```bash
 # priorizamos o git pull antes de qualquer alteracao
 $ git add .
