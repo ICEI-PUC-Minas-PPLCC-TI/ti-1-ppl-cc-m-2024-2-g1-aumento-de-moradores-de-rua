@@ -763,31 +763,44 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 | Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/ ⚠️ EXEMPLO ⚠️      |
 | Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
 | Protótipo Interativo        | Figma  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
-| Editor de Código            | Visual Studio Code  |                                             |
+| Editor de Código            | Visual Studio Code  | https://vscode.dev/?vscode-lang=pt-br                                            |
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
 > Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, (2) )ferramentas de comunicação, (3) )ferramentas de diagramação, (4) )plataformas de hospedagem, entre outras.
 
 ## Gerenciamento do Projeto
+* [Any Gabrriela](https://github.com/anygabriella): Design Thinking, Projeto de Interfaces
+* [Eduardo Henrique](https://github.com/Eduard-Aniceto): Slides da Apresentação, Projeto de Interfaces, Documentação GitHub
+* [Frederico Matheus](https://github.com/Freduart12): Design Thinking, Slides da Apresentação, Documentação GitHub
+* [Izabel Chaves](https://github.com/rainbowcrack): Requesitos Funcionais e Requesitos Não Funcionais, Documentação GitHub, Projeto de Interfaces
+* [Vitor Daniel](https://github.com/vloax): Requesitos Funcionais e Requesitos Não Funcionais, Projeto de Interfaces, User Flow, Protótipo Interativo
 
-Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
+Utilizamos a Metodologia Kanban para organizar os trabalhos a serem entregues por cada integrante, por meio de: A Fazer, Em Adamento e Concluído, em Post-it coloridos em um quadro branco no Canva e no Notion. Fizemos um Controle de Qualidade atráves de votações de aprovações de trabalho, do qual todos tiveram direito a um voto em: Pronto para Enviar, Precisa ser Revisado e Descartado.
 
-![Exemplo de Kanban](images/exemplo-kanban.png)
+A gestão de configuração do projeto via GitHub foi dada por conexão remota SSH, dos membros do time adicionados ao projeto:
+```bash
+$ git remote add origin https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/
+```
+Em sua máquina local, cada um optou por usar o VS Code baixado no computador ou usado em site via docker ou usado como editor de texto na Google Cloud, o repositório foi puxado por:
+```bash
+$ git clone https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/
+```
+Configuramos diretamente no Master, após autenticarmos o Git com o VS Code e a nossa conta no GitHub:
+```bash
+# priorizamos o git pull antes de qualquer alteracao
+$ git add .
+$ git push origin master
+```
+**Processo de Design Thinkin:**
+Todo o processo foi organizado na plataforma online Miro, após a criação da equipe no ambiente de trabalho. Divididos em: Matriz CSD, Mapa de Stakeholders, Entrevistas Qualitativas e Highlights de Pesquisa, Personas e Proposta de Valor. 
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
->
-> **Orientações**:
->
-> - [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-> - [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-> - [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Fomos às ruas, onde entrevistamos dois moradores na Praça da Liberade e um funcionário da Prefeitura de BH responsável pela limpeza. Obtivemos o conhecimento necessário para focar em uma frente de trabalho, em que destacamos o principal problema: a segurança em abrigos.
+
+**Metodologia Scrum:** 
+Utilizamos a Metodologia Scrum, do qual nos reunimos semanalmente às Sextas-Feiras na PUC Minas, de forma presencial, e no Domingo para submissão das sprints, de forma remota no WhatsApp.
+
+Usamos o Notion e o Calendário Google para organizar e manter nossas tarefas em dia, aliadas a sprint entregável da semana.
 
 # Solução Implementada
 
