@@ -695,24 +695,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 16.3  | Alta       |
 ---
 
-## Projeto de Interface
-
-Artefatos relacionados com a interface e a interacão do usuário na proposta de solução.
-
-### Wireframes
-
-Estes são os protótipos de telas do sistema.
-
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
-
-Descrição para a tela XPTO
-
-![Exemplo de wireframe](images/exemplo-wireframe.png)
-
-### User Flow
-
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
-
 ### Protótipo Interativo
 
 https://www.figma.com/proto/sr9gPmIYiNjavTUbWUqum8/Projeto-de-Interfaces?node-id=43-5708&node-type=section&t=l8xQlfgYc0R01mSm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A3&starting-point-node-id=43%3A1607&show-proto-sidebar=1
