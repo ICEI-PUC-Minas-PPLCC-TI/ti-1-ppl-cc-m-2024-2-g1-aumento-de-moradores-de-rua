@@ -26,49 +26,39 @@ A documentação do projeto é estruturada da seguinte forma:
 ✅ [Documentação de Design Thinking (MIRO)](files/Aumento-de-moradores-de-rua.pdf) <-- **[MODIFICAR, ESTÁ EM BAIXA QUALIDADE]()
 
 # Contexto
-
-Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
-
-## Problema
-
-**O aumento do número de moradores de rua é um problema social crescente que reflecte falhas estruturais em várias áreas, incluindo habitação, saúde mental, emprego e apoio social. Esse impacto não afeta apenas os indivíduos diretamente afetados, mas também as comunidades e sociedades como um todo.
-
-Os moradores de rua enfrentam frequentemente uma série de desafios, como a falta de acesso a serviços básicos, como alimentação, saúde e abrigo, além de sofrerem com a estigmatização e a exclusão social. As ONGs que trabalham para mitigar essa situação enfrentam dificuldades operacionais significativas, como a gestão ineficiente de recursos, a falta de visibilidade sobre a localização e as necessidades dos moradores, e a dificuldade em envolver voluntários e doadores.**
-
+A população em situação de rua totalizou 5.344 em BH no ano de 2022, segundo o "Censo Pop Rua" da Faculdade de Medicina da UFMG representando um aumento de 192%. A partir desse contexto, torna-se essencial resolver esse problema, por isso nosso projeto busca compreender as necessidades do nosso público-alvo vulnerável, as pessoas em situação de rua, e, por meio disso, estudá-las através de estatísticas e mapeamento, além da integração com serviços sociais. Embora, a aplicação se destine principalmente a Órgãos que são e não governamentais.
 
 ## Objetivos
-
-**Objetivo Geral:
+**Objetivo Geral:**
 Desenvolver um aplicativo para ONGs que facilite a identificação e mapeamento de moradores de rua, promova a arrecadação de doações e forneça informações sobre as ONGs participantes, com o intuito de melhorar a gestão de recursos e a assistência a essas populações.
-Objetivos Específicos:
+
+**Objetivos Específicos:**
 Mapear a população em situação de rua: Criar uma funcionalidade que permita registrar e visualizar a localização dos moradores de rua, ajudando ONGs a direcionar melhor seus esforços e recursos.
 Facilitar a captação de doações: Implementar um sistema no app que permita que doadores localizem pontos de coleta, façam doações online ou se conectem diretamente com ONGs.
 Fornecer informações detalhadas sobre as ONGs: Desenvolver uma área dedicada no aplicativo onde os usuários possam conhecer o trabalho das ONGs, suas missões, áreas de atuação e como podem colaborar.
 Promover a interação entre ONGs e a comunidade: Facilitar a comunicação entre ONGs e voluntários, doadores e outros stakeholders, promovendo ações conjuntas e campanhas.
 Aumentar a conscientização sobre a situação dos moradores de rua: Utilizar o aplicativo como uma plataforma de sensibilização, mostrando a realidade das pessoas em situação de rua e incentivando a participação da sociedade na solução desse problema.
-Oferecer uma interface intuitiva e acessível: Garantir que o aplicativo seja fácil de usar, mesmo para usuários com pouca familiaridade com tecnologia, e acessível a pessoas com diferentes necessidades.**
-
+Oferecer uma interface intuitiva e acessível: Garantir que o aplicativo seja fácil de usar, mesmo para usuários com pouca familiaridade com tecnologia, e acessível a pessoas com diferentes necessidades.
 
 ## Justificativa
 
-**O aumento do número de moradores de rua é uma questão social urgente e complexa que afeta milhões de pessoas em todo o mundo. Isso resulta de uma combinação de factores, incluindo a falta de habitação acessível, desemprego, problemas de saúde mental e escassez de serviços de apoio. Diante desse cenário, a atuação das Organizações Não Governamentais (ONGs) torna-se fundamental para prestar assistência e promover a reintegração social dessas pessoas.
+O aumento do número de moradores de rua é uma questão social urgente e complexa que afeta milhões de pessoas em todo o mundo. Isso resulta de uma combinação de factores, incluindo a falta de habitação acessível, desemprego, problemas de saúde mental e escassez de serviços de apoio. Diante desse cenário, a atuação das Organizações Não Governamentais (ONGs) torna-se fundamental para prestar assistência e promover a reintegração social dessas pessoas.
 
-Este trabalho justifica-se pela necessidade de criar uma ferramenta digital que facilite a atuação das ONGs e melhore a eficiência de suas operações. O desenvolvimento de um aplicativo específico para esse público-alvo visa atender a diversas necessidades, como a gestão de ações, o acompanhamento de moradores de rua, a integração com redes sociais, e o registro de ações de voluntariado.**
-
+Este trabalho justifica-se pela necessidade de criar uma ferramenta digital que facilite a atuação das ONGs e melhore a eficiência de suas operações. O desenvolvimento de um aplicativo específico para esse público-alvo visa atender a diversas necessidades, como a gestão de ações, o acompanhamento de moradores de rua, a integração com redes sociais, e o registro de ações de voluntariado.
 
 ## Público-Alvo
 
-**O público-alvo do aplicativo específico para ONGs que atuam no apoio a moradores de rua é composto por três grupos principais:
+O público-alvo do aplicativo específico para ONGs que atuam no apoio a moradores de rua é composto por três grupos principais:
 
-1-Organizações Não Governamentais (ONGs):
+**1-Organizações Não Governamentais (ONGs):**
 
 As ONGs são o foco principal do aplicativo, pois são as responsáveis ​​por fornecer assistência e apoio direto aos moradores de rua. O aplicativo deve atender suas necessidades operacionais, facilitando a gestão de ações, o acompanhamento de ações de voluntariado e a integração com parceiros.
 
-2-Moradores de Rua:
+**2-Moradores de Rua:**
 
 Os moradores de rua são os beneficiários das ações realizadas pelas ONGs. O aplicativo deve ser projetado para atender suas necessidades, permitindo que as ONGs registrem informações sobre sua localização, saúde e bem-estar, além de possibilitar um acompanhamento mais eficaz. 
 
-3-Voluntários e Doadores:
+**3-Voluntários e Doadores:**
 
 O aplicativo também é destinado a voluntários e doadores que desejam contribuir com as ONGs. A plataforma deve facilitar o engajamento desses indivíduos, permitindo que eles se inscrevam para ações de voluntariado, façam ações financeiras e acompanhem o impacto de suas contribuições.**
 
