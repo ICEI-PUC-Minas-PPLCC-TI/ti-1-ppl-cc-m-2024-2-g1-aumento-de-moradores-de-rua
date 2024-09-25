@@ -694,128 +694,163 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 16.2  | Alta       |
 | 16.3  | Alta       |
 ---
-# Wireframes
-HOME GERAL
-A Home Geral é a página inicial do site, acessada por todos os usuários ao entrarem. Ela serve como o ponto de partida para a navegação e oferece uma visão geral dos principais destaques e funcionalidades disponíveis.
+# Projeto de interface
+
+## Protótipo Interativo 
+
+Link -> [Protótipo Interativo](https://www.figma.com/proto/sr9gPmIYiNjavTUbWUqum8/Projeto-de-Interfaces?node-id=43-1607&node-type=canvas&t=b6BTUmYUTyP6C9po-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A3&starting-point-node-id=43%3A1607&share=1
+)
+
+## UserFlow
+
+Link -> [User Flow](https://miro.com/welcomeonboard/T05PMHQwc3l4OTMyMkN5Tmp3Q2RMZ0Y1MlJUTENGTDJkWnRodUJBYTlyM3ViUTFuSVdZVnRjaHlTeGVoUzhaQ3wzNDU4NzY0NTIxNDc3MjYwNzE0fDI=?share_link_id=546586416477)
+
+## Wireframes
+
+## Home Geral
+A **Home Geral** é a página inicial do site, acessada por todos os usuários ao entrarem. Ela serve como o ponto de partida para a navegação e oferece uma visão geral dos principais destaques e funcionalidades disponíveis.
+
 ![Home Geral](images/HOME-GERAL.png)
 
-LOGIN
-O login é a área onde os usuários vão inserir suas credenciais, como cnpj/cpf e senha, para acessar suas contas. Ela garante a segurança do sistema, permitindo o acesso apenas a usuários autenticados e fornecendo opções de recuperação de senha e cadastro para novos usuários.
-![Home Geral](images/Login-Geral.png)
+## Login
+O **Login** é a área onde os usuários inserem suas credenciais, como CNPJ/CPF e senha, para acessar suas contas. Ela garante a segurança do sistema, permitindo o acesso apenas a usuários autenticados, além de oferecer opções de recuperação de senha e cadastro para novos usuários.
 
-REGISTRA VOLUNTÁRIO
-A página Registro de voluntário permite que novos voluntários criem uma conta no site, fornecendo informações básicas como nome, e-mail, e outros dados necessários. Após o preenchimento, os usuários poderão acessar as funcionalidades exclusivas disponíveis apenas para voluntários registrados.
-![Registro voluntário](images/Registrar-se.png)
+![Login](images/Login-Geral.png)
 
-REGISTRO ONG
-A página Registro de ONGs permite que novas ONGs criem uma conta no site, fornecendo informações básicas como nome, e-mail, e outros dados necessários. Após o preenchimento, as organizações poderão acessar as funcionalidades exclusivas disponíveis apenas para ONGs registrados.
-![Rigistro ONG](images/Registrar-se-ong.png)
+## Registro de Voluntário
+A página **Registro de Voluntário** permite que novos voluntários criem uma conta no site, fornecendo informações básicas como nome, e-mail, e outros dados necessários. Após o preenchimento, os usuários poderão acessar as funcionalidades exclusivas para voluntários registrados.
 
-REGISTRO DOADOR
-A página Registro de Doador permite que novas pessoas com intesão de realizar uma doação criem uma conta no site, fornecendo informações básicas como nome, e-mail e outros dados necessários. Após o preenchimento, os usuários poderão acessar as funcionalidades exclusivas disponíveis apenas para Doadores registrados.
+![Registro Voluntário](images/Registrar-se.png)
+
+## Registro de ONG
+A página **Registro de ONG** permite que novas ONGs criem uma conta no site, fornecendo informações básicas como nome, e-mail, e outros dados necessários. Após o cadastro, as ONGs poderão acessar funcionalidades exclusivas.
+
+![Registro ONG](images/Registrar-se-ong.png)
+
+## Registro de Doador
+A página **Registro de Doador** permite que pessoas interessadas em realizar doações criem uma conta no site, fornecendo informações básicas como nome, e-mail e outros dados necessários. Após o preenchimento, os doadores poderão acessar funcionalidades exclusivas.
+
 ![Registro Doador](images/Registrar-se-doador.png)
 
-SENHA REGISTRO
-A página de senha registro permite a criação de senhas pessoais para maior segurança .
-![Criar SENHA](images/Registrar-se-Adicionar-senha.png)
+## Criar Senha
+A página de **Criação de Senha** permite a criação de senhas pessoais para garantir a segurança da conta.
 
-CADASTRO ONG
-Nessa área as ONGs interessadas vão realizar o cadastro no site, para exibir a outros usuários suas informações.
-![Cadastro ONG](images/Cadastro-ONG.png) 
+![Criar Senha](images/Registrar-se-Adicionar-senha.png)
 
-ACESSO ONG
-Essa é a pagina Inicial para ONGs, após o login.
+## Cadastro de ONG
+Nesta área, as ONGs interessadas realizam o cadastro no site para exibir suas informações a outros usuários.
+
+![Cadastro de ONG](images/Cadastro-ONG.png)
+
+## Acesso ONG
+Essa é a **página inicial para ONGs** após o login.
+
 ![Acesso ONG](images/Acesso-ong.png)
 
-ONG REGISTRAR MORADOR DE RUA
-Essa página Mostra os moradores de rua registrados, que as ONGs já prestaram serviços.
-![REGISTRAR MORADOR DE RUA](images/ONG-morador-de-rua.png)
+## ONG - Registrar Morador de Rua
+Essa página mostra os moradores de rua que já foram registrados pelas ONGs que prestaram serviços.
 
-ONG REGISTRAR MORADOR DE RUA VOLUNTÁRIOS
-Essa página Mostra os moradores de rua registrados, que os voluntários já prestaram serviços.
-![REGISTRAR MORADOR DE RUA VOLUNTÁRIOS](images/ONG-morador-rua-voluntário.png)
+![Registrar Morador de Rua](images/ONG-morador-de-rua.png)
 
-ONG CADASTRO MORADOR DE RUA
-Essa área irá realizar o cadastro dos moradores de rua.
-![CADASTRO MORADOR DE RUA](images/Registrar-Morador-de-Rua.png)
+## ONG - Registrar Morador de Rua pelos Voluntários
+Essa página mostra os moradores de rua que já foram registrados pelos voluntários que prestaram serviços.
 
-ONG VOLUNTÁRIOS
-Essa página mostra os voluntários registrados.
-![ONG VOLUNTÁRIOS](images/ONG-voluntário.png)
+![Registrar Morador de Rua pelos Voluntários](images/ONG-morador-rua-voluntário.png)
 
-ONG CADASTRO VOLUNATÁRIOS
-Essa área irá realizar o cadastro dos moradores de rua.
-![CADASTRO VOLUNATÁRIOS](images/Cadastro-Voluntario.png)
+## ONG - Cadastro de Morador de Rua
+Essa área permite o cadastro de novos moradores de rua.
 
-ONG IDENTIFICAR/MAPA MORADOR DE RUA
-Essa página tem a função de instruir as ONGs sobre a área da cidade que aquele morador costuma viver, trazendo diversas interações para informação do mesmo.
-![IDENTIFICAR/MAPA MORADOR DE RUA](images/indentificar-morador-rua.png)
+![Cadastro de Morador de Rua](images/Registrar-Morador-de-Rua.png)
 
-ONG IDENTIFICAR/MAPA VOLUNTÁRIOS
-Essa página tem a função de mostrar as ONGs sobre a localização dos voluntários, trazendo diversas interações para identificação do mesmo.
-![IDENTIFICAR/MAPA VOLUNTÁRIOS](images/Identificar-Voluntário.png)
+## ONG - Voluntários
+Essa página exibe os voluntários registrados.
 
-ONG ESTOQUE
-Essa área tem o objetivo de mostrar o estoque da ONG.
+![Voluntários](images/ONG-voluntário.png)
+
+## ONG - Cadastro de Voluntários
+Essa área permite o cadastro de novos voluntários.
+
+![Cadastro de Voluntários](images/Cadastro-Voluntario.png)
+
+## ONG - Identificar/Mapa de Morador de Rua
+Essa página mostra a área da cidade onde os moradores de rua costumam viver, trazendo diversas informações para as ONGs.
+
+![Identificar/Mapa Morador de Rua](images/indentificar-morador-rua.png)
+
+## ONG - Identificar/Mapa de Voluntários
+Essa página mostra a localização dos voluntários e traz interações para as ONGs identificarem os mesmos.
+
+![Identificar/Mapa Voluntários](images/Identificar-Voluntário.png)
+
+## ONG - Estoque
+Essa área exibe o estoque disponível da ONG.
+
 ![Estoque](images/Estoque.png)
 
-ONG REGISTRAR ESTOQUE
-Essa área tem o objetivo de cadastrar o estoque da ONG.
-![REGISTRAR ESTOQUE](images/Cadastro-Estoque.png)
+## ONG - Registrar Estoque
+Essa área permite o cadastro de novos itens no estoque da ONG.
 
-ONG VISITA MORADOR DE RUA
-ESSA página tem o objetivo de auxiliar as ONGs com novos Moradores de rua encontrados e visitados.
-![VISITA MORADOR DE RUA](images/Registrar-visita-Morador-de-Rua.png)
+![Registrar Estoque](images/Cadastro-Estoque.png)
 
-ONG REGISTRAR ATIVIDADE VOLUNTÁRIO
-Essa área tem o objetivo de registrar novos voluntários.
-![REGISTRAR ATIVIDADE VOLUNTÁRIO](images/Registrar-atividade-voluntário.png)
+## ONG - Visita a Morador de Rua
+Essa página auxilia as ONGs no registro de visitas a novos moradores de rua encontrados e visitados.
 
-ACESSO DOADOR
-Essa é a pagina Inicial para os Doadores, após o login.
-![ACESSO DOADOR](images/Acesso-Doador.png)
+![Visita a Morador de Rua](images/Registrar-visita-Morador-de-Rua.png)
 
-DOADOR PERFIL
-Essa paginá irá mostrar o perfil do usuário doaodr.
-![DOADOR PERFIL](images/Doador-seu-perfil.png)
+## ONG - Registrar Atividade de Voluntário
+Essa área permite o registro de novas atividades feitas pelos voluntários.
 
-DOADOR DOAÇÕES FEITAS
-Essa área irá mostar as doações feitas pelo usuário.
-![DOADOR DOAÇÕES FEITAS](images/Doador-doações.png)
+![Registrar Atividade de Voluntário](images/Registrar-atividade-voluntário.png)
 
-DOADOR CONFIGURAÇÕES 
-Essa área serve para as configurações do perfil. 
-![DOADOR CONFIGURAÇÕES ](images/Doador-Configurações.png)
+## Acesso Doador
+Essa é a **página inicial para doadores** após o login.
 
-DOADOR INFORMAÇÂO DOAÇÃO FEITA
-Essa área mostra informações sobre as doações feitas pelo usuário.
-![DOADOR INFORMAÇÂO DOAÇÃO FEITA](images/Doador-informação-doações.png)
+![Acesso Doador](images/Acesso-Doador.png)
 
-ACESSO VOLUNTÁRIO
-Essa é a pagina Inicial para os voluntários, após o login.
-![ACESSO VOLUNTÁRIO](images/Acesso-voluntario.png)
+## Perfil do Doador
+Essa página exibe o perfil do usuário doador.
 
-VOLUNTÁRIO ATIVIDADE
-Essa área mostra as atividades já feitas pelo voluntário.
-![VOLUNTÁRIO ATIVIDADE](images/voluntario-minhas-atividade.png)
+![Perfil do Doador](images/Doador-seu-perfil.png)
 
-VOLUNTÁRIO INFORMAÇÂO ATIVIDADE
-Essa área mostra os detalhes das atividades feitas e as que terão de ser realizada, no dia pelo voluntário.
-![Home Geral](images/voluntario-atividade.png)
+## Doações Feitas
+Essa área exibe as doações realizadas pelo doador.
 
-VOLUNTÁRIO REGISTRAR ATIVIDADE
-Essa área serve para o cadastro das atividades feitas no dia pelo voluntário.
-![VOLUNTÁRIO REGISTRAR ATIVIDADE](images/Voluntario-Registrar-atividade.png)
+![Doações Feitas](images/Doador-doações.png)
 
-VOLUNTÁRIO ONG
-Essa página é onde os voluntários vão conseguir ter acesso as informações sobre as ONGs cadastradas.
-![VOLUNTÁRIO ONG](images/voluntario-ong.png)
+## Configurações do Doador
+Essa área permite a configuração do perfil do doador.
 
+![Configurações do Doador](images/Doador-Configurações.png)
 
+## Informações de Doações Feitas
+Essa área exibe informações detalhadas sobre as doações feitas pelo usuário.
 
+![Informações de Doações Feitas](images/Doador-informação-doações.png)
 
+## Acesso Voluntário
+Essa é a **página inicial para voluntários** após o login.
 
+![Acesso Voluntário](images/Acesso-voluntario.png)
 
+## Atividades do Voluntário
+Essa área exibe as atividades já realizadas pelo voluntário.
+
+![Atividades do Voluntário](images/voluntario-minhas-atividade.png)
+
+## Informações de Atividades do Voluntário
+Essa área exibe os detalhes das atividades realizadas e as que ainda devem ser feitas pelo voluntário.
+
+![Informações de Atividades](images/voluntario-atividade.png)
+
+## Voluntário - Registrar Atividade
+Essa área permite o registro das atividades realizadas no dia pelo voluntário.
+
+![Registrar Atividade](images/Voluntario-Registrar-atividade.png)
+
+## Voluntário - ONG
+Essa página permite que os voluntários tenham acesso a informações sobre as ONGs cadastradas.
+
+![ONGs](images/voluntario-ong.png)
 
 ### Protótipo Interativo
 
