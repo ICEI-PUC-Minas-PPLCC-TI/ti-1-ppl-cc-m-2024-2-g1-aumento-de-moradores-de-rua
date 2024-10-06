@@ -1,0 +1,145 @@
+{
+    "minhasAtividades": [
+      {
+        "id": 1,
+        "nome": "realizar doações para moradores de rua",
+        "dataInicio": "02/10/2024",
+        "dataTermino": "07/10/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 2,
+        "nome": "coordenar distribuição de alimentos",
+        "dataInicio": "10/10/2024",
+        "dataTermino": "10/10/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 3,
+        "nome": "participar de mutirão de limpeza",
+        "dataInicio": "15/10/2024",
+        "dataTermino": "15/10/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 4,
+        "nome": "organizar campanha de arrecadação de roupas",
+        "dataInicio": "20/10/2024",
+        "dataTermino": "25/10/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 5,
+        "nome": "oficina de higiene pessoal",
+        "dataInicio": "01/11/2024",
+        "dataTermino": "01/11/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 6,
+        "nome": "visitas aos abrigos",
+        "dataInicio": "05/11/2024",
+        "dataTermino": "05/11/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 7,
+        "nome": "palestra sobre direitos dos moradores de rua",
+        "dataInicio": "10/11/2024",
+        "dataTermino": "10/11/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 8,
+        "nome": "distribuição de cobertores",
+        "dataInicio": "15/11/2024",
+        "dataTermino": "15/11/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 9,
+        "nome": "treinamento sobre primeiros socorros",
+        "dataInicio": "20/11/2024",
+        "dataTermino": "20/11/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 10,
+        "nome": "ajuda em eventos comunitários",
+        "dataInicio": "01/12/2024",
+        "dataTermino": "01/12/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 11,
+        "nome": "cuidar de animais de rua",
+        "dataInicio": "10/12/2024",
+        "dataTermino": "10/12/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 12,
+        "nome": "mentoria para reabilitação",
+        "dataInicio": "15/12/2024",
+        "dataTermino": "15/12/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 13,
+        "nome": "acompanhamento em consultas médicas",
+        "dataInicio": "20/12/2024",
+        "dataTermino": "20/12/2024",
+        "status": "ativo"
+      },
+      {
+        "id": 14,
+        "nome": "organização de bazar beneficente",
+        "dataInicio": "01/01/2025",
+        "dataTermino": "01/01/2025",
+        "status": "ativo"
+      },
+      {
+        "id": 15,
+        "nome": "fazer atividades recreativas",
+        "dataInicio": "10/01/2025",
+        "dataTermino": "10/01/2025",
+        "status": "ativo"
+      },
+      {
+        "id": 16,
+        "nome": "distribuição de kits de inverno",
+        "dataInicio": "15/01/2025",
+        "dataTermino": "15/01/2025",
+        "status": "ativo"
+      },
+      {
+        "id": 17,
+        "nome": "campanha de conscientização sobre saúde",
+        "dataInicio": "20/01/2025",
+        "dataTermino": "20/01/2025",
+        "status": "ativo"
+      },
+      {
+        "id": 18,
+        "nome": "apoio psicológico para moradores de rua",
+        "dataInicio": "01/02/2025",
+        "dataTermino": "01/02/2025",
+        "status": "ativo"
+      },
+      {
+        "id": 19,
+        "nome": "realizar oficinas de capacitação profissional",
+        "dataInicio": "10/02/2025",
+        "dataTermino": "10/02/2025",
+        "status": "ativo"
+      },
+      {
+        "id": 20,
+        "nome": "preparar refeições comunitárias",
+        "dataInicio": "15/02/2025",
+        "dataTermino": "15/02/2025",
+        "status": "ativo"
+      }
+    ]
+  }
+  

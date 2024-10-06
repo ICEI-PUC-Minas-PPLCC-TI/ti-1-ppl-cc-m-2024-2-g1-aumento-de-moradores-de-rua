@@ -1,0 +1,165 @@
+{
+    "detalhamentoAtividade": [
+      {
+        "id": 1,
+        "ong": "Mais Dignidade Menos Dor",
+        "dataInicio": "02/10/2024",
+        "dataTermino": "07/10/2024",
+        "endereco": "rua Claudio Manuel, 867 - Lourdes",
+        "contato": "(31) 97585-3567"
+      },
+      {
+        "id": 2,
+        "ong": "Caminhos da Esperança",
+        "dataInicio": "10/10/2024",
+        "dataTermino": "12/10/2024",
+        "endereco": "av. Amazonas, 1500 - Centro",
+        "contato": "(31) 98123-4567"
+      },
+      {
+        "id": 3,
+        "ong": "Acolher é Viver",
+        "dataInicio": "15/10/2024",
+        "dataTermino": "15/10/2024",
+        "endereco": "rua da Bahia, 450 - Funcionários",
+        "contato": "(31) 99123-7890"
+      },
+      {
+        "id": 4,
+        "ong": "Sorriso Solidário",
+        "dataInicio": "20/10/2024",
+        "dataTermino": "20/10/2024",
+        "endereco": "praça da Liberdade, s/n - Liberdade",
+        "contato": "(31) 96325-1478"
+      },
+      {
+        "id": 5,
+        "ong": "Esperança Sem Fronteiras",
+        "dataInicio": "01/11/2024",
+        "dataTermino": "01/11/2024",
+        "endereco": "rua dos Tamoios, 230 - Santa Tereza",
+        "contato": "(31) 93210-1234"
+      },
+      {
+        "id": 6,
+        "ong": "Corações Abertos",
+        "dataInicio": "05/11/2024",
+        "dataTermino": "05/11/2024",
+        "endereco": "av. Afonso Pena, 1000 - Centro",
+        "contato": "(31) 98876-5432"
+      },
+      {
+        "id": 7,
+        "ong": "Apoio e Amor",
+        "dataInicio": "10/11/2024",
+        "dataTermino": "10/11/2024",
+        "endereco": "rua São Paulo, 500 - Savassi",
+        "contato": "(31) 97456-7890"
+      },
+      {
+        "id": 8,
+        "ong": "Mãos Amigas",
+        "dataInicio": "15/11/2024",
+        "dataTermino": "15/11/2024",
+        "endereco": "av. do Contorno, 2000 - Funcionários",
+        "contato": "(31) 95987-6543"
+      },
+      {
+        "id": 9,
+        "ong": "Cidadania em Ação",
+        "dataInicio": "20/11/2024",
+        "dataTermino": "20/11/2024",
+        "endereco": "rua das Flores, 75 - Pampulha",
+        "contato": "(31) 94123-4567"
+      },
+      {
+        "id": 10,
+        "ong": "Vidas que Importam",
+        "dataInicio": "01/12/2024",
+        "dataTermino": "01/12/2024",
+        "endereco": "av. Cristiano Machado, 1800 - Cidade Nova",
+        "contato": "(31) 92765-1234"
+      },
+      {
+        "id": 11,
+        "ong": "Esperança e Caridade",
+        "dataInicio": "10/12/2024",
+        "dataTermino": "10/12/2024",
+        "endereco": "rua dos Cataventos, 300 - Nova Suíça",
+        "contato": "(31) 91876-5432"
+      },
+      {
+        "id": 12,
+        "ong": "Alimento e Amor",
+        "dataInicio": "15/12/2024",
+        "dataTermino": "15/12/2024",
+        "endereco": "rua João Pinheiro, 100 - Centro",
+        "contato": "(31) 90876-5432"
+      },
+      {
+        "id": 13,
+        "ong": "Rumo ao Futuro",
+        "dataInicio": "20/12/2024",
+        "dataTermino": "20/12/2024",
+        "endereco": "praça do Papa, s/n - Mangabeiras",
+        "contato": "(31) 89654-3210"
+      },
+      {
+        "id": 14,
+        "ong": "Vidas em Transformação",
+        "dataInicio": "01/01/2025",
+        "dataTermino": "01/01/2025",
+        "endereco": "rua da Paz, 450 - Floresta",
+        "contato": "(31) 98765-4321"
+      },
+      {
+        "id": 15,
+        "ong": "Cidadãos do Mundo",
+        "dataInicio": "10/01/2025",
+        "dataTermino": "10/01/2025",
+        "endereco": "av. Brasil, 800 - Centro",
+        "contato": "(31) 97531-2468"
+      },
+      {
+        "id": 16,
+        "ong": "Juntos por um Futuro Melhor",
+        "dataInicio": "15/01/2025",
+        "dataTermino": "15/01/2025",
+        "endereco": "rua das Acácias, 200 - São Pedro",
+        "contato": "(31) 96321-6548"
+      },
+      {
+        "id": 17,
+        "ong": "Cuidando do Próximo",
+        "dataInicio": "20/01/2025",
+        "dataTermino": "20/01/2025",
+        "endereco": "av. dos Andradas, 1350 - Centro",
+        "contato": "(31) 95123-7890"
+      },
+      {
+        "id": 18,
+        "ong": "Esperança do Amanhã",
+        "dataInicio": "01/02/2025",
+        "dataTermino": "01/02/2025",
+        "endereco": "rua do Ouro, 420 - Centro",
+        "contato": "(31) 96543-7890"
+      },
+      {
+        "id": 19,
+        "ong": "Solidariedade Sempre",
+        "dataInicio": "10/02/2025",
+        "dataTermino": "10/02/2025",
+        "endereco": "av. Afonso Pena, 1600 - Centro",
+        "contato": "(31) 97865-1234"
+      },
+      {
+        "id": 20,
+        "ong": "Um Novo Começo",
+        "dataInicio": "15/02/2025",
+        "dataTermino": "15/02/2025",
+        "endereco": "rua das Laranjeiras, 350 - Centro",
+        "contato": "(31) 93456-7890"
+      }
+    ]
+  }
+  
