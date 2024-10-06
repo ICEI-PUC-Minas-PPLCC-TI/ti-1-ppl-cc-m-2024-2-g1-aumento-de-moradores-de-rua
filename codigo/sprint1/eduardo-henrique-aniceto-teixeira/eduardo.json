@@ -1,1 +1,129 @@
-"exemplo de arquivo"
+{
+    "minhasDoacoes": [
+        {
+            "id": 1,
+            "doacao": "R$10,00",
+            "dataDoacao": "01/10/2024",
+            "meioPagamento": "Pix",
+            "statusDoacao": "Realizado com sucesso"
+        },
+        {
+            "id": 2,
+            "doacao": "R$20,00",
+            "dataDoacao": "15/10/2024",
+            "meioPagamento": "Cartão de Crédito",
+            "statusDoacao": "Pendente"
+        },
+        {
+            "id": 3,
+            "doacao": "R$50,00",
+            "dataDoacao": "20/09/2024",
+            "meioPagamento": "Boleto Bancário",
+            "statusDoacao": "Realizado com sucesso"
+        },
+        {
+            "id": 4,
+            "doacao": "R$5,00",
+            "dataDoacao": "05/10/2024",
+            "meioPagamento": "Transferência Bancária",
+            "statusDoacao": "Cancelado"
+        }
+    ],
+    "meuPerfil": [
+        {
+            "id": 1,
+            "imgPerfil": "perfil.png",
+            "localidade": "Brasil, Belo Horizonte, MG",
+            "contato": "31 98709-9579",
+            "email": "jambo@outlook.com",
+            "outrasInformacoes": "Siga-me no GitHub: JamboDev"
+        },
+        {
+            "id": 2,
+            "imgPerfil": "perfil2.png",
+            "localidade": "Brasil, São Paulo, SP",
+            "contato": "11 99888-1234",
+            "email": "jambo2@outlook.com",
+            "outrasInformacoes": "LinkedIn: Jambo2Professional"
+        },
+        {
+            "id": 3,
+            "imgPerfil": "perfil3.png",
+            "localidade": "Brasil, Curitiba, PR",
+            "contato": "41 98765-4321",
+            "email": "jambo3@gmail.com",
+            "outrasInformacoes": "Instagram: @JamboLife"
+        }
+    ],
+    "configuracoes": [
+        {
+            "id": 1,
+            "localidade": "Brasil, Betim, MG",
+            "contato": "31 97893-7716",
+            "email": "jambo@gmail.com",
+            "outrasInformacoes": "Siga minhas redes sociais para acompanhar meus trabalhos voluntários! @jamboAjuda"
+        },
+        {
+            "id": 2,
+            "localidade": "Brasil, Rio de Janeiro, RJ",
+            "contato": "21 92345-6789",
+            "email": "jambo3@gmail.com",
+            "outrasInformacoes": "Facebook: JamboAjudando"
+        },
+        {
+            "id": 3,
+            "localidade": "Brasil, Porto Alegre, RS",
+            "contato": "51 91234-5678",
+            "email": "jambo4@hotmail.com",
+            "outrasInformacoes": "Twitter: @JamboPoa"
+        },
+        {
+            "id": 4,
+            "localidade": "Brasil, Manaus, AM",
+            "contato": "92 94444-1234",
+            "email": "jambo_am@outlook.com",
+            "outrasInformacoes": "Site pessoal: www.jamboam.com"
+        }
+    ],
+    "doarAgora": [
+        {
+            "id": 1,
+            "valor": "R$10,00",
+            "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!"
+        },
+        {
+            "id": 2,
+            "valor": "R$50,00",
+            "descricao": "Muito grato pelo trabalho que vocês estão fazendo. Continuem firmes!"
+        },
+        {
+            "id": 3,
+            "valor": "R$100,00",
+            "descricao": "Continuem ajudando tantas pessoas. Esse valor é para contribuir com a sua causa!"
+        },
+        {
+            "id": 4,
+            "valor": "R$30,00",
+            "descricao": "Fiquei emocionado com as histórias e quero apoiar!"
+        },
+        {
+            "id": 5,
+            "valor": "R$5,00",
+            "descricao": "Uma pequena contribuição, mas feita de coração!"
+        }
+    ],
+    "doarAgoraPagamento": [
+        {
+            "pagamento": "Pix",
+            "qrcode": "Gerado imagem na hora"
+        },
+        {
+            "pagamento": "Cartão de Crédito",
+            "qrcode": "Não aplicável"
+        },
+        {
+            "pagamento": "Boleto Bancário",
+            "qrcode": "Não aplicável"
+        }
+    ]
+}
