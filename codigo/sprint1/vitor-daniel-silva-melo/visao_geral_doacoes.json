@@ -1,0 +1,129 @@
+{
+  "visao_geral": {
+    "grafico": {
+      "tipo": "barra",
+      "dados": {
+        "total_doado": 75000,
+        "numero_doacoes": 500,
+        "impacto": [
+          {
+            "ong": "Amigos_da_Educação",
+            "feedback": "Positivo",
+            "impacto_doacao": 75
+          },
+          {
+            "ong": "Saude_para_Todos",
+            "feedback": "Excelente",
+            "impacto_doacao": 90
+          },
+          {
+            "ong": "Verde_Brasil",
+            "feedback": "Bom",
+            "impacto_doacao": 65
+          },
+          {
+            "ong": "Alimenta_Humanidade",
+            "feedback": "Muito Bom",
+            "impacto_doacao": 80
+          },
+          {
+            "ong": "Abrigo_Alegria",
+            "feedback": "Excelente",
+            "impacto_doacao": 88
+          }
+        ]
+      }
+    },
+    "resumo_doacoes": {
+      "total_doado": 75000,
+      "numero_doacoes": 500,
+      "feedback": [
+        {
+          "ong": "Amigos_da_Educação",
+          "comentario": "Muito gratos pelas contribuições que estão transformando a educação nas comunidades."
+        },
+        {
+          "ong": "Saude_para_Todos",
+          "comentario": "As doações nos ajudaram a expandir nossos serviços de saúde para áreas carentes."
+        },
+        {
+          "ong": "Verde_Brasil",
+          "comentario": "Agradecemos o apoio que está possibilitando projetos de conservação ambiental."
+        },
+        {
+          "ong": "Alimenta_Humanidade",
+          "comentario": "As doações estão garantindo refeições para milhares de famílias em situação de vulnerabilidade."
+        },
+        {
+          "ong": "Abrigo_Alegria",
+          "comentario": "Obrigado pelo suporte que está proporcionando um lar seguro para crianças e idosos."
+        }
+      ]
+    },
+    "ongs": [
+      {
+        "nome": "Amigos_da_Educação",
+        "localizacao": "São Paulo, SP",
+        "area": "Educação",
+        "detalhes_doacao": {
+          "valor_doado": 20000,
+          "numero_doacoes": 150
+        }
+      },
+      {
+        "nome": "Saude_para_Todos",
+        "localizacao": "Rio de Janeiro, RJ",
+        "area": "Saúde",
+        "detalhes_doacao": {
+          "valor_doado": 20000,
+          "numero_doacoes": 200
+        }
+      },
+      {
+        "nome": "Verde_Brasil",
+        "localizacao": "Manaus, AM",
+        "area": "Meio Ambiente",
+        "detalhes_doacao": {
+          "valor_doado": 10000,
+          "numero_doacoes": 100
+        }
+      },
+      {
+        "nome": "Alimenta_Humanidade",
+        "localizacao": "Belo Horizonte, MG",
+        "area": "Assistência Social",
+        "detalhes_doacao": {
+          "valor_doado": 15000,
+          "numero_doacoes": 120
+        }
+      },
+      {
+        "nome": "Abrigo_Alegria",
+        "localizacao": "Porto Alegre, RS",
+        "area": "Assistência Comunitária",
+        "detalhes_doacao": {
+          "valor_doado": 10000,
+          "numero_doacoes": 80
+        }
+      },
+      {
+        "nome": "Cultura_Viva",
+        "localizacao": "Salvador, BA",
+        "area": "Cultura",
+        "detalhes_doacao": {
+          "valor_doado": 5000,
+          "numero_doacoes": 50
+        }
+      },
+      {
+        "nome": "Tecnologia_Escolar",
+        "localizacao": "Curitiba, PR",
+        "area": "Tecnologia Educacional",
+        "detalhes_doacao": {
+          "valor_doado": 5000,
+          "numero_doacoes": 50
+        }
+      }
+    ]
+  }
+}
