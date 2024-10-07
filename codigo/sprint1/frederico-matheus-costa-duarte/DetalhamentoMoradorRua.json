@@ -1,0 +1,139 @@
+{
+    "Morador de Rua": [
+      {
+        "id": 1,
+        "nome": "José Eustáquio",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Lourdes",
+        "Personalidade": "Gentil e muito conversador, gosta de ajudar as pessoas da comunidade."
+      },
+      {
+        "id": 2,
+        "nome": "Maria Aparecida",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Centro",
+        "Personalidade": "Reservada, mas tem uma atitude muito resiliente e sempre otimista."
+      },
+      {
+        "id": 3,
+        "nome": "Carlos Eduardo",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Santa Efigênia",
+        "Personalidade": "Carismático, gosta de fazer piadas e é conhecido por sua alegria."
+      },
+      {
+        "id": 4,
+        "nome": "Ana Clara",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Liberdade",
+        "Personalidade": "Simpática e acolhedora, sempre disposta a ouvir os problemas dos outros."
+      },
+      {
+        "id": 5,
+        "nome": "João Batista",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Jardim das Palmeiras",
+        "Personalidade": "Calmo e introspectivo, gosta de refletir sobre a vida e seus desafios."
+      },
+      {
+        "id": 6,
+        "nome": "Mariana Silva",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Savassi",
+        "Personalidade": "Extrovertida e energética, tem muitos amigos e é muito querida."
+      },
+      {
+        "id": 7,
+        "nome": "Roberto Almeida",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Copacabana",
+        "Personalidade": "Sério e determinado, está sempre em busca de maneiras de melhorar sua situação."
+      },
+      {
+        "id": 8,
+        "nome": "Fernanda Souza",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Santa Teresa",
+        "Personalidade": "Alegre e otimista, sua positividade é contagiante."
+      },
+      {
+        "id": 9,
+        "nome": "Luiz Fernando",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "São Cristóvão",
+        "Personalidade": "Tímido e retraído, mas muito observador e atento ao seu redor."
+      },
+      {
+        "id": 10,
+        "nome": "Patrícia Oliveira",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Pampulha",
+        "Personalidade": "Generosa e solidária, sempre preocupada com o bem-estar dos outros."
+      },
+      {
+        "id": 11,
+        "nome": "Paulo Henrique",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Barro Preto",
+        "Personalidade": "Brincalhão e cheio de histórias, adora contar casos do seu passado."
+      },
+      {
+        "id": 12,
+        "nome": "Luciana Pereira",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Funcionários",
+        "Personalidade": "Determinado e persistente, sempre buscando novas oportunidades."
+      },
+      {
+        "id": 13,
+        "nome": "Marcelo Gonçalves",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Mangabeiras",
+        "Personalidade": "Calmo e ponderado, é conhecido pela sua paciência e sabedoria."
+      },
+      {
+        "id": 14,
+        "nome": "Fabiana Santos",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Carmo",
+        "Personalidade": "Criativa e sonhadora, sempre pensando em como transformar a realidade."
+      },
+      {
+        "id": 15,
+        "nome": "Ricardo Nogueira",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte",
+        "Bairro": "Floresta",
+        "Personalidade": "Empático e solidário, sempre buscando ajudar os que estão ao seu redor."
+      }
+    ]
+  }

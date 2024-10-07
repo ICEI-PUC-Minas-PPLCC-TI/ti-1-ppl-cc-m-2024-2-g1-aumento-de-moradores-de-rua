@@ -1,0 +1,154 @@
+{
+    "registroMoradorRua": [
+      {
+        "id": 1,
+        "nome": "José Eustáquio",
+        "cpf": "753.981.447.34",
+        "Data de nascimento": "06/04/1980",
+        "Rua do cadastro": "Sergipel",
+        "Bairro do cadastro": "Lourdes",
+        "Número do cadastro": "1",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 2,
+        "nome": "Maria Aparecida",
+        "cpf": "432.765.198.22",
+        "Data de nascimento": "12/11/1975",
+        "Rua do cadastro": "Rua das Flores",
+        "Bairro do cadastro": "Centro",
+        "Número do cadastro": "45",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 3,
+        "nome": "Carlos Eduardo",
+        "cpf": "154.876.439.10",
+        "Data de nascimento": "03/09/1990",
+        "Rua do cadastro": "Av. Brasil",
+        "Bairro do cadastro": "Santa Efigênia",
+        "Número do cadastro": "102",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 4,
+        "nome": "Ana Clara",
+        "cpf": "321.654.987.01",
+        "Data de nascimento": "25/02/1985",
+        "Rua do cadastro": "Rua João Pessoa",
+        "Bairro do cadastro": "Liberdade",
+        "Número do cadastro": "78",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 5,
+        "nome": "João Batista",
+        "cpf": "987.654.321.99",
+        "Data de nascimento": "17/07/1969",
+        "Rua do cadastro": "Rua dos Ipês",
+        "Bairro do cadastro": "Jardim das Palmeiras",
+        "Número do cadastro": "15",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 6,
+        "nome": "Mariana Silva",
+        "cpf": "258.963.147.36",
+        "Data de nascimento": "29/01/1993",
+        "Rua do cadastro": "Rua São José",
+        "Bairro do cadastro": "Savassi",
+        "Número do cadastro": "88",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 7,
+        "nome": "Roberto Almeida",
+        "cpf": "963.852.741.25",
+        "Data de nascimento": "10/12/1970",
+        "Rua do cadastro": "Av. Independência",
+        "Bairro do cadastro": "Copacabana",
+        "Número do cadastro": "212",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 8,
+        "nome": "Fernanda Souza",
+        "cpf": "741.258.963.11",
+        "Data de nascimento": "14/08/1983",
+        "Rua do cadastro": "Rua Ceará",
+        "Bairro do cadastro": "Santa Teresa",
+        "Número do cadastro": "56",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 9,
+        "nome": "Luiz Fernando",
+        "cpf": "654.987.321.00",
+        "Data de nascimento": "22/05/1977",
+        "Rua do cadastro": "Rua Nova Esperança",
+        "Bairro do cadastro": "São Cristóvão",
+        "Número do cadastro": "99",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 10,
+        "nome": "Patrícia Oliveira",
+        "cpf": "852.963.741.88",
+        "Data de nascimento": "30/03/1982",
+        "Rua do cadastro": "Rua Tiradentes",
+        "Bairro do cadastro": "Pampulha",
+        "Número do cadastro": "33",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 11,
+        "nome": "Paulo Henrique",
+        "cpf": "951.753.842.19",
+        "Data de nascimento": "15/10/1987",
+        "Rua do cadastro": "Rua Amazonas",
+        "Bairro do cadastro": "Barro Preto",
+        "Número do cadastro": "250",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 12,
+        "nome": "Luciana Pereira",
+        "cpf": "741.963.258.41",
+        "Data de nascimento": "28/06/1992",
+        "Rua do cadastro": "Rua Espírito Santo",
+        "Bairro do cadastro": "Funcionários",
+        "Número do cadastro": "112",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 13,
+        "nome": "Marcelo Gonçalves",
+        "cpf": "654.123.987.65",
+        "Data de nascimento": "04/05/1975",
+        "Rua do cadastro": "Av. Afonso Pena",
+        "Bairro do cadastro": "Mangabeiras",
+        "Número do cadastro": "300",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 14,
+        "nome": "Fabiana Santos",
+        "cpf": "369.258.147.12",
+        "Data de nascimento": "09/09/1984",
+        "Rua do cadastro": "Rua Grão Mogol",
+        "Bairro do cadastro": "Carmo",
+        "Número do cadastro": "57",
+        "Cidade do cadastro": "Belo Horizonte"
+      },
+      {
+        "id": 15,
+        "nome": "Ricardo Nogueira",
+        "cpf": "852.741.963.77",
+        "Data de nascimento": "19/02/1989",
+        "Rua do cadastro": "Rua Timbiras",
+        "Bairro do cadastro": "Floresta",
+        "Número do cadastro": "101",
+        "Cidade do cadastro": "Belo Horizonte"
+      }
+    ]
+  }
