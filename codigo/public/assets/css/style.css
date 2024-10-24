@@ -61,13 +61,13 @@ p {
 
 /* Links */
 a {
-    color: #007bff;
+    color: #7BB6EA;
     text-decoration: none;
     transition: color 0.2s;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #7BB6EA;
 }
 
 /* Formulários */
@@ -75,18 +75,18 @@ input,
 textarea,
 select {
     width: 100%;
-    padding: 0.75rem 1rem;
+    padding: 0.45rem 0.8rem;
     margin-bottom: 1rem;
     border: 1px solid #ced4da;
-    border-radius: 0.375rem;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-    border-color: #80bdff;
+    border-color: #7BB6EA;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
     outline: none;
 }
