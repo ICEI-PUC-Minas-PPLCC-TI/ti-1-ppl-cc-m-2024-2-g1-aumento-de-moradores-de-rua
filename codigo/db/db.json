@@ -2,32 +2,84 @@
   "usuarios": [
     {
       "id": 1,
+      "nome": "Administrador do Sistema",
       "login": "admin",
       "senha": "123",
       "tipo": "voluntario",
-      "nome": "Administrador do Sistema",
+      "data_nascimento": "1990-01-01",  
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "contatos": {
+        "telefone": "123456789"
+      },
       "email": "admin@abc.com"
     },
     {
       "id": 2,
       "login": "user",
+      "data_nascimento": "1990-01-01",  
       "senha": "123",
       "tipo": "ong",
       "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "email": "user@abc.com",
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "contatos": {
+        "telefone": "123456789"
+      }
     },
     {
       "login": "rommel",
       "senha": "123",
       "tipo": "ong",
       "nome": "Rommel",
+      "data_nascimento": "1990-01-01",  
       "email": "rommel@gmail.com",
-      "id": 3
+      "id": 3,
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "contatos": {
+        "telefone": "123456789"
+      }
     },
     {
       "login": "abv",
       "senha": "123",
+      "data_nascimento": "1990-01-01",  
       "nome": "asdasd",
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "contatos": {
+        "telefone": "123456789"
+      },
       "email": "vitords.mello@gmail.com",
       "id": 4
     }
