@@ -1,0 +1,39 @@
+{
+  "ongs": [
+    {
+      "id": 1,
+      "cpnj": "123456789",
+      "data_fundacao": "2024-01-01",
+      "razao_social": "ONG 1",
+      "nome_fantasia": "ONG 1",
+      "contatos": {
+        "telefone": "123456789",
+        "email": "(12) 3456-7890"
+      },
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "descricao": "Descrição da ONG 1",
+      "objetivos": [
+        "Objetivo 1",
+        "Objetivo 2",
+        "Objetivo 3"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "alimentos",
+          "nome": "Alimento 1", 
+          "quantidade": 100,
+          "descricao": "Descrição do Alimento 1"
+        }
+      ],
+      "responsavel": 1
+    }
+  ]
+}
