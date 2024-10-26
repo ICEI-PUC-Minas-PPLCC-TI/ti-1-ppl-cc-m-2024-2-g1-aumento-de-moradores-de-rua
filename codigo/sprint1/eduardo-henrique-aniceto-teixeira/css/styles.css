@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.casa-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    background-color: #ccc;
+}
+
+.back-button:hover {
+    color: white;
+    background-color: grey;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10%;
+}
+
+.field {
+    margin-left: 80px;
+    font-size: 19px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field, .textarea-field {
+    width: 470px;
+    padding: 10px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.textarea-field {
+    height: 100px;
+    width: 470px;
+    margin-left: 70px;
+    resize: none;
+}
+
+.input-field:hover, .input-field-1:hover, .textarea-field:hover {
+    background-color: #f3f3f3;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    color: rgb(3, 3, 3);
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+.confirmar:hover {
+    font-size: 18px;
+    background-color: #00c44b;
+    color: white;
+}
+
+.cancelar-1:hover {
+    font-size: 18px;
+    background-color: #e90e0e;
+    color: white;
+}
+
+.button-submit {
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 550px;
+    height: 700px;
+    margin: 15px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+ /* Complementos para a pag 2 */
+
+.align-input-1 {
+    text-align: center;
+}
+
+.input-field-1 {
+    text-align: center;
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.field-1 {
+    text-align: center;
+    font-size: 19px;
+    display: block;
+    margin-bottom: 25px;
+}
