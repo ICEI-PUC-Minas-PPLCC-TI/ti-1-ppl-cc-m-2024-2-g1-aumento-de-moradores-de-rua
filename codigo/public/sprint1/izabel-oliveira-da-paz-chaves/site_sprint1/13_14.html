@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Atividade de Voluntariado</title>
+
+    <!-- Puxar o CSS do guardiao -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Secao de testes -->
+    <li><a href="11.html">11</a>
+        <li><a href="12.html">12</a>
+        <li><a href="13_14.html">13_14</a>
+        <li><a href="14.html">14</a>
+
+    <div class="container">
+        <h2 id="titulo">Registrar nova atividade de voluntariado</h2>
+
+        <!-- Botões para alternar entre "Atividade" e "Dia de Trabalho" -->
+        <div class="switch">
+            <button onclick="mudarParaAtividade()">Registrar Atividade</button>
+            <button onclick="mudarParaDiaDeTrabalho()">Registrar Dia de Trabalho</button>
+        </div>
+
+        <form id="voluntariadoForm">
+            <label for="nomeAtividade">Nome da atividade</label>
+            <input type="text" id="nomeAtividade" required>
+
+            <!-- Campos alterados dinamicamente -->
+            <label id="labelInicio" for="dataInicio">Data de início</label>
+            <input type="date" id="dataInicio" required>
+
+            <label id="labelTermino" for="dataTermino">Data de término</label>
+            <input type="date" id="dataTermino" required>
+
+            <!-- Campo de descrição ocultado em "Dia de Trabalho" -->
+            <div id="descricaoContainer">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="4"></textarea>
+            </div>
+
+            <!-- Botao chama funcao Java Script -->
+            <button type="button" onclick="concluirCadastro()">Concluir cadastro</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
