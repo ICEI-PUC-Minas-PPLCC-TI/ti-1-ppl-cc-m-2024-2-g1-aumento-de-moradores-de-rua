@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="perfil.js">
+    <script src="js/script.js" defer></script>
 </head>
 <body class="body-container">
     <div class="container">
         <div class="profile-container">
-            <a href="doarAgora-0.html" class="back-button" id="voltar"><img src="img/casa.png" class="casa-icon"> Voltar</a>
+            <a href="#" class="back-button" id="voltar"><img src="img/casa.png" class="casa-icon" alt="Ícone de casa"> Voltar</a>
             <div class="profile-header">
-                <div class="profile-photo"></div>
+                <div class="profile-photo" id="profilePhoto"></div>
                 <div class="profile-info">
-                    <div class="clickable">[Alterar Nome]</div>
-                    <div class="clickable">[Alterar país, cidade, estado]</div>
-                    <div class="clickable">[Alterar contato]</div>
-                    <div class="clickable">[Alterar Email]</div>
-                    <div class="clickable">[Alterar Outras informações pessoais]</div>
+                    <div class="info-field">
+                         <p id="nome">[Alterar Nome]</p>
+
+                         </div>
+                    <div class="info-field" id="estado">[Alterar Estado]</div>
+                    <div class="info-field" id="cidade">[Alterar Cidade]</div>
+                    <div class="info-field" id="telefone">[Alterar Telefone]</div>
+                    <div class="info-field" id="email">[Alterar Email]</div>
+                    <div class="info-field" id="info-adicional">[Alterar Outras informações pessoais]</div>
                 </div>
                 <div class="navigation">
                     <a href="Perfil.html"><button class="nav-button-conf">Confirmar</button></a>
@@ -26,21 +30,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll('.nav-button').forEach(button => {
-            button.addEventListener('click', function() {
-                if (this.textContent === 'Logout') {
-                    if (confirm('Deseja realmente sair?')) {
-                        console.log('Usuário fez logout');
-                        // Add logout logic here
-                    }
-                } else if (this.textContent === 'Configurações') {
-                    console.log('Abrindo configurações');
-                    // Add settings logic here
-                }
-            });
-        });
-    </script>
 </body>
 </html>

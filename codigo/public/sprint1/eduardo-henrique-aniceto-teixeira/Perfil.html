@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="perfil.js">
+    <script src="js/script.js" defer></script>
 </head>
 <body class="body-container">
     <div class="container">
         <div class="profile-container">
-            <a href="doarAgora-0.html" class="back-button" id="voltar"><img src="img/casa.png" class="casa-icon"> Voltar</a>
+            <a href="#" class="back-button" id="voltar">
+                <img src="img/casa.png" class="casa-icon" alt="Ícone de casa"> Voltar
+            </a>
             <div class="profile-header">
-                <div class="profile-photo"></div>
+                <div class="profile-photo" id="profilePhoto"></div>
                 <div class="profile-info">
-                    <div class="info-field">[Nome]</div>
-                    <div class="info-field">[país, cidade, estado]</div>
-                    <div class="info-field">[contato]</div>
-                    <div class="info-field">[Email]</div>
-                    <div class="info-field">[Outras informações pessoais]</div>
+                    <div class="info-field" id="nome">[Nome]</div>
+                    <div class="info-field" id="estado">[Estado]</div>
+                    <div class="info-field" id="cidade">[Cidade]</div>
+                    <div class="info-field" id="telefone">[Telefone]</div>
+                    <div class="info-field" id="email">[Email]</div>
+                    <div class="info-field" id="info-adicional">[Outras informações pessoais]</div>
                 </div>
                 <div class="navigation">
                     <a href="configuracoes.html"><button class="nav-button-conf">Configurações</button></a>
@@ -27,20 +30,15 @@
         </div>
     </div>
 
-    <script>
-        document.querySelectorAll('.nav-button').forEach(button => {
-            button.addEventListener('click', function() {
-                if (this.textContent === 'Logout') {
-                    if (confirm('Deseja realmente sair?')) {
-                        console.log('Usuário fez logout');
-                        // Add logout logic here
-                    }
-                } else if (this.textContent === 'Configurações') {
-                    console.log('Abrindo configurações');
-                    // Add settings logic here
-                }
-            });
-        });
-    </script>
+    <!-- Modal para edição -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <p id="modalMessage"></p>
+            <input type="text" id="modalInput" placeholder="Digite um novo valor" />
+            <button id="modalConfirm">Confirmar</button>
+            <button id="modalCancel">Cancelar</button>
+        </div>
+    </div>
 </body>
 </html>
