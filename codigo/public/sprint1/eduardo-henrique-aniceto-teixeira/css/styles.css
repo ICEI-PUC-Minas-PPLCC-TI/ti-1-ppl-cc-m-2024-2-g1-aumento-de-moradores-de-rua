@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-body {
+.doar-container {
     font-family: Arial, sans-serif;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1000px;
     background-color: #f4f4f4;
 }
 
-.container {
+.container-Doar {
     display: flex;
     width: 60%;
     background-color: white;
@@ -26,15 +26,21 @@ body {
     height: 20px;
 }
 
+a {
+    text-decoration: none;
+}
 .back-button {
     position: absolute;
     top: 20px;
     left: 20px;
     padding: 10px;
     font-size: 18px;
-    text-decoration: none;
     color: black;
     background-color: #ccc;
+}
+
+.info-field {
+        padding: 10px;
 }
 
 .back-button:hover {
@@ -84,12 +90,13 @@ h1 {
 
 button {
     padding: 10px 20px;
-    background-color: #ccc;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s;
     border: none;
     color: rgb(3, 3, 3);
     border-radius: 4px;
     font-size: 16px;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 .confirmar:hover {
@@ -137,4 +144,109 @@ button {
     font-size: 19px;
     display: block;
     margin-bottom: 25px;
+}
+
+
+
+
+ /*CSS para a página Meu Perfil */ 
+
+.body-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.container {
+    width: 1700px;
+    margin-left: 20%;
+}
+
+.profile-container {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 270px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+.profile-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.clickable {
+    margin-bottom: 12px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.clickable:hover {
+    background-color: rgb(38, 128, 207);
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-button-conf, .nav-button-canc {
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #e0e0e0;
+}
+.nav-button-conf:hover {
+    background-color: #00c44b;
+    color: white;
+}
+
+.nav-button-canc:hover {
+    background-color: #e90e0e;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 20px;
+        align-items: flex-start;
+    }
 }
