@@ -156,7 +156,7 @@ header {
     margin-top: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 50%;
-    position: relative;
+    position: absolute;
     padding: 6px 12px;
     left: 50%;
     transform: translateX(-50%);
