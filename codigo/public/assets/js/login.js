@@ -21,18 +21,17 @@ var db_usuarios = {};
 // Objeto para o usuário corrente
 var usuarioCorrente = {};
 
-// Inicializa a aplicação de Login
-function initLoginApp () {
+// Inicializa a aplicação de Login (Não necessário)
+/* function initLoginApp () {
     let pagina = window.location.pathname;
     if (pagina != LOGIN_URL) {
-        // CONFIGURA A URLS DE RETORNO COMO A PÁGINA ATUAL
         sessionStorage.setItem('returnURL', pagina);
         RETURN_URL = pagina;
 
-        // INICIALIZA USUARIOCORRENTE A PARTIR DE DADOS NO LOCAL STORAGE, CASO EXISTA
-        usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+        let usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+      
         if (usuarioCorrenteJSON) {
-            usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
+            usuarioCorrente = JSON.parse(usuarioCorrenteJSON);
         } else {
             window.location.href = LOGIN_URL;
         }
@@ -53,7 +52,7 @@ function initLoginApp () {
         });
     }
 };
-
+*/
 
 function carregarUsuarios(callback) {
     fetch(API_URL)
@@ -82,6 +81,7 @@ function loginUser (login, senha) {
             usuarioCorrente.login = usuario.login;
             usuarioCorrente.email = usuario.email;
             usuarioCorrente.nome = usuario.nome;
+            usuarioCorrente.tipo = usuario.tipo;
 
             // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
@@ -134,5 +134,8 @@ function showUserInfo (element) {
     }
 }
 
-// Inicializa as estruturas utilizadas pelo LoginApp
-initLoginApp ();
+window.onload = function () {   
+    carregarUsuarios(() => {
+        console.log('Usuários carregados...');
+    });
+}   

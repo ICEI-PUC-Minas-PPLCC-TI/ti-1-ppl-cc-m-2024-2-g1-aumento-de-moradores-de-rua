@@ -148,3 +148,45 @@ button:disabled {
         font-size: 0.875rem;
     }
 }
+
+/* Header */
+
+header {
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    position: relative;
+    padding: 6px 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+}
+
+.nav_links {
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    padding: 2px 6px;
+}
+
+.nav_link:hover {
+    background-color: #333 !important;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.variant_black {
+    background-color: #000;
+}
+
+.variant_black>.login_link {
+    color: white;
+    text-decoration: none;
+}
