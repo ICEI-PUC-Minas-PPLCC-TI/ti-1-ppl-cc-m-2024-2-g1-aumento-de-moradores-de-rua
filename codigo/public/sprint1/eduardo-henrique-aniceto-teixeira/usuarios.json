@@ -1,0 +1,94 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Patricia",
+            "img-perfil": "perfil0.jpg",
+            "estado": "Minas Gerais",
+            "cidade": "Belo Horizonte",
+            "telefone": "31 98709-9579",
+            "email": "patricia@outlook.com",
+            "info-adicional": "Siga-me no GitHub: PatriciaDev"
+        },
+        {
+            "id": 2,
+            "nome": "Poliana",
+            "img-perfil": "perfil1.jpg",
+            "estado": "São Paulo",
+            "cidade": "São Paulo",
+            "telefone": "11 99888-1234",
+            "email": "poliana@outlook.com",
+            "info-adicional": "LinkedIn: Poliana2Professional"
+        },
+        {
+            "id": 3,
+            "nome": "Priscila",
+            "img-perfil": "perfil2.jpg",
+            "estado": "Paraná",
+            "cidade": "Curitiba",
+            "telefone": "41 98765-4321",
+            "email": "priscila@gmail.com",
+            "info-adicional": "Instagram: @PriscilaLife"
+        },
+        {
+            "id": 4,
+            "nome": "Lucas",
+            "img-perfil": "perfil3.jpg",
+            "estado": "Rio de Janeiro",
+            "cidade": "Rio de Janeiro",
+            "telefone": "21 99999-8888",
+            "email": "lucas@outlook.com",
+            "info-adicional": "Amo viajar!"
+        },
+        {
+            "id": 5,
+            "nome": "Fernanda",
+            "img-perfil": "perfil4.jpg",
+            "estado": "São Paulo",
+            "cidade": "Campinas",
+            "telefone": "19 98765-4321",
+            "email": "fernanda@gmail.com",
+            "info-adicional": "Desenvolvedora de Software"
+        },
+        {
+            "id": 6,
+            "nome": "Gabriel",
+            "img-perfil": "perfil5.jpg",
+            "estado": "Minas Gerais",
+            "cidade": "Uberlândia",
+            "telefone": "34 99876-5432",
+            "email": "gabriel@outlook.com",
+            "info-adicional": "Entusiasta de tecnologia"
+        },
+        {
+            "id": 7,
+            "nome": "Carla",
+            "img-perfil": "perfil6.jpg",
+            "estado": "Bahia",
+            "cidade": "Salvador",
+            "telefone": "71 98765-6789",
+            "email": "carla@gmail.com",
+            "info-adicional": "Amo cozinhar"
+        },
+        {
+            "id": 8,
+            "nome": "Rafael",
+            "img-perfil": "perfil7.jpg",
+            "estado": "Paraná",
+            "cidade": "Curitiba",
+            "telefone": "41 91234-5678",
+            "email": "rafael@outlook.com",
+            "info-adicional": "Apaixonado por esportes"
+        },
+        {
+            "id": 9,
+            "nome": "Ana",
+            "img-perfil": "perfil8.jpg",
+            "estado": "Rio Grande do Sul",
+            "cidade": "Porto Alegre",
+            "telefone": "51 98765-4321",
+            "email": "ana@outlook.com",
+            "info-adicional": "Artista plástica"
+        }
+    ]
+}

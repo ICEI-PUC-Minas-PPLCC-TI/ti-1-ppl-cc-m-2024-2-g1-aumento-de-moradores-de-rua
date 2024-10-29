@@ -1,5 +1,5 @@
 function carregarPerfis() {
-    fetch('meuPerfil.json') // Verifique o caminho correto do arquivo
+    fetch('usuarios.json') // Verifique o caminho correto do arquivo
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro ao carregar o JSON: ${response.statusText}`);
@@ -8,10 +8,10 @@ function carregarPerfis() {
         })
         .then(data => {
             // Verifica se há dados no JSON
-            if (data.meuPerfil && data.meuPerfil.length > 0) {
+            if (data.usuarios && data.usuarios.length > 0) {
                 // Gera um índice aleatório de 0 a 8 (inclusive)
-                const perfilIndex = Math.floor(Math.random() * data.meuPerfil.length); // Isso garante um número de 0 a 8
-                const perfil = data.meuPerfil[perfilIndex]; // Seleciona o perfil aleatório
+                const perfilIndex = Math.floor(Math.random() * data.usuarios.length); // Isso garante um número de 0 a 8
+                const perfil = data.usuarios[perfilIndex]; // Seleciona o perfil aleatório
 
                 // Atualiza o conteúdo do HTML com os dados do perfil
                 document.getElementById('nome').textContent = perfil.nome || "Nome não disponível";
