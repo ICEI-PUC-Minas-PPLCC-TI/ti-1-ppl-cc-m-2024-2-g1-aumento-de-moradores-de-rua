@@ -122,7 +122,7 @@ button:disabled {
     border-bottom: none;
 }
 
-/* Responsividade */
+/* Responsividade - Fontes */
 @media (max-width: 576px) {
     h1 {
         font-size: 2rem;
@@ -186,7 +186,30 @@ header {
     background-color: #000;
 }
 
+.variant_black:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .variant_black>.login_link {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    header {
+        width: 95%;
+    }
+
+    .nav_link {
+        font-size: 0.8rem;
+        padding: 2px 4px;
+    }
+
+    .nav_links {
+        gap: 6px;
+    }
+
+    .variant_black {
+        font-size: 0.8rem;
+    }
 }

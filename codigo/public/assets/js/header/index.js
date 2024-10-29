@@ -1,6 +1,4 @@
-const LOGIN_URL = "/modulos/login/login.html";
-let RETURN_URL = "/modulos/login/index.html";
-const API_URL = '/usuarios';
+const LOGIN_CALLBACK_URL = "/modulos/login/login.html";
 
 const menus = {
   "ong": [
@@ -19,30 +17,17 @@ const menus = {
 };
 
 const renderMenu = () => {
-  let currentUser = {};
-
-  const user = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
-  if (user) {
-    currentUser = user;
-  }
+  const user = JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
 
   let menu = menus.not_logged;
-
-  if (currentUser.tipo === 'ong') {
+  if (user.tipo === 'ong') {
     menu = menus.ong;
-  } else if (currentUser.tipo === 'pessoa') {
+  } else if (user.tipo === 'pessoa') {
     menu = menus.pessoa;
   }
 
   const menuItems = menu.map(item => `<a class="nav_link" href="${item.url}">${item.name}</a>`).join('');
-
-  let loginButton = '';
-
-  if (!currentUser.tipo) {
-    loginButton = `<button class="variant_black login_button">login</button>`;
-  } else {
-    loginButton = `<button class="variant_black logout_button">logout</button>`;
-  }
+  let loginButton = user.tipo ? `<button class="variant_black logout_button">sair</button>` : `<button class="variant_black login_button">entrar</button>`;
 
   const headerHtml = `
   <header>
@@ -56,7 +41,12 @@ const renderMenu = () => {
     </nav>
   </header>`;
 
-  document.body.insertAdjacentHTML('afterbegin', headerHtml);
+  const existingHeader = document.querySelector('header');
+  if (existingHeader) {
+    existingHeader.outerHTML = headerHtml;
+  } else {
+    document.body.innerHTML = headerHtml + document.body.innerHTML;
+  }
 
   const loginBtn = document.querySelector('.login_button');
   const logoutBtn = document.querySelector('.logout_button');
@@ -67,11 +57,11 @@ const renderMenu = () => {
 
 const logout = () => {
   sessionStorage.removeItem('usuarioCorrente');
-  window.location.href = LOGIN_URL;
+  window.location.href = LOGIN_CALLBACK_URL;
 };
 
 const login = () => {
-  window.location.href = LOGIN_URL;
+  window.location.href = LOGIN_CALLBACK_URL;
 };
 
-window.addEventListener('load', renderMenu);
+window.addEventListener('pageshow', renderMenu);
