@@ -1,0 +1,32 @@
+{
+    "minhasDoacoes": [
+        {
+            "id": 1,
+            "doacao": "R$10,00",
+            "dataDoacao": "01/10/2024",
+            "meioPagamento": "Pix",
+            "statusDoacao": "Realizado com sucesso"
+        },
+        {
+            "id": 2,
+            "doacao": "R$20,00",
+            "dataDoacao": "15/10/2024",
+            "meioPagamento": "Cartão de Crédito",
+            "statusDoacao": "Pendente"
+        },
+        {
+            "id": 3,
+            "doacao": "R$50,00",
+            "dataDoacao": "20/09/2024",
+            "meioPagamento": "Boleto Bancário",
+            "statusDoacao": "Realizado com sucesso"
+        },
+        {
+            "id": 4,
+            "doacao": "R$5,00",
+            "dataDoacao": "05/10/2024",
+            "meioPagamento": "Transferência Bancária",
+            "statusDoacao": "Cancelado"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "doarAgora": [
+        {
+            "id": 1,
+            "valor": "R$10,00",
+            "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!"
+        },
+        {
+            "id": 2,
+            "valor": "R$50,00",
+            "descricao": "Muito grato pelo trabalho que vocês estão fazendo. Continuem firmes!"
+        },
+        {
+            "id": 3,
+            "valor": "R$100,00",
+            "descricao": "Continuem ajudando tantas pessoas. Esse valor é para contribuir com a sua causa!"
+        },
+        {
+            "id": 4,
+            "valor": "R$30,00",
+            "descricao": "Fiquei emocionado com as histórias e quero apoiar!"
+        },
+        {
+            "id": 5,
+            "valor": "R$5,00",
+            "descricao": "Uma pequena contribuição, mas feita de coração!"
+        }
+    ]
+}

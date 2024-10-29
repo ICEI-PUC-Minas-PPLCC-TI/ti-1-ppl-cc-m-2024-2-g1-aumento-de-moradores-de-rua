@@ -2,7 +2,7 @@ let currentProfileIndex = 0; // Índice do perfil atual
 let profiles = []; // Array para armazenar todos os perfis
 
 function carregarPerfis() {
-    fetch('meuPerfil.json') // Verifique o caminho correto do arquivo
+    fetch('usuarios.json') // Verifique o caminho correto do arquivo
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro ao carregar o JSON: ${response.statusText}`);
@@ -10,8 +10,8 @@ function carregarPerfis() {
             return response.json();
         })
         .then(data => {
-            if (data.meuPerfil && data.meuPerfil.length > 0) {
-                profiles = data.meuPerfil; // Armazena todos os perfis
+            if (data.usuarios && data.usuarios.length > 0) {
+                profiles = data.usuarios; // Armazena todos os perfis
                 exibirPerfil(currentProfileIndex); // Exibe o primeiro perfil
                 adicionarEventosDeClique(); // Adiciona eventos de clique
             } else {
@@ -49,17 +49,6 @@ function adicionarEventosDeClique() {
             }
         });
     });
-}
-
-let mensagem = document.querySelector(".mensagem") ;
-
-// mostra a mensagem
-function showMessage(){   
-   mensagem.style.display = "block";   
- }
-// esconde a mensagem
-function hideMessage(){
-  mensagem.style.display = "none"; 
 }
 
 // Carrega perfis ao iniciar a página
