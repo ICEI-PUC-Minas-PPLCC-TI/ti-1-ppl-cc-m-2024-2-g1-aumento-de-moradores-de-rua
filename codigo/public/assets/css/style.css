@@ -213,3 +213,54 @@ header {
         font-size: 0.8rem;
     }
 }
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card {
+    width: 260px;
+    box-sizing: border-box;
+    margin: 0px 0px 10px 0px;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card_image {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}
+
+.card p {
+    margin: 2px 0;
+}
+
+.card button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}

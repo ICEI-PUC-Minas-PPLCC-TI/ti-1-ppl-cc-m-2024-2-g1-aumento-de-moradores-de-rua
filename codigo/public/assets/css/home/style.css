@@ -3,3 +3,7 @@
   height: 500px;
   object-fit: cover;
 }
+
+main {
+  margin: 20px 0px;
+}
