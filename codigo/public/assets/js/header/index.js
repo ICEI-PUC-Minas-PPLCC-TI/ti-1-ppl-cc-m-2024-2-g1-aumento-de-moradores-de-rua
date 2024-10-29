@@ -16,17 +16,21 @@ const menus = {
   ]
 };
 
-const renderMenu = () => {
-  const user = JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
-
+const menuByType = (user) => {
   let menu = menus.not_logged;
+
   if (user.tipo === 'ong') {
     menu = menus.ong;
   } else if (user.tipo === 'pessoa') {
     menu = menus.pessoa;
   }
 
+  return menu;
+}
+
+const buildHtml = (menu, user) => {
   const menuItems = menu.map(item => `<a class="nav_link" href="${item.url}">${item.name}</a>`).join('');
+ 
   let loginButton = user.tipo ? `<button class="variant_black logout_button">sair</button>` : `<button class="variant_black login_button">entrar</button>`;
 
   const headerHtml = `
@@ -40,6 +44,16 @@ const renderMenu = () => {
       </div>
     </nav>
   </header>`;
+
+  return headerHtml;
+}
+
+const renderMenu = () => {
+  const user = JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
+
+  const menu = menuByType(user); 
+
+  const headerHtml = buildHtml(menu, user);
 
   const existingHeader = document.querySelector('header');
   if (existingHeader) {
