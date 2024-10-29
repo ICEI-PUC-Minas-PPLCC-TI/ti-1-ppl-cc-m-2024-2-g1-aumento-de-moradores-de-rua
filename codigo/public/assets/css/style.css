@@ -241,17 +241,12 @@ header {
 }
 
 .card p {
-    margin: 2px 0;
+    margin: 1px 0;
 }
 
 .card button {
-    padding: 10px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    border: none;
-    background-color: #007BFF;
-    color: #fff;
-    border-radius: 5px;
+    margin-top: 5px;
+    border-radius: 6px;
     text-align: center;
 }
 

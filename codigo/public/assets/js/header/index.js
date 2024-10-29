@@ -8,11 +8,11 @@ const menus = {
   ],
   "pessoa": [
     { "name": "doações", "url": "/modulos/pessoas/doacoes.html" },
-    { "name": "ong's", "url": "/modulos/pessoas/ongs.html" }
+    { "name": "ong's", "url": "/modulos/shared/ongs/listagem.html" }
   ],
   "not_logged": [
     { "name": "sobre nós", "url": "/modulos/login/cadastro.html" },
-    { "name": "ong's", "url": "/modulos/pessoas/ongs.html" }
+    { "name": "ong's", "url": "/modulos/shared/ongs/listagem.html" }
   ]
 };
 
