@@ -5,7 +5,7 @@
 
 /* Estilos Globais */
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif !important;
     font-size: 16px;
     color: #333;
     line-height: 1.6;
@@ -74,42 +74,42 @@ a:hover {
 input,
 textarea,
 select {
-    width: 100%;
-    padding: 0.45rem 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100% !important;
+    padding: 0.45rem 0.8rem !important;
+    margin-bottom: 1rem !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 8px !important;
+    font-size: 0.9rem !important;
+    transition: border-color 0.2s, box-shadow 0.2s !important;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-    border-color: #7BB6EA;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
-    outline: none;
+    border-color: #7BB6EA !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25) !important;
+    outline: none !important;
 }
 
 /* Botões */
 button {
-    padding: 0.45rem 1.5rem;
-    background-color: #7BB6EA;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.2s, opacity 0.2s;
+    padding: 0.45rem 1.5rem !important;
+    background-color: #7BB6EA !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 12px !important;
+    font-size: 0.9rem !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    transition: background-color 0.2s, opacity 0.2s !important;
 }
 
 button:active {
-    opacity: 0.8;
+    opacity: 0.8 !important;
 }
 
 button:disabled {
-    background-color: #6c757d;
+    background-color: #6c757d !important;
     cursor: not-allowed;
 }
 

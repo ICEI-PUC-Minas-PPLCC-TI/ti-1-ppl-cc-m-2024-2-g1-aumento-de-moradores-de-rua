@@ -101,30 +101,24 @@ function logoutUser () {
     window.location = LOGIN_URL;
 }
 
-function addUser (nome, login, senha, email) {
-
-    // Cria um objeto de usuario para o novo usuario 
-    let usuario = { "login": login, "senha": senha, "nome": nome, "email": email };
-
-    // Envia dados do novo usuário para ser inserido no JSON Server
-    fetch(API_URL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(usuario),
+function addUser(usuario, endpoint) {
+    fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(usuario),
     })
-        .then(response => response.json())
-        .then(data => {
-            // Adiciona o novo usuário na variável db_usuarios em memória
-            db_usuarios.push (usuario);
-            displayMessage("Usuário inserido com sucesso");
-        })
-        .catch(error => {
-            console.error('Erro ao inserir usuário via API JSONServer:', error);
-            displayMessage("Erro ao inserir usuário");
-        });
-}
+      .then(response => response.json())
+      .then(data => {
+        console.log("Usuário inserido com sucesso:", data);
+      })
+      .catch(error => {
+        console.error('Erro ao inserir usuário via API JSONServer:', error);
+        alert("Erro ao inserir usuário");
+      });
+  }
+
 
 function showUserInfo (element) {
     var elemUser = document.getElementById(element);
