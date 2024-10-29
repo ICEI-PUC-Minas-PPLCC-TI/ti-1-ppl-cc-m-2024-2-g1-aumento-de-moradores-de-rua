@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhamento Atividade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Puxar o CSS do guardiao -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Puxar o "Header" da Home Page -->
+    <script src="./assets/js/header/index.js"></script>
+</head>
+<body>
+    <!-- Secao de testes -->
+    <ul>
+        <li><a href="11.html">11</a></li>
+        <li><a href="12.html">12</a></li>
+        <li><a href="13_14.html">13_14</a></li>
+        <li><a href="14.html">14</a></li>
+    </ul>
+
+    <div class="container">
+
+        <!-- Detalhes da Atividade -->
+        <div class="activity-header">
+            <h2>Atividade – [nome]</h2>
+            <button class="btn-registrar-trabalho" onclick="window.location.href='13_14.html'">+ registrar dia de trabalho</button>
+        </div>     
+
+        <div class="activity-info">
+            <img src="https://via.placeholder.com/50" alt="Imagem ONG">
+            <div>
+                <p>[ong]</p>
+                <p>[endereço]</p>
+                <p>[contato]</p>
+            </div>
+            <div style="margin-left: auto;">
+                <p>Data de início: [data]</p>
+                <p>Data de término: [data]</p>
+            </div>
+        </div>
+
+        <!-- Dias de Trabalho -->
+        <h3>Dias de trabalho</h3>
+
+        <!-- Botões dos dias de trabalho gerados dinamicamente -->
+        <div id="diasTrabalho" class="d-flex flex-wrap">      
+        </div>
+    </div>
+
+    <!-- Puxar os 'Dias de Trabalho' no JSON para botões-->
+    <script>
+        async function carregarDiasTrabalho() {
+            try {
+                // URL da API do JSON
+                // os dados do back-end JSON são fictícios para evitar ataques de Broken Acess Control
+                const response = await fetch('https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/blob/master/codigo/db/db.json');
+                const dados = await response.json();
+
+                const diasTrabalhoContainer = document.getElementById('dias-trabalho');
+
+                // Limpa o conteúdo atual
+                diasTrabalhoContainer.innerHTML = '';
+
+                // Itera os dados e cria um botão para cada dia de trabalho
+                dados.forEach(dia => {
+                    const botao = document.createElement('button');
+                    botao.className = 'work-day-btn';
+                    botao.innerText = `${dia.data} - ${dia.nome_atividade}`;
+                    diasTrabalhoContainer.appendChild(botao);
+                });
+
+            // tratamento de exceções (except e try)
+            } catch (error) {
+                console.error('Erro ao carregar os dados:', error);
+            }
+        }
+    </script>
+
+    </div>
+
+</body>
+</html>
