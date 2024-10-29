@@ -34,13 +34,13 @@ function exibirPerfil(index) {
         document.getElementById('info-adicional').textContent = perfil["info-adicional"] || "Informação adicional não disponível";
 
         const profilePhoto = document.getElementById('profilePhoto');
-        profilePhoto.innerHTML = `<img src="img/${perfil["img-perfil"]}" alt="Foto de perfil" style="max-width: 250px; max-height: 270px;">`;
+        profilePhoto.innerHTML = `<img src="img/${perfil["img-perfil"]}" alt="Foto de perfil" style="max-width: 250px; max-height: 250px;">`;
     }
 }
 
 // Função para adicionar eventos de clique aos campos
 function adicionarEventosDeClique() {
-    document.querySelectorAll('.info-field').forEach(field => {
+    document.querySelectorAll('.info-field-conf').forEach(field => {
         field.addEventListener('click', () => {
             const id = field.id; // Pega o ID do campo clicado
             const novoValor = prompt(`Digite um novo valor para ${id}:`, field.textContent);
@@ -51,5 +51,39 @@ function adicionarEventosDeClique() {
     });
 }
 
+let mensagem = document.querySelector(".mensagem") ;
+
+// mostra a mensagem
+function showMessage(){   
+   mensagem.style.display = "block";   
+ }
+// esconde a mensagem
+function hideMessage(){
+  mensagem.style.display = "none"; 
+}
+
 // Carrega perfis ao iniciar a página
 window.onload = carregarPerfis;
+
+document.querySelectorAll('.nav-button-conf, .nav-button-canc').forEach(button => {
+    button.addEventListener('click', function() {
+        if (this.textContent === 'Logout') {
+            if (confirm('Deseja realmente sair?')) {
+                console.log('Usuário fez logout');
+                // Lógica de logout
+            }
+        } else if (this.textContent === 'Configurações') {
+            console.log('Abrindo configurações');
+            // Lógica para abrir configurações
+        } else if (this.textContent === 'Confirmar') {
+            if (confirm('Deseja confirmar mudanças?')) {
+                console.log('Usuário alterou informações');
+                // Lógica de confirmação
+            }
+        } else if(this.textContent === 'Cancelar') {
+            if(confirm('Cancelar alterações?')) {
+                console.log('Usuário cancelou alterações');
+            }
+        }
+    });
+});

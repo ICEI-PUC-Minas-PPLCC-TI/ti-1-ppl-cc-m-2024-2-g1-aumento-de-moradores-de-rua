@@ -15,7 +15,7 @@
 
 .container-Doar {
     display: flex;
-    width: 60%;
+    width:75%;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -37,16 +37,29 @@ a {
     font-size: 18px;
     color: black;
     background-color: #ccc;
-}
-
-.info-field {
-        padding: 10px;
+    transition: background-color 0.7s;  
 }
 
 .back-button:hover {
     color: white;
-    background-color: grey;
+    background-color: rgb(38, 128, 207);
 }
+
+.info-field {
+    padding: 10px;
+}
+
+.info-field-conf {
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.4s;  
+}
+
+.info-field-conf:hover {
+    color: rgb(0, 210, 210);
+    font-size: 19px;
+}
+
 
 .form-container {
     flex: 1;
@@ -55,9 +68,14 @@ a {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-size: 27px;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo {
+    text-align: end;
 }
 
 .field {
@@ -68,7 +86,7 @@ h1 {
 }
 
 .input-field, .textarea-field {
-    width: 470px;
+    width: 300px;
     padding: 10px;
     margin-left: 70px;
     margin-bottom: 20px;
@@ -79,7 +97,7 @@ h1 {
 
 .textarea-field {
     height: 100px;
-    width: 470px;
+    width: 300px;
     margin-left: 70px;
     resize: none;
 }
@@ -91,12 +109,12 @@ h1 {
 button {
     padding: 10px 20px;
     background-color: #f0f0f0;
-    transition: background-color 0.2s;
     border: none;
     color: rgb(3, 3, 3);
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.7s;
 }
 
 .confirmar:hover {
@@ -221,7 +239,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 1s;
     text-align: center;
 }
 
@@ -279,8 +297,7 @@ button {
     font-weight: bold;
 }
 
-.close-button:hover,
-.close-button:focus {
+.close-button:hover, .close-button:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
