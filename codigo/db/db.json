@@ -12,7 +12,7 @@
         "logradouro": "Rua 1",
         "numero": "123",
         "complemento": "Casa",
-        "bairro": "Bairro 1",
+        "bairro": "Bairro 5",
         "cidade": "Cidade 1",
         "estado": "Estado 1",
         "cep": "12345-678"
@@ -30,42 +30,42 @@
       "senha": "123",
       "tipo": "ong",
       "data_nascimento": "1991-02-02",
-      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ3BI1.img10.jpeg",
       "endereco": {
-        "logradouro": "Rua 2",
-        "numero": "234",
-        "complemento": "Empresa",
-        "bairro": "Bairro 2",
         "cidade": "Cidade 2",
+        "numero": "123",
         "estado": "Estado 2",
-        "cep": "13782-123"
+        "bairro": "Bairro 2",
+        "logradouro": "Rua 2",
+        "cep": "13782-123",
+        "complemento": "Empresa"
       },
       "contatos": {
         "telefone": "123456789",
         "email": "ong@abc.com"
       },
-      "infoAdicional": "Sou uma ong e amamos nosso trabalho!"
+      "infoAdicional": "Somos uma ong e amamos nosso trabalho!"
     },
     {
       "id": 3,
-      "nome": "user",
+      "nome": "user do Sistema",
       "login": "user",
       "senha": "123",
       "tipo": "pessoa",
       "data_nascimento": "1990-01-01",
-      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
       "endereco": {
         "logradouro": "Rua 1",
         "numero": "123",
         "complemento": "Casa",
-        "bairro": "Bairro 1",
-        "cidade": "Cidade 1",
+        "bairro": "Mangabeiras",
+        "cidade": "Belo Horizonte", 
         "estado": "Estado 1",
         "cep": "12345-678"
       },
       "contatos": {
         "telefone": "123456789",
-        "email": "user@abc.com"
+        "email": "admin@abc.com"
       },
       "infoAdicional": "Sou o usuário"
     }
@@ -132,14 +132,292 @@
   ],
   "doacoes": [
     {
-      "ong": 1,
-      "doador": 2,
+      "id":"1",
+      "id_ong": 1,
+      "id_usuario": 2,
       "valor": 10,
-      "data": "2024-10-02",
+      "data-doacao": "21-10-2024",
       "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!",
       "pagamento": {
         "tipo": "pix"
-      }
+      },
+      "id":"2",
+      "id_ong": 4,
+      "id_usuario": 1,
+      "valor": 40,
+      "data-doacao": "02-10-2024",
+      "descricao": "É de coração!",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 3,
+      "id_ong": 2,
+      "id_usuario": 1,
+      "data_doacao": "2024-10-05",
+      "itens_doacao": [
+        {
+          "tipo": "alimentos",
+          "nome": "Feijão",
+          "quantidade": 15,
+          "descricao": "Feijão carioca 1kg"
+        }
+      ],
+      "descricao": "Doação de feijão para a ONG 2."
+    },
+    {
+      "id": 4,
+      "id_ong": 3,
+      "id_usuario": 2,
+      "data_doacao": "2024-10-12",
+      "itens_doacao": [
+        {
+          "tipo": "roupas",
+          "nome": "Calças",
+          "quantidade": 25,
+          "descricao": "Calças jeans e de moletom"
+        }
+      ],
+      "descricao": "Doação de calças para a ONG 3."
+    },
+    {
+      "id": 5,
+      "id_ong": 4,
+      "id_usuario": 3,
+      "data_doacao": "2024-09-20",
+      "itens_doacao": [
+        {
+          "tipo": "alimentos",
+          "nome": "Óleo de soja",
+          "quantidade": 10,
+          "descricao": "Garrafas de óleo de soja 900ml"
+        }
+      ],
+      "descricao": "Doação de óleo para a ONG 4."
+    },
+    {
+      "id": 6,
+      "id_ong": 5,
+      "id_usuario": 4,
+      "data_doacao": "2024-09-25",
+      "itens_doacao": [
+        {
+          "tipo": "brinquedos",
+          "nome": "Bolas",
+          "quantidade": 5,
+          "descricao": "Bolas de futebol"
+        }
+      ],
+      "descricao": "Doação de brinquedos para a ONG 5."
+    },
+    {
+      "id": 7,
+      "id_ong": 6,
+      "id_usuario": 5,
+      "data_doacao": "2024-10-02",
+      "itens_doacao": [
+        {
+          "tipo": "livros",
+          "nome": "Livros infantis",
+          "quantidade": 30,
+          "descricao": "Livros de contos e fábulas"
+        }
+      ],
+      "descricao": "Doação de livros para a ONG 6."
+    },
+    {
+      "id": 8,
+      "id_ong": 1,
+      "id_usuario": 6,
+      "data_doacao": "2024-10-11",
+      "itens_doacao": [
+        {
+          "tipo": "higiene",
+          "nome": "Sabonetes",
+          "quantidade": 100,
+          "descricao": "Sabonetes neutros em barra"
+        }
+      ],
+      "descricao": "Doação de itens de higiene para a ONG 1."
+    },
+    {
+      "id": 9,
+      "id_ong": 7,
+      "id_usuario": 7,
+      "data_doacao": "2024-09-15",
+      "itens_doacao": [
+        {
+          "tipo": "material escolar",
+          "nome": "Cadernos",
+          "quantidade": 50,
+          "descricao": "Cadernos de 200 páginas"
+        }
+      ],
+      "descricao": "Doação de cadernos para a ONG 7."
+    },
+    {
+      "id": 10,
+      "id_ong": 2,
+      "id_usuario": 8,
+      "data_doacao": "2024-10-18",
+      "itens_doacao": [
+        {
+          "tipo": "alimentos",
+          "nome": "Leite em pó",
+          "quantidade": 20,
+          "descricao": "Pacotes de 400g de leite em pó"
+        }
+      ],
+      "descricao": "Doação de leite para a ONG 2."
+    },
+    {
+      "id": 11,
+      "id_ong": 3,
+      "id_usuario": 9,
+      "data_doacao": "2024-09-05",
+      "itens_doacao": [
+        {
+          "tipo": "medicamentos",
+          "nome": "Analgésicos",
+          "quantidade": 15,
+          "descricao": "Caixas de paracetamol 500mg"
+        }
+      ],
+      "descricao": "Doação de analgésicos para a ONG 3."
+    },
+    {
+      "id": 12,
+      "id_ong": 4,
+      "id_usuario": 10,
+      "data_doacao": "2024-09-22",
+      "itens_doacao": [
+        {
+          "tipo": "alimentos",
+          "nome": "Macarrão",
+          "quantidade": 30,
+          "descricao": "Pacotes de macarrão espaguete"
+        }
+      ],
+      "descricao": "Doação de macarrão para a ONG 4."
+    },
+    {
+      "id": 13,
+      "id_ong": 5,
+      "id_usuario": 11,
+      "data_doacao": "2024-10-14",
+      "itens_doacao": [
+        {
+          "tipo": "roupas",
+          "nome": "Cobertores",
+          "quantidade": 12,
+          "descricao": "Cobertores de lã"
+        }
+      ],
+      "descricao": "Doação de cobertores para a ONG 5."
+    },
+    {
+      "id": 14,
+      "id_ong": 6,
+      "id_usuario": 12,
+      "data_doacao": "2024-10-07",
+      "itens_doacao": [
+        {
+          "tipo": "brinquedos",
+          "nome": "Carrinhos de brinquedo",
+          "quantidade": 8,
+          "descricao": "Carrinhos variados de plástico"
+        }
+      ],
+      "descricao": "Doação de brinquedos para a ONG 6."
+    },
+    {
+      "id": 15,
+      "id_ong": 7,
+      "id_usuario": 13,
+      "data_doacao": "2024-09-30",
+      "itens_doacao": [
+        {
+          "tipo": "calçados",
+          "nome": "Tênis infantis",
+          "quantidade": 10,
+          "descricao": "Tênis de vários tamanhos"
+        }
+      ],
+      "descricao": "Doação de calçados para a ONG 7."
+    },
+    {
+      "id": 16,
+      "id_ong": 2,
+      "id_usuario": 14,
+      "data_doacao": "2024-10-08",
+      "itens_doacao": [
+        {
+          "tipo": "livros",
+          "nome": "Livros didáticos",
+          "quantidade": 20,
+          "descricao": "Livros de matemática e português"
+        }
+      ],
+      "descricao": "Doação de livros para a ONG 2."
+    },
+    {
+      "id": 17,
+      "id_ong": 3,
+      "id_usuario": 15,
+      "data_doacao": "2024-10-17",
+      "itens_doacao": [
+        {
+          "tipo": "higiene",
+          "nome": "Papel higiênico",
+          "quantidade": 50,
+          "descricao": "Rolos de papel higiênico"
+        }
+      ],
+      "descricao": "Doação de papel higiênico para a ONG 3."
+    },
+    {
+      "id": 18,
+      "id_ong": 4,
+      "id_usuario": 16,
+      "data_doacao": "2024-09-25",
+      "itens_doacao": [
+        {
+          "tipo": "brinquedos",
+          "nome": "Jogo de montar",
+          "quantidade": 3,
+          "descricao": "Jogos de blocos de montar"
+        }
+      ],
+      "descricao": "Doação de jogos de montar para a ONG 4."
+    },
+    {
+      "id": 19,
+      "id_ong": 5,
+      "id_usuario": 17,
+      "data_doacao": "2024-10-19",
+      "itens_doacao": [
+        {
+          "tipo": "alimentos",
+          "nome": "Açúcar",
+          "quantidade": 25,
+          "descricao": "Pacotes de 1kg de açúcar"
+        }
+      ],
+      "descricao": "Doação de açúcar para a ONG 5."
+    },
+    {
+      "id": 20,
+      "id_ong": 6,
+      "id_usuario": 18,
+      "data_doacao": "2024-09-18",
+      "itens_doacao": [
+        {
+          "tipo": "roupas",
+          "nome": "Camisas",
+          "quantidade": 30,
+          "descricao": "Camisas masculinas variadas"
+        }
+      ],
+      "descricao": "Doação de camisas para a ONG 6."
     }
   ],
   "ongs": [
@@ -177,6 +455,216 @@
         }
       ],
       "responsavel": 1
+    },
+    {
+      "id": 2,
+      "cpnj": "987654321",
+      "data_fundacao": "2020-05-15",
+      "razao_social": "ONG 2",
+      "nome_fantasia": "Apoio e Esperança",
+      "contatos": {
+        "telefone": "(21) 98765-4321",
+        "email": "contato@apoesp.com"
+      },
+      "endereco": {
+        "logradouro": "Avenida Central",
+        "numero": "200",
+        "complemento": "Sala 2",
+        "bairro": "Centro",
+        "cidade": "Cidade 2",
+        "estado": "Estado 2",
+        "cep": "23456-789"
+      },
+      "descricao": "ONG dedicada à assistência a famílias de baixa renda.",
+      "objetivos": [
+        "Distribuição de alimentos",
+        "Apoio psicológico",
+        "Capacitação profissional"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "roupas",
+          "nome": "Casacos",
+          "quantidade": 50,
+          "descricao": "Casacos para crianças"
+        }
+      ],
+      "responsavel": 2
+    },
+    {
+      "id": 3,
+      "cpnj": "111222333",
+      "data_fundacao": "2018-03-10",
+      "razao_social": "ONG 3",
+      "nome_fantasia": "Ajuda Animal",
+      "contatos": {
+        "telefone": "(11) 91234-5678",
+        "email": "ajudaanimal@gmail.com"
+      },
+      "endereco": {
+        "logradouro": "Rua dos Bichos",
+        "numero": "45",
+        "complemento": "Galpão",
+        "bairro": "Pet Ville",
+        "cidade": "Cidade 3",
+        "estado": "Estado 3",
+        "cep": "34567-890"
+      },
+      "descricao": "ONG voltada para o resgate e cuidado de animais abandonados.",
+      "objetivos": [
+        "Resgate de animais",
+        "Castração gratuita",
+        "Adoção responsável"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "remédios",
+          "nome": "Vermífugos",
+          "quantidade": 30,
+          "descricao": "Vermífugos para cães e gatos"
+        }
+      ],
+      "responsavel": 3
+    },
+    {
+      "id": 4,
+      "cpnj": "333444555",
+      "data_fundacao": "2019-12-01",
+      "razao_social": "ONG 4",
+      "nome_fantasia": "Educa Jovem",
+      "contatos": {
+        "telefone": "(31) 93456-7890",
+        "email": "contato@educajovem.org"
+      },
+      "endereco": {
+        "logradouro": "Rua da Educação",
+        "numero": "101",
+        "complemento": "2º andar",
+        "bairro": "Bairro Estudantil",
+        "cidade": "Cidade 4",
+        "estado": "Estado 4",
+        "cep": "45678-901"
+      },
+      "descricao": "ONG que oferece cursos e atividades para jovens de baixa renda.",
+      "objetivos": [
+        "Educação complementar",
+        "Aulas de informática",
+        "Aulas de idiomas"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "material escolar",
+          "nome": "Cadernos",
+          "quantidade": 200,
+          "descricao": "Cadernos para alunos"
+        }
+      ],
+      "responsavel": 4
+    },
+    {
+      "id": 5,
+      "cpnj": "555666777",
+      "data_fundacao": "2021-07-22",
+      "razao_social": "ONG 5",
+      "nome_fantasia": "Verde e Vida",
+      "contatos": {
+        "telefone": "(27) 97654-3210",
+        "email": "verdevida@eco.org"
+      },
+      "endereco": {
+        "logradouro": "Rua das Árvores",
+        "numero": "50",
+        "complemento": "Fundos",
+        "bairro": "Bairro Verde",
+        "cidade": "Cidade 5",
+        "estado": "Estado 5",
+        "cep": "56789-012"
+      },
+      "descricao": "ONG de proteção ambiental e reflorestamento.",
+      "objetivos": [
+        "Plantio de árvores",
+        "Educação ambiental",
+        "Proteção de áreas verdes"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "ferramentas",
+          "nome": "Pás",
+          "quantidade": 10,
+          "descricao": "Pás para plantio"
+        }
+      ],
+      "responsavel": 5
+    },
+    {
+      "id": 6,
+      "cpnj": "888999000",
+      "data_fundacao": "2017-11-30",
+      "razao_social": "ONG 6",
+      "nome_fantasia": "Casa da Saúde",
+      "contatos": {
+        "telefone": "(19) 98765-4321",
+        "email": "saude@casadaong.com"
+      },
+      "endereco": {
+        "logradouro": "Av. Saúde e Vida",
+        "numero": "999",
+        "complemento": "Clínica",
+        "bairro": "Centro Médico",
+        "cidade": "Cidade 6",
+        "estado": "Estado 6",
+        "cep": "67890-123"
+      },
+      "descricao": "ONG com foco em atendimento médico gratuito para a população carente.",
+      "objetivos": [
+        "Atendimento clínico",
+        "Exames gratuitos",
+        "Campanhas de vacinação"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "medicamentos",
+          "nome": "Analgésicos",
+          "quantidade": 100,
+          "descricao": "Analgésicos para doação"
+        }
+      ],
+      "responsavel": 6
+    },
+    {
+      "id": 7,
+      "cpnj": "101112131",
+      "data_fundacao": "2016-08-25",
+      "razao_social": "ONG 7",
+      "nome_fantasia": "Lar das Crianças",
+      "contatos": {
+        "telefone": "(15) 99876-5432",
+        "email": "larcriancas@ong.com"
+      },
+      "endereco": {
+        "logradouro": "Rua dos Pequeninos",
+        "numero": "25",
+        "complemento": "Casa 1",
+        "bairro": "Infantil",
+        "cidade": "Cidade 7",
+        "estado": "Estado 7",
+        "cep": "78901-234"
+      },
+      "descricao": "ONG que acolhe crianças em situação de vulnerabilidade.",
+      "objetivos": [
+        "Acolhimento infantil",
+        "Alimentação e abrigo",
+        "Atividades educativas"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "brinquedos",
+          "nome": "Bonecas",
+          "quantidade": 30,
+          "descricao": "Bonecas para atividades recreativas"
+        }
+      ],
+      "responsavel": 7
     }
   ],
   "pessoas": [

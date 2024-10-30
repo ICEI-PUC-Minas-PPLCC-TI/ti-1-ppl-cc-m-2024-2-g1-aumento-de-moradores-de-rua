@@ -122,6 +122,14 @@ button:disabled {
     border-bottom: none;
 }
 
+.card {
+    margin-bottom: 40px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
 /* Responsividade */
 @media (max-width: 576px) {
     h1 {

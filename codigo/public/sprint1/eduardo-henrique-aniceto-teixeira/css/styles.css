@@ -221,7 +221,7 @@ div.doar {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-header {
+.profile-header  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -331,4 +331,10 @@ div.doar {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.info{
+    display: flex;
+    text-align: center;
+    align-items: center;
 }

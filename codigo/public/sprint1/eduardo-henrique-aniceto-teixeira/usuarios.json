@@ -1,112 +1,73 @@
 {
-    "usuarios": [
-        {
-            "id": 1,
-            "nome": "Patricia",
-            "imgPerfil": "perfil0.jpg",
-            "pais": "Brasil",
-            "estado": "Minas Gerais",
-            "cidade": "Belo Horizonte",
-            "cep": "30000-000",
-            "telefone": "31 98709-9579",
-            "email": "patricia@outlook.com",
-            "infoAdicional": "Siga-me no GitHub: PatriciaDev"
-        },
-        {
-            "id": 2,
-            "nome": "Poliana",
-            "imgPerfil": "perfil1.jpg",
-            "pais": "Brasil",
-            "estado": "São Paulo",
-            "cidade": "São Paulo",
-            "cep": "30000-001",
-            "telefone": "11 99888-1234",
-            "email": "poliana@outlook.com",
-            "infoAdicional": "LinkedIn: Poliana2Professional"
-        },
-        {
-            "id": 3,
-            "nome": "Priscila",
-            "imgPerfil": "perfil2.jpg",
-            "pais": "Brasil",
-            "estado": "Paraná",
-            "cidade": "Curitiba",
-            "cep": "30000-002",       
-            "telefone": "41 98765-4321",
-            "email": "priscila@gmail.com",
-            "infoAdicional": "Instagram: @PriscilaLife"
-        },
-        {
-            "id": 4,
-            "nome": "Lucas",
-            "imgPerfil": "perfil3.jpg",
-            "pais": "Brasil",
-            "estado": "Rio de Janeiro",
-            "cidade": "Rio de Janeiro",
-            "cep": "30000-000",
-            "telefone": "21 99999-8888",
-            "email": "lucas@outlook.com",
-            "infoAdicional": "Amo viajar!"
-        },
-        {
-            "id": 5,
-            "nome": "Fernanda",
-            "imgPerfil": "perfil4.jpg",
-            "pais": "Brasil",
-            "estado": "São Paulo",
-            "cidade": "Campinas",
-            "cep": "30000-000",       
-            "telefone": "19 98765-4321",
-            "email": "fernanda@gmail.com",
-            "infoAdicional": "Desenvolvedora de Software"
-        },
-        {
-            "id": 6,
-            "nome": "Gabriel",
-            "imgPerfil": "perfil5.jpg",
-            "pais": "Brasil",
-            "estado": "Minas Gerais",
-            "cidade": "Uberlândia",
-            "cep": "30000-000",         
-            "telefone": "34 99876-5432",
-            "email": "gabriel@outlook.com",
-            "infoAdicional": "Entusiasta de tecnologia"
-        },
-        {
-            "id": 7,
-            "nome": "Carla",
-            "imgPerfil": "perfil6.jpg",
-            "pais": "Brasil",
-            "estado": "Bahia",
-            "cidade": "Salvador",
-            "cep": "30000-000",       
-            "telefone": "71 98765-6789",
-            "email": "carla@gmail.com",
-            "infoAdicional": "Amo cozinhar"
-        },
-        {
-            "id": 8,
-            "nome": "Rafael",
-            "imgPerfil": "perfil7.jpg",
-            "pais": "Brasil",
-            "estado": "Paraná",
-            "cidade": "Curitiba",
-            "cep": "30000-000",       
-            "telefone": "41 91234-5678",
-            "email": "rafael@outlook.com",
-            "infoAdicional": "Apaixonado por esportes"
-        },
-        {
-            "id": 9,
-            "nome": "Ana",
-            "imgPerfil": "perfil8.jpg",
-            "pais": "Brasil",
-            "estado": "Rio Grande do Sul",
-            "cidade": "Porto Alegre",
-            "cep": "30000-000",
-            "telefone": "51 98765-4321",
-            "email": "ana@outlook.com",
-            "infoAdicional": "Artista plástica"
-        }
-    ]
+"usuarios": [
+    {
+      "id": 1,
+      "nome": "Administrador do Sistema",
+      "login": "admin",
+      "senha": "123",
+      "tipo": "pessoa",
+      "data_nascimento": "1990-01-01",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "contatos": {
+        "telefone": "123456789",
+        "email": "admin@abc.com"
+      },
+      "infoAdicional": "Sou o administrador"
+    },
+    {
+      "id": 2,
+      "nome": "ONG Prosperar",
+      "login": "ong",
+      "senha": "123",
+      "tipo": "ong",
+      "data_nascimento": "1991-02-02",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
+      "endereco": {
+        "logradouro": "Rua 2",
+        "numero": "234",
+        "complemento": "Empresa",
+        "bairro": "Bairro 2",
+        "cidade": "Cidade 2",
+        "estado": "Estado 2",
+        "cep": "13782-123"
+      },
+      "contatos": {
+        "telefone": "123456789",
+        "email": "ong@abc.com"
+      },
+      "infoAdicional": "Sou uma ong e amamos nosso trabalho!"
+    },
+    {
+      "id": 3,
+      "nome": "user",
+      "login": "user",
+      "senha": "123",
+      "tipo": "pessoa",
+      "data_nascimento": "1990-01-01",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "contatos": {
+        "telefone": "123456789",
+        "email": "user@abc.com"
+      },
+      "infoAdicional": "Sou o usuário"
+    }
+  ]
 }
