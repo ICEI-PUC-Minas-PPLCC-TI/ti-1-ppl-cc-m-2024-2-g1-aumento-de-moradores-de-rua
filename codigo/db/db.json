@@ -132,16 +132,18 @@
   ],
   "doacoes": [
     {
-      "id":"1",
+      "id": 1,
       "id_ong": 1,
       "id_usuario": 2,
       "valor": 10,
       "data-doacao": "21-10-2024",
       "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!",
       "pagamento": {
-        "tipo": "pix"
-      },
-      "id":"2",
+      "tipo": "pix"
+      }
+    },  
+    {
+      "id":2,
       "id_ong": 4,
       "id_usuario": 1,
       "valor": 40,
@@ -149,275 +151,187 @@
       "descricao": "É de coração!",
       "pagamento": {
         "tipo": "pix"
-      },
+      }
+    },
+    {
       "id": 3,
       "id_ong": 2,
       "id_usuario": 1,
       "data_doacao": "2024-10-05",
-      "itens_doacao": [
-        {
-          "tipo": "alimentos",
-          "nome": "Feijão",
-          "quantidade": 15,
-          "descricao": "Feijão carioca 1kg"
-        }
-      ],
-      "descricao": "Doação de feijão para a ONG 2."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 4,
       "id_ong": 3,
       "id_usuario": 2,
       "data_doacao": "2024-10-12",
-      "itens_doacao": [
-        {
-          "tipo": "roupas",
-          "nome": "Calças",
-          "quantidade": 25,
-          "descricao": "Calças jeans e de moletom"
-        }
-      ],
-      "descricao": "Doação de calças para a ONG 3."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 5,
       "id_ong": 4,
       "id_usuario": 3,
       "data_doacao": "2024-09-20",
-      "itens_doacao": [
-        {
-          "tipo": "alimentos",
-          "nome": "Óleo de soja",
-          "quantidade": 10,
-          "descricao": "Garrafas de óleo de soja 900ml"
-        }
-      ],
-      "descricao": "Doação de óleo para a ONG 4."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 6,
       "id_ong": 5,
       "id_usuario": 4,
       "data_doacao": "2024-09-25",
-      "itens_doacao": [
-        {
-          "tipo": "brinquedos",
-          "nome": "Bolas",
-          "quantidade": 5,
-          "descricao": "Bolas de futebol"
-        }
-      ],
-      "descricao": "Doação de brinquedos para a ONG 5."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 7,
       "id_ong": 6,
       "id_usuario": 5,
       "data_doacao": "2024-10-02",
-      "itens_doacao": [
-        {
-          "tipo": "livros",
-          "nome": "Livros infantis",
-          "quantidade": 30,
-          "descricao": "Livros de contos e fábulas"
-        }
-      ],
-      "descricao": "Doação de livros para a ONG 6."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 8,
       "id_ong": 1,
       "id_usuario": 6,
       "data_doacao": "2024-10-11",
-      "itens_doacao": [
-        {
-          "tipo": "higiene",
-          "nome": "Sabonetes",
-          "quantidade": 100,
-          "descricao": "Sabonetes neutros em barra"
-        }
-      ],
-      "descricao": "Doação de itens de higiene para a ONG 1."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 9,
       "id_ong": 7,
       "id_usuario": 7,
       "data_doacao": "2024-09-15",
-      "itens_doacao": [
-        {
-          "tipo": "material escolar",
-          "nome": "Cadernos",
-          "quantidade": 50,
-          "descricao": "Cadernos de 200 páginas"
-        }
-      ],
-      "descricao": "Doação de cadernos para a ONG 7."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 10,
       "id_ong": 2,
       "id_usuario": 8,
       "data_doacao": "2024-10-18",
-      "itens_doacao": [
-        {
-          "tipo": "alimentos",
-          "nome": "Leite em pó",
-          "quantidade": 20,
-          "descricao": "Pacotes de 400g de leite em pó"
-        }
-      ],
-      "descricao": "Doação de leite para a ONG 2."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 11,
       "id_ong": 3,
       "id_usuario": 9,
       "data_doacao": "2024-09-05",
-      "itens_doacao": [
-        {
-          "tipo": "medicamentos",
-          "nome": "Analgésicos",
-          "quantidade": 15,
-          "descricao": "Caixas de paracetamol 500mg"
-        }
-      ],
-      "descricao": "Doação de analgésicos para a ONG 3."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 12,
       "id_ong": 4,
       "id_usuario": 10,
       "data_doacao": "2024-09-22",
-      "itens_doacao": [
-        {
-          "tipo": "alimentos",
-          "nome": "Macarrão",
-          "quantidade": 30,
-          "descricao": "Pacotes de macarrão espaguete"
-        }
-      ],
-      "descricao": "Doação de macarrão para a ONG 4."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 13,
       "id_ong": 5,
       "id_usuario": 11,
       "data_doacao": "2024-10-14",
-      "itens_doacao": [
-        {
-          "tipo": "roupas",
-          "nome": "Cobertores",
-          "quantidade": 12,
-          "descricao": "Cobertores de lã"
-        }
-      ],
-      "descricao": "Doação de cobertores para a ONG 5."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 14,
       "id_ong": 6,
       "id_usuario": 12,
       "data_doacao": "2024-10-07",
-      "itens_doacao": [
-        {
-          "tipo": "brinquedos",
-          "nome": "Carrinhos de brinquedo",
-          "quantidade": 8,
-          "descricao": "Carrinhos variados de plástico"
-        }
-      ],
-      "descricao": "Doação de brinquedos para a ONG 6."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 15,
       "id_ong": 7,
       "id_usuario": 13,
       "data_doacao": "2024-09-30",
-      "itens_doacao": [
-        {
-          "tipo": "calçados",
-          "nome": "Tênis infantis",
-          "quantidade": 10,
-          "descricao": "Tênis de vários tamanhos"
-        }
-      ],
-      "descricao": "Doação de calçados para a ONG 7."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 16,
       "id_ong": 2,
       "id_usuario": 14,
       "data_doacao": "2024-10-08",
-      "itens_doacao": [
-        {
-          "tipo": "livros",
-          "nome": "Livros didáticos",
-          "quantidade": 20,
-          "descricao": "Livros de matemática e português"
-        }
-      ],
-      "descricao": "Doação de livros para a ONG 2."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 17,
       "id_ong": 3,
       "id_usuario": 15,
       "data_doacao": "2024-10-17",
-      "itens_doacao": [
-        {
-          "tipo": "higiene",
-          "nome": "Papel higiênico",
-          "quantidade": 50,
-          "descricao": "Rolos de papel higiênico"
-        }
-      ],
-      "descricao": "Doação de papel higiênico para a ONG 3."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 18,
       "id_ong": 4,
       "id_usuario": 16,
       "data_doacao": "2024-09-25",
-      "itens_doacao": [
-        {
-          "tipo": "brinquedos",
-          "nome": "Jogo de montar",
-          "quantidade": 3,
-          "descricao": "Jogos de blocos de montar"
-        }
-      ],
-      "descricao": "Doação de jogos de montar para a ONG 4."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 19,
       "id_ong": 5,
       "id_usuario": 17,
       "data_doacao": "2024-10-19",
-      "itens_doacao": [
-        {
-          "tipo": "alimentos",
-          "nome": "Açúcar",
-          "quantidade": 25,
-          "descricao": "Pacotes de 1kg de açúcar"
-        }
-      ],
-      "descricao": "Doação de açúcar para a ONG 5."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     },
     {
       "id": 20,
       "id_ong": 6,
       "id_usuario": 18,
       "data_doacao": "2024-09-18",
-      "itens_doacao": [
-        {
-          "tipo": "roupas",
-          "nome": "Camisas",
-          "quantidade": 30,
-          "descricao": "Camisas masculinas variadas"
-        }
-      ],
-      "descricao": "Doação de camisas para a ONG 6."
+      "descricao": "É de coração!",
+      "pagamento": {
+      "tipo": "pix"
+      }
     }
   ],
   "ongs": [
