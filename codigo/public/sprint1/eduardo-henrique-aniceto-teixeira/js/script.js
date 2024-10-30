@@ -1,59 +1,44 @@
+var usuarioCorrente = {};
+
 function carregarPerfis() {
-    fetch('usuarios.json') // Verifique o caminho correto do arquivo
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Erro ao carregar o JSON: ${response.statusText}`);
-            }
-            return response.json();
-        })
+    fetch('/usuarios') // Insira o caminho correto do arquivo JSON
+        .then(response => response.json())
         .then(data => {
-            // Verifica se há dados no JSON
-            if (data.usuarios && data.usuarios.length > 0) {
-                // Gera um índice aleatório de 0 a 8 (inclusive)
-                const perfilIndex = Math.floor(Math.random() * data.usuarios.length); // Isso garante um número de 0 a 8
-                const perfil = data.usuarios[perfilIndex]; // Seleciona o perfil aleatório
+            console.log(data);
 
-                // Atualiza o conteúdo do HTML com os dados do perfil
-                document.getElementById('nome').textContent = perfil.nome || "Nome não disponível";
-                document.getElementById('estado').textContent = perfil.estado || "Estado não disponível";
-                document.getElementById('cidade').textContent = perfil.cidade || "Cidade não disponível";
-                document.getElementById('telefone').textContent = perfil.telefone || "Telefone não disponível";
-                document.getElementById('email').textContent = perfil.email || "Email não disponível";
-                document.getElementById('info-adicional').textContent = perfil["info-adicional"] || "Informação adicional não disponível";
+            if (data && usuarioCorrente.id) {
+                // Encontrar o perfil do usuário com o ID atual
+                const perfil = data.find(user => user.id == usuarioCorrente.id);
 
-                const profilePhoto = document.getElementById('profilePhoto');
-                profilePhoto.innerHTML = `<img src="img/${perfil["img-perfil"]}" alt="Foto de perfil" style="max-width: 250px; max-height: 270px;">`;
+                console.log("Perfil: " + perfil);
+
+                if (perfil) {
+                    // Atualizar o conteúdo do HTML com os dados do perfil
+                    document.getElementById('nome').textContent = perfil.nome || "Nome não disponível";
+                    document.getElementById('estado').textContent = perfil.endereco.estado || "Estado não disponível";
+                    document.getElementById('cidade').textContent = perfil.endereco.cidade || "Cidade não disponível";
+                    document.getElementById('telefone').textContent = perfil.contatos.telefone || "Telefone não disponível";
+                    document.getElementById('email').textContent = perfil.contatos.email || "Email não disponível";
+                    document.getElementById('info-adicional').textContent = perfil.infoAdicional || "Informação adicional não disponível";
+
+                    // Exibir foto do perfil
+                    const profilePhoto = document.getElementById('profilePhoto');
+                    profilePhoto.innerHTML = `<img src="${perfil.imgPerfil}" alt="Foto de perfil" style="max-width: 250px; max-height: 250px;">`;
+                } else {
+                    console.error('Perfil não encontrado para o ID especificado.');
+                }
             } else {
-                console.error('Nenhum perfil encontrado no JSON');
+                console.error('Dados de usuários ou ID de usuário logado não encontrados.');
             }
         })
         .catch(error => console.error('Erro ao carregar os perfis:', error));
 }
 
-
-// Carrega perfis ao iniciar a página
-window.onload = carregarPerfis;
-
-document.querySelectorAll('.nav-button-conf, .nav-button-canc').forEach(button => {
-    button.addEventListener('click', function() {
-        if (this.textContent === 'Logout') {
-            if (confirm('Deseja realmente sair?')) {
-                console.log('Usuário fez logout');
-                // Lógica de logout
-            }
-        } else if (this.textContent === 'Configurações') {
-            console.log('Abrindo configurações');
-            // Lógica para abrir configurações
-        } else if (this.textContent === 'Confirmar') {
-            if (confirm('Deseja confirmar mudanças?')) {
-                console.log('Usuário alterou informações');
-                // Lógica de confirmação
-            }
-        } else if(this.textContent === 'Cancelar') {
-            if(confirm('Cancelar alterações?')) {
-                console.log('Usuário cancelou alterações');
-            }
-        }
-    });
-});
-
+// Carrega o perfil ao iniciar a página
+window.onload = () => {
+    const usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+    if (usuarioCorrenteJSON) {
+        usuarioCorrente = JSON.parse(usuarioCorrenteJSON);
+    }
+    carregarPerfis();
+};

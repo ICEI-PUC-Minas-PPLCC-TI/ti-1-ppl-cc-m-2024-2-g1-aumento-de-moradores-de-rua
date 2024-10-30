@@ -6,7 +6,8 @@
       "login": "admin",
       "senha": "123",
       "tipo": "pessoa",
-      "data_nascimento": "1990-01-01",  
+      "data_nascimento": "1990-01-01",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
       "endereco": {
         "logradouro": "Rua 1",
         "numero": "123",
@@ -17,57 +18,42 @@
         "cep": "12345-678"
       },
       "contatos": {
-        "telefone": "123456789"
+        "telefone": "123456789",
+        "email": "admin@abc.com"
       },
-      "email": "admin@abc.com"
+      "infoAdicional": "Sou o administrador"
     },
     {
       "id": 2,
-      "login": "user",
-      "data_nascimento": "1990-01-01",  
+      "nome": "ONG Prosperar",
+      "login": "ong",
       "senha": "123",
       "tipo": "ong",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com",
+      "data_nascimento": "1991-02-02",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
       "endereco": {
-        "logradouro": "Rua 1",
-        "numero": "123",
-        "complemento": "Casa",
-        "bairro": "Bairro 1",
-        "cidade": "Cidade 1",
-        "estado": "Estado 1",
-        "cep": "12345-678"
+        "logradouro": "Rua 2",
+        "numero": "234",
+        "complemento": "Empresa",
+        "bairro": "Bairro 2",
+        "cidade": "Cidade 2",
+        "estado": "Estado 2",
+        "cep": "13782-123"
       },
       "contatos": {
-        "telefone": "123456789"
-      }
+        "telefone": "123456789",
+        "email": "ong@abc.com"
+      },
+      "infoAdicional": "Sou uma ong e amamos nosso trabalho!"
     },
     {
-      "login": "rommel",
-      "senha": "123",
-      "tipo": "ong",
-      "nome": "Rommel",
-      "data_nascimento": "1990-01-01",  
-      "email": "rommel@gmail.com",
       "id": 3,
-      "endereco": {
-        "logradouro": "Rua 1",
-        "numero": "123",
-        "complemento": "Casa",
-        "bairro": "Bairro 1",
-        "cidade": "Cidade 1",
-        "estado": "Estado 1",
-        "cep": "12345-678"
-      },
-      "contatos": {
-        "telefone": "123456789"
-      }
-    },
-    {
-      "login": "abv",
+      "nome": "user",
+      "login": "admin",
       "senha": "123",
-      "data_nascimento": "1990-01-01",  
-      "nome": "asdasd",
+      "tipo": "pessoa",
+      "data_nascimento": "1990-01-01",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
       "endereco": {
         "logradouro": "Rua 1",
         "numero": "123",
@@ -78,10 +64,10 @@
         "cep": "12345-678"
       },
       "contatos": {
-        "telefone": "123456789"
+        "telefone": "123456789",
+        "email": "user@abc.com"
       },
-      "email": "vitords.mello@gmail.com",
-      "id": 4
+      "infoAdicional": "Sou o usuário"
     }
   ],
   "atividades": [
@@ -118,7 +104,7 @@
     {
       "ong": 1,
       "doador": 2,
-      "valor": 10.00,
+      "valor": 10,
       "data": "2024-10-02",
       "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!",
       "pagamento": {
@@ -155,7 +141,7 @@
       "necessidades_especificas": [
         {
           "tipo": "alimentos",
-          "nome": "Alimento 1", 
+          "nome": "Alimento 1",
           "quantidade": 100,
           "descricao": "Descrição do Alimento 1"
         }

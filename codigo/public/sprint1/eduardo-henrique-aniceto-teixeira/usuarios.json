@@ -3,92 +3,110 @@
         {
             "id": 1,
             "nome": "Patricia",
-            "img-perfil": "perfil0.jpg",
+            "imgPerfil": "perfil0.jpg",
+            "pais": "Brasil",
             "estado": "Minas Gerais",
             "cidade": "Belo Horizonte",
+            "cep": "30000-000",
             "telefone": "31 98709-9579",
             "email": "patricia@outlook.com",
-            "info-adicional": "Siga-me no GitHub: PatriciaDev"
+            "infoAdicional": "Siga-me no GitHub: PatriciaDev"
         },
         {
             "id": 2,
             "nome": "Poliana",
-            "img-perfil": "perfil1.jpg",
+            "imgPerfil": "perfil1.jpg",
+            "pais": "Brasil",
             "estado": "São Paulo",
             "cidade": "São Paulo",
+            "cep": "30000-001",
             "telefone": "11 99888-1234",
             "email": "poliana@outlook.com",
-            "info-adicional": "LinkedIn: Poliana2Professional"
+            "infoAdicional": "LinkedIn: Poliana2Professional"
         },
         {
             "id": 3,
             "nome": "Priscila",
-            "img-perfil": "perfil2.jpg",
+            "imgPerfil": "perfil2.jpg",
+            "pais": "Brasil",
             "estado": "Paraná",
             "cidade": "Curitiba",
+            "cep": "30000-002",       
             "telefone": "41 98765-4321",
             "email": "priscila@gmail.com",
-            "info-adicional": "Instagram: @PriscilaLife"
+            "infoAdicional": "Instagram: @PriscilaLife"
         },
         {
             "id": 4,
             "nome": "Lucas",
-            "img-perfil": "perfil3.jpg",
+            "imgPerfil": "perfil3.jpg",
+            "pais": "Brasil",
             "estado": "Rio de Janeiro",
             "cidade": "Rio de Janeiro",
+            "cep": "30000-000",
             "telefone": "21 99999-8888",
             "email": "lucas@outlook.com",
-            "info-adicional": "Amo viajar!"
+            "infoAdicional": "Amo viajar!"
         },
         {
             "id": 5,
             "nome": "Fernanda",
-            "img-perfil": "perfil4.jpg",
+            "imgPerfil": "perfil4.jpg",
+            "pais": "Brasil",
             "estado": "São Paulo",
             "cidade": "Campinas",
+            "cep": "30000-000",       
             "telefone": "19 98765-4321",
             "email": "fernanda@gmail.com",
-            "info-adicional": "Desenvolvedora de Software"
+            "infoAdicional": "Desenvolvedora de Software"
         },
         {
             "id": 6,
             "nome": "Gabriel",
-            "img-perfil": "perfil5.jpg",
+            "imgPerfil": "perfil5.jpg",
+            "pais": "Brasil",
             "estado": "Minas Gerais",
             "cidade": "Uberlândia",
+            "cep": "30000-000",         
             "telefone": "34 99876-5432",
             "email": "gabriel@outlook.com",
-            "info-adicional": "Entusiasta de tecnologia"
+            "infoAdicional": "Entusiasta de tecnologia"
         },
         {
             "id": 7,
             "nome": "Carla",
-            "img-perfil": "perfil6.jpg",
+            "imgPerfil": "perfil6.jpg",
+            "pais": "Brasil",
             "estado": "Bahia",
             "cidade": "Salvador",
+            "cep": "30000-000",       
             "telefone": "71 98765-6789",
             "email": "carla@gmail.com",
-            "info-adicional": "Amo cozinhar"
+            "infoAdicional": "Amo cozinhar"
         },
         {
             "id": 8,
             "nome": "Rafael",
-            "img-perfil": "perfil7.jpg",
+            "imgPerfil": "perfil7.jpg",
+            "pais": "Brasil",
             "estado": "Paraná",
             "cidade": "Curitiba",
+            "cep": "30000-000",       
             "telefone": "41 91234-5678",
             "email": "rafael@outlook.com",
-            "info-adicional": "Apaixonado por esportes"
+            "infoAdicional": "Apaixonado por esportes"
         },
         {
             "id": 9,
             "nome": "Ana",
-            "img-perfil": "perfil8.jpg",
+            "imgPerfil": "perfil8.jpg",
+            "pais": "Brasil",
             "estado": "Rio Grande do Sul",
             "cidade": "Porto Alegre",
+            "cep": "30000-000",
             "telefone": "51 98765-4321",
             "email": "ana@outlook.com",
-            "info-adicional": "Artista plástica"
+            "infoAdicional": "Artista plástica"
         }
     ]
 }
