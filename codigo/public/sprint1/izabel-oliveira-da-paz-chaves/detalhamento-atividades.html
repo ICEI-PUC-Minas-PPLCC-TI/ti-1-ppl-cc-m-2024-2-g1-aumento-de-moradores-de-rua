@@ -7,19 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Puxar o CSS do guardiao -->
-    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Puxar o "Header" da Home Page -->
-    <script src="../../assets/js/header/index.js"></script>
+    <script src="assets/js/header/index.js"></script>
 </head>
 <body>
-    <!-- Secao de testes -->
+    <!-- Secao de testes
     <ul>
         <li><a href="listagem-atividades.html">11</a></li>
         <li><a href="detalhamento-atividades.html">12</a></li>
         <li><a href="registro-voluntario.html">13_14</a></li>
-        <li><a href="u.html">14</a></li>
-    </ul>
+    
+    </ul> -->
 
     <div class="container">
         <!-- Detalhes da Atividade -->
@@ -60,7 +60,7 @@
             }
 
             try {
-                const response = await fetch('atividades.json'); // Altere para o caminho do seu JSON
+                const response = await fetch('json_fixed/atividades.json'); // caminho JSON
                 const dados = await response.json();
 
                 const atividade = dados.atividades.find(a => a.id == id);
@@ -83,7 +83,7 @@
 
         async function carregarDiasTrabalho(atividadeId) {
             try {
-                const response = await fetch('dias_trabalho.json'); // Altere para o caminho do seu JSON com os dias de trabalho
+                const response = await fetch('json_fixed/dias_trabalho.json'); // caminho do JSON
                 const dados = await response.json();
 
                 const diasTrabalhoContainer = document.getElementById('diasTrabalho');
