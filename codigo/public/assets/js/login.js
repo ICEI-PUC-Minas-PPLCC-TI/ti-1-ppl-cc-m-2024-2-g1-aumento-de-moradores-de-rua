@@ -67,15 +67,12 @@ function carregarUsuarios(callback) {
     });
 }
 
-// Verifica se o login do usuário está ok e, se positivo, direciona para a página inicial
 function loginUser (login, senha) {
 
-    // Verifica todos os itens do banco de dados de usuarios 
-    // para localizar o usuário informado no formulario de login
+
     for (var i = 0; i < db_usuarios.length; i++) {
         var usuario = db_usuarios[i];
 
-        // Se encontrou login, carrega usuário corrente e salva no Session Storage
         if (login == usuario.login && senha == usuario.senha) {
             usuarioCorrente.id = usuario.id;
             usuarioCorrente.login = usuario.login;
@@ -83,42 +80,19 @@ function loginUser (login, senha) {
             usuarioCorrente.nome = usuario.nome;
             usuarioCorrente.tipo = usuario.tipo;
 
-            // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
 
-            // Retorna true para usuário encontrado
             return true;
         }
     }
 
-    // Se chegou até aqui é por que não encontrou o usuário e retorna falso
     return false;
 }
 
-// Apaga os dados do usuário corrente no sessionStorage
 function logoutUser () {
     sessionStorage.removeItem ('usuarioCorrente');
     window.location = LOGIN_URL;
-}
-
-function addUser(usuario, endpoint) {
-    fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(usuario),
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log("Usuário inserido com sucesso:", data);
-      })
-      .catch(error => {
-        console.error('Erro ao inserir usuário via API JSONServer:', error);
-        alert("Erro ao inserir usuário");
-      });
-  }
-
+}   
 
 function showUserInfo (element) {
     var elemUser = document.getElementById(element);

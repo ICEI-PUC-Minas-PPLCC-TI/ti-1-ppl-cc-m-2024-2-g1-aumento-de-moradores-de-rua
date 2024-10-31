@@ -43,6 +43,7 @@ function exibirPerfil(perfil) {
         }
 
         document.getElementById('nome').value = perfil.nome || "Nome não disponível";
+        document.getElementById('data_nascimento').value = perfil.data_nascimento || "Data não disponível";
         document.getElementById('estado').value = perfil.endereco.estado || "Estado não disponível";
         document.getElementById('cidade').value = perfil.endereco.cidade || "Cidade não disponível";
         document.getElementById('bairro').value = perfil.endereco.bairro || "Bairo não disponível";
@@ -75,7 +76,7 @@ function salvarPerfil() {
         id: usuarioCorrente.id,
         nome,
         imgPerfil,
-        // data_de_nascimento,
+        data_de_nascimento,
         endereco: {
             cidade: cidade,
             // numero,

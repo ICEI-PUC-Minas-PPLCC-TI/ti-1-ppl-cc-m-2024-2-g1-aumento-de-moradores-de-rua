@@ -7,3 +7,23 @@
 main {
   margin: 20px 0px;
 }
+
+.donations_holder {
+  background-color: #6FAF71;
+  opacity: 0.9;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.donations {
+  font-size: 1.2rem;
+  margin-bottom: 0px !important;
+  color: white;
+  font-weight: bold;
+}
+
+.list_header {
+  margin-top: 15px;
+}

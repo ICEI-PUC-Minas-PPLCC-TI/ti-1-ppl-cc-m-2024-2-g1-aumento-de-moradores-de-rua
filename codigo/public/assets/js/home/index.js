@@ -1,4 +1,5 @@
 let currentUser = {};
+let ongs = {};
 
 const formatDate = (dateStr) => {
   if (!dateStr) return '';
@@ -12,6 +13,7 @@ const fetchData = () => {
   fetch("/ongs")
     .then((res) => res.json())
     .then((ongs) => {
+      ongs = ongs;
       const ongsList = document.querySelector(".ongs-list");
       ongsList.innerHTML = "";
 
@@ -24,9 +26,9 @@ const fetchData = () => {
         const ongElement = `
           <div class="card">
             <img class="card_image" src="${ong.imageUrl || './assets/images/home_img.jpg'}" alt="${ong.nome_fantasia}">
-            <p>${ong.nome_fantasia}</p>
+            <p><b>${ong.nome_fantasia}</b></p>
             <p>${ong.endereco.cidade}</p>
-            <p>${ong.contatos.telefone}</p>
+            <p>${ong.contatos.telefone || "Sem telefone"}</p>
             <button onclick="verDetalhes(${ong.id})">Detalhes</button>
           </div>`;
 
@@ -70,14 +72,6 @@ const fetchData = () => {
       const atividadesList = document.querySelector(".atividades-list");
       atividadesList.innerHTML = "<p>Erro ao carregar os registros das atividades.</p>";
     });
-};
-
-const verDetalhes = (id) => {
-  console.log('Ver detalhes da ONG com ID:', id);
-};
-
-const verDetalhesAtividade = (id) => {
-  console.log('Ver detalhes da Atividade com ID:', id);
 };
 
 fetchData();
