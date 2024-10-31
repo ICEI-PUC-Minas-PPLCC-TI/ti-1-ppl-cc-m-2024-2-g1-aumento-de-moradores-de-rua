@@ -163,10 +163,31 @@ header {
     border-radius: 12px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_brand {
+    display: flex;
+    align-items: center;
+}
+
+.menu_toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
 .nav_links {
     gap: 12px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
 
 .nav_link {
@@ -184,6 +205,10 @@ header {
 
 .variant_black {
     background-color: #000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
 .variant_black:hover {
@@ -195,25 +220,29 @@ header {
     text-decoration: none;
 }
 
-@media (max-width: 576px) {
-    header {
-        width: 95%;
-    }
-
-    .nav_link {
-        font-size: 0.8rem;
-        padding: 2px 4px;
+@media (max-width: 768px) {
+    .menu_toggle {
+        display: block;
     }
 
     .nav_links {
-        gap: 6px;
+        flex-direction: column;
+        width: 100%;
+        display: none;
     }
 
-    .variant_black {
-        font-size: 0.8rem;
+    .nav_links.active {
+        display: flex;
+    }
+
+    .nav_link {
+        margin-bottom: 10px;
+    }
+
+    .navbar>div:last-child {
+        margin-top: 10px;
     }
 }
-
 
 .card-container {
     display: flex;
@@ -261,4 +290,8 @@ header {
     .card {
         width: 100%;
     }
+}
+
+.main {
+    margin: 20px 0px;
 }

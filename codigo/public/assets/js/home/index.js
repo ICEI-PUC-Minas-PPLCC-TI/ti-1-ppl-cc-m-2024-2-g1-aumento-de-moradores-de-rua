@@ -67,7 +67,7 @@ const fetchData = async () => {
       }
     }
 
-    ongs.forEach((ong) => {
+    ongs.filter((o) => o.status === "accepted").forEach((ong) => {
       const ongElement = `
         <div class="card">
           <img class="card_image" src="${ong.imageUrl || './assets/images/home_img.jpg'}" alt="${ong.nome_fantasia}">
@@ -83,13 +83,12 @@ const fetchData = async () => {
     console.error('Erro ao buscar as ONGs:', error);
   }
 
-  console.log('currentUser:', currentUser);
-
   try {
     const response = await fetch(`/atividades?voluntario=${currentUser.id}`);
     const atividades = await response.json();
 
     const atividadesList = document.querySelector(".atividades-list");
+  
     if (!atividadesList) {
       console.error('Elemento .atividades-list não encontrado.');
       return;
@@ -99,8 +98,11 @@ const fetchData = async () => {
 
     if (atividades.length === 0) {
       atividadesList.innerHTML = "<p>Nenhum registro encontrado.</p>";
+      document.querySelector('.atividades_geral').style.display = 'none';
       return;
     }
+
+    countData(atividades);
 
     atividades.forEach((atividade) => {
       const atividadeElement = `
@@ -122,6 +124,27 @@ const fetchData = async () => {
     }
   }
 };
+
+const countData = (atividades) => {
+  const atividadesConcluidas = atividades.filter(v => v.status === 'done').length;
+  const atividadesPendentes = atividades.filter(v => v.status === 'waiting').length;
+  const atividadesEmAndamento = atividades.filter(v => v.status === 'doing').length;
+
+  const atvConcluidasElement = document.querySelector('.atividades_concluidas');
+  if (atvConcluidasElement) {
+    atvConcluidasElement.innerHTML = atividadesConcluidas;
+  }
+
+  const atvPendentesElement = document.querySelector('.atividades_pendentes');
+  if (atvPendentesElement) {
+    atvPendentesElement.innerHTML = atividadesPendentes;
+  }
+
+  const atvEmAndamentoElement = document.querySelector('.atividades_em_andamento');
+  if (atvEmAndamentoElement) {
+    atvEmAndamentoElement.innerHTML = atividadesEmAndamento;
+  }
+}
 
 const initializeData = () => {
   fetchData();
