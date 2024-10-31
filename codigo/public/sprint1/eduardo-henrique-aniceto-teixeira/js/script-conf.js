@@ -109,18 +109,5 @@ window.onload = () => {
         usuarioCorrente = JSON.parse(usuarioCorrenteJSON);
     }
     carregarPerfis();
-    exibirPerfil(perfil);
-    // salvarPerfil();
-};
-
-// Seleciona o botão pelo nome da classe
-const confirmButton = document.querySelector('.nav-button-conf');
-
-// Adiciona o event listener para o evento 'click'
-confirmButton.addEventListener('click', function() {
     salvarPerfil();
-    console.log('ertyuiuytreertyuiuytr');
-    
-    window.location.href = 'Perfil.html';
-});
-
+};

@@ -53,7 +53,7 @@
       "senha": "123",
       "tipo": "pessoa",
       "data_nascimento": "1990-01-01",
-      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ29IW.perfil7.jpeg",
       "endereco": {
         "logradouro": "Rua 1",
         "numero": "123",
@@ -108,6 +108,27 @@
         "telefone": ""
       },
       "id": 5
+    },
+    {
+      "login": "Edu",
+      "senha": "123",
+      "nome": "Eduardo",
+      "email": "edu@sga.com",
+      "tipo": "pessoa",
+      "data_nascimento": "2024-10-30",
+      "endereco": {
+        "logradouro": "Praça da Liberdade",
+        "numero": "123",
+        "complemento": "Palácio",
+        "bairro": "Savassi",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30140010"
+      },
+      "contatos": {
+        "telefone": "40028922"
+      },
+      "id": 6
     }
   ],
   "atividades": [
