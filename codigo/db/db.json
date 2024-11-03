@@ -110,23 +110,22 @@
       "id": 5
     },
     {
-      "login": "Edu",
+      "login": "root",
       "senha": "123",
-      "nome": "Eduardo",
-      "email": "edu@sga.com",
-      "tipo": "pessoa",
-      "data_nascimento": "2024-10-30",
+      "nome": "Usuário Root",
+      "email": "root@gmail.com",
+      "tipo": "root",
       "endereco": {
-        "logradouro": "Praça da Liberdade",
-        "numero": "123",
-        "complemento": "Palácio",
-        "bairro": "Savassi",
+        "logradouro": "Rua Messias Coutinho",
+        "numero": "111",
+        "complemento": "",
+        "bairro": "Céu Azul",
         "cidade": "Belo Horizonte",
         "estado": "MG",
-        "cep": "30140010"
+        "cep": "31580400"
       },
       "contatos": {
-        "telefone": "40028922"
+        "telefone": ""
       },
       "id": 6
     }
@@ -136,7 +135,7 @@
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
-      "status": "Aguardando Alocação",
+      "status": "done",
       "ong": 1,
       "voluntario": 3,
       "descricao": "Distribuição de comida para moradores de rua",
@@ -146,7 +145,7 @@
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
-      "status": "Aguardando Alocação",
+      "status": "waiting",
       "ong": 1,
       "voluntario": 3,
       "descricao": "Distribuição de comida para moradores de rua",
@@ -156,7 +155,7 @@
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
-      "status": "Aguardando Alocação",
+      "status": "done",
       "ong": 1,
       "voluntario": 3,
       "descricao": "Distribuição de comida para moradores de rua",
@@ -166,7 +165,7 @@
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
-      "status": "Aguardando Alocação",
+      "status": "doing",
       "ong": 1,
       "voluntario": 3,
       "descricao": "Distribuição de comida para moradores de rua",
@@ -193,7 +192,7 @@
   ],
   "doacoes": [
     {
-      "ong": 1,
+      "ong": 3,
       "doador": 2,
       "valor": 10,
       "data": "2024-10-02",
@@ -206,13 +205,13 @@
   "ongs": [
     {
       "id": 1,
-      "cpnj": "123456789",
+      "cnpj": "123456789",
       "data_fundacao": "2024-01-01",
       "razao_social": "ONG 1",
       "nome_fantasia": "ONG 1",
       "contatos": {
         "telefone": "123456789",
-        "email": "(12) 3456-7890"
+        "email": "contato@ong1.org"
       },
       "endereco": {
         "logradouro": "Rua 1",
@@ -237,34 +236,16 @@
           "descricao": "Descrição do Alimento 1"
         }
       ],
-      "responsavel": 1
+      "responsavel": 5,
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
     },
     {
-      "cnpj": "123214123124123",
-      "data_fundacao": "2023-10-12",
-      "razao_social": "ONG prosperar",
-      "nome_fantasia": "ONG prosperar",
-      "endereco": {
-        "logradouro": "Rua Messias Coutinho",
-        "numero": "444",
-        "complemento": "Casa",
-        "bairro": "Céu Azul",
-        "cidade": "Belo Horizonte",
-        "estado": "MG",
-        "cep": "31580400"
-      },
-      "contatos": {
-        "telefone": "12321321341"
-      },
-      "status": "waiting",
-      "responsavel": 4,
-      "id": 2
-    },
-    {
+      "id": 3,
       "cnpj": "123213123123",
       "data_fundacao": "2023-10-12",
-      "razao_social": "ong_do_joao",
-      "nome_fantasia": "ong_do_joao",
+      "razao_social": "ONG do João",
+      "nome_fantasia": "ONG do João",
       "endereco": {
         "logradouro": "Rua Messias Coutinho",
         "numero": "111",
@@ -272,14 +253,64 @@
         "bairro": "Céu Azul",
         "cidade": "Belo Horizonte",
         "estado": "MG",
-        "cep": "31580400"
+        "cep": "31580-400"
       },
       "contatos": {
-        "telefone": ""
+        "telefone": "31999999999",
+        "email": "contato@ongdojoao.org"
       },
-      "status": "waiting",
+      "descricao": "Descrição da ONG do João",
+      "objetivos": [
+        "Objetivo A",
+        "Objetivo B"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "educação",
+          "nome": "Materiais Escolares",
+          "quantidade": 200,
+          "descricao": "Cadernos, lápis, borrachas, etc."
+        }
+      ],
       "responsavel": 5,
-      "id": 3
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+    },
+    {
+      "id": 4,
+      "cnpj": "987654321",
+      "data_fundacao": "2022-06-15",
+      "razao_social": "ONG Esperança",
+      "nome_fantasia": "ONG Esperança",
+      "endereco": {
+        "logradouro": "Rua da Paz",
+        "numero": "200",
+        "complemento": "",
+        "bairro": "Centro",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "20000-000"
+      },
+      "contatos": {
+        "telefone": "21987654321",
+        "email": "contato@ongesperanca.org"
+      },
+      "descricao": "Descrição da ONG Esperança",
+      "objetivos": [
+        "Objetivo X",
+        "Objetivo Y"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "vestuário",
+          "nome": "Roupas",
+          "quantidade": 50,
+          "descricao": "Roupas para crianças"
+        }
+      ],
+      "responsavel": 5,
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
     }
   ],
   "pessoas": [

@@ -4,10 +4,6 @@
   object-fit: cover;
 }
 
-main {
-  margin: 20px 0px;
-}
-
 .donations_holder {
   background-color: #6FAF71;
   opacity: 0.9;
@@ -26,4 +22,93 @@ main {
 
 .list_header {
   margin-top: 15px;
+}
+
+.atividades_geral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.atividade {
+  display: flex;
+  flex-direction: column;
+}
+
+.atividades_concluidas_holder {
+  background-color: #6FAF71;
+  opacity: 0.5;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.atividades_concluidas {
+  font-size: 1.2rem;
+  margin-bottom: 0px !important;
+  color: white;
+  font-weight: bold;
+}
+
+.atividades_andamento_holder {
+  background-color: yellow;
+  opacity: 0.5;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.atividades_andamento {
+  font-size: 1.2rem;
+  margin-bottom: 0px !important;
+  color: white;
+  font-weight: bold;
+}
+
+.atividades_pendentes_holder {
+  background-color: red;
+  opacity: 0.5;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.atividades_pendentes {
+  font-size: 1.2rem;
+  margin-bottom: 0px !important;
+  color: white;
+  font-weight: bold;
+}
+
+.validate_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.validate-btn {
+  background-color: #6FAF71 !important;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.reject-btn {
+  background-color: red !important;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
 }

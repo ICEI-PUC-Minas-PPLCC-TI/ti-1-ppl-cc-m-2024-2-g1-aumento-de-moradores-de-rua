@@ -2,17 +2,20 @@ const LOGIN_CALLBACK_URL = "/modulos/login/login.html";
 
 const menus = {
   "ong": [
-    { "name": "pessoas em situação de rua", "url": "/modulos/ongs/pessoas-em-situacao-de-rua.html" },
-    { "name": "itens do estoque", "url": "/modulos/ongs/itens-do-estoque.html" },
-    { "name": "voluntários", "url": "/modulos/ongs/voluntarios.html" }
+    { "name": "Pessoas em Situação de Rua", "url": "/modulos/ongs/pessoas-em-situacao-de-rua.html" },
+    { "name": "Itens do Estoque", "url": "/modulos/ongs/itens-do-estoque.html" },
+    { "name": "Voluntários", "url": "/modulos/ongs/voluntarios.html" }
   ],
   "pessoa": [
-    { "name": "doações", "url": "/modulos/pessoas/doacoes.html" },
-    { "name": "ong's", "url": "/modulos/shared/ongs/listagem.html" }
+    { "name": "Doações", "url": "/modulos/pessoas/doacoes.html" },
+    { "name": "ONGs", "url": "/modulos/shared/ongs/listagem.html" }
   ],
   "not_logged": [
-    { "name": "sobre nós", "url": "/modulos/login/cadastro.html" },
-    { "name": "ong's", "url": "/modulos/shared/ongs/listagem.html" }
+    { "name": "Sobre Nós", "url": "/modulos/login/cadastro.html" },
+    { "name": "ONGs", "url": "/modulos/shared/ongs/listagem.html" }
+  ],
+  "root": [
+    { "name": "Validar ONGs", "url": "/modulos/root/validar.html" }
   ]
 };
 
@@ -23,35 +26,47 @@ const menuByType = (user) => {
     menu = menus.ong;
   } else if (user.tipo === 'pessoa') {
     menu = menus.pessoa;
+  } else if (user.tipo === 'root') {
+    menu = menus.root;
   }
 
   return menu;
-}
+};
 
 const buildHtml = (menu, user) => {
-  const menuItems = menu.map(item => `<a class="nav_link" href="${item.url}">${item.name}</a>`).join('');
- 
-  let loginButton = user.tipo ? `<button class="variant_black logout_button">sair</button>` : `<button class="variant_black login_button">entrar</button>`;
+  const menuItems = menu.map(item => `<li class="nav-item"><a class="nav-link" href="${item.url}">${item.name}</a></li>`).join('');
+
+  let loginButton = user.tipo ? `<button class="btn btn-outline-dark logout_button">Sair</button>` : `<button class="btn btn-outline-dark login_button">Entrar</button>`;
 
   const headerHtml = `
   <header>
-    <nav class="navbar">
-      <div class="nav_links">
-        ${menuItems}
-      </div>
-      <div>
-        ${loginButton}
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <i class="bi bi-house-fill"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            ${menuItems}
+          </ul>
+          <div class="d-flex">
+            ${loginButton}
+          </div>
+        </div>
       </div>
     </nav>
   </header>`;
 
   return headerHtml;
-}
+};
 
 const renderMenu = () => {
   const user = JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
 
-  const menu = menuByType(user); 
+  const menu = menuByType(user);
 
   const headerHtml = buildHtml(menu, user);
 
@@ -59,7 +74,7 @@ const renderMenu = () => {
   if (existingHeader) {
     existingHeader.outerHTML = headerHtml;
   } else {
-    document.body.innerHTML = headerHtml + document.body.innerHTML;
+    document.body.insertAdjacentHTML('afterbegin', headerHtml);
   }
 
   const loginBtn = document.querySelector('.login_button');
@@ -78,4 +93,4 @@ const login = () => {
   window.location.href = LOGIN_CALLBACK_URL;
 };
 
-window.addEventListener('pageshow', renderMenu);
+window.addEventListener('load', renderMenu);
