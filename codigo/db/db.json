@@ -205,21 +205,22 @@
   "ongs": [
     {
       "id": 1,
-      "cnpj": "123456789",
+      "cpnj": "123456789",
       "data_fundacao": "2024-01-01",
-      "razao_social": "ONG 1",
-      "nome_fantasia": "ONG 1",
+      "img": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
+      "razao_social": "razao social",
+      "nome_fantasia": "Mão Amiga",
       "contatos": {
         "telefone": "123456789",
-        "email": "contato@ong1.org"
+        "email": "(12) 3456-7890"
       },
       "endereco": {
         "logradouro": "Rua 1",
         "numero": "123",
         "complemento": "Casa",
         "bairro": "Bairro 1",
-        "cidade": "Cidade 1",
-        "estado": "Estado 1",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
         "cep": "12345-678"
       },
       "descricao": "Descrição da ONG 1",
@@ -236,9 +237,7 @@
           "descricao": "Descrição do Alimento 1"
         }
       ],
-      "responsavel": 5,
-      "status": "accepted",
-      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+      "responsavel": 1
     },
     {
       "id": 3,
