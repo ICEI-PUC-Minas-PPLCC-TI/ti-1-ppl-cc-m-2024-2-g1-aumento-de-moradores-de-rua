@@ -240,40 +240,76 @@
       "responsavel": 1
     },
     {
-      "id": 3,
-      "cnpj": "123213123123",
-      "data_fundacao": "2023-10-12",
-      "razao_social": "ONG do João",
-      "nome_fantasia": "ONG do João",
-      "endereco": {
-        "logradouro": "Rua Messias Coutinho",
-        "numero": "111",
-        "complemento": "",
-        "bairro": "Céu Azul",
-        "cidade": "Belo Horizonte",
-        "estado": "MG",
-        "cep": "31580-400"
-      },
+      "id": 2,
+      "cpnj": "987654321",
+      "data_fundacao": "2023-05-15",
+      "img": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
+      "razao_social": "Razão Social 2",
+      "nome_fantasia": "Apoio Esperança",
       "contatos": {
-        "telefone": "31999999999",
-        "email": "contato@ongdojoao.org"
+        "telefone": "987654321",
+        "email": "contato@apoioesperanca.org"
       },
-      "descricao": "Descrição da ONG do João",
+      "endereco": {
+        "logradouro": "Rua 2",
+        "numero": "456",
+        "complemento": "Apto 101",
+        "bairro": "Bairro 2",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "87654-321"
+      },
+      "descricao": "Descrição da ONG 2",
       "objetivos": [
-        "Objetivo A",
-        "Objetivo B"
+        "Objetivo 1",
+        "Objetivo 2"
       ],
       "necessidades_especificas": [
         {
-          "tipo": "educação",
-          "nome": "Materiais Escolares",
+          "tipo": "vestuário",
+          "nome": "Roupa Infantil",
           "quantidade": 200,
-          "descricao": "Cadernos, lápis, borrachas, etc."
+          "descricao": "Roupas para crianças de até 10 anos"
         }
       ],
-      "responsavel": 5,
-      "status": "accepted",
-      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+      "responsavel": 2
+    },
+     {
+      "id": 3,
+      "cpnj": "123123123",
+      "data_fundacao": "2022-10-22",
+      "img": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
+      "razao_social": "Razão Social 3",
+      "nome_fantasia": "Lar Solidário",
+      "contatos": {
+        "telefone": "123123123",
+        "email": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg"
+      },
+      "endereco": {
+        "logradouro": "Rua 3",
+        "numero": "789",
+        "complemento": "Prédio",
+        "bairro": "Bairro 3",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "32123-456"
+      },
+      "descricao": "Descrição da ONG 3",
+      "objetivos": [
+        "Objetivo 1",
+        "Objetivo 2",
+        "Objetivo 3",
+        "Objetivo 4"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "higiene",
+          "nome": "Sabonete",
+          "quantidade": 300,
+          "descricao": "Sabonetes para adultos e crianças"
+        }
+      ],
+      "responsavel": 3
     },
     {
       "id": 4,
