@@ -313,39 +313,39 @@
     },
     {
       "id": 4,
-      "cnpj": "987654321",
-      "data_fundacao": "2022-06-15",
-      "razao_social": "ONG Esperança",
-      "nome_fantasia": "ONG Esperança",
-      "endereco": {
-        "logradouro": "Rua da Paz",
-        "numero": "200",
-        "complemento": "",
-        "bairro": "Centro",
-        "cidade": "Rio de Janeiro",
-        "estado": "RJ",
-        "cep": "20000-000"
-      },
+      "cpnj": "456456456",
+      "data_fundacao": "2021-03-18",
+      "img": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
+      "razao_social": "Razão Social 4",
+      "nome_fantasia": "Vida Saudável",
       "contatos": {
-        "telefone": "21987654321",
-        "email": "contato@ongesperanca.org"
+        "telefone": "456456456",
+        "email": "contato@vidasaudavel.org"
       },
-      "descricao": "Descrição da ONG Esperança",
+      "endereco": {
+        "logradouro": "Rua 4",
+        "numero": "101",
+        "complemento": "Sala 202",
+        "bairro": "Bairro 4",
+        "cidade": "Curitiba",
+        "estado": "PR",
+        "cep": "65432-789"
+      },
+      "descricao": "Descrição da ONG 4",
       "objetivos": [
-        "Objetivo X",
-        "Objetivo Y"
+        "Objetivo 1",
+        "Objetivo 2",
+        "Objetivo 3"
       ],
       "necessidades_especificas": [
         {
-          "tipo": "vestuário",
-          "nome": "Roupas",
-          "quantidade": 50,
-          "descricao": "Roupas para crianças"
+          "tipo": "educação",
+          "nome": "Material Escolar",
+          "quantidade": 150,
+          "descricao": "Cadernos, lápis e canetas para crianças"
         }
       ],
-      "responsavel": 5,
-      "status": "accepted",
-      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+      "responsavel": 4
     }
   ],
   "pessoas": [
