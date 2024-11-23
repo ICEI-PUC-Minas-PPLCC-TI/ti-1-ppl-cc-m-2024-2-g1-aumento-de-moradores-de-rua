@@ -1,0 +1,82 @@
+{
+    "atividades": [
+      {
+        "id": 1,
+        "nome": "Distribuição de Comida",
+        "data_inicio": "2024-01-10",
+        "data_fim": "2024-01-20",
+        "status": "Aguardando Alocação",
+        "ong": 1,
+        "voluntario": null,
+        "descricao": "Distribuição de comida para moradores de rua",
+        "tipo": "doacao"
+      },
+      {
+        "id": 2,
+        "nome": "Campanha de Agasalhos",
+        "data_inicio": "2024-02-01",
+        "data_fim": "2024-02-15",
+        "status": "Em andamento",
+        "ong": 2,
+        "voluntario": null,
+        "descricao": "Coleta e distribuição de agasalhos para a população de rua durante o inverno.",
+        "tipo": "doacao"
+      },
+      {
+        "id": 3,
+        "nome": "Atendimento Médico Móvel",
+        "data_inicio": "2024-03-05",
+        "data_fim": "2024-03-10",
+        "status": "Aguardando Alocação",
+        "ong": 3,
+        "voluntario": null,
+        "descricao": "Oferecer atendimento médico e psicológico para moradores de rua.",
+        "tipo": "serviço"
+      },
+      {
+        "id": 4,
+        "nome": "Oficina de Empreendedorismo",
+        "data_inicio": "2024-04-01",
+        "data_fim": "2024-04-05",
+        "status": "Aguardando Alocação",
+        "ong": 4,
+        "voluntario": null,
+        "descricao": "Capacitar moradores de rua com habilidades empreendedoras.",
+        "tipo": "educação"
+      },
+      {
+        "id": 5,
+        "nome": "Limpeza de Espaços Públicos",
+        "data_inicio": "2024-05-15",
+        "data_fim": "2024-05-20",
+        "status": "Em andamento",
+        "ong": 5,
+        "voluntario": null,
+        "descricao": "Mobilização de voluntários para limpar áreas públicas frequentadas por moradores de rua.",
+        "tipo": "serviço"
+      },
+      {
+        "id": 6,
+        "nome": "Corte de Cabelo Solidário",
+        "data_inicio": "2024-06-10",
+        "data_fim": "2024-06-12",
+        "status": "Aguardando Alocação",
+        "ong": 6,
+        "voluntario": null,
+        "descricao": "Oferecer cortes de cabelo gratuitos para moradores de rua.",
+        "tipo": "serviço"
+      },
+      {
+        "id": 7,
+        "nome": "Palestra sobre Direitos",
+        "data_inicio": "2024-07-01",
+        "data_fim": "2024-07-01",
+        "status": "Aguardando Alocação",
+        "ong": 7,
+        "voluntario": null,
+        "descricao": "Informar moradores de rua sobre seus direitos e recursos disponíveis.",
+        "tipo": "educação"
+      }
+    ]
+  }
+  
