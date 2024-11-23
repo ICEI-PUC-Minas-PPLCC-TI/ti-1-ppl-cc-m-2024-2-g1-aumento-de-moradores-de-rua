@@ -274,7 +274,7 @@
       ],
       "responsavel": 2
     },
-     {
+    {
       "id": 3,
       "cpnj": "123123123",
       "data_fundacao": "2022-10-22",
@@ -346,6 +346,40 @@
         }
       ],
       "responsavel": 4
+    }
+  ],
+  "itens-estoque": [
+    {
+      "id": "1",
+      "ongId": "1",
+      "nome": "Cobertor",
+      "quantidade": 10,
+      "validade": "2025-12-31",
+      "descricao": "Cobertores para distribuir no inverno"
+    },
+    {
+      "id": "2",
+      "ongId": "3",
+      "nome": "Marmita",
+      "quantidade": 50,
+      "validade": "2023-11-30",
+      "descricao": "Marmitas prontas para entrega"
+    },
+    {
+      "id": "3",
+      "ongId": "2",
+      "nome": "Água Mineral",
+      "quantidade": 30,
+      "validade": "2024-06-01",
+      "descricao": "Garrafas de água de 500ml"
+    },
+    {
+      "id": "1732396862628-340",
+      "ongId": 2,
+      "nome": "Cesta básica",
+      "quantidade": 10,
+      "validade": "2027-10-10",
+      "descricao": "Alimentos."
     }
   ],
   "pessoas": [

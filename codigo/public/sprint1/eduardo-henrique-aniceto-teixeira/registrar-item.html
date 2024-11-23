@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Item Estoque</title>
+    <link href="css/style-estoque.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="titulo">Registrar novo item do estoque</h2>
+
+        <form id="taskForm">
+            <label for="nomeAtividade">Nome</label>
+            <input type="text" id="nomeAtividade" required>
+
+            <label id="labelQuantidade" for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" required>
+
+            <label id="labelTermino" for="dataTermino">Data de validade</label>
+            <input type="date" id="dataTermino" required>
+
+            <div id="descricaoContainer">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Concluir cadastro</button>
+        </form>
+    </div>
+
+    <script src="/sprint1/eduardo-henrique-aniceto-teixeira/js/script-estoque.js"></script>
+</body>
+</html>
