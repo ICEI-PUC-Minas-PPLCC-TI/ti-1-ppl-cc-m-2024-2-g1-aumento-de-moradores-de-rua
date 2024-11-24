@@ -38,9 +38,14 @@ const fetchData = async () => {
   currentUser = JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
 
   const element = document.querySelector('#donations_geral');
+  const element_atividades = document.querySelector('.geral_atividades');
 
   if (element) {
     element.style.display = currentUser.tipo == 'ong' ? 'block' : 'none';
+  }
+
+  if (element_atividades) {
+    element_atividades.style.display = currentUser.tipo == 'pessoa' ? 'block' : 'none';
   }
 
   try {
@@ -85,6 +90,7 @@ const fetchData = async () => {
 
   try {
     const response = await fetch(`/atividades?voluntario=${currentUser.id}`);
+   
     const atividades = await response.json();
 
     const atividadesList = document.querySelector(".atividades-list");
