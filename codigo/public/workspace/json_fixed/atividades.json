@@ -1,0 +1,14 @@
+{
+  "atividades": [
+    {
+      "nome": "Distribuição de Comida",
+      "data_inicio": "2024-01-10",
+      "data_fim": "2024-01-20",
+      "status": "Aguardando Alocação",
+      "ong": 1,
+      "voluntario": null,
+      "descricao": "Distribuição de comida para moradores de rua",
+      "tipo": "doacao"
+    }
+  ]
+}
