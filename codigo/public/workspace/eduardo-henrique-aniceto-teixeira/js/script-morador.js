@@ -4,7 +4,7 @@ async function gerarCards() {
 
     // Fazendo o fetch dos dados do servidor
     try {
-        const response = await fetch('http://localhost:3000/itens-estoque');
+        const response = await fetch('/pessoas');
         
         // Caso de sucesso
         if (!response.ok) {
@@ -12,24 +12,23 @@ async function gerarCards() {
         }
 
         // Convertendo a resposta para JSON
-        const itensEstoque = await response.json();
+        const moradores = await response.json();
 
         // Iterando itens do estoque e criando os cards
-        itensEstoque.forEach(item => {
+        moradores.forEach(pessoa => {
             const card = `
-                <div class="col-sm-4 mb-4">
+                <div class="col-sm-3 mb-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="${item.nome}">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="${pessoa.nome}">
                         <div class="card-body">
-                            <h5 class="card-title">${item.nome}</h5>
-                            <p class="card-text">${item.descricao}</p>
-                            <p><strong>Quantidade:</strong> ${item.quantidade}</p>
-                            <p><strong>Validade:</strong> ${item.validade}</p>
+                            <h5 class="card-title">${pessoa.nome}</h5>
+                            <p class="card-text">${pessoa.tipo}</p>
+                            <p><strong>Genero::</strong> ${pessoa.genero}</p>
+                            <p><strong>Data de nascimento:</strong> ${pessoa.data_nascimento}</p>
                         </div>
                     </div>
                 </div>
             `;
-            
             // Adicionando o card ao container (acumulador)
             container.innerHTML += card;
         });

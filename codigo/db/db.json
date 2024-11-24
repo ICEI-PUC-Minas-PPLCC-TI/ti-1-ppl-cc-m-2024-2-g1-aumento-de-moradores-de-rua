@@ -351,7 +351,7 @@
   "itens-estoque": [
     {
       "id": "1",
-      "ongId": "1",
+      "ongId": 1,
       "nome": "Cobertor",
       "quantidade": 10,
       "validade": "2025-12-31",
@@ -359,7 +359,7 @@
     },
     {
       "id": "2",
-      "ongId": "3",
+      "ongId": 3,
       "nome": "Marmita",
       "quantidade": 50,
       "validade": "2023-11-30",
@@ -367,7 +367,7 @@
     },
     {
       "id": "3",
-      "ongId": "2",
+      "ongId": 2,
       "nome": "Água Mineral",
       "quantidade": 30,
       "validade": "2024-06-01",
@@ -389,6 +389,7 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1980-01-01",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zFf0p8.morador10.jpeg",
       "problemas_saude": [
         {
           "nome": "Depressão",
@@ -445,6 +446,7 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Feminino",
       "data_nascimento": "1975-05-12",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zFfteq.moradora.jpeg",
       "problemas_saude": [
         {
           "nome": "Hipertensão",
