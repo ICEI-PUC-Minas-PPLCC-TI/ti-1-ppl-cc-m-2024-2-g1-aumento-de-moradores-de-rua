@@ -19,11 +19,11 @@ async function gerarCards() {
             const card = `
                 <div class="col-sm-3 mb-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="${pessoa.nome}">
+                        <img src="${pessoa.imgPerfil}" class="card-img-top" alt="${pessoa.nome}">
                         <div class="card-body">
                             <h5 class="card-title">${pessoa.nome}</h5>
                             <p class="card-text">${pessoa.tipo}</p>
-                            <p><strong>Genero::</strong> ${pessoa.genero}</p>
+                            <p><strong>Genero:</strong> ${pessoa.genero}</p>
                             <p><strong>Data de nascimento:</strong> ${pessoa.data_nascimento}</p>
                         </div>
                     </div>
