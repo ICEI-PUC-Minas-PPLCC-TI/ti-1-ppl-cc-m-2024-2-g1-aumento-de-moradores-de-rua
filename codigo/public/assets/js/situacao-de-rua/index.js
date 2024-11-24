@@ -1,10 +1,8 @@
-// Função para obter o 'id' da URL
 function getIdFromURL() {
   const params = new URLSearchParams(window.location.search);
   return params.get('id');
 }
 
-// Função para buscar dados da API
 async function fetchPessoaData() {
   const id = getIdFromURL();
   try {
@@ -24,7 +22,6 @@ async function fetchPessoaData() {
   }
 }
 
-// Preenche os dados do morador no perfil
 function preencherDadosMorador(data) {
   document.getElementById('morador-foto').src = data.imgPerfil || '#';
   document.getElementById('morador-nome').textContent = data.nome;
@@ -35,7 +32,6 @@ function preencherDadosMorador(data) {
   document.getElementById('morador-personalidade').textContent = data.personalidade || 'Personalidade não informada';
 }
 
-// Lista as necessidades do morador
 function listarNecessidades(necessidades) {
   const necessidadesContainer = document.getElementById('necessidades');
   necessidades.forEach(necessidade => {
@@ -49,7 +45,6 @@ function listarNecessidades(necessidades) {
   });
 }
 
-// Lista as últimas localizações do morador
 function listarLocalizacoes(localizacoes) {
   const localizacoesContainer = document.getElementById('localizacoes');
   localizacoes.forEach((localizacao, index) => {
@@ -64,9 +59,15 @@ function listarLocalizacoes(localizacoes) {
         <p><strong>Rua:</strong> ${localizacao.rua}</p>
         <p><strong>Número:</strong> ${localizacao.numero}</p>
         <p><strong>CEP:</strong> ${localizacao.cep}</p>
-        <p><strong>Localizado em:</strong> ${localizacao.localizado_em}</p>
-      </div>
-    `;
+        <p><strong>Localizado em:</strong> ${localizacao.localizado_em
+        ? new Date(localizacao.localizado_em).toLocaleDateString('pt-BR', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+        })
+        : 'Data não informada'
+      }</p>
+      `;
     localizacoesContainer.appendChild(card);
 
     carregarMapa(localizacao, `mapa-${index}`);
@@ -99,5 +100,4 @@ function carregarMapa(localizacao, mapaId) {
   });
 }
 
-// Inicia o script após o carregamento da página
 document.addEventListener('DOMContentLoaded', fetchPessoaData);
