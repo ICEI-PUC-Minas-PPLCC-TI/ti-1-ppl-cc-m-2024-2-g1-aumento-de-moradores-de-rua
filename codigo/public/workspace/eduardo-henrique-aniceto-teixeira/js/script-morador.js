@@ -1,4 +1,5 @@
 // Função criar cards dinamicamente
+const atualizacoes = {};
 async function gerarCards() {
     const container = document.getElementById('cards-container');
     container.innerHTML = ''; // Limpa o container antes de renderizar novamente
@@ -14,6 +15,7 @@ async function gerarCards() {
         moradores.forEach(pessoa => {
             const card = document.createElement('div');
             card.className = 'col-sm-3 mb-3';
+            const localizacao = pessoa.ultimas_localizacoes[0] || { cidade: 'Não informado', estado: 'Não informado' };
 
             card.innerHTML = `
                 <div class="card">
@@ -21,6 +23,8 @@ async function gerarCards() {
                     <div class="card-body">
                         <h5 class="card-title">${pessoa.nome}</h5>
                         <p class="card-text">${pessoa.tipo}</p>
+                        <p><strong>Cidade:</strong> ${localizacao.cidade}</p>
+                        <p><strong>Estado:</strong> ${localizacao.estado}</p>
                         <p><strong>Gênero:</strong> ${pessoa.genero}</p>
                         <p><strong>Data de nascimento:</strong> ${pessoa.data_nascimento}</p>
                         <button class="btn btn-primary btn-edit" data-id="${pessoa.id}">Editar</button>
@@ -44,12 +48,12 @@ async function gerarCards() {
 function adicionarEventosBotoes() {
     const editButtons = document.querySelectorAll('.btn-edit');
     const deleteButtons = document.querySelectorAll('.btn-delete');
-
+    
     // Evento de editar
     editButtons.forEach(button => {
         button.addEventListener('click', async () => {
             const id = button.getAttribute('data-id');
-            const novoNome = prompt('Digite o novo nome [ENTER para não alterar]:');
+            const novoNome = prompt('Digite o nome [ENTER para não alterar]:');
             if (novoNome) {
                 try {
                     await fetch(`/pessoas/${id}`, {
@@ -62,7 +66,8 @@ function adicionarEventosBotoes() {
                     console.error('Erro ao editar:', error);
                 }
             }
-            const novoTipo = prompt('Digite o a atual situação da pessoa [Ex: Morador de rua] [ENTER para não alterar]:');
+
+            const novoTipo = prompt('Digite a atual situação da pessoa [Ex: Morador de rua] [ENTER para não alterar]:');
             if (novoTipo) {
                 try {
                     await fetch(`/pessoas/${id}`, {
@@ -75,6 +80,39 @@ function adicionarEventosBotoes() {
                     console.error('Erro ao editar:', error);
                 }
             }
+
+            const novaCidade = prompt('Digite a nova cidade: [ENTER para não alterar]');
+            const novoEstado = prompt('Digite o novo estado [Ex: MG/Minas Gerais]: [ENTER para não alterar]');
+            if (novaCidade || novoEstado) {
+                try {
+                    const response = await fetch(`/pessoas/${id}`);
+                    if (!response.ok) throw new Error('Erro ao buscar os dados da pessoa.');
+
+                    const pessoa = await response.json();
+                    const localizacoes = pessoa.ultimas_localizacoes || [];
+
+                    if (localizacoes.length === 0) {
+                        alert('Nenhuma localização encontrada para atualizar.');
+                        return;
+                    }
+
+                    const ultimaLocalizacao = localizacoes[localizacoes.length - 1];
+                    ultimaLocalizacao.cidade = novaCidade || ultimaLocalizacao.cidade;
+                    ultimaLocalizacao.estado = novoEstado || ultimaLocalizacao.estado;
+
+                    await fetch(`/pessoas/${id}`, {
+                        method: 'PATCH',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ ultimas_localizacoes: localizacoes }),
+                    });
+                    gerarCards(); // Atualiza a lista
+                } catch (error) {
+                    console.error('Erro ao editar:', error);
+                }
+            } else {
+                alert('Nenhuma alteração realizada.');
+            }
+
             const novoGenero = prompt('Digite o genero da pessoa [ENTER para não alterar]:');
             if (novoGenero) {
                 try {
@@ -88,7 +126,8 @@ function adicionarEventosBotoes() {
                     console.error('Erro ao editar:', error);
                 }
             }
-            const novaDataNascimento = prompt('Digite o a data de nascimento: [ENTER para não alterar]');
+
+            const novaDataNascimento = prompt('Digite a data de nascimento: [ENTER para não alterar]');
             if (novaDataNascimento) {
                 try {
                     await fetch(`/pessoas/${id}`, {
