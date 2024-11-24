@@ -52,6 +52,7 @@ const fetchData = async () => {
     const response = await fetch("/ongs");
     ongs = await response.json();
 
+    console.log("ONG's: ", ongs);
     const ongsList = document.querySelector(".ongs-list");
     if (!ongsList) {
       console.error('Elemento .ongs-list não encontrado.');
@@ -90,11 +91,11 @@ const fetchData = async () => {
 
   try {
     const response = await fetch(`/atividades?voluntario=${currentUser.id}`);
-   
+
     const atividades = await response.json();
 
     const atividadesList = document.querySelector(".atividades-list");
-  
+
     if (!atividadesList) {
       console.error('Elemento .atividades-list não encontrado.');
       return;

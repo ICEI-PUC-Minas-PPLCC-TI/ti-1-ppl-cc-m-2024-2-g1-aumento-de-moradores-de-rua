@@ -2,9 +2,9 @@ const LOGIN_CALLBACK_URL = "/modulos/login/login.html";
 
 const menus = {
   "ong": [
-    { "name": "Pessoas em Situação de Rua", "url": "/modulos/ongs/pessoas-em-situacao-de-rua.html" },
-    { "name": "Itens do Estoque", "url": "/modulos/ongs/itens-do-estoque.html" },
-    { "name": "Voluntários", "url": "/modulos/ongs/voluntarios.html" }
+    { "name": "Pessoas em Situação de Rua", "url": "/modulos/ong/pessoas/pessoas-em-situacao-de-rua.html" },
+    { "name": "Itens do Estoque", "url": "/modulos/ong/itens-do-estoque.html" },
+    { "name": "Voluntários", "url": "/modulos/ong/voluntarios.html" }
   ],
   "pessoa": [
     { "name": "Doações", "url": "/modulos/pessoas/doacoes.html" },

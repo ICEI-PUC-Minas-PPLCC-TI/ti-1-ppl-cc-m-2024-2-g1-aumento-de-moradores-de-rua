@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhamento do Morador</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../../assets/css/ongs/pessoas-em-situacao-de-rua.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@3.0.0/dist/geosearch.css" />
+</head>
+
+<body>
+
+  <main class="main" style="padding-top: 100px;">
+    <section class="perfil-morador">
+      <img src="#" alt="Foto do Morador" class="morador-foto" id="morador-foto">
+      <h2 id="morador-nome">Nome do Morador</h2>
+      <p id="morador-pais">País</p>
+      <p id="morador-estado">Estado</p>
+      <p id="morador-cidade">Cidade</p>
+      <p id="morador-bairro">Bairro</p>
+      <p id="morador-personalidade">Personalidade</p>
+    </section>
+
+    <section class="detalhes">
+      <button onclick="window.location.href='RegistroMoradorRua.html'" class="registro">Registrar Novo Morador</button>
+
+      <h2>Necessidades do Morador</h2>
+      <div class="necessidades" id="necessidades">
+      </div>
+
+      <h2>Últimas Localizações</h2>
+      <div class="localizacoes" id="localizacoes">
+      </div>
+
+    </section>
+  </main>
+
+  <script src="../../../assets/js/header/index.js"></script>
+  <script src="../../../assets/js/situacao-de-rua/index.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-geosearch@latest/dist/bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
