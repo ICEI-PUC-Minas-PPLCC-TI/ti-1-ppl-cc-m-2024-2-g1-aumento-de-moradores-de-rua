@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Morador</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+  </head>
+  <body>
+
+    <header>
+        
+      </header>
+    
+      <main class="main">
+        <section class="section">
+          <h2>Registrar Novo Morador</h2>
+    
+          <form id="registro">
+            <fieldset>
+              <legend>Informações Pessoais</legend>
+              <label for="foto">Foto:</label>
+              <input type="file" id="foto" name="foto" accept="image/*">
+
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+    
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="cpf" required>
+    
+              <label for="Data de Nascimento">Data de Nascimento:</label>
+              <input type="text" id="Data de Nascimento" name="Data de Nascimento" required>
+            </fieldset>
+    
+            <fieldset>
+              <legend>Localidade</legend>
+              <label for="Rua do Cadastro">Rua do Cadastro:</label>
+              <input type="text" id="Rua do Cadastro" name="Rua do Cadastro" required>
+
+              <label for="Bairro do Cadastro">Bairro do Cadastro:</label>
+              <input type="text" id="Bairro do Cadastro" name="Bairro do Cadastro" required>
+
+              <label for="Número do Cadastro">Número do Cadastro:</label>
+              <input type="text" id="Número do Cadastro" name="Número do Cadastro" required>
+
+              <label for="Cidade Do Cadastro">Cidade Do Cadastro:</label>
+              <input type="text" id="Cidade Do Cadastro" name="Cidade Do Cadastro" required>
+
+            </fieldset>
+    
+            <fieldset>
+              <legend>Necessidades do Morador</legend>
+              <div id="necessidades">
+                <div class="necessidade-item">
+                  <input type="text" placeholder="Digite uma necessidade">
+                  <button type="button" class="remove">Remover</button>
+                </div>
+              </div>
+              <button type="button" id="add-necessidade">Adicionar</button>
+            </fieldset>
+            <nav>
+            <a href="ListagemMoradorRua.html" class="concluir"> Concluir Cadastro </a>
+            </nav>
+          </form>
+        </section>
+      </main>
+      <script src="JS/script.js"></script>
+  </body>
+</html>

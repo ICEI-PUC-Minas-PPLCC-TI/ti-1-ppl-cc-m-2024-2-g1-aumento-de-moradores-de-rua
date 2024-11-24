@@ -1,0 +1,116 @@
+{
+    "listagemMoradorRua": [
+      {
+        "id": 1,
+        "Nome do Morador": "Adriana Mendes",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 2,
+        "Nome do Morador": "Fernando Braga",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 3,
+        "Nome do Morador": "Joana Martins",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 4,
+        "Nome do Morador": "Rafael Oliveira",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 5,
+        "Nome do Morador": "Patrícia Lima",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 6,
+        "Nome do Morador": "Andréia Costa",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 6,
+        "Nome do Morador": "Lucas Fernandes",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 7,
+        "Nome do Morador": "Rodrigo Silva",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 8,
+        "Nome do Morador": "Camila Souza",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 9,
+        "Nome do Morador": "Vinícius Borges",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 10,
+        "Nome do Morador": "Sofia Alves",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 11,
+        "Nome do Morador": "Fábio Moreira",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 12,
+        "Nome do Morador": "Júlia Cardoso",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 13,
+        "Nome do Morador": "Henrique Pereira",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 14,
+        "Nome do Morador": "Gabriela Rocha",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      },
+      {
+        "id": 15,
+        "Nome do Morador": "Marcos Almeida",
+        "País": "Brasil",
+        "Estado": "Minas Gerais",
+        "Cidade": "Belo Horizonte"
+      }
+    ]
+}

@@ -1,387 +1,4 @@
 {
-  "usuarios": [
-    {
-      "id": 1,
-      "nome": "Administrador do Sistema",
-      "login": "admin",
-      "senha": "123",
-      "tipo": "pessoa",
-      "data_nascimento": "1990-01-01",
-      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
-      "endereco": {
-        "logradouro": "Rua 1",
-        "numero": "123",
-        "complemento": "Casa",
-        "bairro": "Bairro 1",
-        "cidade": "Cidade 1",
-        "estado": "Estado 1",
-        "cep": "12345-678"
-      },
-      "contatos": {
-        "telefone": "123456789",
-        "email": "admin@abc.com"
-      },
-      "infoAdicional": "Sou o administrador"
-    },
-    {
-      "id": 2,
-      "nome": "ONG Prosperar",
-      "login": "ong",
-      "senha": "123",
-      "tipo": "ong",
-      "data_nascimento": "1991-02-02",
-      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
-      "endereco": {
-        "logradouro": "Rua 2",
-        "numero": "234",
-        "complemento": "Empresa",
-        "bairro": "Bairro 2",
-        "cidade": "Cidade 2",
-        "estado": "Estado 2",
-        "cep": "13782-123"
-      },
-      "contatos": {
-        "telefone": "123456789",
-        "email": "ong@abc.com"
-      },
-      "infoAdicional": "Sou uma ong e amamos nosso trabalho!"
-    },
-    {
-      "id": 3,
-      "nome": "user",
-      "login": "user",
-      "senha": "123",
-      "tipo": "pessoa",
-      "data_nascimento": "1990-01-01",
-      "imgPerfil": "https://i.im.ge/2024/10/30/kZ29IW.perfil7.jpeg",
-      "endereco": {
-        "logradouro": "Rua 1",
-        "numero": "123",
-        "complemento": "Casa",
-        "bairro": "Bairro 1",
-        "cidade": "Cidade 1",
-        "estado": "Estado 1",
-        "cep": "12345-678"
-      },
-      "contatos": {
-        "telefone": "123456789",
-        "email": "user@abc.com"
-      },
-      "infoAdicional": "Sou o usuário"
-    },
-    {
-      "login": "ong_prosperar",
-      "senha": "123",
-      "nome": "ONG Prosperar",
-      "email": "ong@ong.com",
-      "tipo": "ong",
-      "endereco": {
-        "logradouro": "Rua Messias Coutinho",
-        "numero": "444",
-        "complemento": "Casa",
-        "bairro": "Céu Azul",
-        "cidade": "Belo Horizonte",
-        "estado": "MG",
-        "cep": "31580400"
-      },
-      "contatos": {
-        "telefone": "12321321341"
-      },
-      "id": 4
-    },
-    {
-      "login": "ong_do_joao",
-      "senha": "123",
-      "nome": "ong_do_joao",
-      "email": "ong_do_joao",
-      "tipo": "ong",
-      "endereco": {
-        "logradouro": "Rua Messias Coutinho",
-        "numero": "111",
-        "complemento": "",
-        "bairro": "Céu Azul",
-        "cidade": "Belo Horizonte",
-        "estado": "MG",
-        "cep": "31580400"
-      },
-      "contatos": {
-        "telefone": ""
-      },
-      "id": 5
-    },
-    {
-      "login": "root",
-      "senha": "123",
-      "nome": "Usuário Root",
-      "email": "root@gmail.com",
-      "tipo": "root",
-      "endereco": {
-        "logradouro": "Rua Messias Coutinho",
-        "numero": "111",
-        "complemento": "",
-        "bairro": "Céu Azul",
-        "cidade": "Belo Horizonte",
-        "estado": "MG",
-        "cep": "31580400"
-      },
-      "contatos": {
-        "telefone": ""
-      },
-      "id": 6
-    }
-  ],
-  "atividades": [
-    {
-      "nome": "Distribuição de Comida",
-      "data_inicio": "2024-01-10",
-      "data_fim": "2024-01-20",
-      "status": "done",
-      "ong": 1,
-      "voluntario": 3,
-      "descricao": "Distribuição de comida para moradores de rua",
-      "tipo": "doacao"
-    },
-    {
-      "nome": "Distribuição de Comida",
-      "data_inicio": "2024-01-10",
-      "data_fim": "2024-01-20",
-      "status": "waiting",
-      "ong": 1,
-      "voluntario": 3,
-      "descricao": "Distribuição de comida para moradores de rua",
-      "tipo": "doacao"
-    },
-    {
-      "nome": "Distribuição de Comida",
-      "data_inicio": "2024-01-10",
-      "data_fim": "2024-01-20",
-      "status": "done",
-      "ong": 1,
-      "voluntario": 3,
-      "descricao": "Distribuição de comida para moradores de rua",
-      "tipo": "doacao"
-    },
-    {
-      "nome": "Distribuição de Comida",
-      "data_inicio": "2024-01-10",
-      "data_fim": "2024-01-20",
-      "status": "doing",
-      "ong": 1,
-      "voluntario": 3,
-      "descricao": "Distribuição de comida para moradores de rua",
-      "tipo": "doacao"
-    }
-  ],
-  "dias_trabalho": [
-    {
-      "id": 1,
-      "dia": "segunda",
-      "horarios": [
-        {
-          "inicio": "08:00",
-          "fim": "12:00"
-        },
-        {
-          "inicio": "13:00",
-          "fim": "17:00"
-        }
-      ],
-      "voluntario": 1,
-      "atividade": 1
-    }
-  ],
-  "doacoes": [
-    {
-      "ong": 3,
-      "doador": 2,
-      "valor": 10,
-      "data": "2024-10-02",
-      "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!",
-      "pagamento": {
-        "tipo": "pix"
-      }
-    }
-  ],
-  "ongs": [
-    {
-      "id": 1,
-      "cpnj": "123456789",
-      "data_fundacao": "2024-01-01",
-      "img": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
-      "razao_social": "razao social",
-      "nome_fantasia": "Mão Amiga",
-      "contatos": {
-        "telefone": "123456789",
-        "email": "(12) 3456-7890"
-      },
-      "endereco": {
-        "logradouro": "Rua 1",
-        "numero": "123",
-        "complemento": "Casa",
-        "bairro": "Bairro 1",
-        "cidade": "Belo Horizonte",
-        "estado": "MG",
-        "cep": "12345-678"
-      },
-      "descricao": "Descrição da ONG 1",
-      "objetivos": [
-        "Objetivo 1",
-        "Objetivo 2",
-        "Objetivo 3"
-      ],
-      "necessidades_especificas": [
-        {
-          "tipo": "alimentos",
-          "nome": "Alimento 1",
-          "quantidade": 100,
-          "descricao": "Descrição do Alimento 1"
-        }
-      ],
-      "responsavel": 1
-    },
-    {
-      "id": 2,
-      "cpnj": "987654321",
-      "data_fundacao": "2023-05-15",
-      "img": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
-      "razao_social": "Razão Social 2",
-      "nome_fantasia": "Apoio Esperança",
-      "contatos": {
-        "telefone": "987654321",
-        "email": "contato@apoioesperanca.org"
-      },
-      "endereco": {
-        "logradouro": "Rua 2",
-        "numero": "456",
-        "complemento": "Apto 101",
-        "bairro": "Bairro 2",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "87654-321"
-      },
-      "descricao": "Descrição da ONG 2",
-      "objetivos": [
-        "Objetivo 1",
-        "Objetivo 2"
-      ],
-      "necessidades_especificas": [
-        {
-          "tipo": "vestuário",
-          "nome": "Roupa Infantil",
-          "quantidade": 200,
-          "descricao": "Roupas para crianças de até 10 anos"
-        }
-      ],
-      "responsavel": 2
-    },
-    {
-      "id": 3,
-      "cpnj": "123123123",
-      "data_fundacao": "2022-10-22",
-      "img": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
-      "razao_social": "Razão Social 3",
-      "nome_fantasia": "Lar Solidário",
-      "contatos": {
-        "telefone": "123123123",
-        "email": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg"
-      },
-      "endereco": {
-        "logradouro": "Rua 3",
-        "numero": "789",
-        "complemento": "Prédio",
-        "bairro": "Bairro 3",
-        "cidade": "Rio de Janeiro",
-        "estado": "RJ",
-        "cep": "32123-456"
-      },
-      "descricao": "Descrição da ONG 3",
-      "objetivos": [
-        "Objetivo 1",
-        "Objetivo 2",
-        "Objetivo 3",
-        "Objetivo 4"
-      ],
-      "necessidades_especificas": [
-        {
-          "tipo": "higiene",
-          "nome": "Sabonete",
-          "quantidade": 300,
-          "descricao": "Sabonetes para adultos e crianças"
-        }
-      ],
-      "responsavel": 3
-    },
-    {
-      "id": 4,
-      "cpnj": "456456456",
-      "data_fundacao": "2021-03-18",
-      "img": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil7.jpeg",
-      "razao_social": "Razão Social 4",
-      "nome_fantasia": "Vida Saudável",
-      "contatos": {
-        "telefone": "456456456",
-        "email": "contato@vidasaudavel.org"
-      },
-      "endereco": {
-        "logradouro": "Rua 4",
-        "numero": "101",
-        "complemento": "Sala 202",
-        "bairro": "Bairro 4",
-        "cidade": "Curitiba",
-        "estado": "PR",
-        "cep": "65432-789"
-      },
-      "descricao": "Descrição da ONG 4",
-      "objetivos": [
-        "Objetivo 1",
-        "Objetivo 2",
-        "Objetivo 3"
-      ],
-      "necessidades_especificas": [
-        {
-          "tipo": "educação",
-          "nome": "Material Escolar",
-          "quantidade": 150,
-          "descricao": "Cadernos, lápis e canetas para crianças"
-        }
-      ],
-      "responsavel": 4
-    }
-  ],
-  "itens-estoque": [
-    {
-      "id": "1",
-      "ongId": 1,
-      "nome": "Cobertor",
-      "quantidade": 10,
-      "validade": "2025-12-31",
-      "descricao": "Cobertores para distribuir no inverno"
-    },
-    {
-      "id": "2",
-      "ongId": 3,
-      "nome": "Marmita",
-      "quantidade": 50,
-      "validade": "2023-11-30",
-      "descricao": "Marmitas prontas para entrega"
-    },
-    {
-      "id": "3",
-      "ongId": 2,
-      "nome": "Água Mineral",
-      "quantidade": 30,
-      "validade": "2024-06-01",
-      "descricao": "Garrafas de água de 500ml"
-    },
-    {
-      "id": "1732396862628-340",
-      "ongId": 2,
-      "nome": "Cesta básica",
-      "quantidade": 10,
-      "validade": "2027-10-10",
-      "descricao": "Alimentos."
-    }
-  ],
   "pessoas": [
     {
       "id": "1",
@@ -389,7 +6,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1980-01-01",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOTFHD.moradorideo3.jpeg",
       "problemas_saude": [
         {
           "nome": "Depressão",
@@ -442,11 +58,10 @@
     },
     {
       "id": "2",
-      "nome": "Marli Santana",
+      "nome": "Maria Oliveira",
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Feminino",
-      "data_nascimento": "1974-05-18",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOQKWL.moradora1.jpeg",
+      "data_nascimento": "1975-05-12",
       "problemas_saude": [
         {
           "nome": "Hipertensão",
@@ -494,7 +109,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1968-08-20",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOTThX.moradorgram2.jpeg",
       "problemas_saude": [
         {
           "nome": "Asma",
@@ -542,7 +156,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Feminino",
       "data_nascimento": "1985-11-30",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOQZjc.moradora4.jpeg",
       "problemas_saude": [
         {
           "nome": "Ansiedade",
@@ -590,7 +203,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1990-02-17",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOQzYa.morador.jpeg",
       "problemas_saude": [
         {
           "nome": "Dependência Química",
@@ -638,7 +250,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Feminino",
       "data_nascimento": "1995-09-09",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOQnzz.moradora6.jpeg",
       "problemas_saude": [
         {
           "nome": "Desnutrição",
@@ -686,7 +297,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1970-12-25",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOT1O4.moradorideo2.jpeg",
       "problemas_saude": [
         {
           "nome": "Esquizofrenia",
@@ -734,7 +344,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Feminino",
       "data_nascimento": "2000-03-14",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOQeWK.moradora8.jpeg",
       "problemas_saude": [
         {
           "nome": "Anemia",
@@ -782,7 +391,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1982-06-06",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOT2mC.moradorideo0.jpeg",
       "problemas_saude": [
         {
           "nome": "Tuberculose",
@@ -830,7 +438,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Feminino",
       "data_nascimento": "1978-10-02",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOQkUx.moradora3.jpeg",
       "problemas_saude": [
         {
           "nome": "Artrite",
@@ -878,7 +485,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1965-07-07",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOT2mC.moradorideo0.jpeg",
       "problemas_saude": [
         {
           "nome": "Doença Pulmonar",
@@ -926,7 +532,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Feminino",
       "data_nascimento": "1988-04-18",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOQH4J.moradora2.webp",
       "problemas_saude": [
         {
           "nome": "Epilepsia",
@@ -974,7 +579,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1993-01-27",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOT7Bf.moradorideo4.jpeg",
       "problemas_saude": [
         {
           "nome": "Deficiência Visual",
@@ -1022,7 +626,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Feminino",
       "data_nascimento": "1998-12-05",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOQKWL.moradora1.jpeg",
       "problemas_saude": [
         {
           "nome": "Gravidez",
@@ -1070,7 +673,6 @@
       "tipo": "Pessoa em Situação de Rua",
       "genero": "Masculino",
       "data_nascimento": "1972-05-15",
-      "imgPerfil": "https://i.im.ge/2024/11/24/zOTab1.moradorideo5.jpeg",
       "problemas_saude": [
         {
           "nome": "Insuficiência Renal",
