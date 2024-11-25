@@ -11,6 +11,8 @@ async function gerarCards() {
 
         const moradores = await response.json();
 
+        moradores.filter(morador => morador.tipo === 'situacao_rua');
+
         // Iterando sobre os moradores e criando os cards
         moradores.forEach(pessoa => {
             const card = document.createElement('div');
@@ -22,13 +24,13 @@ async function gerarCards() {
                     <img src="${pessoa.imgPerfil}" class="card-img-top" alt="${pessoa.nome}">
                     <div class="card-body">
                         <h5 class="card-title">${pessoa.nome}</h5>
-                        <p class="card-text">${pessoa.tipo}</p>
                         <p><strong>Cidade:</strong> ${localizacao.cidade}</p>
                         <p><strong>Estado:</strong> ${localizacao.estado}</p>
                         <p><strong>Gênero:</strong> ${pessoa.genero}</p>
                         <p><strong>Data de nascimento:</strong> ${pessoa.data_nascimento}</p>
                         <button class="btn btn-primary btn-edit" data-id="${pessoa.id}">Editar</button>
                         <button class="btn btn-danger btn-delete" data-id="${pessoa.id}">Deletar</button>
+                        <button class="btn btn-primary btn-info" data-id="${pessoa.id}">ver detalhes</button>
                     </div>
                 </div>
             `;
@@ -48,7 +50,16 @@ async function gerarCards() {
 function adicionarEventosBotoes() {
     const editButtons = document.querySelectorAll('.btn-edit');
     const deleteButtons = document.querySelectorAll('.btn-delete');
-    
+    const infoButtons = document.querySelectorAll('.btn-info');
+
+    // Evento de ver detalhes
+    infoButtons.forEach(button => {
+        button.addEventListener('click', async () => {
+            const id = button.getAttribute('data-id');
+            window.location.href = `/modulos/ong/pessoas/pessoas-em-situacao-de-rua.html?id=${id}`;
+        });
+    });
+
     // Evento de editar
     editButtons.forEach(button => {
         button.addEventListener('click', async () => {

@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <main class="main" style="padding-top: 100px;">
     <section class="perfil-morador">
       <img src="#" alt="Foto do Morador" class="morador-foto" id="morador-foto">
@@ -28,20 +27,24 @@
       <button onclick="window.location.href='RegistroMoradorRua.html'" class="registro">Registrar Novo Morador</button>
 
       <h2>Necessidades do Morador</h2>
-      <div class="necessidades" id="necessidades">
-      </div>
+      <div class="necessidades" id="necessidades"></div>
 
       <h2>Últimas Localizações</h2>
-      <div class="localizacoes" id="localizacoes">
-      </div>
-
+      <button class="ver-detalhes" onclick="mostrarMapaCompleto()">Ver todas as localizações</button>
+      <div class="localizacoes" id="localizacoes"></div>
     </section>
   </main>
+
+  <div id="modal-mapa" class="modal">
+    <div id="mapa-completo" class="mapa-completo"></div>
+    <button class="fechar-modal" onclick="fecharMapaCompleto()">Fechar</button>
+  </div>
 
   <script src="../../../assets/js/header/index.js"></script>
   <script src="../../../assets/js/situacao-de-rua/index.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-geosearch@latest/dist/bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
