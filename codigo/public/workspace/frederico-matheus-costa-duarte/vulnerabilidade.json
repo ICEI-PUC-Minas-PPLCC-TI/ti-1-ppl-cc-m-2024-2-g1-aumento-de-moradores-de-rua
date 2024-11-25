@@ -1,0 +1,12 @@
+[
+    {
+        "nome": "Maria Silva",
+        "idade": 34,
+        "situacao": "Perda do emprego e dificuldade para pagar aluguel."
+    },
+    {
+        "nome": "João Oliveira",
+        "idade": 28,
+        "situacao": "Família desestruturada e renda insuficiente."
+    }
+]
