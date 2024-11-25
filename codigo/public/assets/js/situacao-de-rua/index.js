@@ -75,11 +75,9 @@ function listarLocalizacoes(localizacoes) {
         })
         : 'Data não informada'
       }</p>
-        <button>
           <a class="abrir-google-maps" href="https://www.google.com/maps?q=${encodeURIComponent(endereco)}" target="_blank">
               Abrir no Google Maps
           </a>
-        </button>
       </div>
     `;
     localizacoesContainer.appendChild(card);
