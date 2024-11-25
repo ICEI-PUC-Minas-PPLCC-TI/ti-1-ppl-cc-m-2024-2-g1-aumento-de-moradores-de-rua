@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhamento Atividade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Puxar o CSS do guardiao -->
+    <link href="../../../assets/css/style.css" rel="stylesheet">
+
+    <!-- Puxar o "Header" da Home Page -->
+    <script src="../../../assets/js/header/index.js"></script>
+</head>
+
+<!-- 
+npm install -g json-server (instalar o JSON Server)
+json-server --watch db.json --port 3000 (iniciar o JSON Server)
+http://localhost:3000/XXXXXXX
+-->
+
+<body>
+    <!-- Header -->
+    <header class="bg-light py-3">
+        <div class="container">
+            <h1>Minhas Atividades</h1>
+            <nav>
+                <ul class="list-unstyled d-flex">
+                    <li class="me-3"><a href="listagem-atividades.html">Listagem de Atividades</a></li>
+                    <li><a href="../sprint1-individual/registro-voluntario.html">Registrar Dia de Trabalho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <!-- Detalhes da Atividade -->
+        <div class="activity-header">
+            <h2 id="atividadeNome">Atividade – [nome]</h2>
+            <button class="btn btn-primary" onclick="window.location.href='../sprint1-individual/registro-voluntario.html'">+ registrar dia de trabalho</button>
+        </div>     
+
+        <div class="activity-info">
+            <img src="https://via.placeholder.com/50" alt="Imagem ONG" id="ongImagem">
+            <div>
+                <p id="ongNome">[ong]</p>
+                <p id="endereco">[endereço]</p>
+                <p id="contato">[contato]</p>
+            </div>
+            <div style="margin-left: auto;">
+                <p id="dataInicio">Data de início: [data]</p>
+                <p id="dataFim">Data de término: [data]</p>
+            </div>
+        </div>
+
+        <!-- Dias de Trabalho -->
+        <h3>Dias de trabalho</h3>
+
+        <!-- Seção para os dias de trabalho -->
+        <div id="diasTrabalho" class="d-flex flex-wrap"></div>
+    </div>
+
+    <!-- Puxar os 'Dias de Trabalho' no JSON para exibição -->
+    <script>
+        async function carregarDetalhes() {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+
+            if (!id) {
+                document.getElementById('atividadeNome').innerText = 'ID da atividade não fornecido.';
+                return;
+            }
+
+            try {
+                const response = await fetch('http://localhost:3000/atividades'); // caminho JSON
+                const dados = await response.json();
+
+                const atividade = dados.atividades.find(a => a.id == id);
+                if (atividade) {
+                    document.getElementById('atividadeNome').innerText = `Atividade – ${atividade.nome}`;
+                    document.getElementById('ongNome').innerText = `Nome da ONG - ${atividade.ong_nome}`;
+                    document.getElementById('endereco').innerText = `Endereço - ${atividade.endereco}`; 
+                    document.getElementById('contato').innerText = `Contato - ${atividade.contato}`; 
+                    document.getElementById('dataInicio').innerText = `Data de início: ${atividade.data_inicio}`;
+                    document.getElementById('dataFim').innerText = `Data de término: ${atividade.data_fim}`;
+
+                    carregarDiasTrabalho(atividade.id);
+                } else {
+                    document.getElementById('atividadeNome').innerText = 'Atividade não encontrada.';
+                }
+            } catch (error) {
+                console.error('Erro ao carregar os dados:', error);
+            }
+        }
+
+        async function carregarDiasTrabalho(atividadeId) {
+            try {
+                const response = await fetch('http://localhost:3000/dias_trabalho'); // caminho do JSON
+                const dados = await response.json();
+
+                const diasTrabalhoContainer = document.getElementById('diasTrabalho');
+                diasTrabalhoContainer.innerHTML = ''; // Limpa o conteúdo atual
+
+                dados.dias_trabalho.forEach(dia => {
+                    if (dia.atividade == atividadeId) { // Filtra pelos dias da atividade correta
+                        const diaElemento = document.createElement('div');
+                        diaElemento.className = 'm-2 p-2 border rounded';
+
+                        // Criação do texto para exibir o dia e os horários
+                        let horariosTexto = dia.horarios.map(h => `${h.inicio} - ${h.fim}`).join(', ');
+                        diaElemento.innerText = `${dia.dia}: ${horariosTexto}`;
+
+                        diasTrabalhoContainer.appendChild(diaElemento);
+                    }
+                });
+            } catch (error) {
+                console.error('Erro ao carregar os dias de trabalho:', error);
+            }
+        }
+
+        // Chamar a função ao carregar a página
+        window.onload = carregarDetalhes;
+    </script>
+</body>
+</html>
