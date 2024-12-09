@@ -12,6 +12,10 @@ const donationsTotal = (doacoes) => {
   return doacoes.reduce((total, doacao) => total + doacao.valor, 0);
 }
 
+const verDetalhes = (id) => {
+  window.location.href = `modulos/shared/ongs/detalhada.html?id=${id}`;
+}
+
 const fetchDonations = async () => {
   if (currentUser.tipo !== 'ong') {
     const totalElement = document.querySelector('.donations_geral');

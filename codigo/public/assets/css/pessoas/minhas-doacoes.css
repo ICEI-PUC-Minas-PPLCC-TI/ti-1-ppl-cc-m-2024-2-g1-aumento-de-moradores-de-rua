@@ -1,0 +1,127 @@
+.minhas-doacoes-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.minhas-doacoes-container h1 {
+  text-align: start;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.doacoes-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.doacoes-table thead {
+  background-color: #1E3A8A;
+  color: #fff;
+}
+
+.doacoes-table th,
+.doacoes-table td {
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.doacoes-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.doacoes-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.doacoes-table th {
+  font-weight: bold;
+}
+
+.doacoes-table td .acao-btn {
+  background-color: #1E3A8A;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.doacoes-table td .acao-btn:hover {
+  background-color: #374dc1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-body p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+  .doacoes-table th,
+  .doacoes-table td {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+  }
+}

@@ -132,44 +132,68 @@
   ],
   "atividades": [
     {
+      "id": 1,
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
       "status": "done",
       "ong": 1,
-      "voluntario": 3,
+      "voluntarios": [
+        3
+      ],
       "descricao": "Distribuição de comida para moradores de rua",
       "tipo": "doacao"
     },
     {
+      "id": 2,
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
       "status": "waiting",
       "ong": 1,
-      "voluntario": 3,
+      "voluntarios": [
+        3
+      ],
       "descricao": "Distribuição de comida para moradores de rua",
       "tipo": "doacao"
     },
     {
+      "id": 3,
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
       "status": "done",
       "ong": 1,
-      "voluntario": 3,
+      "voluntarios": [
+        3
+      ],
       "descricao": "Distribuição de comida para moradores de rua",
       "tipo": "doacao"
     },
     {
+      "id": 4,
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
       "status": "doing",
       "ong": 1,
-      "voluntario": 3,
+      "voluntarios": [
+        3
+      ],
       "descricao": "Distribuição de comida para moradores de rua",
       "tipo": "doacao"
+    },
+    {
+      "nome": "aaaaa",
+      "descricao": "aaaaaaaaaaaaaa",
+      "data_inicio": "2024-10-12",
+      "data_fim": "2024-10-14",
+      "status": "Em Andamento",
+      "ong": 5,
+      "voluntarios": [
+        3
+      ],
+      "id": 5
     }
   ],
   "dias_trabalho": [
@@ -186,154 +210,261 @@
           "fim": "17:00"
         }
       ],
-      "voluntario": 1,
+      "voluntario": 5,
       "atividade": 1
+    },
+    {
+      "dia": "segunda",
+      "horarios": [
+        {
+          "inicio": "08:00",
+          "fim": "12:00"
+        },
+        {
+          "inicio": "13:00",
+          "fim": "17:00"
+        }
+      ],
+      "voluntario": 3,
+      "atividade": 5,
+      "id": 2
     }
   ],
   "doacoes": [
     {
+      "id": 1,
       "ong": 3,
-      "doador": 2,
+      "doador": 3,
       "valor": 10,
       "data": "2024-10-02",
+      "status": "done",
       "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!",
       "pagamento": {
         "tipo": "pix"
       }
+    },
+    {
+      "ong": 3,
+      "doador": 3,
+      "valor": 12,
+      "data": "2024-10-02",
+      "status": "done",
+      "descricao": "123123",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 2
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 100,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "weadfasd",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 3
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 100,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "123",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 4
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 100,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "123",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 5
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 100,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "Vitor",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 6
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 123123,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "12321124",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 7
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 123,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "123",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 8
+    },
+    {
+      "ong": 3,
+      "doador": 1,
+      "valor": 100,
+      "data": "2024-12-09",
+      "status": "done",
+      "descricao": "Boa!",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 9
     }
   ],
   "ongs": [
-      {
-        "id": 1,
-        "cnpj": "123456789",
-        "data_fundacao": "2024-01-01",
-        "razao_social": "ONG 1",
-        "nome_fantasia": "ONG 1",
-        "contatos": {
-          "telefone": "123456789",
-          "email": "contato@ong1.org"
-        },
-        "endereco": {
-          "logradouro": "Rua 1",
-          "numero": "123",
-          "complemento": "Casa",
-          "bairro": "Bairro 1",
-          "cidade": "Cidade 1",
-          "estado": "Estado 1",
-          "cep": "12345-678"
-        },
-        "descricao": "Descrição da ONG 1",
-        "objetivos": [
-          "Objetivo 1",
-          "Objetivo 2",
-          "Objetivo 3"
-        ],
-        "necessidades_especificas": [
-          {
-            "tipo": "alimentos",
-            "nome": "Alimento 1",
-            "quantidade": 100,
-            "descricao": "Descrição do Alimento 1"
-          }
-        ],
-        "responsavel": 2,
-        "status": "accepted",
-        "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+    {
+      "id": 1,
+      "cnpj": "123456789",
+      "data_fundacao": "2024-01-01",
+      "razao_social": "ONG 1",
+      "nome_fantasia": "ONG 1",
+      "contatos": {
+        "telefone": "123456789",
+        "email": "contato@ong1.org"
       },
-      {
-        "id": 3,
-        "cnpj": "123213123123",
-        "data_fundacao": "2023-10-12",
-        "razao_social": "ONG do João",
-        "nome_fantasia": "ONG do João",
-        "endereco": {
-          "logradouro": "Rua Messias Coutinho",
-          "numero": "111",
-          "complemento": "",
-          "bairro": "Céu Azul",
-          "cidade": "Belo Horizonte",
-          "estado": "MG",
-          "cep": "31580-400"
-        },
-        "contatos": {
-          "telefone": "31999999999",
-          "email": "contato@ongdojoao.org"
-        },
-        "descricao": "Descrição da ONG do João",
-        "objetivos": [
-          "Objetivo A",
-          "Objetivo B"
-        ],
-        "necessidades_especificas": [
-          {
-            "tipo": "educação",
-            "nome": "Materiais Escolares",
-            "quantidade": 200,
-            "descricao": "Cadernos, lápis, borrachas, etc."
-          }
-        ],
-        "responsavel": 5,
-        "status": "accepted",
-        "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
       },
-      {
-        "id": 4,
-        "cnpj": "987654321",
-        "data_fundacao": "2022-06-15",
-        "razao_social": "ONG Esperança",
-        "nome_fantasia": "ONG Esperança",
-        "endereco": {
-          "logradouro": "Rua da Paz",
-          "numero": "200",
-          "complemento": "",
-          "bairro": "Centro",
-          "cidade": "Rio de Janeiro",
-          "estado": "RJ",
-          "cep": "20000-000"
-        },
-        "contatos": {
-          "telefone": "21987654321",
-          "email": "contato@ongesperanca.org"
-        },
-        "descricao": "Descrição da ONG Esperança",
-        "objetivos": [
-          "Objetivo X",
-          "Objetivo Y"
-        ],
-        "necessidades_especificas": [
-          {
-            "tipo": "vestuário",
-            "nome": "Roupas",
-            "quantidade": 50,
-            "descricao": "Roupas para crianças"
-          }
-        ],
-        "responsavel": 2,
-        "status": "accepted",
-        "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+      "descricao": "Descrição da ONG 1",
+      "objetivos": [
+        "Objetivo 1",
+        "Objetivo 2",
+        "Objetivo 3"
+      ],
+      "necessidades_especificas": [],
+      "responsavel": 2,
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+    },
+    {
+      "id": 3,
+      "cnpj": "123213123123",
+      "data_fundacao": "2023-10-12",
+      "razao_social": "ONG do João",
+      "nome_fantasia": "ONG do João",
+      "endereco": {
+        "logradouro": "Rua Messias Coutinho",
+        "numero": "111",
+        "complemento": "",
+        "bairro": "Céu Azul",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "31580-400"
       },
-      {
-        "cnpj": "123123123123",
-        "data_fundacao": "2024-10-24",
-        "razao_social": "aaaaa",
-        "nome_fantasia": "aaaaaa",
-        "endereco": {
-          "logradouro": "Rua Messias Coutinho",
-          "numero": "111",
-          "complemento": "",
-          "bairro": "Céu Azul",
-          "cidade": "Belo Horizonte",
-          "estado": "MG",
-          "cep": "31580400"
-        },
-        "contatos": {
-          "telefone": "123214123"
-        },
-        "status": "accepted",
-        "responsavel": 7,
-        "id": 5
-      }
-    ],
+      "contatos": {
+        "telefone": "31999999999",
+        "email": "vitords.mello@gmail.com"
+      },
+      "descricao": "Descrição da ONG do João",
+      "objetivos": [
+        "Objetivo A",
+        "Objetivo B"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "educação",
+          "nome": "Materiais Escolares",
+          "quantidade": 200,
+          "descricao": "Cadernos, lápis, borrachas, etc."
+        }
+      ],
+      "responsavel": 5,
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+    },
+    {
+      "id": 4,
+      "cnpj": "987654321",
+      "data_fundacao": "2022-06-15",
+      "razao_social": "ONG Esperança",
+      "nome_fantasia": "ONG Esperança",
+      "endereco": {
+        "logradouro": "Rua da Paz",
+        "numero": "200",
+        "complemento": "",
+        "bairro": "Centro",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "20000-000"
+      },
+      "contatos": {
+        "telefone": "21987654321",
+        "email": "contato@ongesperanca.org"
+      },
+      "descricao": "Descrição da ONG Esperança",
+      "objetivos": [
+        "Objetivo X",
+        "Objetivo Y"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "vestuário",
+          "nome": "Roupas",
+          "quantidade": 50,
+          "descricao": "Roupas para crianças"
+        }
+      ],
+      "responsavel": 2,
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+    },
+    {
+      "cnpj": "123123123123",
+      "data_fundacao": "2024-10-24",
+      "razao_social": "aaaaa",
+      "nome_fantasia": "aaaaaa",
+      "endereco": {
+        "logradouro": "Rua Messias Coutinho",
+        "numero": "111",
+        "complemento": "",
+        "bairro": "Céu Azul",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "31580400"
+      },
+      "contatos": {
+        "telefone": "123214123"
+      },
+      "status": "accepted",
+      "responsavel": 7,
+      "id": 5
+    }
+  ],
   "itens-estoque": [
     {
       "id": "1",
@@ -350,22 +481,6 @@
       "quantidade": 50,
       "validade": "2023-11-30",
       "descricao": "Marmitas prontas para entrega"
-    },
-    {
-      "id": "3",
-      "ongId": 2,
-      "nome": "Água Mineral",
-      "quantidade": 30,
-      "validade": "2024-06-01",
-      "descricao": "Garrafas de água de 500ml"
-    },
-    {
-      "id": "1732396862628-340",
-      "ongId": 2,
-      "nome": "Cesta básica",
-      "quantidade": 10,
-      "validade": "2027-10-10",
-      "descricao": "Alimentos."
     }
   ],
   "pessoas": [
@@ -1115,6 +1230,23 @@
         "telefone": "98955555555",
         "email": "andre_barbosa@outlook.com"
       }
+    }
+  ],
+  "voluntarios": [
+    {
+      "id": 1,
+      "ong": 5,
+      "usuario": 3
+    },
+    {
+      "ong": 3,
+      "usuario": 3,
+      "id": 2
+    },
+    {
+      "ong": 4,
+      "usuario": 3,
+      "id": 3
     }
   ]
 }

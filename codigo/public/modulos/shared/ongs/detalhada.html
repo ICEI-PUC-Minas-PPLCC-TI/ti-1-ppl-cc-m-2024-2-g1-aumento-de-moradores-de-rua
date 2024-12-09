@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>detalhamento da ong</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../../assets/css/ongs/visualizacao-detalhada-ong.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    .btn-gap {
+      margin-right: 10px;
+    }
+
+    .acao-pessoa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 10px;
+      gap: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main" style="padding-top: 100px;">
+    <section class="perfil-ong">
+      <img src="#" alt="logo da ong" class="ong-foto" id="ong-foto">
+      <h2 id="ong-razao-social">razão social</h2>
+      <p id="ong-nome-fantasia">nome fantasia</p>
+      <p id="ong-cnpj">cnpj</p>
+      <p id="ong-data-fundacao">data de fundação</p>
+      <div id="acao-pessoa" class="acao-pessoa"></div>
+    </section>
+
+    <section class="detalhes">
+      <div class="card-info">
+        <h2>contatos</h2>
+        <div class="info-linhas" id="contatos">
+          <p><b>telefone:</b> <span id="ong-telefone"></span></p>
+          <p><b>email:</b> <span id="ong-email"></span></p>
+        </div>
+      </div>
+
+      <div class="card-info">
+        <h2>endereço</h2>
+        <div class="info-linhas" id="endereco">
+          <p><b>logradouro:</b> <span id="ong-logradouro"></span></p>
+          <p><b>número:</b> <span id="ong-numero"></span></p>
+          <p><b>bairro:</b> <span id="ong-bairro"></span></p>
+          <p><b>cidade:</b> <span id="ong-cidade"></span></p>
+          <p><b>estado:</b> <span id="ong-estado"></span></p>
+          <p><b>cep:</b> <span id="ong-cep"></span></p>
+        </div>
+      </div>
+
+      <div class="card-info">
+        <h2>descrição</h2>
+        <p id="ong-descricao"></p>
+      </div>
+
+      <div class="card-info objetivos-container">
+        <h2>objetivos</h2>
+        <div class="objetivos" id="objetivos"></div>
+      </div>
+
+      <div class="card-info">
+        <h2>necessidades específicas</h2>
+        <div class="necessidades" id="necessidades"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modais (Certifique-se de que os modais existam no seu HTML) -->
+  <!-- Exemplo de modal para editar ONG -->
+  <div class="modal fade" id="editarOngModal" tabindex="-1" aria-labelledby="editarOngModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form id="editar-ong-form">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editarOngModalLabel">Editar ONG</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="fechar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="edit-razao-social" class="form-label">Razão Social</label>
+              <input type="text" class="form-control" id="edit-razao-social" required>
+            </div>
+            <div class="mb-3">
+              <label for="edit-nome-fantasia" class="form-label">Nome Fantasia</label>
+              <input type="text" class="form-control" id="edit-nome-fantasia" required>
+            </div>
+            <div class="mb-3">
+              <label for="edit-cnpj" class="form-label">CNPJ</label>
+              <input type="text" class="form-control" id="edit-cnpj" required>
+            </div>
+            <div class="mb-3">
+              <label for="edit-data-fundacao" class="form-label">Data de Fundação</label>
+              <input type="date" class="form-control" id="edit-data-fundacao" required>
+            </div>
+            <div class="mb-3">
+              <label for="edit-descricao" class="form-label">Descrição</label>
+              <textarea class="form-control" id="edit-descricao" rows="3" required></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+            <button type="submit" class="btn btn-primary">salvar mudanças</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="../../../assets/js/header/index.js"></script>
+  <script src="../../../assets/js/ongs/detalhada.js"></script>
+</body>
+
+</html>

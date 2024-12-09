@@ -2,20 +2,21 @@ const LOGIN_CALLBACK_URL = "/modulos/login/login.html";
 
 const menus = {
   "ong": [
-    { "name": "Pessoas em Situação de Rua", "url": "/modulos/ong/pessoas/listagem-morador.html" },
-    { "name": "Itens do Estoque", "url": "/modulos/ong/itens-do-estoque.html" },
-    { "name": "Voluntários", "url": "/modulos/ong/voluntarios.html" }
+    { "name": "situação de rua", "url": "/modulos/ong/pessoas/listagem-morador.html" },
+    { "name": "itens do estoque", "url": "/modulos/ong/itens-do-estoque.html" },
+    { "name": "atividades", "url": "/modulos/shared/atividades.html" }
   ],
   "pessoa": [
-    { "name": "Doações", "url": "/modulos/pessoas/doacoes.html" },
-    { "name": "ONGs", "url": "/modulos/shared/ongs/listagem.html" }
+    { "name": "doações", "url": "/modulos/pessoas/doacoes.html" },
+    { "name": "ong's", "url": "/modulos/shared/ongs/listagem.html" },
+    { "name": "atividades", "url": "/modulos/shared/atividades.html" }
   ],
   "not_logged": [
-    { "name": "Sobre Nós", "url": "/modulos/login/cadastro.html" },
-    { "name": "ONGs", "url": "/modulos/shared/ongs/listagem.html" }
+    { "name": "sobre nós", "url": "/modulos/login/cadastro.html" },
+    { "name": "ong's", "url": "/modulos/shared/ongs/listagem.html" }
   ],
   "root": [
-    { "name": "Validar ONGs", "url": "/modulos/root/validar.html" }
+    { "name": "validar ong's", "url": "/modulos/root/validar.html" }
   ]
 };
 

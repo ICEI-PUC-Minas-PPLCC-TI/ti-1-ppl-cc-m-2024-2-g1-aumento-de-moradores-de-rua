@@ -19,7 +19,6 @@ async function gerarCards() {
             const card = `
                 <div class="col-sm-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="${item.nome}">
                         <div class="card-body">
                             <h5 class="card-title">${item.nome}</h5>
                             <p class="card-text">${item.descricao}</p>

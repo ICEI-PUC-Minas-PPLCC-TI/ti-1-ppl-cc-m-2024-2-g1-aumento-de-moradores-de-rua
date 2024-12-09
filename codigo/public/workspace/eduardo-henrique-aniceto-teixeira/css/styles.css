@@ -15,7 +15,7 @@
 
 .container-Doar {
     display: flex;
-    width:75%;
+    width: 75%;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -29,6 +29,7 @@
 a {
     text-decoration: none;
 }
+
 .back-button {
     position: absolute;
     top: 20px;
@@ -37,7 +38,7 @@ a {
     font-size: 18px;
     color: black;
     background-color: #ccc;
-    transition: background-color 0.7s;  
+    transition: background-color 0.7s;
 }
 
 .back-button:hover {
@@ -50,8 +51,8 @@ a {
 }
 
 .info-field-conf {
-   padding: 5px;
-   margin-top: 5px;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 .form-container {
@@ -78,7 +79,8 @@ h1 {
     margin-bottom: 5px;
 }
 
-.input-field, .textarea-field {
+.input-field,
+.textarea-field {
     width: 300px;
     padding: 10px;
     margin-left: 70px;
@@ -95,7 +97,9 @@ h1 {
     resize: none;
 }
 
-.input-field:hover, .input-field-1:hover, .textarea-field:hover {
+.input-field:hover,
+.input-field-1:hover,
+.textarea-field:hover {
     background-color: #f3f3f3;
 }
 
@@ -134,13 +138,16 @@ button {
 }
 
 .responsive-image {
-    width: 100%; /* A imagem ocupa 100% da largura do container */
-    height: auto; /* A altura se ajusta automaticamente */
-    max-width: 600px; /* Largura máxima para evitar que fique muito grande */
+    width: 100%;
+    /* A imagem ocupa 100% da largura do container */
+    height: auto;
+    /* A altura se ajusta automaticamente */
+    max-width: 600px;
+    /* Largura máxima para evitar que fique muito grande */
     margin-top: 15%;
 }
 
- /* Complementos para a pag 2 */
+/* Complementos para a pag 2 */
 
 .align-input-1 {
     text-align: center;
@@ -197,7 +204,7 @@ div.doar {
     margin-left: 33%;
 }
 
- /*CSS para a página Meu Perfil */ 
+/*CSS para a página Meu Perfil */
 
 .body-container {
     font-family: Arial, sans-serif;
@@ -221,7 +228,7 @@ div.doar {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-header  {
+.profile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -261,7 +268,8 @@ div.doar {
     align-items: flex-end;
 }
 
-.nav-button-conf, .nav-button-canc {
+.nav-button-conf,
+.nav-button-canc {
     padding: 8px 16px;
     margin-bottom: 8px;
     margin-top: 5px;
@@ -276,6 +284,7 @@ div.doar {
 .nav-button:hover {
     background-color: #e0e0e0;
 }
+
 .nav-button-conf:hover {
     background-color: #00c44b;
     color: white;
@@ -300,24 +309,33 @@ div.doar {
 }
 
 .modal {
-    display: none; /* Oculto por padrão */
+    display: none;
+    /* Oculto por padrão */
     position: fixed;
-    z-index: 1; /* Fica acima de tudo */
+    z-index: 1;
+    /* Fica acima de tudo */
     left: 0;
     top: 0;
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
-    overflow: auto; /* Habilita o scroll se necessário */
-    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro transparente */
+    width: 100%;
+    /* Largura total */
+    height: 100%;
+    /* Altura total */
+    overflow: auto;
+    /* Habilita o scroll se necessário */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fundo escuro transparente */
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* Centro */
+    margin: 15% auto;
+    /* Centro */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Largura do modal */
-    max-width: 500px; /* Largura máxima do modal */
+    width: 80%;
+    /* Largura do modal */
+    max-width: 500px;
+    /* Largura máxima do modal */
 }
 
 .close-button {
@@ -327,13 +345,14 @@ div.doar {
     font-weight: bold;
 }
 
-.close-button:hover, .close-button:focus {
+.close-button:hover,
+.close-button:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
-.info{
+.info {
     display: flex;
     text-align: center;
     align-items: center;

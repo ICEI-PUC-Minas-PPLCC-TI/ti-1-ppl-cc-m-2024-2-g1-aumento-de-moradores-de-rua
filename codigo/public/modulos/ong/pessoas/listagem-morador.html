@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de Moradores de Rua</title>
+    <title>Pessoas em Situação de Rua</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="../../../assets/css/style.css">
-
 </head>
 
 <body>
 
-    <div class="container my-5">
-        <h1 class="text-center mb-4">Listagem de Moradores de Rua</h1>
-        <div class="row" id="cards-container">
-            <!-- Cards dinâmicos -->
+    <main class="container" style="padding-top: 110px;">
+        <div>
+            <h3 class="text-start mb-4">Pessoas em Situação de Rua</h3>
+            <div class="card-container" id="cards-container">
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="editForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editModalLabel">Editar Morador de Rua</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="edit-id">
+                        <div class="mb-3">
+                            <label for="edit-nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="edit-nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-genero" class="form-label">Gênero</label>
+                            <input type="text" class="form-control" id="edit-genero" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-data-nascimento" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="edit-data-nascimento" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-imgPerfil" class="form-label">URL da Imagem</label>
+                            <input type="url" class="form-control" id="edit-imgPerfil">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
+    <!-- Scripts Necessários -->
+    <script src="../../../assets/js/header/index.js"></script>
     <script src="../../../assets/js/situacao-de-rua/script-morador.js"></script>
 
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

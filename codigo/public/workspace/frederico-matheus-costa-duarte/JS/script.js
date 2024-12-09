@@ -217,6 +217,7 @@ function carregarDetalhesMorador() {
 }
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
   if (document.title === "Registrar Novo Morador") {
     document.getElementById('formRegistrar').addEventListener('submit', registrarMorador);

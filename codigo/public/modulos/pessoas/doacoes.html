@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Doações</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/pessoas/minhas-doacoes.css">
+</head>
+
+<body>
+  <main class="main" style="padding-top: 100px;">
+    <section class="minhas-doacoes-container">
+      <div class="table-header">
+        <h1>minhas doações</h1>
+        <button id="doar-btn" class="doar-btn">realizar doação</button>
+      </div>
+      <table class="doacoes-table">
+        <thead>
+          <tr>
+            <th>ONG</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Tipo de Pagamento</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="doacoes-tbody">
+        </tbody>
+      </table>
+    </section>
+
+    <div id="modal-doacao" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h5>detalhes da doação</h5>
+        <div class="modal-body">
+          <p><strong>ONG:</strong> <span id="modal-ong"></span></p>
+          <p><strong>Valor:</strong> R$ <span id="modal-valor"></span></p>
+          <p><strong>Data:</strong> <span id="modal-data"></span></p>
+          <p><strong>Status:</strong> <span id="modal-status"></span></p>
+          <p><strong>Tipo de Pagamento:</strong> <span id="modal-pagamento"></span></p>
+          <p><strong>Descrição:</strong> <span id="modal-descricao"></span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../assets/js/pessoas/minhas-doacoes.js"></script>
+  <script src="../../assets/js/header/index.js"></script>
+</body>
+
+</html>

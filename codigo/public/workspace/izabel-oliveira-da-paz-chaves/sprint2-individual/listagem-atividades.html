@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,7 @@
         // Função para carregar atividades a partir do JSON Server
         async function carregarAtividades() {
             try {
-                const response = await fetch('http://localhost:3000/atividades'); // caminho JSON
+                const response = await fetch('/atividades'); // caminho JSON
                 if (!response.ok) {
                     throw new Error('Erro ao carregar atividades');
                 }
@@ -70,4 +71,5 @@
         window.onload = carregarAtividades;
     </script>
 </body>
+
 </html>

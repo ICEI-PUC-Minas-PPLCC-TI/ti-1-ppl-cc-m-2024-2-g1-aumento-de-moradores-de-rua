@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Atividades</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link href="../../assets/css/style.css" rel="stylesheet">
+  <script src="../../assets/js/header/index.js" defer></script>
+</head>
+
+<body>
+  <main class="container" style="padding-top: 110px;">
+    <div class="d-flex justify-content-between align-items-center">
+      <h4 class="mt-4">Minhas Atividades</h4>
+      <button id="novaAtividadeBtn" class="btn btn-success mb-3 d-none">Nova Atividade <i class="bi bi-plus-circle"></i></button>
+    </div>
+
+    <div class="table-responsive mt-2">
+      <table class="table table-striped table-hover" id="atividadesTable">
+        <thead class="table-dark">
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Data Início</th>
+            <th>Data Fim</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="editForm">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editModalLabel">Editar Atividade</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="edit-id">
+            <div class="mb-3">
+              <label for="edit-nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="edit-nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="edit-descricao" class="form-label">Descrição</label>
+              <textarea class="form-control" id="edit-descricao" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="edit-data-inicio" class="form-label">Data Início</label>
+              <input type="date" class="form-control" id="edit-data-inicio" required>
+            </div>
+            <div class="mb-3">
+              <label for="edit-data-fim" class="form-label">Data Fim</label>
+              <input type="date" class="form-control" id="edit-data-fim" required>
+            </div>
+            <div class="mb-3">
+              <label for="edit-status" class="form-label">Status</label>
+              <select class="form-select" id="edit-status" required>
+                <option value="Planejada">Planejada</option>
+                <option value="Em Andamento">Em Andamento</option>
+                <option value="Concluída">Concluída</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="createForm">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createModalLabel">Nova Atividade</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="create-nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="create-nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="create-descricao" class="form-label">Descrição</label>
+              <textarea class="form-control" id="create-descricao" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="create-data-inicio" class="form-label">Data Início</label>
+              <input type="date" class="form-control" id="create-data-inicio" required>
+            </div>
+            <div class="mb-3">
+              <label for="create-data-fim" class="form-label">Data Fim</label>
+              <input type="date" class="form-control" id="create-data-fim" required>
+            </div>
+            <div class="mb-3">
+              <label for="create-status" class="form-label">Status</label>
+              <select class="form-select" id="create-status" required>
+                <option value="Planejada">Planejada</option>
+                <option value="Em Andamento">Em Andamento</option>
+                <option value="Concluída">Concluída</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-success">Criar Atividade</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script>
+    const user = JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
+
+    let atividadesData = [];
+    let ongId = null;
+
+    async function carregarAtividades() {
+      try {
+        let atividades = [];
+        if (user.tipo === 'ong') {
+          const responseOng = await fetch('/ongs');
+          if (!responseOng.ok) throw new Error('Erro ao carregar ONGs');
+          const ongs = await responseOng.json();
+          const ong = ongs.find(o => o.id === user.id);
+          if (ong) {
+            ongId = ong.id;
+            const responseAtividades = await fetch(`/atividades?ong=${ong.id}`);
+            atividades = await responseAtividades.json();
+            document.getElementById('novaAtividadeBtn').classList.remove('d-none');
+          }
+        } else if (user.tipo === 'pessoa') {
+          const responseAtividades = await fetch('/atividades');
+          const allAtividades = await responseAtividades.json();
+          atividades = allAtividades.filter(a => a.voluntarios && a.voluntarios.includes(user.id));
+        }
+        atividadesData = atividades;
+        gerarTabela(atividades);
+      } catch (error) {
+        console.error(error);
+        document.getElementById('atividadesTable').getElementsByTagName('tbody')[0].innerHTML = '<tr><td colspan="6">Erro ao carregar as atividades.</td></tr>';
+      }
+    }
+
+    function gerarTabela(atividades) {
+      const tbody = document.getElementById('atividadesTable').getElementsByTagName('tbody')[0];
+      tbody.innerHTML = '';
+
+      atividades.forEach(atividade => {
+        const tr = document.createElement('tr');
+
+        const tdNome = document.createElement('td');
+        tdNome.textContent = atividade.nome;
+        tr.appendChild(tdNome);
+
+        const tdDescricao = document.createElement('td');
+        tdDescricao.textContent = atividade.descricao;
+        tr.appendChild(tdDescricao);
+
+        const tdDataInicio = document.createElement('td');
+        tdDataInicio.textContent = formatarData(atividade.data_inicio);
+        tr.appendChild(tdDataInicio);
+
+        const tdDataFim = document.createElement('td');
+        tdDataFim.textContent = formatarData(atividade.data_fim);
+        tr.appendChild(tdDataFim);
+
+        const tdStatus = document.createElement('td');
+        tdStatus.textContent = atividade.status;
+        tr.appendChild(tdStatus);
+
+        const tdAcoes = document.createElement('td');
+
+        const btnDetalhes = document.createElement('button');
+        btnDetalhes.className = 'btn btn-info btn-sm me-2';
+        btnDetalhes.innerHTML = '<i class="bi bi-eye"></i>';
+        btnDetalhes.title = 'Ver Detalhes';
+        btnDetalhes.addEventListener('click', () => {
+          window.location.href = `detalhamento-atividades.html?id=${atividade.id}`;
+        });
+        tdAcoes.appendChild(btnDetalhes);
+
+        if (user.tipo === 'ong') {
+          const btnEditar = document.createElement('button');
+          btnEditar.className = 'btn btn-warning btn-sm me-2';
+          btnEditar.innerHTML = '<i class="bi bi-pencil-square"></i>';
+          btnEditar.title = 'Editar Atividade';
+          btnEditar.addEventListener('click', () => {
+            abrirModalEdicao(atividade.id);
+          });
+          tdAcoes.appendChild(btnEditar);
+
+          const btnDeletar = document.createElement('button');
+          btnDeletar.className = 'btn btn-danger btn-sm';
+          btnDeletar.innerHTML = '<i class="bi bi-trash"></i>';
+          btnDeletar.title = 'Deletar Atividade';
+          btnDeletar.addEventListener('click', () => {
+            confirmarDelecao(atividade.id);
+          });
+          tdAcoes.appendChild(btnDeletar);
+        }
+
+        tr.appendChild(tdAcoes);
+        tbody.appendChild(tr);
+      });
+
+      if (atividades.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" class="text-center">Nenhuma atividade encontrada.</td></tr>';
+      }
+    }
+
+    function formatarData(dataISO) {
+      const data = new Date(dataISO);
+      if (isNaN(data)) return 'Data Inválida';
+      return data.toLocaleDateString('pt-BR');
+    }
+
+    function abrirModalEdicao(id) {
+      const atividade = atividadesData.find(a => a.id === id);
+      if (!atividade) {
+        Swal.fire('Erro', 'Atividade não encontrada.', 'error');
+        return;
+      }
+
+      document.getElementById('edit-id').value = atividade.id;
+      document.getElementById('edit-nome').value = atividade.nome;
+      document.getElementById('edit-descricao').value = atividade.descricao;
+      document.getElementById('edit-data-inicio').value = atividade.data_inicio.split('T')[0];
+      document.getElementById('edit-data-fim').value = atividade.data_fim.split('T')[0];
+      document.getElementById('edit-status').value = atividade.status;
+
+      const editModal = new bootstrap.Modal(document.getElementById('editModal'));
+      editModal.show();
+    }
+
+    function confirmarDelecao(id) {
+      Swal.fire({
+        title: 'Tem certeza?',
+        text: "Você não poderá reverter isso!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Sim, deletar!',
+        cancelButtonText: 'Cancelar'
+      }).then(async (result) => {
+        if (result.isConfirmed) {
+          try {
+            const response = await fetch(`/atividades/${id}`, { method: 'DELETE' });
+            if (!response.ok) throw new Error('Erro ao deletar atividade.');
+
+            Swal.fire(
+              'Deletado!',
+              'A atividade foi deletada com sucesso.',
+              'success'
+            );
+
+            carregarAtividades();
+          } catch (error) {
+            console.error('Erro ao deletar:', error);
+            Swal.fire(
+              'Erro!',
+              'Ocorreu um erro ao deletar a atividade.',
+              'error'
+            );
+          }
+        }
+      });
+    }
+
+    document.getElementById('editForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const id = document.getElementById('edit-id').value;
+      const nome = document.getElementById('edit-nome').value.trim();
+      const descricao = document.getElementById('edit-descricao').value.trim();
+      const data_inicio = document.getElementById('edit-data-inicio').value;
+      const data_fim = document.getElementById('edit-data-fim').value;
+      const status = document.getElementById('edit-status').value;
+
+      if (!nome || !descricao || !data_inicio || !data_fim || !status) {
+        Swal.fire('Erro', 'Por favor, preencha todos os campos obrigatórios.', 'warning');
+        return;
+      }
+
+      try {
+        const updateData = {
+          nome,
+          descricao,
+          data_inicio,
+          data_fim,
+          status
+        };
+
+        const response = await fetch(`/atividades/${id}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(updateData),
+        });
+
+        if (!response.ok) throw new Error('Erro ao atualizar atividade.');
+
+        Swal.fire(
+          'Sucesso!',
+          'A atividade foi atualizada com sucesso.',
+          'success'
+        );
+
+        const editModalEl = document.getElementById('editModal');
+        const editModal = bootstrap.Modal.getInstance(editModalEl);
+        editModal.hide();
+
+        carregarAtividades();
+      } catch (error) {
+        console.error('Erro ao editar:', error);
+        Swal.fire(
+          'Erro!',
+          'Ocorreu um erro ao atualizar a atividade.',
+          'error'
+        );
+      }
+    });
+
+    document.getElementById('novaAtividadeBtn').addEventListener('click', () => {
+      const createModal = new bootstrap.Modal(document.getElementById('createModal'));
+      createModal.show();
+    });
+
+    document.getElementById('createForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (user.tipo !== 'ong' || !ongId) {
+        Swal.fire('Erro', 'Usuário não autorizado para criar atividades.', 'error');
+        return;
+      }
+
+      const nome = document.getElementById('create-nome').value.trim();
+      const descricao = document.getElementById('create-descricao').value.trim();
+      const data_inicio = document.getElementById('create-data-inicio').value;
+      const data_fim = document.getElementById('create-data-fim').value;
+      const status = document.getElementById('create-status').value;
+
+      if (!nome || !descricao || !data_inicio || !data_fim || !status) {
+        Swal.fire('Erro', 'Por favor, preencha todos os campos obrigatórios.', 'warning');
+        return;
+      }
+
+      try {
+        const newAtividade = {
+          nome,
+          descricao,
+          data_inicio,
+          data_fim,
+          status,
+          ong: ongId,
+          voluntarios: []
+        };
+
+        const response = await fetch('/atividades', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(newAtividade),
+        });
+
+        if (!response.ok) throw new Error('Erro ao criar atividade.');
+
+        Swal.fire(
+          'Sucesso!',
+          'A atividade foi criada com sucesso.',
+          'success'
+        );
+
+        const createModalEl = document.getElementById('createModal');
+        const createModal = bootstrap.Modal.getInstance(createModalEl);
+        createModal.hide();
+
+        carregarAtividades();
+        document.getElementById('createForm').reset();
+      } catch (error) {
+        console.error('Erro ao criar atividade:', error);
+        Swal.fire(
+          'Erro!',
+          'Ocorreu um erro ao criar a atividade.',
+          'error'
+        );
+      }
+    });
+
+    window.onload = carregarAtividades;
+  </script>
+</body>
+
+</html>
