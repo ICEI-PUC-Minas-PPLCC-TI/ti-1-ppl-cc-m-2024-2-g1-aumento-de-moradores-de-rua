@@ -9,6 +9,67 @@
   <link rel="stylesheet" href="../../../assets/css/ongs/pessoas-em-situacao-de-rua.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@3.0.0/dist/geosearch.css" />
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 90vw;
+      border-radius: 8px;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,26 +85,89 @@
     </section>
 
     <section class="detalhes">
-
       <h2>Necessidades do Morador</h2>
       <div class="necessidades" id="necessidades"></div>
+      <button class="btn" id="btn-abrir-modal-necessidades">Editar Necessidades</button>
 
       <h2>Últimas Localizações</h2>
       <button class="ver-detalhes" onclick="mostrarMapaCompleto()">Ver todas as localizações</button>
+      <button class="btn" id="btn-abrir-modal-localizacao">Cadastrar Última Localização</button>
       <div class="localizacoes" id="localizacoes"></div>
     </section>
   </main>
 
+  <!-- Modal para Cadastrar Última Localização -->
+  <div id="modal-localizacao" class="modal">
+    <div class="modal-content">
+      <span class="close" id="fechar-modal-localizacao">&times;</span>
+      <h2>Cadastrar Última Localização</h2>
+      <form id="form-cadastrar-localizacao">
+        <div class="form-group">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" required>
+          <div class="error" id="erro-cep"></div>
+        </div>
+        <div class="form-group">
+          <label for="rua">Rua:</label>
+          <input type="text" id="rua" name="rua" required>
+          <div class="error" id="erro-rua"></div>
+        </div>
+        <div class="form-group">
+          <label for="numero">Número:</label>
+          <input type="text" id="numero" name="numero" required>
+          <div class="error" id="erro-numero"></div>
+        </div>
+        <div class="form-group">
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" required>
+          <div class="error" id="erro-bairro"></div>
+        </div>
+        <div class="form-group">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+          <div class="error" id="erro-cidade"></div>
+        </div>
+        <div class="form-group">
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" maxlength="2" required>
+          <div class="error" id="erro-estado"></div>
+        </div>
+        <div class="form-group">
+          <label for="localizado_em">Data de Localização:</label>
+          <input type="date" id="localizado_em" name="localizado_em" required>
+          <div class="error" id="erro-localizado_em"></div>
+        </div>
+        <button type="submit" class="btn">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="modal-necessidades" class="modal">
+    <div class="modal-content">
+      <span class="close" id="fechar-modal-necessidades">&times;</span>
+      <h2>Editar Necessidades</h2>
+      <form id="form-editar-necessidades">
+        <div id="lista-necessidades">
+        </div>
+        <button type="button" class="btn" id="adicionar-necessidade">Adicionar Necessidade</button>
+        <button type="submit" class="btn">Salvar</button>
+      </form>
+    </div>
+  </div>
+
   <div id="modal-mapa" class="modal">
-    <div id="mapa-completo" class="mapa-completo"></div>
-    <button class="fechar-modal" onclick="fecharMapaCompleto()">Fechar</button>
+    <div class="modal-content">
+      <span class="close" onclick="fecharMapaCompleto()">&times;</span>
+      <div id="mapa-completo" class="mapa-completo" style="height: 500px;"></div>
+      <button class="btn" onclick="fecharMapaCompleto()">Fechar</button>
+    </div>
   </div>
 
   <script src="../../../assets/js/header/index.js"></script>
   <script src="../../../assets/js/situacao-de-rua/index.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-geosearch@latest/dist/bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function disableFormFields(disabled) {
     const fields = form.querySelectorAll('input, select, textarea, button');
     fields.forEach(field => {
-      if (field !== gerarQrBtn) { // Mantém o botão gerar QR habilitado/desabilitado conforme necessário
+      if (field !== gerarQrBtn) {
         field.disabled = disabled;
       }
     });

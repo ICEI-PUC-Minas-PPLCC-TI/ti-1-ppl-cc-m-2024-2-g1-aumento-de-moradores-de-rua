@@ -1,10 +1,10 @@
-let currentProfileIndex = 0; // Índice do perfil atual
-let profiles = []; // Array para armazenar todos os perfis
+let currentProfileIndex = 0;
+let profiles = [];
 var usuarioCorrente = {};
 
 
 function carregarPerfis() {
-    fetch('/usuarios') // Insira o caminho correto do arquivo JSON
+    fetch('/usuarios')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro ao carregar o JSON: ${response.statusText}`);
@@ -13,15 +13,11 @@ function carregarPerfis() {
         })
         .then(data => {
             if (data && usuarioCorrente.id) {
-                // Encontrar o perfil do usuário com o ID atual
                 const perfil = data.find(user => user.id === usuarioCorrente.id);
 
-                
-                if (perfil) {
-                    // Atualizar o conteúdo do HTML com os dados do perfil
-                    exibirPerfil(perfil);
 
-                    // Exibir foto do perfil
+                if (perfil) {
+                    exibirPerfil(perfil);
                     const profilePhoto = document.getElementById('profilePhoto');
                     profilePhoto.innerHTML = `<img src="${perfil.imgPerfil}" alt="Foto de perfil" style="max-width: 250px; max-height: 270px;">`;
                 } else {
@@ -33,33 +29,31 @@ function carregarPerfis() {
         })
         .catch(error => console.error('Erro ao carregar os perfis:', error));
 }
-
-// Função para exibir o perfil baseado no índice
 function exibirPerfil(perfil) {
-    
-        if (perfil.tipo == 'ong') {
-            let data = document.querySelector(".data_nasc_field");
-            data.style.display = "none";
-        }
 
-        document.getElementById('nome').value = perfil.nome || "Nome não disponível";
-        document.getElementById('data_nascimento').value = perfil.data_nascimento || "Data não disponível";
-        document.getElementById('estado').value = perfil.endereco.estado || "Estado não disponível";
-        document.getElementById('cidade').value = perfil.endereco.cidade || "Cidade não disponível";
-        document.getElementById('bairro').value = perfil.endereco.bairro || "Bairo não disponível";
-        document.getElementById('logradouro').value = perfil.endereco.logradouro || "Rua não disponível";
-        document.getElementById('cep').value = perfil.endereco.cep || "CEP não disponível";
-        document.getElementById('complemento').value = perfil.endereco.complemento || "Complemento não disponível";
-        document.getElementById('telefone').value = perfil.contatos.telefone || "Telefone não disponível";
-        document.getElementById('email').value = perfil.contatos.email || "Email não disponível";
-        document.getElementById('infoAdicional').value = perfil.infoAdicional || "Informação ainda não disponível";
+    if (perfil.tipo == 'ong') {
+        let data = document.querySelector(".data_nasc_field");
+        data.style.display = "none";
+    }
 
-        const profilePhoto = document.getElementById('profilePhoto');
-        profilePhoto.innerHTML = `<img src="${perfil.imgPerfil}" alt="Foto de perfil" style="max-width: 250px; max-height: 250px;">`;
+    document.getElementById('nome').value = perfil.nome || "Nome não disponível";
+    document.getElementById('data_nascimento').value = perfil.data_nascimento || "Data não disponível";
+    document.getElementById('estado').value = perfil.endereco.estado || "Estado não disponível";
+    document.getElementById('cidade').value = perfil.endereco.cidade || "Cidade não disponível";
+    document.getElementById('bairro').value = perfil.endereco.bairro || "Bairo não disponível";
+    document.getElementById('logradouro').value = perfil.endereco.logradouro || "Rua não disponível";
+    document.getElementById('cep').value = perfil.endereco.cep || "CEP não disponível";
+    document.getElementById('complemento').value = perfil.endereco.complemento || "Complemento não disponível";
+    document.getElementById('telefone').value = perfil.contatos.telefone || "Telefone não disponível";
+    document.getElementById('email').value = perfil.contatos.email || "Email não disponível";
+    document.getElementById('infoAdicional').value = perfil.infoAdicional || "Informação ainda não disponível";
+
+    const profilePhoto = document.getElementById('profilePhoto');
+    profilePhoto.innerHTML = `<img src="${perfil.imgPerfil}" alt="Foto de perfil" style="max-width: 250px; max-height: 250px;">`;
 }
 
 
-function salvarPerfil() {   
+function salvarPerfil() {
     const nome = document.getElementById('nome').value;
     const estado = document.getElementById('estado').value;
     const cidade = document.getElementById('cidade').value;
@@ -79,7 +73,6 @@ function salvarPerfil() {
         data_de_nascimento,
         endereco: {
             cidade: cidade,
-            // numero,
             estado,
             bairro,
             logradouro,
@@ -93,7 +86,7 @@ function salvarPerfil() {
         infoAdicional,
     };
 
-    fetch(`http://localhost:3000/usuarios/${usuarioCorrente.id}`, {    
+    fetch(`http://localhost:3000/usuarios/${usuarioCorrente.id}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -101,8 +94,6 @@ function salvarPerfil() {
         body: JSON.stringify(perfil)
     })
 }
-
-// Carrega perfis ao iniciar a página
 window.onload = () => {
     const usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
     if (usuarioCorrenteJSON) {

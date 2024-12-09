@@ -4,10 +4,7 @@ function getIdFromURL() {
 }
 
 function getCurrentUser() {
-  return {
-    id: 3,
-    tipo: 'pessoa'
-  };
+  return JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
 }
 
 async function fetchOngData() {
@@ -29,24 +26,24 @@ function preencherDadosONG(data) {
   document.getElementById('ong-foto').src = data.imageUrl || '#';
   document.getElementById('ong-razao-social').textContent = data.razao_social || 'razão social não informada';
   document.getElementById('ong-nome-fantasia').textContent = data.nome_fantasia || 'nome fantasia não informado';
-  document.getElementById('ong-cnpj').textContent = data.cnpj ? `cnpj: ${data.cnpj}` : 'cnpj não informado';
+  document.getElementById('ong-cnpj').textContent = data.cnpj ? `CNPJ: ${data.cnpj}` : 'CNPJ não informado';
   document.getElementById('ong-data-fundacao').textContent = data.data_fundacao
-    ? `fundada em: ${new Date(data.data_fundacao).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' })}`
-    : 'data de fundação não informada';
+    ? `Fundada em: ${new Date(data.data_fundacao).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' })}`
+    : 'Data de fundação não informada';
 
-  document.getElementById('ong-telefone').textContent = data.contatos?.telefone ? `${data.contatos.telefone}` : 'telefone não informado';
-  document.getElementById('ong-email').textContent = data.contatos?.email ? `${data.contatos.email}` : 'email não informado';
+  document.getElementById('ong-telefone').textContent = data.contatos?.telefone ? `${data.contatos.telefone}` : 'Telefone não informado';
+  document.getElementById('ong-email').textContent = data.contatos?.email ? `${data.contatos.email}` : 'Email não informado';
 
   if (data.endereco) {
-    document.getElementById('ong-logradouro').textContent = data.endereco.logradouro ? `${data.endereco.logradouro}` : '';
-    document.getElementById('ong-numero').textContent = data.endereco.numero ? `${data.endereco.numero}` : '';
-    document.getElementById('ong-bairro').textContent = data.endereco.bairro ? `${data.endereco.bairro}` : '';
-    document.getElementById('ong-cidade').textContent = data.endereco.cidade ? `${data.endereco.cidade}` : '';
-    document.getElementById('ong-estado').textContent = data.endereco.estado ? `${data.endereco.estado}` : '';
-    document.getElementById('ong-cep').textContent = data.endereco.cep ? `${data.endereco.cep}` : '';
+    document.getElementById('ong-logradouro').textContent = data.endereco.logradouro || '';
+    document.getElementById('ong-numero').textContent = data.endereco.numero || '';
+    document.getElementById('ong-bairro').textContent = data.endereco.bairro || '';
+    document.getElementById('ong-cidade').textContent = data.endereco.cidade || '';
+    document.getElementById('ong-estado').textContent = data.endereco.estado || '';
+    document.getElementById('ong-cep').textContent = data.endereco.cep || '';
   }
 
-  document.getElementById('ong-descricao').textContent = data.descricao || 'descrição não informada';
+  document.getElementById('ong-descricao').textContent = data.descricao || 'Descrição não informada';
 }
 
 function listarObjetivos(objetivos) {
@@ -60,7 +57,7 @@ function listarObjetivos(objetivos) {
       objetivosContainer.appendChild(p);
     });
   } else {
-    objetivosContainer.textContent = 'nenhum objetivo informado.';
+    objetivosContainer.textContent = 'Nenhum objetivo informado.';
   }
 }
 
@@ -74,24 +71,29 @@ function listarNecessidades(necessidades) {
       card.classList.add('necessidade-card', 'mb-2', 'p-3', 'border', 'rounded');
       card.innerHTML = `
         <h5>${necessidade.nome}</h5>
-        <p><strong>tipo:</strong> ${necessidade.tipo}</p>
-        <p><strong>quantidade:</strong> ${necessidade.quantidade}</p>
+        <p><strong>Tipo:</strong> ${necessidade.tipo}</p>
+        <p><strong>Quantidade:</strong> ${necessidade.quantidade}</p>
         <p>${necessidade.descricao}</p>
       `;
       necessidadesContainer.appendChild(card);
     });
   } else {
-    necessidadesContainer.textContent = 'nenhuma necessidade específica informada.';
+    necessidadesContainer.textContent = 'Nenhuma necessidade específica informada.';
   }
 }
 
 async function adicionarBotoesAcao(ongID) {
   const usuario = getCurrentUser();
-  if (usuario.tipo === 'pessoa') {
-    const acaoPessoa = document.getElementById('acao-pessoa');
+  const acaoOng = document.getElementById('acao-ong');
+  const acaoPessoa = document.getElementById('acao-pessoa');
+
+  if (usuario.tipo === 'ong' && verificarResponsavel(ongID, usuario.id)) {
+    acaoOng.style.display = 'flex';
+  } else if (usuario.tipo === 'pessoa') {
+    acaoPessoa.style.display = 'flex';
 
     const doacaoBtn = document.createElement('button');
-    doacaoBtn.textContent = 'realizar doação';
+    doacaoBtn.textContent = 'Realizar Doação';
     doacaoBtn.classList.add('btn', 'btn-doacao', 'btn-gap');
     doacaoBtn.onclick = () => {
       window.location.href = `/modulos/pessoas/realizar-doacao.html?ongID=${ongID}`;
@@ -103,29 +105,55 @@ async function adicionarBotoesAcao(ongID) {
 
     if (jaVoluntario) {
       const mensagemVoluntario = document.createElement('span');
-      mensagemVoluntario.textContent = 'você é voluntário nessa ong';
+      mensagemVoluntario.textContent = 'Você é voluntário nessa ONG';
       mensagemVoluntario.classList.add('mensagem-voluntario');
       acaoPessoa.appendChild(mensagemVoluntario);
     } else {
       const voluntariarBtn = document.createElement('button');
-      voluntariarBtn.textContent = 'se voluntariar';
+      voluntariarBtn.textContent = 'Se Voluntariar';
       voluntariarBtn.classList.add('btn', 'btn-voluntariar');
       voluntariarBtn.onclick = () => {
         Swal.fire({
-          title: 'confirmar voluntariado?',
+          title: 'Confirmar voluntariado?',
           icon: 'question',
           showCancelButton: true,
-          confirmButtonText: 'sim',
-          cancelButtonText: 'não'
+          confirmButtonText: 'Sim',
+          cancelButtonText: 'Não'
         }).then((result) => {
           if (result.isConfirmed) {
             realizarVoluntariado(ongID, usuario.id);
-            window.location.reload();
           }
         });
       };
       acaoPessoa.appendChild(voluntariarBtn);
     }
+  }
+
+  const btnEditarObjetivos = document.getElementById('btn-editar-objetivos');
+  const btnEditarNecessidades = document.getElementById('btn-editar-necessidades');
+
+  if (usuario.tipo === 'ong' && verificarResponsavel(ongID, usuario.id)) {
+    btnEditarObjetivos.style.display = 'inline-block';
+    btnEditarNecessidades.style.display = 'inline-block';
+  }
+
+  if (btnEditarObjetivos) {
+    btnEditarObjetivos.addEventListener('click', () => {
+      abrirEditarObjetivosModal();
+    });
+  }
+
+  if (btnEditarNecessidades) {
+    btnEditarNecessidades.addEventListener('click', () => {
+      abrirEditarNecessidadesModal();
+    });
+  }
+
+  const editarOngBtn = document.getElementById('btn-editar-ong');
+  if (editarOngBtn) {
+    editarOngBtn.addEventListener('click', () => {
+      abrirEditarOngModal();
+    });
   }
 }
 
@@ -136,58 +164,37 @@ async function verificarVoluntariado(ongID, usuarioID) {
       const voluntarios = await response.json();
       return voluntarios.length > 0;
     } else {
-      console.error('erro ao verificar voluntariado');
+      console.error('Erro ao verificar voluntariado');
       return false;
     }
   } catch (error) {
-    console.error('erro ao verificar voluntariado:', error);
+    console.error('Erro ao verificar voluntariado:', error);
+    return false;
+  }
+}
+
+async function verificarResponsavel(ongID, usuarioID) {
+  try {
+    const response = await fetch(`/ongs/${ongID}`);
+    if (response.ok) {
+      const ong = await response.json();
+      return ong.responsavel === usuarioID;
+    } else {
+      console.error('Erro ao verificar responsável');
+      return false;
+    }
+  } catch (error) {
+    console.error('Erro ao verificar responsável:', error);
     return false;
   }
 }
 
 function inicializarEventos() {
-  const editarOngBtn = document.getElementById('btn-se-voluntariar');
-  const editarObjetivosBtn = document.getElementById('btn-editar-objetivos');
-  const editarNecessidadesBtn = document.getElementById('btn-editar-necessidades');
-  const adicionarNecessidadeBtn = document.getElementById('btn-adicionar-necessidade');
-
-  const idOng = getIdFromURL();
-  const usuario = getCurrentUser();
-
-  if (editarOngBtn) {
-    editarOngBtn.addEventListener('click', () => {
-      if (usuario.tipo === 'pessoa') {
-      } else if (usuario.tipo === 'ong') {
-        const editarOngModal = new bootstrap.Modal(document.getElementById('editarOngModal'));
-        editarOngModal.show();
-      } else {
-        alert('tipo de usuário desconhecido.');
-      }
-    });
-  }
-
-  if (editarObjetivosBtn) {
-    editarObjetivosBtn.addEventListener('click', () => {
-      abrirEditarObjetivosModal();
-    });
-  }
-
-  if (editarNecessidadesBtn) {
-    editarNecessidadesBtn.addEventListener('click', () => {
-      abrirEditarNecessidadesModal();
-    });
-  }
-
-  if (adicionarNecessidadeBtn) {
-    adicionarNecessidadeBtn.addEventListener('click', () => {
-      abrirEditarNecessidadesModal();
-    });
-  }
-
   const editarOngForm = document.getElementById('editar-ong-form');
   if (editarOngForm) {
     editarOngForm.addEventListener('submit', (event) => {
       event.preventDefault();
+      const idOng = getIdFromURL();
       salvarEdicaoOng(idOng);
     });
   }
@@ -196,6 +203,7 @@ function inicializarEventos() {
   if (editarObjetivosForm) {
     editarObjetivosForm.addEventListener('submit', (event) => {
       event.preventDefault();
+      const idOng = getIdFromURL();
       salvarEdicaoObjetivos(idOng);
     });
   }
@@ -208,6 +216,7 @@ function inicializarEventos() {
       if (novoObjetivo) {
         adicionarNovoObjetivo(novoObjetivo);
         novoObjetivoInput.value = '';
+
       }
     });
   }
@@ -216,6 +225,7 @@ function inicializarEventos() {
   if (editarNecessidadesForm) {
     editarNecessidadesForm.addEventListener('submit', (event) => {
       event.preventDefault();
+      const idOng = getIdFromURL();
       salvarEdicaoNecessidades(idOng);
     });
   }
@@ -244,15 +254,15 @@ async function realizarVoluntariado(ongID, usuarioID) {
     });
 
     if (response.ok) {
-      Swal.fire('você se voluntariou com sucesso!', '', 'success').then(() => {
+      Swal.fire('Você se voluntariou com sucesso!', '', 'success').then(() => {
         fetchOngData();
       });
     } else {
-      Swal.fire('erro ao se voluntariar. tente novamente.', '', 'error');
+      Swal.fire('Erro ao se voluntariar. Tente novamente.', '', 'error');
     }
   } catch (error) {
-    console.error('erro ao realizar voluntariado:', error);
-    Swal.fire('erro ao realizar voluntariado.', '', 'error');
+    console.error('Erro ao realizar voluntariado:', error);
+    Swal.fire('Erro ao realizar voluntariado.', '', 'error');
   }
 }
 
@@ -276,7 +286,7 @@ function preencherListaObjetivosParaEdicao() {
         div.classList.add('input-group', 'mb-2');
         div.innerHTML = `
           <input type="text" class="form-control objetivo-input" value="${obj}">
-          <button class="btn btn-danger btn-remover-objetivo" data-index="${index}" type="button">remover</button>
+          <button class="btn btn-danger btn-remover-objetivo" data-index="${index}" type="button">Remover</button>
         `;
         listaObjetivosDiv.appendChild(div);
       });
@@ -290,7 +300,7 @@ function preencherListaObjetivosParaEdicao() {
       });
     })
     .catch(error => {
-      console.error('erro ao buscar objetivos:', error);
+      console.error('Erro ao buscar objetivos:', error);
     });
 }
 
@@ -304,7 +314,7 @@ function removerObjetivo(index) {
       atualizarObjetivosNaOng(idOng, objetivos);
     })
     .catch(error => {
-      console.error('erro ao remover objetivo:', error);
+      console.error('Erro ao remover objetivo:', error);
     });
 }
 
@@ -318,7 +328,7 @@ function adicionarNovoObjetivo(objetivo) {
       atualizarObjetivosNaOng(idOng, objetivos);
     })
     .catch(error => {
-      console.error('erro ao adicionar objetivo:', error);
+      console.error('Erro ao adicionar objetivo:', error);
     });
 }
 
@@ -332,17 +342,17 @@ function atualizarObjetivosNaOng(idOng, objetivos) {
   })
     .then(response => {
       if (response.ok) {
-        Swal.fire('objetivos atualizados com sucesso!', '', 'success').then(() => {
+        Swal.fire('Objetivos atualizados com sucesso!', '', 'success').then(() => {
           fetchOngData();
           const editarObjetivosModal = bootstrap.Modal.getInstance(document.getElementById('editarObjetivosModal'));
           editarObjetivosModal.hide();
         });
       } else {
-        Swal.fire('erro ao atualizar objetivos.', '', 'error');
+        Swal.fire('Erro ao atualizar objetivos.', '', 'error');
       }
     })
     .catch(error => {
-      console.error('erro ao atualizar objetivos:', error);
+      console.error('Erro ao atualizar objetivos:', error);
     });
 }
 
@@ -370,26 +380,26 @@ function preencherListaNecessidadesParaEdicao() {
       const necessidades = data.necessidades_especificas || [];
       necessidades.forEach((nec, index) => {
         const div = document.createElement('div');
-        div.classList.add('card', 'mb-2');
+        div.classList.add('card', 'mb-2', 'w-100');
         div.innerHTML = `
           <div class="card-body">
             <div class="mb-3">
-              <label class="form-label">tipo</label>
+              <label class="form-label">Tipo</label>
               <input type="text" class="form-control necessidade-tipo" value="${nec.tipo}" required>
             </div>
             <div class="mb-3">
-              <label class="form-label">nome</label>
+              <label class="form-label">Nome</label>
               <input type="text" class="form-control necessidade-nome" value="${nec.nome}" required>
             </div>
             <div class="mb-3">
-              <label class="form-label">quantidade</label>
+              <label class="form-label">Quantidade</label>
               <input type="number" class="form-control necessidade-quantidade" value="${nec.quantidade}" required>
             </div>
             <div class="mb-3">
-              <label class="form-label">descrição</label>
+              <label class="form-label">Descrição</label>
               <textarea class="form-control necessidade-descricao" rows="2" required>${nec.descricao}</textarea>
             </div>
-            <button class="btn btn-danger btn-remover-necessidade" data-index="${index}" type="button">remover</button>
+            <button class="btn btn-danger btn-remover-necessidade" data-index="${index}" type="button">Remover</button>
           </div>
         `;
         listaNecessidadesDiv.appendChild(div);
@@ -404,7 +414,7 @@ function preencherListaNecessidadesParaEdicao() {
       });
     })
     .catch(error => {
-      console.error('erro ao buscar necessidades:', error);
+      console.error('Erro ao buscar necessidades:', error);
     });
 }
 
@@ -418,7 +428,7 @@ function removerNecessidade(index) {
       atualizarNecessidadesNaOng(idOng, necessidades);
     })
     .catch(error => {
-      console.error('erro ao remover necessidade:', error);
+      console.error('Erro ao remover necessidade:', error);
     });
 }
 
@@ -471,26 +481,37 @@ function atualizarNecessidadesNaOng(idOng, necessidades) {
   })
     .then(response => {
       if (response.ok) {
-        Swal.fire('necessidades atualizadas com sucesso!', '', 'success').then(() => {
+        Swal.fire('Necessidades atualizadas com sucesso!', '', 'success').then(() => {
           fetchOngData();
           const editarNecessidadesModal = bootstrap.Modal.getInstance(document.getElementById('editarNecessidadesModal'));
           editarNecessidadesModal.hide();
         });
       } else {
-        Swal.fire('erro ao atualizar necessidades.', '', 'error');
+        Swal.fire('Erro ao atualizar necessidades.', '', 'error');
       }
     })
     .catch(error => {
-      console.error('erro ao atualizar necessidades:', error);
+      console.error('Erro ao atualizar necessidades:', error);
     });
 }
 
-function abrirEditarOngModal(data) {
-  document.getElementById('edit-razao-social').value = data.razao_social || '';
-  document.getElementById('edit-nome-fantasia').value = data.nome_fantasia || '';
-  document.getElementById('edit-cnpj').value = data.cnpj || '';
-  document.getElementById('edit-data-fundacao').value = data.data_fundacao || '';
-  document.getElementById('edit-descricao').value = data.descricao || '';
+function abrirEditarOngModal() {
+  const idOng = getIdFromURL();
+  fetch(`/ongs/${idOng}`)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('edit-razao-social').value = data.razao_social || '';
+      document.getElementById('edit-nome-fantasia').value = data.nome_fantasia || '';
+      document.getElementById('edit-cnpj').value = data.cnpj || '';
+      document.getElementById('edit-data-fundacao').value = data.data_fundacao || '';
+      document.getElementById('edit-descricao').value = data.descricao || '';
+
+      const editarOngModal = new bootstrap.Modal(document.getElementById('editarOngModal'));
+      editarOngModal.show();
+    })
+    .catch(error => {
+      console.error('Erro ao buscar dados da ONG para edição:', error);
+    });
 }
 
 function salvarEdicaoOng(idOng) {
@@ -517,17 +538,17 @@ function salvarEdicaoOng(idOng) {
   })
     .then(response => {
       if (response.ok) {
-        Swal.fire('ong atualizada com sucesso!', '', 'success').then(() => {
+        Swal.fire('ONG atualizada com sucesso!', '', 'success').then(() => {
           fetchOngData();
           const editarOngModal = bootstrap.Modal.getInstance(document.getElementById('editarOngModal'));
           editarOngModal.hide();
         });
       } else {
-        Swal.fire('erro ao atualizar ong.', '', 'error');
+        Swal.fire('Erro ao atualizar ONG.', '', 'error');
       }
     })
     .catch(error => {
-      console.error('erro ao atualizar ong:', error);
+      console.error('Erro ao atualizar ONG:', error);
     });
 }
 

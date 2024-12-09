@@ -16,6 +16,11 @@ const verDetalhes = (id) => {
   window.location.href = `modulos/shared/ongs/detalhada.html?id=${id}`;
 }
 
+const verDetalhesAtividade = (id) => {
+  window.location.href = `/modulos/shared/detalhamento-atividades.html?id=${id}`;
+}
+
+
 const fetchDonations = async () => {
   if (currentUser.tipo !== 'ong') {
     const totalElement = document.querySelector('.donations_geral');
@@ -42,14 +47,18 @@ const fetchData = async () => {
   currentUser = JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
 
   const element = document.querySelector('#donations_geral');
-  const element_atividades = document.querySelector('.geral_atividades');
+  const element_atividades = document.querySelector('.atividades_geral');
+  const element_list = document.querySelector('.geral_atividades');
 
   if (element) {
     element.style.display = currentUser.tipo == 'ong' ? 'block' : 'none';
   }
 
+  console.log()
+
   if (element_atividades) {
-    element_atividades.style.display = currentUser.tipo == 'pessoa' ? 'block' : 'none';
+    element_atividades.style.display = currentUser.tipo == 'pessoa' ? '' : 'none';
+    element_list.style.display = currentUser.tipo == 'pessoa' ? 'block' : 'none';
   }
 
   try {
@@ -93,50 +102,54 @@ const fetchData = async () => {
     console.error('Erro ao buscar as ONGs:', error);
   }
 
-  try {
-    const response = await fetch(`/atividades?voluntario=${currentUser.id}`);
+  if (currentUser) {
+    try {
+      const response = await fetch(`/atividades?voluntario=${currentUser.id}`);
 
-    const atividades = await response.json();
+      const atividades = await response.json();
 
-    const atividadesList = document.querySelector(".atividades-list");
+      const atividadesList = document.querySelector(".atividades-list");
 
-    if (!atividadesList) {
-      console.error('Elemento .atividades-list não encontrado.');
-      return;
-    }
+      if (!atividadesList) {
+        console.error('Elemento .atividades-list não encontrado.');
+        return;
+      }
 
-    atividadesList.innerHTML = "";
+      atividadesList.innerHTML = "";
 
-    if (atividades.length === 0) {
-      atividadesList.innerHTML = "<p>Nenhum registro encontrado.</p>";
-      document.querySelector('.atividades_geral').style.display = 'none';
-      return;
-    }
+      if (atividades.length === 0) {
+        atividadesList.innerHTML = "<p>Nenhum registro encontrado.</p>";
+        document.querySelector('.atividades_geral').style.display = 'none';
+        return;
+      }
 
-    countData(atividades);
+      countData(atividades);
 
-    atividades.forEach((atividade) => {
-      const atividadeElement = `
-        <div class="card">
-          <img class="card_image" src="${atividade.imageUrl || './assets/images/home_img.jpg'}" alt="${atividade.nome}">
-          <p><b>${atividade.nome}</b></p>
-          <p>Data Início: ${formatDate(atividade.data_inicio)}</p>
-          <p>Data Fim: ${formatDate(atividade.data_fim)}</p>
-          <button onclick="verDetalhesAtividade(${atividade.id})">Ver Detalhes</button>
-        </div>`;
+      atividades.forEach((atividade) => {
+        const atividadeElement = `
+          <div class="card">
+            <img class="card_image" src="${atividade.imageUrl || './assets/images/home_img.jpg'}" alt="${atividade.nome}">
+            <p><b>${atividade.nome}</b></p>
+            <p>Data Início: ${formatDate(atividade.data_inicio)}</p>
+            <p>Data Fim: ${formatDate(atividade.data_fim)}</p>
+            <button onclick="verDetalhesAtividade(${atividade.id})">Ver Detalhes</button>
+          </div>`;
 
-      atividadesList.innerHTML += atividadeElement;
-    });
-  } catch (error) {
-    console.error('Erro ao buscar os dados das atividades:', error);
-    const atividadesList = document.querySelector(".atividades-list");
-    if (atividadesList) {
-      atividadesList.innerHTML = "<p>Erro ao carregar os registros das atividades.</p>";
+        atividadesList.innerHTML += atividadeElement;
+      });
+    } catch (error) {
+      console.error('Erro ao buscar os dados das atividades:', error);
+      const atividadesList = document.querySelector(".atividades-list");
+      if (atividadesList) {
+        atividadesList.innerHTML = "<p>Erro ao carregar os registros das atividades.</p>";
+      }
     }
   }
 };
 
 const countData = (atividades) => {
+  if (!currentUser) return;
+
   const atividadesConcluidas = atividades.filter(v => v.status === 'done').length;
   const atividadesPendentes = atividades.filter(v => v.status === 'waiting').length;
   const atividadesEmAndamento = atividades.filter(v => v.status === 'doing').length;

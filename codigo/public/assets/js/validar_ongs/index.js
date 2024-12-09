@@ -15,7 +15,6 @@ const fetchData = async () => {
     const response = await fetch("/ongs");
     const allOngs = await response.json();
 
-    // Filtrar ONGs com status 'waiting'
     ongs = allOngs.filter(ong => ong.status === 'waiting');
 
     const validateList = document.querySelector(".validate_list");

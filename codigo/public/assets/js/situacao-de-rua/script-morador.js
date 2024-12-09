@@ -131,8 +131,6 @@ function confirmarDelecao(id) {
         }
     });
 }
-
-// Evento para tratar o envio do formulário de edição
 document.getElementById('editForm').addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -143,15 +141,12 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
     const genero = document.getElementById('edit-genero').value.trim();
     const data_nascimento = document.getElementById('edit-data-nascimento').value;
     const imgPerfil = document.getElementById('edit-imgPerfil').value.trim();
-
-    // Validação básica
     if (!nome || !genero || !data_nascimento) {
         Swal.fire('Erro', 'Por favor, preencha todos os campos obrigatórios.', 'warning');
         return;
     }
 
     try {
-        // Atualizar as informações principais
         const updateData = {
             nome,
             tipo,
@@ -167,8 +162,6 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
         });
 
         if (!response1.ok) throw new Error('Erro ao atualizar informações principais.');
-
-        // Atualizar localização
         const pessoa = moradoresData.find(m => m.id == id);
         const localizacoes = pessoa.ultimas_localizacoes || [];
 
@@ -184,7 +177,6 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
 
             if (!response2.ok) throw new Error('Erro ao atualizar localização.');
         } else {
-            // Se não houver localizações, adicionar uma nova
             const novaLocalizacao = { cidade, estado };
             const updatedLocalizacoes = [...localizacoes, novaLocalizacao];
 
@@ -202,13 +194,9 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
             'As informações foram atualizadas com sucesso.',
             'success'
         );
-
-        // Fechar o modal
         const editModalEl = document.getElementById('editModal');
         const editModal = bootstrap.Modal.getInstance(editModalEl);
         editModal.hide();
-
-        // Atualizar os cards
         gerarCards();
     } catch (error) {
         console.error('Erro ao editar:', error);
@@ -219,6 +207,4 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
         );
     }
 });
-
-// Inicializar a geração dos cards ao carregar a página
 window.onload = gerarCards;

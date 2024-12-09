@@ -1,17 +1,14 @@
-// Função criar cards dinamicamente
+
 const atualizacoes = {};
 async function gerarCards() {
     const container = document.getElementById('cards-container');
-    container.innerHTML = ''; // Limpa o container antes de renderizar novamente
+    container.innerHTML = '';
 
     try {
-        // Fazendo o fetch dos dados do servidor
         const response = await fetch('/pessoas');
         if (!response.ok) throw new Error('Erro ao carregar os dados.');
 
         const moradores = await response.json();
-
-        // Iterando sobre os moradores e criando os cards
         moradores.forEach(pessoa => {
             const card = document.createElement('div');
             card.className = 'col-sm-3 mb-3';
@@ -35,21 +32,15 @@ async function gerarCards() {
 
             container.appendChild(card);
         });
-
-        // Adiciona os eventos aos botões de editar e deletar
         adicionarEventosBotoes();
     } catch (error) {
         console.error('Erro ao carregar dados:', error);
         container.innerHTML = '<p>Erro ao carregar os dados. Tente novamente mais tarde.</p>';
     }
 }
-
-// Função para adicionar eventos aos botões
 function adicionarEventosBotoes() {
     const editButtons = document.querySelectorAll('.btn-edit');
     const deleteButtons = document.querySelectorAll('.btn-delete');
-    
-    // Evento de editar
     editButtons.forEach(button => {
         button.addEventListener('click', async () => {
             const id = button.getAttribute('data-id');
@@ -61,7 +52,7 @@ function adicionarEventosBotoes() {
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ nome: novoNome }),
                     });
-                    gerarCards(); // Atualiza a lista
+                    gerarCards();
                 } catch (error) {
                     console.error('Erro ao editar:', error);
                 }
@@ -75,7 +66,7 @@ function adicionarEventosBotoes() {
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ tipo: novoTipo }),
                     });
-                    gerarCards(); // Atualiza a lista
+                    gerarCards();
                 } catch (error) {
                     console.error('Erro ao editar:', error);
                 }
@@ -105,7 +96,7 @@ function adicionarEventosBotoes() {
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ ultimas_localizacoes: localizacoes }),
                     });
-                    gerarCards(); // Atualiza a lista
+                    gerarCards();
                 } catch (error) {
                     console.error('Erro ao editar:', error);
                 }
@@ -121,7 +112,7 @@ function adicionarEventosBotoes() {
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ genero: novoGenero }),
                     });
-                    gerarCards(); // Atualiza a lista
+                    gerarCards();
                 } catch (error) {
                     console.error('Erro ao editar:', error);
                 }
@@ -135,22 +126,20 @@ function adicionarEventosBotoes() {
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ data_nascimento: novaDataNascimento },),
                     });
-                    gerarCards(); // Atualiza a lista
+                    gerarCards();
                 } catch (error) {
                     console.error('Erro ao editar:', error);
                 }
             }
         });
     });
-
-    // Evento de deletar
     deleteButtons.forEach(button => {
         button.addEventListener('click', async () => {
             const id = button.getAttribute('data-id');
             if (confirm('Tem certeza que deseja deletar?')) {
                 try {
                     await fetch(`/pessoas/${id}`, { method: 'DELETE' });
-                    gerarCards(); // Atualiza a lista
+                    gerarCards();
                 } catch (error) {
                     console.error('Erro ao deletar:', error);
                 }
@@ -158,6 +147,4 @@ function adicionarEventosBotoes() {
         });
     });
 }
-
-// Construtor de eventos para atualização da página
 window.onload = gerarCards;

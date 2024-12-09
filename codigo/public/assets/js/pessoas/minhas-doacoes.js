@@ -1,4 +1,3 @@
-// minhas-doacoes.js
 function getCurrentUserId() {
   return JSON.parse(sessionStorage.getItem('usuarioCorrente')).id || {};
 }

@@ -1,21 +1,17 @@
 var usuarioCorrente = {};
 
 function carregarPerfil() {
-    fetch('/usuarios') // Insira o caminho correto do arquivo JSON
+    fetch('/usuarios')
         .then(response => response.json())
         .then(data => {
             console.log(data);
 
             if (data && usuarioCorrente.id) {
-                // Encontrar o perfil do usuário com o ID atual
                 const perfil = data.find(user => user.id == usuarioCorrente.id);
 
                 console.log("Perfil: " + perfil);
 
                 if (perfil) {
-
-                    
-                    // Atualizar o conteúdo do HTML com os dados do perfil
                     document.getElementById('nome').textContent = perfil.nome || "Nome não disponível";
                     document.getElementById('data_nascimento').textContent = perfil.data_nascimento || "Data não disponível";
                     document.getElementById('estado').textContent = perfil.endereco.estado || "Estado não disponível";
@@ -27,7 +23,6 @@ function carregarPerfil() {
                     document.getElementById('telefone').textContent = perfil.contatos.telefone || "Telefone não disponível";
                     document.getElementById('email').textContent = perfil.contatos.email || "Email não disponível";
                     document.getElementById('infoAdicional').textContent = perfil.infoAdicional || "Informação adicional não disponível";
-                    // Exibir foto do perfil
                     const profilePhoto = document.getElementById('imgPerfil');
                     profilePhoto.innerHTML = `<img src="${perfil.imgPerfil}" alt="Foto de perfil" style="max-width: 250px; max-height: 250px;">`;
                 } else {
@@ -39,8 +34,6 @@ function carregarPerfil() {
         })
         .catch(error => console.error('Erro ao carregar os perfis:', error));
 }
-
-// Carrega o perfil ao iniciar a página
 window.onload = () => {
     const usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
     if (usuarioCorrenteJSON) {
