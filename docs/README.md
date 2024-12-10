@@ -19,9 +19,10 @@ A documentação do projeto é estruturada da seguinte forma:
 2. Contexto
 3. Product Discovery
 4. Product Design
-5. Metodologia
-6. Solução
-7. Referências Bibliográficas
+5. Projeto de Solução
+6. Metodologia
+7. Solução
+8. Referências Bibliográficas
 
 ✅ [Documentação de Design Thinking (MIRO)](files/Aumento-de-moradores-de-rua.pdf)
 
@@ -245,6 +246,9 @@ Nesse momento, vamos transformar os insights e validações obtidos em soluçõe
 #### Proposta para Persona João
 
 [Proposta de valor João](images/Proposta-de-valor-Joao.png)
+
+
+# Projeto de Solução
 
 
 ## Requisitos
@@ -694,7 +698,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | 16.2  | Alta       |
 | 16.3  | Alta       |
 ---
-# Projeto de interface
+# Projeto de solução
 
 ## Protótipo Interativo 
 
@@ -926,81 +930,1406 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 [![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.
->
-> Inclua um link para o vídeo do projeto.
 
 ## Funcionalidades
 
 Esta seção apresenta as funcionalidades da solução.Info
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+> ##### Funcionalidade 1 - Listagem Morador de Rua
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite acessar a listagem dos moradores de rua, acessar os detalhes de cada, editar, apagar, ver suas necessidades e últimas localizações para fazer as doações. (Só é permitido ter o acesso logado como ONG)
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+* **Estrutura de dados:** [Morador](#ti_ed_morador)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login
-  * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
+  * Abra o site e efetue o login como ONG. login: "ong_do_joao" senha: "123"
+  * Acesse o menu principal e escolha a opção "situacao de rua"
+  * Nesta tela você poderá ver detalhes do morador de rua, editar ou excluir o cadastro.
 * **Tela da funcionalidade**:
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+![Tela de Listagem de Morador](images/solucao-listagem-morador.png)
+![Tela de Detalhes do Morador](images/solucao-detalhes-morador.png)
+![Tela de Editar Dados do Morador](images/solucao-editar-morador.png)
+![Tela de Excluir Perfil do Morador](images/solucao-excluir-morador.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+
+> ##### Funcionalidade 2 - Itens do Estoque 
+
+Permite a ONG criar novo item, visualizar, editar ou excluir um item do estoque.
+
+* **Estrutura de dados:** [Item-estoque](#ti_ed_item_estoque)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login como ONG. login: "ong_do_joao" senha: "123"
+  * Acesse o menu principal e escolha a opção "itens do estoque"
+  * Escolha a ação que deseja realizar.
+* **Tela da funcionalidade**:
+
+![Tela de Itens do estoque](images/solucao-itens-estoque.png)
+
+> ##### Funcionalidade 3 - Minhas Atividades ONG
+
+A tela de "Minhas Atividades" é destinada para controle de atividades feitas, como, trabalhos voluntários, doações para moradores de rua recentemente.
+Permite adicionar nova atividade, visualizar, editar ou excluir. 
+
+* **Estrutura de dados:** [Atividades ONG](#ti_ed_atividades_ong)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login como ONG. login: "ong_do_joao" senha: "123"
+  * Acesse o menu principal e escolha a opção "atividades"
+  * Escolha a ação que deseja realizar.
+* **Tela da funcionalidade**:
+
+![Tela de Minhas Atividades ONG](images/solucao-minhas-atividades-ong.png)
+
+ ##### Funcionalidade 4 - Meu Perfil
+
+Permite que o usuário entre no perfil e visualize seus dados cadastrados e o permite editá-los.
+
+* **Estrutura de dados:** [Meu Perfil](#ti_ed_usuarios)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login uma das seguintes contas --> login: "ong", senha: "123"; login: "user", senha: "123"; login: "admin", senha: "123"
+  * Acesse o menu principal e escolha a opção "meu perfil"
+  * Escolha a ação que deseja realizar.
+* **Tela da funcionalidade**:
+
+![Tela de Meu Perfil](images/solucao-minhas-atividades-ong.png)
+
+> ##### Funcionalidade 5 - Minhas Doações
+
+Permite o usuário visualizar o histórico de doações feitas pelo site e para qual ONG foi realizada.
+
+* **Estrutura de dados:** [Doações](#ti_ed_minhas_doacoes)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login como usuário login: "user" senha: "123" 
+  * Acesse o menu principal e escolha a opção "doações"
+  * Se for preciso olhar mais detalhes da doação, clique na ação "Visualizar"
+* **Tela da funcionalidade**:
+
+![Tela de Minhas Doações](images/solucao-minhas-doacoes.png)
+
+##### Funcionalidade 6 - Realizar Doação 
+
+Permite o usuário a fazer uma doação para uma ONG de sua escolha.
+
+* **Estrutura de dados:** [Realizar Doação](#ti_ed_realizar_doacoes)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login como usuário login: "user" senha: "123" 
+  * Selecione uma ONG em destaque na tela inicial, ou, acesse o menu principal e escolha a opção ONG's
+  * Em seguida, escolha a opção "Realizar Doação" e digite o valor a ser doado, e, em seguida, clique em gerar QR Code
+* **Tela da funcionalidade**:
+
+![Tela de Realizar Doação](images/solucao-realizar-doacao.png)
 >
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+> ##### Funcionalidade 7 - Minhas Atividades Usuário
+
+A tela de "Minhas Atividades" é destinada para controle de atividades feitas, como, trabalhos voluntários, doações para moradores de rua recentemente.
+Permite visualizar detalhadamente o histórico de as atividades realizadas. 
+
+* **Estrutura de dados:** [Atividades Usuário](#ti_ed_atividades_usuario)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login como ONG: login: "ong_do_joao" senha: "123"
+  * Acesse o menu principal e escolha a opção "atividades"
+  * Escolha a ação que deseja realizar.
+* **Tela da funcionalidade**:
+
+![Tela de Minhas Atividades Usuário](images/solucao-minhas-atividades.png)
 
 ## Estruturas de Dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
 
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
-
-Contatos da aplicação
-
-```json
-  {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
-  
-```
-
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### ti_ed_usuarios   
 
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+      "id": 1,
+      "nome": "Administrador do Sistema",
+      "login": "admin",
+      "senha": "123",
+      "tipo": "pessoa",
+      "data_nascimento": "1990-01-01",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "contatos": {
+        "telefone": "123456789",
+        "email": "admin@abc.com"
+      },
+      "infoAdicional": "Sou o administrador"
+    },
+    {
+      "id": 2,
+      "nome": "ONG Prosperar",
+      "login": "ong",
+      "senha": "123",
+      "tipo": "ong",
+      "data_nascimento": "1991-02-02",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg",
+      "endereco": {
+        "logradouro": "Rua 2",
+        "numero": "234",
+        "complemento": "Empresa",
+        "bairro": "Bairro 2",
+        "cidade": "Cidade 2",
+        "estado": "Estado 2",
+        "cep": "13782-123"
+      },
+      "contatos": {
+        "telefone": "123456789",
+        "email": "ong@abc.com"
+      },
+      "infoAdicional": "Sou uma ong e amamos nosso trabalho!"
+    },
+    {
+      "id": 3,
+      "nome": "user",
+      "login": "user",
+      "senha": "123",
+      "tipo": "pessoa",
+      "data_nascimento": "1990-01-01",
+      "imgPerfil": "https://i.im.ge/2024/10/30/kZ29IW.perfil7.jpeg",
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "contatos": {
+        "telefone": "123456789",
+        "email": "user@abc.com"
+      },
+      "infoAdicional": "Sou o usuário"
+    },
+    {
+      "login": "ong_prosperar",
+      "senha": "123",
+      "nome": "ONG Prosperar",
+      "email": "ong@ong.com",
+      "tipo": "ong",
+      "endereco": {
+        "logradouro": "Rua Messias Coutinho",
+        "numero": "444",
+        "complemento": "Casa",
+        "bairro": "Céu Azul",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "31580400"
+      },
+      "contatos": {
+        "telefone": "12321321341"
+      },
+      "id": 4
+    },
+    {
+      "login": "ong_do_joao",
+      "senha": "123",
+      "nome": "ong_do_joao",
+      "email": "ong_do_joao",
+      "tipo": "ong",
+      "endereco": {
+        "logradouro": "Rua Messias Coutinho",
+        "numero": "111",
+        "complemento": "",
+        "bairro": "Céu Azul",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "31580400"
+      },
+      "contatos": {
+        "telefone": ""
+      },
+      "id": 5
+    },
+    {
+      "login": "root",
+      "senha": "123",
+      "nome": "Usuário Root",
+      "email": "root@gmail.com",
+      "tipo": "root",
+      "endereco": {
+        "logradouro": "Rua Messias Coutinho",
+        "numero": "111",
+        "complemento": "",
+        "bairro": "Céu Azul",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "31580400"
+      },
+      "contatos": {
+        "telefone": ""
+      },
+      "id": 6
+    }
+  
 ```
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
+##### ti_ed_atividades_usuario 
+
+Registro de atividades realizadas pelo usuário 
+
+```json
+  {
+      "id": 1,
+      "nome": "Distribuição de Comida",
+      "data_inicio": "2024-01-10",
+      "data_fim": "2024-01-20",
+      "status": "done",
+      "ong": 1,
+      "voluntarios": [
+        3
+      ],
+      "descricao": "Distribuição de comida para moradores de rua",
+      "tipo": "doacao"
+    },
+    {
+      "id": 2,
+      "nome": "Distribuição de Comida",
+      "data_inicio": "2024-01-10",
+      "data_fim": "2024-01-20",
+      "status": "waiting",
+      "ong": 1,
+      "voluntarios": [
+        3
+      ],
+      "descricao": "Distribuição de comida para moradores de rua",
+      "tipo": "doacao"
+    },
+    {
+      "id": 3,
+      "nome": "Distribuição de Comida",
+      "data_inicio": "2024-01-10",
+      "data_fim": "2024-01-20",
+      "status": "done",
+      "ong": 1,
+      "voluntarios": [
+        3
+      ],
+      "descricao": "Distribuição de comida para moradores de rua",
+      "tipo": "doacao"
+    },
+    {
+      "id": 4,
+      "nome": "Distribuição de Comida",
+      "data_inicio": "2024-01-10",
+      "data_fim": "2024-01-20",
+      "status": "doing",
+      "ong": 1,
+      "voluntarios": [
+        3
+      ],
+      "descricao": "Distribuição de comida para moradores de rua",
+      "tipo": "doacao"
+    },
+    {
+      "nome": "aaaaa",
+      "descricao": "aaaaaaaaaaaaaa",
+      "data_inicio": "2024-10-12",
+      "data_fim": "2024-10-14",
+      "status": "concluída",
+      "ong": 5,
+      "voluntarios": [
+        3
+      ],
+      "id": 5
+    }
+```
+
+##### Dias de Trabalho  
+
+Registro sobre os dias de trabalhos realizados pelo usuário
+
+```json
+    {
+      "id": 1,
+      "dia": "segunda",
+      "horarios": [
+        {
+          "inicio": "08:00",
+          "fim": "12:00"
+        },
+        {
+          "inicio": "13:00",
+          "fim": "17:00"
+        }
+      ],
+      "voluntario": 5,
+      "atividade": 1
+    },
+    {
+      "dia": "segunda",
+      "horarios": [
+        {
+          "inicio": "08:00",
+          "fim": "12:00"
+        },
+        {
+          "inicio": "13:00",
+          "fim": "17:00"
+        }
+      ],
+      "voluntario": 3,
+      "atividade": 5,
+      "id": 2
+    },
+    {
+      "dia": "segunda",
+      "horarios": [
+        {
+          "inicio": "10:00",
+          "fim": "12:00"
+        }
+      ],
+      "voluntario": 3,
+      "atividade": 5,
+      "id": 3
+    },
+    {
+      "dia": "segunda",
+      "horarios": [
+        {
+          "inicio": "04:24",
+          "fim": "23:19"
+        },
+        {
+          "inicio": "14:30",
+          "fim": "19:18"
+        }
+      ],
+      "voluntario": 3,
+      "atividade": 3,
+      "id": 4
+    }
+```
+
+##### ti_ed_minhas_doacoes
+
+Registro de doações realizados pelo usuário
+
+```json
+  {
+      "id": 1,
+      "ong": 3,
+      "doador": 3,
+      "valor": 10,
+      "data": "2024-10-02",
+      "status": "done",
+      "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!",
+      "pagamento": {
+        "tipo": "pix"
+      }
+    },
+    {
+      "ong": 3,
+      "doador": 3,
+      "valor": 12,
+      "data": "2024-10-02",
+      "status": "done",
+      "descricao": "123123",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 2
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 100,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "weadfasd",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 3
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 100,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "123",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 4
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 100,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "123",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 5
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 100,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "Vitor",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 6
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 123123,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "12321124",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 7
+    },
+    {
+      "ong": 1,
+      "doador": 3,
+      "valor": 123,
+      "data": "2024-12-08",
+      "status": "done",
+      "descricao": "123",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 8
+    },
+    {
+      "ong": 3,
+      "doador": 1,
+      "valor": 100,
+      "data": "2024-12-09",
+      "status": "done",
+      "descricao": "Boa!",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 9
+    },
+    {
+      "ong": 3,
+      "doador": 3,
+      "valor": 124,
+      "data": "2024-12-10",
+      "status": "cancelled",
+      "descricao": "Nao sei",
+      "pagamento": {
+        "tipo": "pix"
+      },
+      "id": 10
+    }
+```
+
+##### ONGs  
+
+Registro do perfil ONG
+
+```json
+  {
+      "id": 1,
+      "cnpj": "123456789",
+      "data_fundacao": "2024-01-01",
+      "razao_social": "ONG 1",
+      "nome_fantasia": "ONG 1",
+      "contatos": {
+        "telefone": "123456789",
+        "email": "contato@ong1.org"
+      },
+      "endereco": {
+        "logradouro": "Rua 1",
+        "numero": "123",
+        "complemento": "Casa",
+        "bairro": "Bairro 1",
+        "cidade": "Cidade 1",
+        "estado": "Estado 1",
+        "cep": "12345-678"
+      },
+      "descricao": "Descrição da ONG 1",
+      "objetivos": [
+        "Objetivo 1",
+        "Objetivo 2",
+        "Objetivo 3"
+      ],
+      "necessidades_especificas": [],
+      "responsavel": 2,
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+    },
+    {
+      "id": 3,
+      "cnpj": "123213123123",
+      "data_fundacao": "2023-10-12",
+      "razao_social": "ONG do João",
+      "nome_fantasia": "ONG do João",
+      "endereco": {
+        "logradouro": "Rua Messias Coutinho",
+        "numero": "111",
+        "complemento": "",
+        "bairro": "Céu Azul",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "31580-400"
+      },
+      "contatos": {
+        "telefone": "31999999999",
+        "email": "vitords.mello@gmail.com"
+      },
+      "descricao": "Descrição da ONG do João aaaaaa",
+      "objetivos": [
+        "Objetivo A",
+        "Objetivo B",
+        "asdfasd",
+        "asdafas",
+        "asdafas"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "educação",
+          "nome": "Materiais Escolares",
+          "quantidade": 200,
+          "descricao": "Cadernos, lápis, borrachas, etc."
+        },
+        {
+          "tipo": "aa",
+          "nome": "aaaaaaaaaa",
+          "quantidade": 100,
+          "descricao": "aaaaaa"
+        }
+      ],
+      "responsavel": 5,
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+    },
+    {
+      "id": 4,
+      "cnpj": "987654321",
+      "data_fundacao": "2022-06-15",
+      "razao_social": "ONG Esperança",
+      "nome_fantasia": "ONG Esperança",
+      "endereco": {
+        "logradouro": "Rua da Paz",
+        "numero": "200",
+        "complemento": "",
+        "bairro": "Centro",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "20000-000"
+      },
+      "contatos": {
+        "telefone": "21987654321",
+        "email": "contato@ongesperanca.org"
+      },
+      "descricao": "Descrição da ONG Esperança",
+      "objetivos": [
+        "Objetivo X",
+        "Objetivo Y"
+      ],
+      "necessidades_especificas": [
+        {
+          "tipo": "vestuário",
+          "nome": "Roupas",
+          "quantidade": 50,
+          "descricao": "Roupas para crianças"
+        }
+      ],
+      "responsavel": 2,
+      "status": "accepted",
+      "imageUrl": "https://i.im.ge/2024/10/30/kZ2Uu1.perfil5.jpeg"
+    },
+    {
+      "cnpj": "123123123123",
+      "data_fundacao": "2024-10-24",
+      "razao_social": "aaaaa",
+      "nome_fantasia": "aaaaaa",
+      "endereco": {
+        "logradouro": "Rua Messias Coutinho",
+        "numero": "111",
+        "complemento": "",
+        "bairro": "Céu Azul",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "31580400"
+      },
+      "contatos": {
+        "telefone": "123214123"
+      },
+      "status": "accepted",
+      "responsavel": 7,
+      "id": 5
+    }
+```
+
+##### ti_ed_morador
+
+Registro de todas as pessoas cadastradas no site
+
+```json
+  {
+      "id": "1",
+      "nome": "João da Silva",
+      "tipo": "situacao_rua",
+      "genero": "Masculino",
+      "data_nascimento": "1980-01-01",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOTFHD.moradorideo3.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Depressão",
+          "descricao": "Depressão crônica"
+        },
+        {
+          "nome": "Diabetes",
+          "descricao": "Diabetes tipo 2"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Belo Horizonte",
+          "estado": "MG",
+          "bairro": "Funcionários",
+          "rua": "Rua Pernambuco",
+          "numero": "200",
+          "cep": "31580-400",
+          "localizado_em": "2024-01-10"
+        },
+        {
+          "cidade": "Belo Horizonte",
+          "estado": "MG",
+          "bairro": "Funcionários",
+          "rua": "Rua Paraiba",
+          "numero": "75",
+          "cep": "31580-400",
+          "localizado_em": "2024-01-10"
+        },
+        {
+          "cidade": "Belo Horizonte",
+          "estado": "MG",
+          "bairro": "Funcionários",
+          "rua": "Avenida Afonso Pena",
+          "numero": "100",
+          "cep": "31580-400",
+          "localizado_em": "2024-01-10"
+        },
+        {
+          "cidade": "Ji-Paraná",
+          "estado": "RO",
+          "bairro": "Jardim Presidencial",
+          "rua": "Rua das Mangueiras",
+          "numero": "3271",
+          "cep": "76901-042",
+          "localizado_em": "2024-12-10"
+        },
+        {
+          "cidade": "Ji-Paraná",
+          "estado": "RO",
+          "bairro": "Jardim Presidencial",
+          "rua": "Rua das Mangueiras",
+          "numero": "3271",
+          "cep": "76901-042",
+          "localizado_em": "2024-12-10"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Não sei",
+          "tipo": "",
+          "descricao": "não sei"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "1234567",
+          "orgao_expedidor": "SSP/MG",
+          "data_expedicao": "2000-01-01"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "123.456.789-00"
+        }
+      ],
+      "contatos": {
+        "telefone": "31999999999",
+        "email": "joao_gmail.com"
+      },
+      "cidade": "Ji-Paraná",
+      "estado": "RO",
+      "bairro": "Jardim Presidencial",
+      "rua": "Rua das Mangueiras",
+      "numero": "3271",
+      "cep": "76901-042",
+      "localizado_em": "2024-12-10"
+    },
+    {
+      "id": "2",
+      "nome": "Marli Santana",
+      "tipo": "situacao_rua",
+      "genero": "Feminino",
+      "data_nascimento": "1974-05-18",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOQKWL.moradora1.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Hipertensão",
+          "descricao": "Pressão arterial alta"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Fortal",
+          "estado": "Fortaleza",
+          "bairro": "São Pedro",
+          "rua": "Rua A",
+          "numero": "100",
+          "cep": "30130-000",
+          "localizado_em": "2024-01-10"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Roupas",
+          "tipo": "vestuario",
+          "descricao": "Quero biscoito"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "2345678",
+          "orgao_expedidor": "SSP/SP",
+          "data_expedicao": "1995-03-22"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "234.567.890-11"
+        }
+      ],
+      "contatos": {
+        "telefone": "11988888888",
+        "email": "maria_oliveira@hotmail.com"
+      }
+    },
+    {
+      "id": "3",
+      "nome": "Carlos Pereira",
+      "tipo": "situacao_rua",
+      "genero": "Masculino",
+      "data_nascimento": "1968-08-20",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOTThX.moradorgram2.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Asma",
+          "descricao": "Asma crônica"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ",
+          "bairro": "Copacabana",
+          "rua": "Avenida Atlântica",
+          "numero": "300",
+          "cep": "22010-000",
+          "localizado_em": "2024-03-05"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Medicamentos",
+          "tipo": "saude",
+          "descricao": "Necessita de bombinha para asma"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "3456789",
+          "orgao_expedidor": "SSP/RJ",
+          "data_expedicao": "1988-07-14"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "345.678.901-22"
+        }
+      ],
+      "contatos": {
+        "telefone": "21977777777",
+        "email": "carlos_pereira@yahoo.com"
+      }
+    },
+    {
+      "id": "4",
+      "nome": "Ana Souza",
+      "tipo": "situacao_rua",
+      "genero": "Feminino",
+      "data_nascimento": "1985-11-30",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOQZjc.moradora4.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Ansiedade",
+          "descricao": "Transtorno de ansiedade generalizada"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Curitiba",
+          "estado": "PR",
+          "bairro": "Centro",
+          "rua": "Rua XV de Novembro",
+          "numero": "400",
+          "cep": "80020-310",
+          "localizado_em": "2024-04-12"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Apoio Psicológico",
+          "tipo": "saude_mental",
+          "descricao": "Necessita de atendimento psicológico"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "4567890",
+          "orgao_expedidor": "SSP/PR",
+          "data_expedicao": "2005-09-18"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "456.789.012-33"
+        }
+      ],
+      "contatos": {
+        "telefone": "41966666666",
+        "email": "ana_souza@gmail.com"
+      }
+    },
+    {
+      "id": "5",
+      "nome": "Pedro Santos",
+      "tipo": "situacao_rua",
+      "genero": "Masculino",
+      "data_nascimento": "1990-02-17",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOQzYa.morador.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Dependência Química",
+          "descricao": "Dependência em álcool"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Porto Alegre",
+          "estado": "RS",
+          "bairro": "Moinhos de Vento",
+          "rua": "Rua C",
+          "numero": "500",
+          "cep": "90510-000",
+          "localizado_em": "2024-05-20"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Reabilitação",
+          "tipo": "saude",
+          "descricao": "Necessita de tratamento contra dependência"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "5678901",
+          "orgao_expedidor": "SSP/RS",
+          "data_expedicao": "2010-04-25"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "567.890.123-44"
+        }
+      ],
+      "contatos": {
+        "telefone": "51955555555",
+        "email": "pedro_santos@outlook.com"
+      }
+    },
+    {
+      "id": "6",
+      "nome": "Luisa Fernandes",
+      "tipo": "situacao_rua",
+      "genero": "Feminino",
+      "data_nascimento": "1995-09-09",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOQnzz.moradora6.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Desnutrição",
+          "descricao": "Desnutrição severa"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Salvador",
+          "estado": "BA",
+          "bairro": "Pelourinho",
+          "rua": "Rua D",
+          "numero": "600",
+          "cep": "40026-010",
+          "localizado_em": "2024-06-18"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Alimentação",
+          "tipo": "alimentacao",
+          "descricao": "Necessita de alimentos nutritivos"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "6789012",
+          "orgao_expedidor": "SSP/BA",
+          "data_expedicao": "2015-08-30"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "678.901.234-55"
+        }
+      ],
+      "contatos": {
+        "telefone": "71944444444",
+        "email": "luisa_fernandes@mail.com"
+      }
+    },
+    {
+      "id": "7",
+      "nome": "Ricardo Lima",
+      "tipo": "situacao_rua",
+      "genero": "Masculino",
+      "data_nascimento": "1970-12-25",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOT1O4.moradorideo2.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Esquizofrenia",
+          "descricao": "Esquizofrenia paranoide"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Fortaleza",
+          "estado": "CE",
+          "bairro": "Meireles",
+          "rua": "Avenida Beira Mar",
+          "numero": "700",
+          "cep": "60165-120",
+          "localizado_em": "2024-07-22"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Medicamentos",
+          "tipo": "saude",
+          "descricao": "Necessita de antipsicóticos"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "7890123",
+          "orgao_expedidor": "SSP/CE",
+          "data_expedicao": "1990-11-05"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "789.012.345-66"
+        }
+      ],
+      "contatos": {
+        "telefone": "85933333333",
+        "email": "ricardo_lima@live.com"
+      }
+    },
+    {
+      "id": "8",
+      "nome": "Sofia Costa",
+      "tipo": "situacao_rua",
+      "genero": "Feminino",
+      "data_nascimento": "2000-03-14",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOQeWK.moradora8.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Anemia",
+          "descricao": "Anemia ferropriva"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Recife",
+          "estado": "PE",
+          "bairro": "Boa Viagem",
+          "rua": "Rua E",
+          "numero": "800",
+          "cep": "51021-190",
+          "localizado_em": "2024-08-30"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Suplementos",
+          "tipo": "alimentacao",
+          "descricao": "Necessita de suplementos de ferro"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "8901234",
+          "orgao_expedidor": "SSP/PE",
+          "data_expedicao": "2018-02-10"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "890.123.456-77"
+        }
+      ],
+      "contatos": {
+        "telefone": "81922222222",
+        "email": "sofia_costa@uol.com.br"
+      }
+    },
+    {
+      "id": "9",
+      "nome": "Fernando Gomes",
+      "tipo": "situacao_rua",
+      "genero": "Masculino",
+      "data_nascimento": "1982-06-06",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOT2mC.moradorideo0.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Tuberculose",
+          "descricao": "Em tratamento"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Manaus",
+          "estado": "AM",
+          "bairro": "Centro",
+          "rua": "Rua F",
+          "numero": "900",
+          "cep": "69005-000",
+          "localizado_em": "2024-09-12"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Acompanhamento Médico",
+          "tipo": "saude",
+          "descricao": "Necessita de continuidade no tratamento"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "9012345",
+          "orgao_expedidor": "SSP/AM",
+          "data_expedicao": "2002-06-15"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "901.234.567-88"
+        }
+      ],
+      "contatos": {
+        "telefone": "92911111111",
+        "email": "fernando_gomes@terra.com.br"
+      }
+    },
+    {
+      "id": "10",
+      "nome": "Beatriz Almeida",
+      "tipo": "situacao_rua",
+      "genero": "Feminino",
+      "data_nascimento": "1978-10-02",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOQkUx.moradora3.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Artrite",
+          "descricao": "Artrite reumatoide"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Florianópolis",
+          "estado": "SC",
+          "bairro": "Lagoa da Conceição",
+          "rua": "Rua G",
+          "numero": "1000",
+          "cep": "88062-400",
+          "localizado_em": "2024-10-08"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Fisioterapia",
+          "tipo": "saude",
+          "descricao": "Necessita de sessões de fisioterapia"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "0123456",
+          "orgao_expedidor": "SSP/SC",
+          "data_expedicao": "1998-12-20"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "012.345.678-99"
+        }
+      ],
+      "contatos": {
+        "telefone": "48900000000",
+        "email": "beatriz_almeida@gmail.com"
+      }
+    },
+    {
+      "id": "11",
+      "nome": "Marcos Ribeiro",
+      "tipo": "situacao_rua",
+      "genero": "Masculino",
+      "data_nascimento": "1965-07-07",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOT2mC.moradorideo0.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Doença Pulmonar",
+          "descricao": "DPOC"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Belém",
+          "estado": "PA",
+          "bairro": "Umarizal",
+          "rua": "Rua H",
+          "numero": "1100",
+          "cep": "66055-260",
+          "localizado_em": "2024-11-15"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Oxigênio",
+          "tipo": "saude",
+          "descricao": "Necessita de suporte de oxigênio"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "1234567",
+          "orgao_expedidor": "SSP/PA",
+          "data_expedicao": "1985-05-30"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "123.456.789-00"
+        }
+      ],
+      "contatos": {
+        "telefone": "91999999999",
+        "email": "marcos_ribeiro@bol.com.br"
+      }
+    },
+    {
+      "id": "12",
+      "nome": "Isabela Mendes",
+      "tipo": "situacao_rua",
+      "genero": "Feminino",
+      "data_nascimento": "1988-04-18",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOQH4J.moradora2.webp",
+      "problemas_saude": [
+        {
+          "nome": "Epilepsia",
+          "descricao": "Crises frequentes"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Goiânia",
+          "estado": "GO",
+          "bairro": "Setor Bueno",
+          "rua": "Rua I",
+          "numero": "1200",
+          "cep": "74215-020",
+          "localizado_em": "2024-12-05"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Medicamentos",
+          "tipo": "saude",
+          "descricao": "Necessita de anticonvulsivantes"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "2345678",
+          "orgao_expedidor": "SSP/GO",
+          "data_expedicao": "2008-03-22"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "234.567.890-11"
+        }
+      ],
+      "contatos": {
+        "telefone": "62988888888",
+        "email": "isabela_mendes@hotmail.com"
+      }
+    },
+    {
+      "id": "13",
+      "nome": "Lucas Ferreira",
+      "tipo": "situacao_rua",
+      "genero": "Masculino",
+      "data_nascimento": "1993-01-27",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOT7Bf.moradorideo4.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Deficiência Visual",
+          "descricao": "Cegueira total"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Brasília",
+          "estado": "DF",
+          "bairro": "Asa Sul",
+          "rua": "Rua J",
+          "numero": "1300",
+          "cep": "70070-350",
+          "localizado_em": "2025-01-10"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Apoio",
+          "tipo": "acessibilidade",
+          "descricao": "Necessita de cão-guia"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "3456789",
+          "orgao_expedidor": "SSP/DF",
+          "data_expedicao": "2013-07-14"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "345.678.901-22"
+        }
+      ],
+      "contatos": {
+        "telefone": "61977777777",
+        "email": "lucas_ferreira@yahoo.com"
+      }
+    },
+    {
+      "id": "14",
+      "nome": "Camila Rodrigues",
+      "tipo": "situacao_rua",
+      "genero": "Feminino",
+      "data_nascimento": "1998-12-05",
+      "imgPerfil": "https://i.im.ge/2024/11/24/zOQKWL.moradora1.jpeg",
+      "problemas_saude": [
+        {
+          "nome": "Gravidez",
+          "descricao": "Gestação de alto risco"
+        }
+      ],
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Natal",
+          "estado": "RN",
+          "bairro": "Ponta Negra",
+          "rua": "Rua K",
+          "numero": "1400",
+          "cep": "59090-002",
+          "localizado_em": "2025-02-18"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Pré-natal",
+          "tipo": "saude",
+          "descricao": "Necessita de acompanhamento médico"
+        }
+      ],
+      "documentos": [
+        {
+          "tipo": "RG",
+          "numero": "4567890",
+          "orgao_expedidor": "SSP/RN",
+          "data_expedicao": "2016-09-18"
+        },
+        {
+          "tipo": "CPF",
+          "numero": "456.789.012-33"
+        }
+      ],
+      "contatos": {
+        "telefone": "84966666666",
+        "email": "camila_rodrigues@gmail.com"
+      }
+    }
+```
+
+##### ti_ed_voluntarios
+
+Registro de voluntariados no site
+
+```json
+    {
+      "id": 1,
+      "ong": 5,
+      "usuario": 3
+    },
+    {
+      "ong": 3,
+      "usuario": 3,
+      "id": 2
+    },
+    {
+      "ong": 4,
+      "usuario": 3,
+      "id": 3
+    },
+    {
+      "ong": 1,
+      "usuario": 3,
+      "id": 4
+    }
+```
+
 
 ## Módulos e APIs
 
@@ -1008,32 +2337,13 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 
 **Images**:
 
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
+* im.ge - [https://im.ge.com/](https://im.ge.com/) 
 
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
-
+* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) 
+  
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
-
-# Referências
-
-As referências utilizadas no trabalho foram:
-
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
->
-> **Orientações**:
->
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+* jQuery - [http://www.jquery.com/](http://www.jquery.com/) 
+* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) 
