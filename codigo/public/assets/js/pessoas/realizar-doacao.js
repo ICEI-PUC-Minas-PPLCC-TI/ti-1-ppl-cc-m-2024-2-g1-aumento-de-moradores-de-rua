@@ -1,8 +1,3 @@
-function getCurrentUserId() {
-  return JSON.parse(sessionStorage.getItem('usuarioCorrente')).id || {};
-}
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('doacao-form');
   const qrCodeContainer = document.getElementById('qr-code');
@@ -14,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const formContainer = document.getElementById('form-container');
   let ongsOptions = [];
 
+  function getCurrentUserId() {
+    const usuario = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+    return usuario ? usuario.id : null;
+  }
+
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(response => response.json())
     .then(data => {
       ongsOptions = data;
-
       data.forEach(ong => {
         const option = document.createElement('option');
         option.value = ong.id;
@@ -87,33 +86,46 @@ document.addEventListener('DOMContentLoaded', () => {
       crc ^= str.charCodeAt(i) << 8;
       for (let j = 0; j < 8; j++) {
         if ((crc & 0x8000) !== 0) {
-          crc = (crc << 1) ^ 0x1021;
+          crc = ((crc << 1) ^ 0x1021) & 0xFFFF;
         } else {
-          crc <<= 1;
+          crc = (crc << 1) & 0xFFFF;
         }
-        crc &= 0xFFFF;
       }
     }
     return crc;
   }
 
-  form.addEventListener('input', checkFormValidity);
-
   function checkFormValidity() {
     const ongSelected = ongsSelect.value !== "";
     const valorFilled = document.getElementById('valor').value !== "";
-    if (ongSelected && valorFilled) {
-      gerarQrBtn.disabled = false;
-    } else {
-      gerarQrBtn.disabled = true;
-    }
+    gerarQrBtn.disabled = !(ongSelected && valorFilled);
   }
+
+  form.addEventListener('input', checkFormValidity);
+  const qrCode = new QRCodeStyling({
+    width: 250,
+    height: 250,
+    data: "",
+    image: "",
+    dotsOptions: {
+      color: "#000",
+      type: "square"
+    },
+    backgroundOptions: {
+      color: "#ffffff",
+    },
+    imageOptions: {
+      crossOrigin: "anonymous",
+      margin: 0
+    }
+  });
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const valor = parseFloat(document.getElementById('valor').value).toFixed(2);
-    const descricao = document.getElementById('descricao').value || "Nenhuma descrição fornecida.";
+    let descricao = document.getElementById('descricao').value || "Nenhuma descrição fornecida.";
+    descricao = descricao.substring(0, 25);
     const ongId = document.getElementById('ongs').value;
 
     const ong = ongsOptions.find(ong => String(ong.id) === String(ongId));
@@ -139,37 +151,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const pixPayload = generatePixPayload(pixData);
 
-    qrCodeContainer.innerHTML = "";
-    new QRCode(qrCodeContainer, {
-      text: pixPayload,
-      width: 250,
-      height: 250,
-    });
+    try {
+      qrCode.update({
+        data: pixPayload
+      });
+      qrCode.append(qrCodeContainer);
+    } catch (error) {
+      console.error('Erro ao gerar o QR Code:', error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Erro',
+        text: 'Não foi possível gerar o QR Code. Verifique os dados e tente novamente.',
+      });
+      return;
+    }
 
     qrCodeContainer.classList.add('visible');
     formContainer.classList.add('row');
-
     actionButtons.style.display = 'flex';
-
     disableFormFields(true);
-
     confirmarButton.disabled = false;
     cancelarButton.disabled = false;
-
     qrCodeContainer.scrollIntoView({ behavior: 'smooth' });
   });
 
-  confirmarButton.addEventListener('click', async () => {
-    await postarDoacao();
+  confirmarButton.addEventListener('click', () => {
+    postarDoacao(true);
   });
 
-  cancelarButton.addEventListener('click', async () => {
-    await postarDoacao(false);
+  cancelarButton.addEventListener('click', () => {
+    postarDoacao(false);
   });
 
   async function postarDoacao(confirmado = true) {
     const valor = parseFloat(document.getElementById('valor').value).toFixed(2);
-    const descricao = document.getElementById('descricao').value || "Nenhuma descrição fornecida.";
+    const descricao = document.getElementById('descricao').value.substring(0, 25) || "Nenhuma descrição fornecida.";
     const ongId = document.getElementById('ongs').value;
 
     const doacaoData = {
@@ -187,9 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const response = await fetch('/doacoes', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(doacaoData)
       });
 
@@ -203,14 +217,10 @@ document.addEventListener('DOMContentLoaded', () => {
           window.location.reload();
         });
       } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Erro',
-          text: 'Erro ao realizar a doação.',
-        });
+        throw new Error('Falha na resposta do servidor.');
       }
     } catch (error) {
-      console.error('Erro:', error);
+      console.error('Erro ao postar a doação:', error);
       Swal.fire({
         icon: 'error',
         title: 'Erro',
