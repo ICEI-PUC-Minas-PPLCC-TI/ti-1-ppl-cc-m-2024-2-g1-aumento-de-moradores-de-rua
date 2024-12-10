@@ -3,6 +3,7 @@ const user = JSON.parse(sessionStorage.getItem('usuarioCorrente')) || {};
 let atividadeId = null;
 let atividadeDetalhada = null;
 let ongId = null;
+let voluntariosData = [];
 
 async function carregarDetalhes() {
   const params = new URLSearchParams(window.location.search);
@@ -48,7 +49,7 @@ async function listarVoluntarios() {
   try {
     const responseVoluntarios = await fetch(`/voluntarios?ong=${ongId}`);
     if (!responseVoluntarios.ok) throw new Error('erro ao carregar voluntários');
-    const voluntariosData = await responseVoluntarios.json();
+    voluntariosData = await responseVoluntarios.json();
 
     const usuarioIds = voluntariosData.map(v => v.usuario);
     if (usuarioIds.length === 0) {
@@ -180,7 +181,7 @@ function configurarAcoes() {
     adicionarVoluntarioBtn.classList.remove('d-none');
   }
 
-  if (user.tipo === 'pessoa' && atividadeDetalhada.voluntarios.includes(user.id)) {
+  if (user.tipo == 'pessoa' && voluntariosData.includes(user.id) && atividadeDetalhada.voluntarios && atividadeDetalhada.voluntarios.includes(user.id) && atividadeDetalhada.status == "Em andamento") {
     registrarDiaBtn.classList.remove('d-none');
   }
 
