@@ -36,10 +36,10 @@ async function fetchPessoaData() {
 function preencherDadosMorador(data) {
   document.getElementById('morador-foto').src = data.imgPerfil || '#';
   document.getElementById('morador-nome').textContent = data.nome;
-  document.getElementById('morador-pais').textContent = data.endereco?.pais || 'País não informado';
-  document.getElementById('morador-estado').textContent = data.endereco?.estado || 'Estado não informado';
-  document.getElementById('morador-cidade').textContent = data.endereco?.cidade || 'Cidade não informada';
-  document.getElementById('morador-bairro').textContent = data.endereco?.bairro || 'Bairro não informado';
+  document.getElementById('morador-pais').textContent = data.ultimas_localizacoes[0].pais || 'País não informado';
+  document.getElementById('morador-estado').textContent = data.ultimas_localizacoes[0].estado || 'Estado não informado';
+  document.getElementById('morador-cidade').textContent = data.ultimas_localizacoes[0].cidade || 'Cidade não informada';
+  document.getElementById('morador-bairro').textContent = data.ultimas_localizacoes[0].bairro || 'Bairro não informado';
   document.getElementById('morador-personalidade').textContent = data.personalidade || 'Personalidade não informada';
 }
 
