@@ -47,54 +47,66 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-  function generatePixPayload(data) {
-    const { version, key, city, name, value, message, currency, countryCode } = data;
-
-    function genEMV(id, parameter) {
-      const len = parameter.length.toString().padStart(2, '0');
-      return `${id}${len}${parameter}`;
-    }
-
-    let payload = [
-      genEMV('00', version),
-      genEMV('26', `BR.GOV.BCB.PIX${genEMV('01', key)}${message ? genEMV('02', message) : ''}`),
-      genEMV('52', '0000'),
-      genEMV('53', String(currency)),
-    ];
-
-    if (value) {
-      payload.push(genEMV('54', value.toFixed(2)));
-    }
-
-    const sanitizedName = name.substring(0, 25).toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    const sanitizedCity = city.substring(0, 15).toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-    payload.push(genEMV('58', countryCode.toUpperCase()));
-    payload.push(genEMV('59', sanitizedName));
-    payload.push(genEMV('60', sanitizedCity));
-
-    const payloadString = payload.join('') + '6304';
-    const crc = crc16ccitt(payloadString).toString(16).toUpperCase().padStart(4, '0');
-    const payloadFinal = `${payloadString}${crc}`;
-
-    return payloadFinal;
-  }
-
-  function crc16ccitt(str) {
-    let crc = 0xFFFF;
-    for (let i = 0; i < str.length; i++) {
-      crc ^= str.charCodeAt(i) << 8;
-      for (let j = 0; j < 8; j++) {
-        if ((crc & 0x8000) !== 0) {
-          crc = ((crc << 1) ^ 0x1021) & 0xFFFF;
-        } else {
-          crc = (crc << 1) & 0xFFFF;
-        }
+    function generatePixPayload(data) {
+      const { version, key, city, name, value, currency, countryCode, message } = data;
+    
+      function genEMV(id, parameter) {
+        const len = parameter.length.toString().padStart(2, '0');
+        return `${id}${len}${parameter}`;
       }
+    
+      function sanitizeInput(input, maxLength) {
+        return input
+          .substring(0, maxLength)
+          .toUpperCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^A-Z0-9 ]/g, '');
+      }
+    
+      let payload = [
+        genEMV('00', version), // Payload Format Indicator
+        genEMV(
+          '26', // Merchant Account Information - PIX
+          genEMV('00', 'BR.GOV.BCB.PIX') + genEMV('01', key) + (message ? genEMV('02', sanitizeInput(message, 25)) : '')
+        ),
+        genEMV('52', '0000'), // Merchant Category Code (Default: 0000)
+        genEMV('53', String(currency)), // Transaction Currency (Default: 986 for BRL)
+      ];
+    
+      if (value) {
+        payload.push(genEMV('54', value.toFixed(2))); // Transaction Amount
+      }
+    
+      payload.push(genEMV('58', countryCode.toUpperCase())); // Country Code
+      payload.push(genEMV('59', sanitizeInput(name, 25))); // Merchant Name
+      payload.push(genEMV('60', sanitizeInput(city, 15))); // Merchant City
+    
+      // Adiciona o CRC16 no final do payload
+      const payloadString = payload.join('') + '6304';
+      const crc = crc16ccitt(payloadString).toString(16).toUpperCase().padStart(4, '0');
+      const payloadFinal = `${payloadString}${crc}`;
+    
+      return payloadFinal;
     }
-    return crc;
-  }
-
+    
+    // Função para calcular o CRC16-CCITT
+    function crc16ccitt(str) {
+      let crc = 0xffff;
+      for (let i = 0; i < str.length; i++) {
+        crc ^= str.charCodeAt(i) << 8;
+        for (let j = 0; j < 8; j++) {
+          if ((crc & 0x8000) !== 0) {
+            crc = (crc << 1) ^ 0x1021;
+          } else {
+            crc <<= 1;
+          }
+        }
+        crc &= 0xffff;
+      }
+      return crc;
+    }
+    
   function checkFormValidity() {
     const ongSelected = ongsSelect.value !== "";
     const valorFilled = document.getElementById('valor').value !== "";
@@ -123,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const valor = parseFloat(document.getElementById('valor').value).toFixed(2);
+    const valor = parseFloat(document.querySelector('#valor').value).toFixed(2);
     let descricao = document.getElementById('descricao').value || "Nenhuma descrição fornecida.";
     descricao = descricao.substring(0, 25);
     const ongId = document.getElementById('ongs').value;
@@ -140,11 +152,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const pixData = {
       version: "01",
-      key: ong.contatos.email || ong.contatos.telefone,
+      key: ong.contatos.email || `+55${ong.contatos.telefone}`,
       city: ong.endereco.cidade,
-      name: ong.nome_fantasia,
+      name: ong.razao_social,
       value: parseFloat(valor),
-      message: descricao,
+      message: "Doação no site do Conexão",
       currency: 986,
       countryCode: "BR"
     };

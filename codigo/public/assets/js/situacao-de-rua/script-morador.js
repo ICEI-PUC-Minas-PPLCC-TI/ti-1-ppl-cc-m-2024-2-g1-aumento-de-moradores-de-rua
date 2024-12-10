@@ -179,4 +179,49 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
         );
     }
 });
+
+document.getElementById('addForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const nome = document.getElementById('add-nome').value.trim();
+    const genero = document.getElementById('add-genero').value.trim();
+    const data_nascimento = document.getElementById('add-data-nascimento').value;
+    const imgPerfil = document.getElementById('add-imgPerfil').value.trim();
+
+    if (!nome || !genero || !data_nascimento) {
+        Swal.fire('Erro', 'Por favor, preencha todos os campos obrigatórios.', 'warning');
+        return;
+    }
+
+    try {
+        const novoMorador = {
+            nome,
+            genero,
+            data_nascimento,
+            ultimas_localizacoes: [],
+            necessidades_especificas: [],
+            imgPerfil: imgPerfil || 'https://via.placeholder.com/150',
+            tipo: 'situacao_rua',
+        };
+
+        const response = await fetch('/pessoas', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(novoMorador),
+        });
+
+        if (!response.ok) throw new Error('Erro ao adicionar morador.');
+
+        Swal.fire('Sucesso!', 'Novo morador adicionado com sucesso.', 'success');
+        const addModalEl = document.getElementById('addModal');
+        const addModal = bootstrap.Modal.getInstance(addModalEl);
+        addModal.hide();
+        gerarCards();
+    } catch (error) {
+        console.error('Erro ao adicionar:', error);
+        Swal.fire('Erro!', 'Ocorreu um erro ao adicionar o morador.', 'error');
+    }
+});
+
+
 window.onload = gerarCards;

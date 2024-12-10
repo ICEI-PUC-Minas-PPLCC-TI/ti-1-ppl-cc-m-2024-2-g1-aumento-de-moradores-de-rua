@@ -16,10 +16,13 @@
 
     <main class="container" style="padding-top: 110px;">
         <div>
-            <h3 class="text-start mb-4">pessoas em situação de rua</h3>
-            <div class="card-container" id="cards-container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="text-start">Pessoas em Situação de Rua</h3>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">Adicionar Novo</button>
             </div>
+            <div class="card-container" id="cards-container"></div>
         </div>
+    
     </main>
 
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
@@ -52,6 +55,41 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="addForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addModalLabel">Adicionar Novo Morador</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="add-nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="add-nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="add-genero" class="form-label">Gênero</label>
+                            <input type="text" class="form-control" id="add-genero" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="add-data-nascimento" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="add-data-nascimento" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="add-imgPerfil" class="form-label">URL da Imagem</label>
+                            <input type="url" class="form-control" id="add-imgPerfil">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
                     </div>
                 </form>
             </div>

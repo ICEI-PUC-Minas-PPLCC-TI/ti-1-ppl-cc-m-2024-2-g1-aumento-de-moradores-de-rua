@@ -128,6 +128,26 @@
         "telefone": ""
       },
       "id": 6
+    },
+    {
+      "login": "ong_esperança",
+      "senha": "senha123",
+      "nome": "Ong - Esperança do Brasil",
+      "email": "vitords.mello@gmail.com",
+      "tipo": "ong",
+      "endereco": {
+        "logradouro": "Rua da Bahia",
+        "numero": "100",
+        "complemento": "",
+        "bairro": "Centro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30160906"
+      },
+      "contatos": {
+        "telefone": "69993712560"
+      },
+      "id": 7
     }
   ],
   "atividades": [
@@ -496,6 +516,27 @@
       "status": "accepted",
       "responsavel": 7,
       "id": 5
+    },
+    {
+      "cnpj": "001239123014",
+      "data_fundacao": "2023-10-10",
+      "razao_social": "Vitor Daniel Silva Melo",
+      "nome_fantasia": "ONG ESPERANÇA DO BRASIL",
+      "endereco": {
+        "logradouro": "Rua da Bahia",
+        "numero": "100",
+        "complemento": "",
+        "bairro": "Centro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30160906"
+      },
+      "contatos": {
+        "telefone": "69993712560"
+      },
+      "status": "accepted",
+      "responsavel": 7,
+      "id": 6
     }
   ],
   "itens-estoque": [
@@ -646,6 +687,11 @@
           "nome": "Roupas",
           "tipo": "vestuario",
           "descricao": "Necessita de roupas de frio"
+        },
+        {
+          "nome": "Saúde",
+          "tipo": "",
+          "descricao": "Precisa de auxilio médico constante"
         }
       ],
       "documentos": [
@@ -1288,6 +1334,37 @@
         "telefone": "98955555555",
         "email": "andre_barbosa@outlook.com"
       }
+    },
+    {
+      "nome": "Eduardo Henrique Aniceto",
+      "genero": "Masculino",
+      "data_nascimento": "2024-10-10",
+      "ultimas_localizacoes": [
+        {
+          "cidade": "Belo Horizonte",
+          "estado": "MG",
+          "bairro": "Centro",
+          "rua": "Rua da Bahia",
+          "numero": "100",
+          "cep": "30160-906",
+          "localizado_em": "2024-10-10"
+        }
+      ],
+      "necessidades_especificas": [
+        {
+          "nome": "Cabelo Novo",
+          "tipo": "",
+          "descricao": "Morador de rua está ficando extremamente calvo"
+        },
+        {
+          "nome": "Celular novo",
+          "tipo": "",
+          "descricao": "ele é gay"
+        }
+      ],
+      "imgPerfil": "https://pt.quizur.com/_image?href=https://img.quizur.com/f/img62fe3c69616fb2.09663501.jpg?lastEdited=1660828785&w=600&h=600&f=webp",
+      "tipo": "situacao_rua",
+      "id": "sKVkHTy"
     }
   ],
   "voluntarios": [
