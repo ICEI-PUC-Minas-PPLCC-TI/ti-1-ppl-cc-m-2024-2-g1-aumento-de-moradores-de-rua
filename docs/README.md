@@ -1,8 +1,6 @@
 # Introdução
 
-Informações básicas do projeto.
-
-* **Projeto:** Aumento de Moradores de Rua
+* **Projeto:** Conexão Consciente
 * **Repositório GitHub:** [[LINK PARA O REPOSITÓRIO NO GITHUB]](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/tree/master)
   
 * **Membros da equipe:** 
@@ -926,9 +924,9 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 
 ## Vídeo do Projeto
 
-O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
+O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. 
 
-[![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
+[![Vídeo do projeto](images/logo.png)](https://youtu.be/M2kJHJ2ynj4?si=G87_wlnnL12klLiB)
 
 
 ## Funcionalidades
@@ -939,7 +937,7 @@ Esta seção apresenta as funcionalidades da solução.Info
 
 Permite acessar a listagem dos moradores de rua, acessar os detalhes de cada, editar, apagar, ver suas necessidades e últimas localizações para fazer as doações. (Só é permitido ter o acesso logado como ONG)
 
-* **Estrutura de dados:** [Morador](#ti_ed_morador)
+* **Estrutura de dados:** [Morador](#ti_ed_pessoas)
 * **Instruções de acesso:**
   * Abra o site e efetue o login como ONG. login: "ong_do_joao" senha: "123"
   * Acesse o menu principal e escolha a opção "situacao de rua"
@@ -947,16 +945,16 @@ Permite acessar a listagem dos moradores de rua, acessar os detalhes de cada, ed
 * **Tela da funcionalidade**:
 
 ![Tela de Listagem de Morador](images/solucao-listagem-morador.png)
-![Tela de Detalhes do Morador](images/solucao-detalhes-morador.png)
 ![Tela de Editar Dados do Morador](images/solucao-editar-morador.png)
 ![Tela de Excluir Perfil do Morador](images/solucao-excluir-morador.png)
+![Tela de Detalhes do Morador](images/solucao-detalhes-morador.png)
 
 
 > ##### Funcionalidade 2 - Itens do Estoque 
 
 Permite a ONG criar novo item, visualizar, editar ou excluir um item do estoque.
 
-* **Estrutura de dados:** [Item-estoque](#ti_ed_item_estoque)
+* **Estrutura de dados:** [Item-estoque](#ti_ed_itens_estoque)
 * **Instruções de acesso:**
   * Abra o site e efetue o login como ONG. login: "ong_do_joao" senha: "123"
   * Acesse o menu principal e escolha a opção "itens do estoque"
@@ -970,7 +968,7 @@ Permite a ONG criar novo item, visualizar, editar ou excluir um item do estoque.
 A tela de "Minhas Atividades" é destinada para controle de atividades feitas, como, trabalhos voluntários, doações para moradores de rua recentemente.
 Permite adicionar nova atividade, visualizar, editar ou excluir. 
 
-* **Estrutura de dados:** [Atividades ONG](#ti_ed_atividades_ong)
+* **Estrutura de dados:** [Atividades ONG](#ti_ed_atividades)
 * **Instruções de acesso:**
   * Abra o site e efetue o login como ONG. login: "ong_do_joao" senha: "123"
   * Acesse o menu principal e escolha a opção "atividades"
@@ -990,13 +988,13 @@ Permite que o usuário entre no perfil e visualize seus dados cadastrados e o pe
   * Escolha a ação que deseja realizar.
 * **Tela da funcionalidade**:
 
-![Tela de Meu Perfil](images/solucao-minhas-atividades-ong.png)
+![Tela de Meu Perfil](images/solucao-meu-perfil.png)
 
 > ##### Funcionalidade 5 - Minhas Doações
 
 Permite o usuário visualizar o histórico de doações feitas pelo site e para qual ONG foi realizada.
 
-* **Estrutura de dados:** [Doações](#ti_ed_minhas_doacoes)
+* **Estrutura de dados:** [Doações](#ti_ed_doacoes)
 * **Instruções de acesso:**
   * Abra o site e efetue o login como usuário login: "user" senha: "123" 
   * Acesse o menu principal e escolha a opção "doações"
@@ -1009,7 +1007,7 @@ Permite o usuário visualizar o histórico de doações feitas pelo site e para 
 
 Permite o usuário a fazer uma doação para uma ONG de sua escolha.
 
-* **Estrutura de dados:** [Realizar Doação](#ti_ed_realizar_doacoes)
+* **Estrutura de dados:** [Realizar Doação](#ti_ed_doacoes)
 * **Instruções de acesso:**
   * Abra o site e efetue o login como usuário login: "user" senha: "123" 
   * Selecione uma ONG em destaque na tela inicial, ou, acesse o menu principal e escolha a opção ONG's
@@ -1023,7 +1021,7 @@ Permite o usuário a fazer uma doação para uma ONG de sua escolha.
 A tela de "Minhas Atividades" é destinada para controle de atividades feitas, como, trabalhos voluntários, doações para moradores de rua recentemente.
 Permite visualizar detalhadamente o histórico de as atividades realizadas. 
 
-* **Estrutura de dados:** [Atividades Usuário](#ti_ed_atividades_usuario)
+* **Estrutura de dados:** [Atividades Usuário](#ti_ed_atividades)
 * **Instruções de acesso:**
   * Abra o site e efetue o login como ONG: login: "ong_do_joao" senha: "123"
   * Acesse o menu principal e escolha a opção "atividades"
@@ -1034,11 +1032,9 @@ Permite visualizar detalhadamente o histórico de as atividades realizadas.
 
 ## Estruturas de Dados
 
-Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
-
 ##### ti_ed_usuarios   
 
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema
+**Registro dos usuários do sistema utilizados para login e para o perfil do sistema**
 
 ```json
   {
@@ -1173,9 +1169,9 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
   
 ```
 
-##### ti_ed_atividades_usuario 
+##### ti_ed_atividades
 
-Registro de atividades realizadas pelo usuário 
+**Registro de atividades realizadas pelo usuário** 
 
 ```json
   {
@@ -1244,9 +1240,9 @@ Registro de atividades realizadas pelo usuário
     }
 ```
 
-##### Dias de Trabalho  
+##### #ti_ed_dias_trabalho
 
-Registro sobre os dias de trabalhos realizados pelo usuário
+**Registro sobre os dias de trabalhos realizados pelo usuário**
 
 ```json
     {
@@ -1311,9 +1307,9 @@ Registro sobre os dias de trabalhos realizados pelo usuário
     }
 ```
 
-##### ti_ed_minhas_doacoes
+##### ti_ed_doacoes
 
-Registro de doações realizados pelo usuário
+**Registro de doações realizados pelo usuário**
 
 ```json
   {
@@ -1438,9 +1434,9 @@ Registro de doações realizados pelo usuário
     }
 ```
 
-##### ONGs  
+##### #ti_ed_ongs  
 
-Registro do perfil ONG
+**Registro do perfil ONG**
 
 ```json
   {
@@ -1577,9 +1573,32 @@ Registro do perfil ONG
     }
 ```
 
-##### ti_ed_morador
+##### #ti_ed_itens_estoque
 
-Registro de todas as pessoas cadastradas no site
+**Registro sobre os dias de trabalhos realizados pelo usuário**
+
+```json
+    {
+      "id": 1,
+      "ongId": 1,
+      "nome": "Cobertor",
+      "quantidade": 10,
+      "validade": "2025-12-31",
+      "descricao": "Cobertores para distribuir no inverno!"
+    },
+    {
+      "id": 3,
+      "ongId": 3,
+      "nome": "Pasta de dente",
+      "quantidade": 100,
+      "validade": "2032-12-10",
+      "descricao": "Pasta de dente para distribuir!"
+    }
+```
+
+##### ti_ed_pessoas
+
+**Registro de todas as pessoas cadastradas no site**
 
 ```json
   {
@@ -2305,7 +2324,7 @@ Registro de todas as pessoas cadastradas no site
 
 ##### ti_ed_voluntarios
 
-Registro de voluntariados no site
+**Registro de voluntariados no site**
 
 ```json
     {
@@ -2333,17 +2352,19 @@ Registro de voluntariados no site
 
 ## Módulos e APIs
 
-Esta seção apresenta os módulos e APIs utilizados na solução
-
 **Images**:
 
-* im.ge - [https://im.ge.com/](https://im.ge.com/) 
+* [im.ge](https://im.ge.com/) 
 
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) 
+* [Font Awesome](https://fontawesome.com/) 
   
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) 
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) 
+* [jQuery](http://www.jquery.com/) 
+* [Bootstrap](http://getbootstrap.com/) 
+  
+**Mapa**
+
+* [Open Street Map](https://www.openstreetmap.org/#map=5/-15.13/-53.19)
