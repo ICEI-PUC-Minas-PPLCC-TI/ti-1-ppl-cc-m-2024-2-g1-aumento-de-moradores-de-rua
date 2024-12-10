@@ -1,17 +1,4 @@
-# Introdução
-
-* **Projeto:** Conexão Consciente
-* **Repositório GitHub:** [[LINK PARA O REPOSITÓRIO NO GITHUB]](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/tree/master)
-  
-* **Membros da equipe:** 
-* [Any Gabrriela Neri de Oliveira](https://github.com/anygabriella)
-* [Eduardo Henrique Aniceto Teixeira](https://github.com/Eduard-Aniceto)
-* [Frederico Matheus Costa Duarte](https://github.com/Freduart12)
-* [Izabel Oliveira da Paz Chaves](https://github.com/rainbowcrack)
-* [Vitor Daniel Silva Melo](https://github.com/vloax)
-
-
-A documentação do projeto é estruturada da seguinte forma:
+**A documentação do projeto é estruturada da seguinte forma:**
 
 1. Introdução
 2. Contexto
@@ -22,6 +9,26 @@ A documentação do projeto é estruturada da seguinte forma:
 7. Solução
 8. Referências Bibliográficas
 
+# Introdução
+![Logo projeto](images/logo.png)
+
+### Projeto: Aumento de Moradores de Rua
+* 
+* **Repositório GitHub:** [[Link]](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/tree/master)
+  
+* **Membros da equipe:** 
+* [Any Gabrriela Neri de Oliveira](https://github.com/anygabriella)
+* [Eduardo Henrique Aniceto Teixeira](https://github.com/Eduard-Aniceto)
+* [Frederico Matheus Costa Duarte](https://github.com/Freduart12)
+* [Izabel Oliveira da Paz Chaves](https://github.com/rainbowcrack)
+* [Vitor Daniel Silva Melo](https://github.com/vloax)
+
+**Professores responsáveis:** 
+* [Hayala Nepomuceno Curto](https://github.com/hayalacurto)
+* [Ilo Amy Saldanha Rivero](https://github.com/ilorivero)
+* [Rommel Vieira Carneiro](https://github.com/rommelcarneiro)
+* [Walisson Ferreira de Carvalho](https://github.com/WFCarvalho)
+* 
 ✅ [Documentação de Design Thinking (MIRO)](files/Aumento-de-moradores-de-rua.pdf)
 
 # Contexto
@@ -49,15 +56,15 @@ Este trabalho justifica-se pela necessidade de criar uma ferramenta digital que 
 
 O público-alvo do aplicativo específico para ONGs que atuam no apoio a moradores de rua é composto por três grupos principais:
 
-**1-Organizações Não Governamentais (ONGs):**
+**1- Organizações Não Governamentais (ONGs):**
 
 As ONGs são o foco principal do aplicativo, pois são as responsáveis ​​por fornecer assistência e apoio direto aos moradores de rua. O aplicativo deve atender suas necessidades operacionais, facilitando a gestão de ações, o acompanhamento de ações de voluntariado e a integração com parceiros.
 
-**2-Moradores de Rua:**
+**2- Moradores de Rua:**
 
 Os moradores de rua são os beneficiários das ações realizadas pelas ONGs. O aplicativo deve ser projetado para atender suas necessidades, permitindo que as ONGs registrem informações sobre sua localização, saúde e bem-estar, além de possibilitar um acompanhamento mais eficaz. 
 
-**3-Voluntários e Doadores:**
+**3- Voluntários e Doadores:**
 
 O aplicativo também é destinado a voluntários e doadores que desejam contribuir com as ONGs. A plataforma deve facilitar o engajamento desses indivíduos, permitindo que eles se inscrevam para ações de voluntariado, façam ações financeiras e acompanhem o impacto de suas contribuições.**
 
@@ -69,19 +76,19 @@ O aplicativo também é destinado a voluntários e doadores que desejam contribu
  ### Matriz CSD: 
  Na matriz foram identificadas as seguintes dúvidas, certezas e suposições: 
 
- **1- Dúvidas**: 
+ **1. Dúvidas**: 
  ▸ Uma vez que há o investimento inicial de R$982 milhões pelo governo para pessoas em situação de rua, como tal verba é distribuída? 
  ▸ Por que não vemos o impacto deste "benefício" na vida diária dos afetados?
  ▸ Quais os principais fatores socioeconõmicos que contribuem para o aumento de moradores de rua?
  ▸ Qual a relação entre educação e prevenção da população de rua?
 
- **2- Certezas**: 
+ **2. Certezas**: 
  ▸ Falta de Pesquisa e Mensuração: Há uma disparidade entre os números dos moradores de rua calculados pela Prefeitura de BH, com a realidade.
  ▸ Poucas Verbas e Sub-notificação: A precariedade de pesquisas na área, não compreende a dimensionalidade dos moradores de rua e suas necessidades, que resulta em pouca verba estatal.
  ▸ Aumento dos Moradores de Rua: a cada ano, há um aumento progressivo dos Moradores de Rua, por "n" motivos (desemprego, inflação, falta de políticas pública, má gestão...).
  ▸ Condições de Insalubridade e Doenças Autoimunes: Há relação entre o aumento do número de doenças auto-imunes nos cidadãos, sob o viés da contaminação.
 
- **3- Suposições**: 
+ **3. Suposições**: 
  ▸ Através de um investimento público  localizado e correto, Haverá uma diminuição significativa dos moradores de rua.
  ▸ Melhorias no acesso a empregos e educação, ajudariam no processo.
  ▸ O preconceito da população auxilia na estabilização e perpetuação do problema.
@@ -90,16 +97,16 @@ O aplicativo também é destinado a voluntários e doadores que desejam contribu
 
 
  ### Mapa de stakeholders: 
-Na fase de Mapa de stakeholders apresentamos as seguintes pessoas:
+ #### Na fase de Mapa de stakeholders apresentamos as seguintes pessoas:
 
- **1- Pessoas Fundamentais**: ▸ Doadores
+ **1. Pessoas Fundamentais**: ▸ Doadores
  ▸ Moradores de rua
  Prefeitura de BH
 
- **2- Pessoas Importantes**: ▸ Abrigos e ONG's
+ **2. Pessoas Importantes**: ▸ Abrigos e ONG's
  ▸ Trabalhores Sociais e Profissionais da Saúde
 
- **3- Pessoas Influenciadoras**: ▸ População
+ **3. Pessoas Influenciadoras**: ▸ População
  ▸ Mídia
 
 
@@ -108,22 +115,22 @@ Na fase de Mapa de stakeholders apresentamos as seguintes pessoas:
 ### Entrevistas qualitativas: 
 Nesta etapa fizemos as seguintes perguntas para os desabrigados e coletamos as informações:
 
- **1- Como são os abrigos para moradores de rua?**: No geral, existem reclamações sobre a falta de segurança,
+ **1. Como são os abrigos para moradores de rua?**: No geral, existem reclamações sobre a falta de segurança,
 existência de ladrões (o que gera insegurança), super lotação nos quartos, entre outros.
 
-**2- O que os levou à chegar até tal situação?**: Comumente são problemas associados a perda de
+**2. O que os levou à chegar até tal situação?**: Comumente são problemas associados a perda de
 familiares próximos, como mãe e pai, e por não receberem o apoio necessário (tanto financeiro quanto emocional)  para seguirem seu cotidiano, se veem sem outra escolha. Além de problemas com vícios e drogas.
 
-**3- Como são as doações recebidas?**: No que se refere a doações / ajudas recebidas por eles pela população local, ambos apresentaram opiniões positivas, alegando uma empatia considerável dos urbanistas a sua situação. Entretanto houve uma divergência de opiniões sobre o amparo oferecido pelo governo, onde um relata receber auxílio, enquanto o outro nunca teve acesso a algo do tipo.
+**3. Como são as doações recebidas?**: No que se refere a doações / ajudas recebidas por eles pela população local, ambos apresentaram opiniões positivas, alegando uma empatia considerável dos urbanistas a sua situação. Entretanto houve uma divergência de opiniões sobre o amparo oferecido pelo governo, onde um relata receber auxílio, enquanto o outro nunca teve acesso a algo do tipo.
 
 
-A seguir são perguntas foram feitas para um profissional que trabalha com lipeza pública e tem contato direto com tal população: 
+#### A seguir são perguntas foram feitas para um profissional que trabalha com lipeza pública e tem contato direto com tal população: 
 
-**1- Como os moradores de rua influenciam seu trabalho?**: "Trabalhando na área pública, frequentemente nos deparamos com pessoas em situação de rua que, infelizmente, não demonstram interesse em mudar de vida. Isso pode prejudicar o nosso trabalho, pois muitos acabam utilizando as ruas para suas necessidades básicas e descartando lixo de forma inadequada. Eu acredito que viver nessas condições não é positivo, tanto para eles quanto para a comunidade em geral, e isso reflete negativamente no nosso dia a dia."
+**1. Como os moradores de rua influenciam seu trabalho?**: "Trabalhando na área pública, frequentemente nos deparamos com pessoas em situação de rua que, infelizmente, não demonstram interesse em mudar de vida. Isso pode prejudicar o nosso trabalho, pois muitos acabam utilizando as ruas para suas necessidades básicas e descartando lixo de forma inadequada. Eu acredito que viver nessas condições não é positivo, tanto para eles quanto para a comunidade em geral, e isso reflete negativamente no nosso dia a dia."
 
-**2- Quais são os aspectos positivos dessa convivência?**: "O lado positivo é que, na maioria das vezes, são pessoas educadas e amigáveis. Contudo, sempre existem exceções, e há alguns indivíduos mais agressivos que dificultam o nosso trabalho."
+**2. Quais são os aspectos positivos dessa convivência?**: "O lado positivo é que, na maioria das vezes, são pessoas educadas e amigáveis. Contudo, sempre existem exceções, e há alguns indivíduos mais agressivos que dificultam o nosso trabalho."
 
-**3- Como você percebe o tratamento da população em relação aos moradores de rua?**: "É uma situação muito paralela. Percebo que muitas pessoas se preocupam em ajudar, mas, em muitos casos, os próprios moradores de rua não buscam sair dessa situação. Isso torna o processo de ajuda muito complicado. Conheço, por exemplo, uma pessoa que teve a oportunidade de mudar de vida, com emprego e tudo, mas preferiu continuar no vício das drogas e da bebida. Isso torna realmente difícil prestar qualquer tipo de assistência."
+**3. Como você percebe o tratamento da população em relação aos moradores de rua?**: "É uma situação muito paralela. Percebo que muitas pessoas se preocupam em ajudar, mas, em muitos casos, os próprios moradores de rua não buscam sair dessa situação. Isso torna o processo de ajuda muito complicado. Conheço, por exemplo, uma pessoa que teve a oportunidade de mudar de vida, com emprego e tudo, mas preferiu continuar no vício das drogas e da bebida. Isso torna realmente difícil prestar qualquer tipo de assistência."
 
 
 
@@ -149,16 +156,12 @@ Com os aprendizados que vivenciamos, o grupo chegou a conclusão que devemos nos
 **Aspectos que importaram mais para os participantes**: Entre as pessoas em situação de rua, destaca-se a preferência pessoal em permanecer nas ruas em contraponto aos abrigos. Ademais, sobre a falta de suporte familiar incutidos em seus passados, que preferem ao menos comentar. A ajuda dos pedestres com a doação de roupas e de alimentos se faz presente recorrente, contribuindo para a confiança em um ambiente de gratidão pela boa ação.
 O trabalhador da prefeitura, responsável pela limpeza e manutenção das ruas, adotou uma postura radical em relação ao público em situação de rua afirmando que dificultam o seu trabalho ao remexerem nos lixos, além de que alguns podem ser agressivos. Justificou sua postura frente essa problemática defendendo a realocação deles de forma mais rápida possível.
 
-
 **Novos tópicos ou questões para explorar no futuro**: Pensamos em entender melhor a realidade das pessoas em situação de rua, de um viés mais qualitativo e governamental. Consoante a isso exploraremos no futuro próximo:
 ▸ Como funciona o sistema de segurança e a infraestrutura nos abrigos?
 ▸ O que fazer para atrair o nosso público aos abrigos?
 ▸ Como unir ONG's e voluntários a esse projeto?
 Exploramos as ODS's da ONU e queremos que a tecnologia dialogue com a fraternidade humana. Buscaremos outros projetos e soluções para inspirar a nossa ideia e aprender o que deu errado.
 Queremos dialogar com os nossos colegas de classe de T.I 1 que possuem temas que abrangem o que buscamos, para achar a melhor solução: "Desperdício de Comida", "Desemprego", "Dificuldade de Doações a ONG's" e o grupo de "Vícios".
-
-
-
 
 ## Etapa de Definição
 
@@ -747,7 +750,7 @@ Nesta área, as ONGs interessadas realizam o cadastro no site para exibir suas i
 ## Acesso ONG
 Essa é a **página inicial para ONGs** após o login.
 
-![Acesso ONG](images/Acesso-ong.png)
+![Acesso ONG](images/Acesso-ONG.png)
 
 ## ONG - Registrar Morador de Rua
 Essa página mostra os moradores de rua que já foram registrados pelas ONGs que prestaram serviços.
@@ -854,10 +857,6 @@ Essa página permite que os voluntários tenham acesso a informações sobre as 
 
 ![ONGs](images/voluntario-ong.png)
 
-### Protótipo Interativo
-
-https://www.figma.com/proto/sr9gPmIYiNjavTUbWUqum8/Projeto-de-Interfaces?node-id=43-5708&node-type=section&t=l8xQlfgYc0R01mSm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A3&starting-point-node-id=43%3A1607&show-proto-sidebar=1
-
 # Metodologia
 A equipe foi organizada utilizando a Metodologia Scrum, do qual nos reunimos semanalmente às Sextas-Feiras na PUC Minas, de forma presencial, e no Domingo para submissão das sprints, de forma remota no WhatsApp.
 
@@ -925,6 +924,7 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 ## Vídeo do Projeto
 
 O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. 
+(Clique na imagem para ser redirecionado)
 
 [![Vídeo do projeto](images/logo.png)](https://youtu.be/M2kJHJ2ynj4?si=G87_wlnnL12klLiB)
 
