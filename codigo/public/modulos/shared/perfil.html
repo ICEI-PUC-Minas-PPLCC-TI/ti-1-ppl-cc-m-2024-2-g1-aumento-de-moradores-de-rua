@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/pessoas/meu-perfil.css">
+  <title>Meu Perfil</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <main class="container" style="padding-top: 110px;">
+    <div class="titulo">
+      <h3>meu perfil</h3>
+    </div>
+    <div class="profile-container">
+      <div class="profile-header">
+        <div class="profile-photo" id="imgPerfil"></div>
+        <div class="profile-info">
+          <div class="profile-info-left">
+            <div class="info">
+              <p>Nome:</p>
+              <div class="info-field" id="nome">[Nome]</div>
+            </div>
+            <div class="info">
+              <p>Nascimento:</p>
+              <div class="info-field" id="data_nascimento">[Data de Nascimento]</div>
+            </div>
+            <div class="info">
+              <p>Estado:</p>
+              <div class="info-field" id="estado">[Estado]</div>
+            </div>
+            <div class="info">
+              <p>Cidade:</p>
+              <div class="info-field" id="cidade">[Cidade]</div>
+            </div>
+            <div class="info">
+              <p>Bairro:</p>
+              <div class="info-field" id="bairro">[Bairro]</div>
+            </div>
+
+            <br>
+            <div class="info">
+              <p>Status:</p>
+              <div class="info-field" id="infoAdicional">[Outras informações pessoais]</div>
+            </div>
+          </div>
+          <div class="profile-info-right">
+            <div class="info">
+              <p>Rua:</p>
+              <div class="info-field" id="logradouro">[Rua]</div>
+            </div>
+            <div class="info">
+              <p>CEP:</p>
+              <div class="info-field" id="cep">[CEP]</div>
+            </div>
+            <div class="info">
+              <p>Complemento:</p>
+              <div class="info-field" id="complemento">[Complemento]</div>
+            </div>
+            <div class="info">
+              <p>Telefone:</p>
+              <div class="info-field" id="telefone">[Telefone]</div>
+            </div>
+            <div class="info">
+              <p>Email:</p>
+              <div class="info-field" id="email">[Email]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <button class="nav-button-edit" id="editButton">Editar Perfil</button>
+        <button class="nav-button-canc" id="logoutButton">Logout</button>
+      </div>
+    </div>
+  </main>
+
+  <div id="customModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" id="closeModal">&times;</span>
+      <form id="editForm">
+        <div class="form-group">
+          <label for="nomeInput">Nome:</label>
+          <input type="text" id="nomeInput" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="dataNascimentoInput">Data de Nascimento:</label>
+          <input type="date" id="dataNascimentoInput" name="data_nascimento" required>
+        </div>
+        <div class="form-group">
+          <label for="estadoInput">Estado:</label>
+          <input type="text" id="estadoInput" name="estado" required>
+        </div>
+        <div class="form-group">
+          <label for="cidadeInput">Cidade:</label>
+          <input type="text" id="cidadeInput" name="cidade" required>
+        </div>
+        <div class="form-group">
+          <label for="bairroInput">Bairro:</label>
+          <input type="text" id="bairroInput" name="bairro" required>
+        </div>
+        <div class="form-group">
+          <label for="logradouroInput">Rua:</label>
+          <input type="text" id="logradouroInput" name="logradouro" required>
+        </div>
+        <div class="form-group">
+          <label for="cepInput">CEP:</label>
+          <input type="text" id="cepInput" name="cep" required>
+        </div>
+        <div class="form-group">
+          <label for="complementoInput">Complemento:</label>
+          <input type="text" id="complementoInput" name="complemento">
+        </div>
+        <div class="form-group">
+          <label for="telefoneInput">Telefone:</label>
+          <input type="text" id="telefoneInput" name="telefone" required>
+        </div>
+        <div class="form-group">
+          <label for="emailInput">Email:</label>
+          <input type="email" id="emailInput" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="infoAdicionalInput">Informação Adicional:</label>
+          <textarea id="infoAdicionalInput" name="infoAdicional"></textarea>
+        </div>
+        <div class="modal-buttons">
+          <button type="submit" id="modalConfirm">Confirmar</button>
+          <button type="button" id="modalCancel">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../../assets/js/pessoas/meu-perfil.js" defer></script>
+  <script src="../../assets/js/login.js" defer></script>
+  <script src="../../assets/js/header/index.js" defer></script>
+</body>
+
+</html>

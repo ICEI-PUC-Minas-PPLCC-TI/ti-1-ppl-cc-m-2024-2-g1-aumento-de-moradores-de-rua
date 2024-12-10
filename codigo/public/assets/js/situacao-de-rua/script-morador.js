@@ -136,7 +136,6 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
 
     const id = document.getElementById('edit-id').value;
     const nome = document.getElementById('edit-nome').value.trim();
-    const tipo = document.getElementById('edit-tipo').value.trim();
 
     const genero = document.getElementById('edit-genero').value.trim();
     const data_nascimento = document.getElementById('edit-data-nascimento').value;
@@ -149,7 +148,6 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
     try {
         const updateData = {
             nome,
-            tipo,
             genero,
             data_nascimento,
             imgPerfil
@@ -161,33 +159,7 @@ document.getElementById('editForm').addEventListener('submit', async (e) => {
             body: JSON.stringify(updateData),
         });
 
-        if (!response1.ok) throw new Error('Erro ao atualizar informações principais.');
         const pessoa = moradoresData.find(m => m.id == id);
-        const localizacoes = pessoa.ultimas_localizacoes || [];
-
-        if (localizacoes.length > 0) {
-            const ultimaLocalizacao = { ...localizacoes[localizacoes.length - 1], cidade, estado };
-            const updatedLocalizacoes = [...localizacoes.slice(0, -1), ultimaLocalizacao];
-
-            const response2 = await fetch(`/pessoas/${id}`, {
-                method: 'PATCH',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ultimas_localizacoes: updatedLocalizacoes }),
-            });
-
-            if (!response2.ok) throw new Error('Erro ao atualizar localização.');
-        } else {
-            const novaLocalizacao = { cidade, estado };
-            const updatedLocalizacoes = [...localizacoes, novaLocalizacao];
-
-            const response2 = await fetch(`/pessoas/${id}`, {
-                method: 'PATCH',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ultimas_localizacoes: updatedLocalizacoes }),
-            });
-
-            if (!response2.ok) throw new Error('Erro ao adicionar nova localização.');
-        }
 
         Swal.fire(
             'Sucesso!',

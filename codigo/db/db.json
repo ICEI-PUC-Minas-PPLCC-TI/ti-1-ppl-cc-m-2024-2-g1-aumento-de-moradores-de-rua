@@ -184,11 +184,11 @@
       "tipo": "doacao"
     },
     {
-      "nome": "aaaaa",
-      "descricao": "aaaaaaaaaaaaaa",
-      "data_inicio": "2024-10-12",
-      "data_fim": "2024-10-14",
-      "status": "concluída",
+      "nome": "AAAAAA",
+      "descricao": "AAAAAAAAAAAAAAAAA",
+      "data_inicio": "2020-10-10",
+      "data_fim": "2023-10-10",
+      "status": "Planejada",
       "ong": 5,
       "voluntarios": [
         3
@@ -507,7 +507,7 @@
   "pessoas": [
     {
       "id": "1",
-      "nome": "João da Silva",
+      "nome": "João da Silva ADASDAF",
       "tipo": "situacao_rua",
       "genero": "Masculino",
       "data_nascimento": "1980-01-01",
@@ -569,7 +569,18 @@
           "localizado_em": "2024-12-10"
         }
       ],
-      "necessidades_especificas": [],
+      "necessidades_especificas": [
+        {
+          "nome": "Pão de Forma",
+          "tipo": "",
+          "descricao": "Necessidade Atual"
+        },
+        {
+          "nome": "Olá, mundo!",
+          "tipo": "",
+          "descricao": "dasfasd"
+        }
+      ],
       "documentos": [
         {
           "tipo": "RG",
@@ -1282,6 +1293,11 @@
       "ong": 4,
       "usuario": 3,
       "id": 3
+    },
+    {
+      "ong": 5,
+      "usuario": 3,
+      "id": 4
     }
   ]
 }

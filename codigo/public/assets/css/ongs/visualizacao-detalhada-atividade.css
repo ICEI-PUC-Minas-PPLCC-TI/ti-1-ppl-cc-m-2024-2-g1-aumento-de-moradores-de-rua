@@ -1,0 +1,66 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+button,
+.form-label,
+.btn {
+  text-transform: lowercase;
+}
+
+.card-title,
+.card-text {
+  text-transform: lowercase;
+}
+
+.voluntario-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.voluntario-info {
+  display: flex;
+  align-items: center;
+}
+
+.voluntario-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.voluntario-nome {
+  font-weight: 500;
+}
+
+#diasTrabalhoSection h4 {
+  text-transform: lowercase;
+}
+
+.navigation-buttons .btn {
+  text-transform: lowercase;
+}
+
+.mb-4 h4 {
+  margin-bottom: 1rem;
+}
+
+.modal .form-control,
+.modal .form-select,
+.modal .form-label,
+.modal .btn {
+  text-transform: lowercase;
+}

@@ -4,12 +4,14 @@ const menus = {
   "ong": [
     { "name": "situação de rua", "url": "/modulos/ong/pessoas/listagem-morador.html" },
     { "name": "itens do estoque", "url": "/modulos/ong/itens-do-estoque.html" },
-    { "name": "atividades", "url": "/modulos/shared/atividades.html" }
+    { "name": "atividades", "url": "/modulos/shared/atividades.html" },
+    { "name": "meu perfil", "url": "/modulos/shared/perfil.html" }
   ],
   "pessoa": [
     { "name": "doações", "url": "/modulos/pessoas/doacoes.html" },
     { "name": "ong's", "url": "/modulos/shared/ongs/listagem.html" },
-    { "name": "atividades", "url": "/modulos/shared/atividades.html" }
+    { "name": "atividades", "url": "/modulos/shared/atividades.html" },
+    { "name": "meu perfil", "url": "/modulos/shared/perfil.html" }
   ],
   "not_logged": [
     { "name": "sobre nós", "url": "/modulos/login/cadastro.html" },
