@@ -24,7 +24,7 @@ A documentação do projeto é estruturada da seguinte forma:
 7. Solução
 8. Referências Bibliográficas
 
-✅ [Documentação de Design Thinking (MIRO)](files/Aumento-de-moradores-de-rua.pdf)
+✅ [Documentação de Design Thinking (MIRO)](docs/Aumento-de-moradores-de-rua.pdf)
 
 # Contexto
 A população em situação de rua totalizou 5.344 em BH no ano de 2022, segundo o "Censo Pop Rua" da Faculdade de Medicina da UFMG representando um aumento de 192%. A partir desse contexto, torna-se essencial resolver esse problema, por isso nosso projeto busca compreender as necessidades do nosso público-alvo vulnerável, as pessoas em situação de rua, e, por meio disso, estudá-las através de estatísticas e mapeamento, além da integração com serviços sociais. Embora, a aplicação se destine principalmente a Órgãos que são e não governamentais.
@@ -166,7 +166,7 @@ Queremos dialogar com os nossos colegas de classe de T.I 1 que possuem temas que
 
 ### PERSONA 1
 
-[Joao](files/images/Persona-Joao.png)
+[Joao](docs/images/Persona-Joao.png)
 
 **Nome:** João da Silva.
 **Idade:** 40 anos. 
@@ -182,7 +182,7 @@ Queremos dialogar com os nossos colegas de classe de T.I 1 que possuem temas que
 
 ### PERSONA 2
 
-[Ana](files/images/Persona-Ana.png)
+[Ana](docs/images/Persona-Ana.png)
 
 **Nome:** Ana Paula Ribeiro.
 **Idade:** 38 anos.
@@ -203,7 +203,7 @@ Nesse momento, vamos transformar os insights e validações obtidos em soluçõe
 
 ## Histórias de Usuários
 
-[História de usuários](files/images/Historia-de-usuarios.jpg)
+[História de usuários](docs/images/Historia-de-usuarios.jpg)
 
 
 | **EU COMO...**          | **QUERO/PRECISO ...**                       | **PARA ...**                             |
@@ -240,12 +240,12 @@ Nesse momento, vamos transformar os insights e validações obtidos em soluçõe
 
 ##### Proposta para Persona Ana
 
-[Proposta de valor Ana](files/images/Proposta-de-valor-Ana.png)
+[Proposta de valor Ana](docs/images/Proposta-de-valor-Ana.png)
 
 
 #### Proposta para Persona João
 
-[Proposta de valor João](files/images/Proposta-de-valor-Joao.png)
+[Proposta de valor João](docs/images/Proposta-de-valor-Joao.png)
 
 
 # Projeto de Solução
@@ -714,147 +714,147 @@ Link -> [User Flow](https://miro.com/welcomeonboard/T05PMHQwc3l4OTMyMkN5Tmp3Q2RM
 ## Home Geral
 A **Home Geral** é a página inicial do site, acessada por todos os usuários ao entrarem. Ela serve como o ponto de partida para a navegação e oferece uma visão geral dos principais destaques e funcionalidades disponíveis.
 
-![Home Geral](files/images/HOME-GERAL.png)
+![Home Geral](docs/images/HOME-GERAL.png)
 
 ## Login
 O **Login** é a área onde os usuários inserem suas credenciais, como CNPJ/CPF e senha, para acessar suas contas. Ela garante a segurança do sistema, permitindo o acesso apenas a usuários autenticados, além de oferecer opções de recuperação de senha e cadastro para novos usuários.
 
-![Login](files/images/Login-Geral.png)
+![Login](docs/images/Login-Geral.png)
 
 ## Registro de Voluntário
 A página **Registro de Voluntário** permite que novos voluntários criem uma conta no site, fornecendo informações básicas como nome, e-mail, e outros dados necessários. Após o preenchimento, os usuários poderão acessar as funcionalidades exclusivas para voluntários registrados.
 
-![Registro Voluntário](files/images/Registrar-se.png)
+![Registro Voluntário](docs/images/Registrar-se.png)
 
 ## Registro de ONG
 A página **Registro de ONG** permite que novas ONGs criem uma conta no site, fornecendo informações básicas como nome, e-mail, e outros dados necessários. Após o cadastro, as ONGs poderão acessar funcionalidades exclusivas.
 
-![Registro ONG](files/images/Registrar-se-ong.png)
+![Registro ONG](docs/images/Registrar-se-ong.png)
 
 ## Registro de Doador
 A página **Registro de Doador** permite que pessoas interessadas em realizar doações criem uma conta no site, fornecendo informações básicas como nome, e-mail e outros dados necessários. Após o preenchimento, os doadores poderão acessar funcionalidades exclusivas.
 
-![Registro Doador](files/images/Registrar-se-doador.png)
+![Registro Doador](docs/images/Registrar-se-doador.png)
 
 ## Criar Senha
 A página de **Criação de Senha** permite a criação de senhas pessoais para garantir a segurança da conta.
 
-![Criar Senha](files/images/Registrar-se-Adicionar-senha.png)
+![Criar Senha](docs/images/Registrar-se-Adicionar-senha.png)
 
 ## Cadastro de ONG
 Nesta área, as ONGs interessadas realizam o cadastro no site para exibir suas informações a outros usuários.
 
-![Cadastro de ONG](files/images/Cadastro-ONG.png)
+![Cadastro de ONG](docs/images/Cadastro-ONG.png)
 
 ## Acesso ONG
 Essa é a **página inicial para ONGs** após o login.
 
-![Acesso ONG](files/images/Acesso-ong.png)
+![Acesso ONG](docs/images/Acesso-ong.png)
 
 ## ONG - Registrar Morador de Rua
 Essa página mostra os moradores de rua que já foram registrados pelas ONGs que prestaram serviços.
 
-![Registrar Morador de Rua](files/images/ONG-morador-de-rua.png)
+![Registrar Morador de Rua](docs/images/ONG-morador-de-rua.png)
 
 ## ONG - Registrar Morador de Rua pelos Voluntários
 Essa página mostra os moradores de rua que já foram registrados pelos voluntários que prestaram serviços.
 
-![Registrar Morador de Rua pelos Voluntários](files/images/ONG-morador-rua-voluntário.png)
+![Registrar Morador de Rua pelos Voluntários](docs/images/ONG-morador-rua-voluntário.png)
 
 ## ONG - Cadastro de Morador de Rua
 Essa área permite o cadastro de novos moradores de rua.
 
-![Cadastro de Morador de Rua](files/images/Registrar-Morador-de-Rua.png)
+![Cadastro de Morador de Rua](docs/images/Registrar-Morador-de-Rua.png)
 
 ## ONG - Voluntários
 Essa página exibe os voluntários registrados.
 
-![Voluntários](files/images/ONG-voluntário.png)
+![Voluntários](docs/images/ONG-voluntário.png)
 
 ## ONG - Cadastro de Voluntários
 Essa área permite o cadastro de novos voluntários.
 
-![Cadastro de Voluntários](files/images/Cadastro-Voluntario.png)
+![Cadastro de Voluntários](docs/images/Cadastro-Voluntario.png)
 
 ## ONG - Identificar/Mapa de Morador de Rua
 Essa página mostra a área da cidade onde os moradores de rua costumam viver, trazendo diversas informações para as ONGs.
 
-![Identificar/Mapa Morador de Rua](files/images/indentificar-morador-rua.png)
+![Identificar/Mapa Morador de Rua](docs/images/indentificar-morador-rua.png)
 
 ## ONG - Identificar/Mapa de Voluntários
 Essa página mostra a localização dos voluntários e traz interações para as ONGs identificarem os mesmos.
 
-![Identificar/Mapa Voluntários](files/images/Identificar-Voluntário.png)
+![Identificar/Mapa Voluntários](docs/images/Identificar-Voluntário.png)
 
 ## ONG - Estoque
 Essa área exibe o estoque disponível da ONG.
 
-![Estoque](files/images/Estoque.png)
+![Estoque](docs/images/Estoque.png)
 
 ## ONG - Registrar Estoque
 Essa área permite o cadastro de novos itens no estoque da ONG.
 
-![Registrar Estoque](files/images/Cadastro-Estoque.png)
+![Registrar Estoque](docs/images/Cadastro-Estoque.png)
 
 ## ONG - Visita a Morador de Rua
 Essa página auxilia as ONGs no registro de visitas a novos moradores de rua encontrados e visitados.
 
-![Visita a Morador de Rua](files/images/Registrar-visita-Morador-de-Rua.png)
+![Visita a Morador de Rua](docs/images/Registrar-visita-Morador-de-Rua.png)
 
 ## ONG - Registrar Atividade de Voluntário
 Essa área permite o registro de novas atividades feitas pelos voluntários.
 
-![Registrar Atividade de Voluntário](files/images/Registrar-atividade-voluntário.png)
+![Registrar Atividade de Voluntário](docs/images/Registrar-atividade-voluntário.png)
 
 ## Acesso Doador
 Essa é a **página inicial para doadores** após o login.
 
-![Acesso Doador](files/images/Acesso-Doador.png)
+![Acesso Doador](docs/images/Acesso-Doador.png)
 
 ## Perfil do Doador
 Essa página exibe o perfil do usuário doador.
 
-![Perfil do Doador](files/images/Doador-seu-perfil.png)
+![Perfil do Doador](docs/images/Doador-seu-perfil.png)
 
 ## Doações Feitas
 Essa área exibe as doações realizadas pelo doador.
 
-![Doações Feitas](files/images/Doador-doações.png)
+![Doações Feitas](docs/images/Doador-doações.png)
 
 ## Configurações do Doador
 Essa área permite a configuração do perfil do doador.
 
-![Configurações do Doador](files/images/Doador-Configurações.png)
+![Configurações do Doador](docs/images/Doador-Configurações.png)
 
 ## Informações de Doações Feitas
 Essa área exibe informações detalhadas sobre as doações feitas pelo usuário.
 
-![Informações de Doações Feitas](files/images/Doador-informação-doações.png)
+![Informações de Doações Feitas](docs/images/Doador-informação-doações.png)
 
 ## Acesso Voluntário
 Essa é a **página inicial para voluntários** após o login.
 
-![Acesso Voluntário](files/images/Acesso-voluntario.png)
+![Acesso Voluntário](docs/images/Acesso-voluntario.png)
 
 ## Atividades do Voluntário
 Essa área exibe as atividades já realizadas pelo voluntário.
 
-![Atividades do Voluntário](files/images/voluntario-minhas-atividade.png)
+![Atividades do Voluntário](docs/images/voluntario-minhas-atividade.png)
 
 ## Informações de Atividades do Voluntário
 Essa área exibe os detalhes das atividades realizadas e as que ainda devem ser feitas pelo voluntário.
 
-![Informações de Atividades](files/images/voluntario-atividade.png)
+![Informações de Atividades](docs/images/voluntario-atividade.png)
 
 ## Voluntário - Registrar Atividade
 Essa área permite o registro das atividades realizadas no dia pelo voluntário.
 
-![Registrar Atividade](files/images/Voluntario-Registrar-atividade.png)
+![Registrar Atividade](docs/images/Voluntario-Registrar-atividade.png)
 
 ## Voluntário - ONG
 Essa página permite que os voluntários tenham acesso a informações sobre as ONGs cadastradas.
 
-![ONGs](files/images/voluntario-ong.png)
+![ONGs](docs/images/voluntario-ong.png)
 
 ### Protótipo Interativo
 
@@ -928,7 +928,7 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 
 O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
 
-[![Vídeo do projeto](files/images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
+[![Vídeo do projeto](docs/images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
 
 
 ## Funcionalidades
@@ -946,10 +946,10 @@ Permite acessar a listagem dos moradores de rua, acessar os detalhes de cada, ed
   * Nesta tela você poderá ver detalhes do morador de rua, editar ou excluir o cadastro.
 * **Tela da funcionalidade**:
 
-![Tela de Listagem de Morador](files/images/solucao-listagem-morador.png)
-![Tela de Detalhes do Morador](files/images/solucao-detalhes-morador.png)
-![Tela de Editar Dados do Morador](files/images/solucao-editar-morador.png)
-![Tela de Excluir Perfil do Morador](files/images/solucao-excluir-morador.png)
+![Tela de Listagem de Morador](docs/images/solucao-listagem-morador.png)
+![Tela de Detalhes do Morador](docs/images/solucao-detalhes-morador.png)
+![Tela de Editar Dados do Morador](docs/images/solucao-editar-morador.png)
+![Tela de Excluir Perfil do Morador](docs/images/solucao-excluir-morador.png)
 
 
 > ##### Funcionalidade 2 - Itens do Estoque 
@@ -963,7 +963,7 @@ Permite a ONG criar novo item, visualizar, editar ou excluir um item do estoque.
   * Escolha a ação que deseja realizar.
 * **Tela da funcionalidade**:
 
-![Tela de Itens do estoque](files/images/solucao-itens-estoque.png)
+![Tela de Itens do estoque](docs/images/solucao-itens-estoque.png)
 
 > ##### Funcionalidade 3 - Minhas Atividades ONG
 
@@ -977,7 +977,7 @@ Permite adicionar nova atividade, visualizar, editar ou excluir.
   * Escolha a ação que deseja realizar.
 * **Tela da funcionalidade**:
 
-![Tela de Minhas Atividades ONG](files/images/solucao-minhas-atividades-ong.png)
+![Tela de Minhas Atividades ONG](docs/images/solucao-minhas-atividades-ong.png)
 
  ##### Funcionalidade 4 - Meu Perfil
 
@@ -990,7 +990,7 @@ Permite que o usuário entre no perfil e visualize seus dados cadastrados e o pe
   * Escolha a ação que deseja realizar.
 * **Tela da funcionalidade**:
 
-![Tela de Meu Perfil](files/images/solucao-minhas-atividades-ong.png)
+![Tela de Meu Perfil](docs/images/solucao-minhas-atividades-ong.png)
 
 > ##### Funcionalidade 5 - Minhas Doações
 
@@ -1003,7 +1003,7 @@ Permite o usuário visualizar o histórico de doações feitas pelo site e para 
   * Se for preciso olhar mais detalhes da doação, clique na ação "Visualizar"
 * **Tela da funcionalidade**:
 
-![Tela de Minhas Doações](files/images/solucao-minhas-doacoes.png)
+![Tela de Minhas Doações](docs/images/solucao-minhas-doacoes.png)
 
 ##### Funcionalidade 6 - Realizar Doação 
 
@@ -1016,7 +1016,7 @@ Permite o usuário a fazer uma doação para uma ONG de sua escolha.
   * Em seguida, escolha a opção "Realizar Doação" e digite o valor a ser doado, e, em seguida, clique em gerar QR Code
 * **Tela da funcionalidade**:
 
-![Tela de Realizar Doação](files/images/solucao-realizar-doacao.png)
+![Tela de Realizar Doação](docs/images/solucao-realizar-doacao.png)
 >
 > ##### Funcionalidade 7 - Minhas Atividades Usuário
 
@@ -1030,7 +1030,7 @@ Permite visualizar detalhadamente o histórico de as atividades realizadas.
   * Escolha a ação que deseja realizar.
 * **Tela da funcionalidade**:
 
-![Tela de Minhas Atividades Usuário](files/images/solucao-minhas-atividades.png)
+![Tela de Minhas Atividades Usuário](docs/images/solucao-minhas-atividades.png)
 
 ## Estruturas de Dados
 
@@ -2335,7 +2335,7 @@ Registro de voluntariados no site
 
 Esta seção apresenta os módulos e APIs utilizados na solução
 
-**files/Images**:
+**docs/Images**:
 
 * im.ge - [https://im.ge.com/](https://im.ge.com/) 
 
