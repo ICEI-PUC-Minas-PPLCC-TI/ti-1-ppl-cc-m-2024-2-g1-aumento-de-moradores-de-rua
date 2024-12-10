@@ -740,6 +740,11 @@
           "nome": "Medicamentos",
           "tipo": "saude",
           "descricao": "Necessita de bombinha para asma"
+        },
+        {
+          "nome": "Apoio psicológico",
+          "tipo": "",
+          "descricao": "Necessita de cuidados médicos psicológicos"
         }
       ],
       "documentos": [
