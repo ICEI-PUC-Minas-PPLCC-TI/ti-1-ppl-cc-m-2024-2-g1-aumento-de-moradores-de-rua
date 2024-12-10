@@ -136,7 +136,7 @@
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
-      "status": "done",
+      "status": "Concluída",
       "ong": 1,
       "voluntarios": [
         3
@@ -149,7 +149,7 @@
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
-      "status": "waiting",
+      "status": "Em andamento",
       "ong": 1,
       "voluntarios": [
         3
@@ -162,7 +162,7 @@
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
-      "status": "done",
+      "status": "Concluída",
       "ong": 1,
       "voluntarios": [
         3
@@ -175,7 +175,7 @@
       "nome": "Distribuição de Comida",
       "data_inicio": "2024-01-10",
       "data_fim": "2024-01-20",
-      "status": "doing",
+      "status": "Em andamento",
       "ong": 1,
       "voluntarios": [
         3
@@ -249,7 +249,7 @@
       "doador": 3,
       "valor": 10,
       "data": "2024-10-02",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "Espero que ajude na causa!! Parabéns pelo seu trabalho por uma causa tão importante!",
       "pagamento": {
         "tipo": "pix"
@@ -260,7 +260,7 @@
       "doador": 3,
       "valor": 12,
       "data": "2024-10-02",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "123123",
       "pagamento": {
         "tipo": "pix"
@@ -272,7 +272,7 @@
       "doador": 3,
       "valor": 100,
       "data": "2024-12-08",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "weadfasd",
       "pagamento": {
         "tipo": "pix"
@@ -284,7 +284,7 @@
       "doador": 3,
       "valor": 100,
       "data": "2024-12-08",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "123",
       "pagamento": {
         "tipo": "pix"
@@ -296,7 +296,7 @@
       "doador": 3,
       "valor": 100,
       "data": "2024-12-08",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "123",
       "pagamento": {
         "tipo": "pix"
@@ -308,7 +308,7 @@
       "doador": 3,
       "valor": 100,
       "data": "2024-12-08",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "Vitor",
       "pagamento": {
         "tipo": "pix"
@@ -320,7 +320,7 @@
       "doador": 3,
       "valor": 123123,
       "data": "2024-12-08",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "12321124",
       "pagamento": {
         "tipo": "pix"
@@ -332,7 +332,7 @@
       "doador": 3,
       "valor": 123,
       "data": "2024-12-08",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "123",
       "pagamento": {
         "tipo": "pix"
@@ -344,7 +344,7 @@
       "doador": 1,
       "valor": 100,
       "data": "2024-12-09",
-      "status": "done",
+      "status": "Concluída",
       "descricao": "Boa!",
       "pagamento": {
         "tipo": "pix"

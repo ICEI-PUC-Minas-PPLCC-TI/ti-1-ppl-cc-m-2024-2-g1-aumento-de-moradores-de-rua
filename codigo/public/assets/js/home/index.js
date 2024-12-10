@@ -150,9 +150,9 @@ const fetchData = async () => {
 const countData = (atividades) => {
   if (!currentUser) return;
 
-  const atividadesConcluidas = atividades.filter(v => v.status === 'done').length;
-  const atividadesPendentes = atividades.filter(v => v.status === 'waiting').length;
-  const atividadesEmAndamento = atividades.filter(v => v.status === 'doing').length;
+  const atividadesConcluidas = atividades.filter(v => v.status == 'Concluída').length;
+  const atividadesPendentes = atividades.filter(v => v.status == 'Planejada').length;
+  const atividadesEmAndamento = atividades.filter(v => v.status == 'Em andamento').length;
 
   const atvConcluidasElement = document.querySelector('.atividades_concluidas');
   if (atvConcluidasElement) {
