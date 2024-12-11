@@ -10,9 +10,9 @@
 #### 8. Referências Bibliográficas
 
 # Introdução
+## Projeto: Aumento de Moradores de Rua
 ![Logo projeto](images/logo.png)
 
-# Projeto: Aumento de Moradores de Rua
   
 ## Membros da equipe:
 * [Any Gabrriela Neri de Oliveira](https://github.com/anygabriella)
