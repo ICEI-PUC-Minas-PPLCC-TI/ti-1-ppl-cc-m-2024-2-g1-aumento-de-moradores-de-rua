@@ -1,18 +1,18 @@
 # A documentação do projeto é estruturada da seguinte forma:
 
-### 1. Introdução
-### 2. Contexto
-### 3. Product Discovery
-### 4. Product Design
-### 5. Projeto de Solução
-### 6. Metodologia
-### 7. Solução
-### 8. Referências Bibliográficas
+#### 1. Introdução
+#### 2. Contexto
+#### 3. Product Discovery
+#### 4. Product Design
+#### 5. Projeto de Solução
+#### 6. Metodologia
+#### 7. Solução
+#### 8. Referências Bibliográficas
 
 # Introdução
 ![Logo projeto](images/logo.png)
 
-## Projeto: Aumento de Moradores de Rua
+# Projeto: Aumento de Moradores de Rua
   
 ## Membros da equipe:
 * [Any Gabrriela Neri de Oliveira](https://github.com/anygabriella)
@@ -27,7 +27,8 @@
 * [Rommel Vieira Carneiro](https://github.com/rommelcarneiro)
 * [Walisson Ferreira de Carvalho](https://github.com/WFCarvalho)
 * 
-✅**Repositório GitHub:** [[Link]](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/tree/master)
+✅ [[Repositório GitHub]](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/tree/master)
+
 ✅ [Documentação de Design Thinking (MIRO)](files/Aumento-de-moradores-de-rua.pdf)
 
 # Contexto
