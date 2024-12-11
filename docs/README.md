@@ -1,19 +1,18 @@
-**A documentação do projeto é estruturada da seguinte forma:**
+# A documentação do projeto é estruturada da seguinte forma:
 
-1. Introdução
-2. Contexto
-3. Product Discovery
-4. Product Design
-5. Projeto de Solução
-6. Metodologia
-7. Solução
-8. Referências Bibliográficas
+### 1. Introdução
+### 2. Contexto
+### 3. Product Discovery
+### 4. Product Design
+### 5. Projeto de Solução
+### 6. Metodologia
+### 7. Solução
+### 8. Referências Bibliográficas
 
 # Introdução
 ![Logo projeto](images/logo.png)
 
 ## Projeto: Aumento de Moradores de Rua
-  
   
 ## Membros da equipe:
 * [Any Gabrriela Neri de Oliveira](https://github.com/anygabriella)
@@ -56,15 +55,15 @@ Este trabalho justifica-se pela necessidade de criar uma ferramenta digital que 
 
 O público-alvo do aplicativo específico para ONGs que atuam no apoio a moradores de rua é composto por três grupos principais:
 
-**1- Organizações Não Governamentais (ONGs):**
+### 1- Organizações Não Governamentais (ONGs):
 
 As ONGs são o foco principal do aplicativo, pois são as responsáveis ​​por fornecer assistência e apoio direto aos moradores de rua. O aplicativo deve atender suas necessidades operacionais, facilitando a gestão de ações, o acompanhamento de ações de voluntariado e a integração com parceiros.
 
-**2- Moradores de Rua:**
+## 2- Moradores de Rua:
 
 Os moradores de rua são os beneficiários das ações realizadas pelas ONGs. O aplicativo deve ser projetado para atender suas necessidades, permitindo que as ONGs registrem informações sobre sua localização, saúde e bem-estar, além de possibilitar um acompanhamento mais eficaz. 
 
-**3- Voluntários e Doadores:**
+## 3- Voluntários e Doadores:
 
 O aplicativo também é destinado a voluntários e doadores que desejam contribuir com as ONGs. A plataforma deve facilitar o engajamento desses indivíduos, permitindo que eles se inscrevam para ações de voluntariado, façam ações financeiras e acompanhem o impacto de suas contribuições.**
 
@@ -108,9 +107,6 @@ O aplicativo também é destinado a voluntários e doadores que desejam contribu
 
  **3. Pessoas Influenciadoras**: ▸ População
  ▸ Mídia
-
-
-
 
 ### Entrevistas qualitativas: 
 Nesta etapa fizemos as seguintes perguntas para os desabrigados e coletamos as informações:
