@@ -1,4 +1,4 @@
-[Logo projeto](image/logo.png)
+![Logo projeto](docs/images/logo.png)
 
 # Aumento de Moradores de Rua
 
