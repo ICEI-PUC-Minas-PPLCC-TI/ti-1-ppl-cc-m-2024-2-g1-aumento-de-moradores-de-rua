@@ -12,23 +12,23 @@
 # Introdução
 ![Logo projeto](images/logo.png)
 
-### Projeto: Aumento de Moradores de Rua
-* 
-* **Repositório GitHub:** [[Link]](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/tree/master)
+## Projeto: Aumento de Moradores de Rua
   
-* **Membros da equipe:** 
+  
+## Membros da equipe:
 * [Any Gabrriela Neri de Oliveira](https://github.com/anygabriella)
 * [Eduardo Henrique Aniceto Teixeira](https://github.com/Eduard-Aniceto)
 * [Frederico Matheus Costa Duarte](https://github.com/Freduart12)
 * [Izabel Oliveira da Paz Chaves](https://github.com/rainbowcrack)
 * [Vitor Daniel Silva Melo](https://github.com/vloax)
 
-**Professores responsáveis:** 
+## Professores responsáveis:
 * [Hayala Nepomuceno Curto](https://github.com/hayalacurto)
 * [Ilo Amy Saldanha Rivero](https://github.com/ilorivero)
 * [Rommel Vieira Carneiro](https://github.com/rommelcarneiro)
 * [Walisson Ferreira de Carvalho](https://github.com/WFCarvalho)
 * 
+✅**Repositório GitHub:** [[Link]](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g1-aumento-de-moradores-de-rua/tree/master)
 ✅ [Documentação de Design Thinking (MIRO)](files/Aumento-de-moradores-de-rua.pdf)
 
 # Contexto
